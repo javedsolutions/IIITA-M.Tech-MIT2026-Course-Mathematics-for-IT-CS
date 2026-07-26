@@ -71,7 +71,7 @@ tions
 
 ---
 
-## 🗓️ Contents Covered
+## 🗓️ Broad Course Contents Covered
 
 ### 🔹 Unit 1: Linear Algebra and Matrix Theory
 <!--
@@ -112,7 +112,13 @@ Random Walks and Their Applications, Introduction to Queueing and Network Models
 Mathematical Foundations for AI, Machine Learning and Information Systems.
 
 ---
+## 🗺️: Applications of Mathematics for IT Concepts in the real world
 
+|💻 |  Applications |Maths Concept | Implementation Link |
+|:--- | :--- | :---: | :--- |
+|1.| Image Compression | SVD-Singular Value Decomposition |  |
+
+---
 ## 📜 Course Policies
 
 ### 🛑 Academic Integrity
