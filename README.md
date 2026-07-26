@@ -124,4 +124,4 @@ Plagiarism or unauthorized collaboration will result in a failing grade for the 
 * No assignments are accepted after 48 hours without a prior extension.
 
 ### ♿ Accessibility & Accommodations
-If you require specific classroom accommodations, please contact the University Student Disability Services office early in the semester so we can coordinate arrangements.
+If you require specific classroom accommodations, please contact the Dean Academic or Dean Student Affairs office early in the semester so we can coordinate arrangements.
