@@ -116,7 +116,7 @@ Mathematical Foundations for AI, Machine Learning and Information Systems.
 
 |💻 |  Applications |Maths Concept | Implementation Link |
 |:--- | :--- | :---: | :--- |
-|1.| Image Compression | SVD-Singular Value Decomposition |  |
+|1.| Image Compression | SVD-Singular Value Decomposition |  [Python Code](Applications/image_compression.ipynb) |
 
 ---
 ## 📜 Course Policies
