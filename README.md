@@ -83,7 +83,7 @@ tions
   * *Topics:* Understanding structural dynamics.
   * *Readings:* Chapter 2.
 -->
-Systems of Linear Equations, Row Reduction and Echelon Forms, Matrix Operations and Matrix Inverses,
+[Systems of Linear Equations](Unit_1_Linear_Algebra_and_Matrix_Theory/Systems-of-Linear-Equations.md), Row Reduction and Echelon Forms, Matrix Operations and Matrix Inverses,
 Linear Dependence and Independence, Vector Spaces, Subspaces, Basis and Dimension.
 Orthogonality and Projections - Orthogonal Bases, Orthogonal Projections, Gram-Schmidt Orthogonalization,
 Least Squares Problems and Linear Models.
