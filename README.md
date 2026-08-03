@@ -10,7 +10,7 @@
 ---
 
 ## 👥 Instructor Information
-* **Instructor:** Dr. Mohammed Javed
+* **Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
 * **Email:** javed@iiita.ac.in
 * **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
 <!--  * **Office:** Room 5159, Tech Tower
