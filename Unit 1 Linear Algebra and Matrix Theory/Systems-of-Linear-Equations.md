@@ -200,10 +200,8 @@ a_1 & b_1\\
 a_2 & b_2
 \end{bmatrix}
 \begin{bmatrix}
-x\\
-y
-\end{bmatrix}
-=
+x\\ y
+\end{bmatrix} =
 \begin{bmatrix}
 c_1\\
 c_2
@@ -302,9 +300,9 @@ For a system $A\mathbf{x}=\mathbf{b}$, compare the rank of the coefficient matri
 
 | Condition | Type | Number of Solutions |
 |---|---|---:|
-| $\operatorname{rank}(A)=\operatorname{rank}([A|b])=$ number of variables | Consistent, independent | One |
-| $\operatorname{rank}(A)=\operatorname{rank}([A|b])<$ number of variables | Consistent, dependent | Infinitely many |
-| $\operatorname{rank}(A)<\operatorname{rank}([A|b])$ | Inconsistent | None |
+| $\text{rank}(A)=\text{rank}([A\|b])=$ number of variables | Consistent, independent | One |
+| $\text{rank}(A)=\text{rank}([A\|b])<$ number of variables | Consistent, dependent | Infinitely many |
+| $\text{rank}(A)<\text{rank}([A\|b])$ | Inconsistent | None |
 
 ---
 
@@ -622,14 +620,11 @@ Explain geometrically why coincident lines have infinitely many solutions.
 | Lines coincide | Dependent equations | Infinitely many solutions |
 
 ---
-
-**End of Reading Material**
----
 ## ❓: CHALLENGING Questions - Check Your Understanding 
 * ➡️ **[Q-01]**
 * ➡️ 
 
 ---
 ## 📚 References 
-* **[R-01]**
-* 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
