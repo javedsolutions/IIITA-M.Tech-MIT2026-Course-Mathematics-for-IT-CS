@@ -33,17 +33,13 @@ For two variables, a common system is:
 $$
 a_1x+b_1y=c_1
 $$
-
 $$
 a_2x+b_2y=c_2
 $$
-
 For example:
-
 $$
 x+y=3
 $$
-
 $$
 x-y=-1
 $$
@@ -73,39 +69,28 @@ The solution is the pair $(x,y)$ that makes both equations true.
 A system has a **unique solution** when the two lines intersect at exactly one point.
 
 ### Example
-
 $$
 x+y=3
 $$
-
 $$
 x-y=-1
 $$
-
 Add the equations:
-
 $$
 2x=2
 $$
-
 Therefore:
-
 $$
 x=1
 $$
-
 Substitute into $x+y=3$:
-
 $$
 1+y=3
 $$
-
 $$
 y=2
 $$
-
 ### Solution
-
 $$
 \boxed{(x,y)=(1,2)}
 $$
@@ -121,29 +106,23 @@ $$
 A system has **no solution** when the two lines are parallel and distinct.
 
 ### Example
-
 $$
 y=2x+1
 $$
-
 $$
 y=2x-3
 $$
 
 Both equations have slope $2$, but different y-intercepts. Therefore, the lines are parallel and never intersect.
-
 Subtracting the equations leads to the impossible statement:
 
 $$
 4=0
 $$
-
 ### Solution
-
 $$
 \boxed{\varnothing}
 $$
-
 ![No solution: parallel lines](figures/no_solution.png)
 
 **Figure 2.** Parallel distinct lines represent an inconsistent system.
@@ -155,7 +134,6 @@ $$
 A system has **infinitely many solutions** when both equations describe the same line.
 
 ### Example
-
 $$
 y=2x+1
 $$
@@ -173,7 +151,6 @@ $$
 Both equations are identical.
 
 ### Solution
-
 $$
 \boxed{\{(x,y):y=2x+1\}}
 $$
@@ -209,7 +186,6 @@ c_2
 $$
 
 Here:
-
 - $A$ is the coefficient matrix.
 - $\mathbf{x}$ is the variable vector.
 - $\mathbf{b}$ is the constant vector.
@@ -249,45 +225,32 @@ $$
 ## 8. Worked Example Using Elimination
 
 Solve:
-
 $$
 2x+3y=13
 $$
-
 $$
 x-y=1
 $$
-
 Multiply the second equation by 3:
-
 $$
 3x-3y=3
 $$
-
 Add the equations:
-
 $$
 5x=16
 $$
-
 Therefore:
-
 $$
 x=\frac{16}{5}
 $$
-
 Substitute into $x-y=1$:
-
 $$
 \frac{16}{5}-y=1
 $$
-
 $$
 y=\frac{11}{5}
 $$
-
 ### Solution
-
 $$
 \boxed{(x,y)=\left(\frac{16}{5},\frac{11}{5}\right)}
 $$
@@ -317,11 +280,9 @@ Python provides several useful libraries:
 ## 10.1 Solve a System Using NumPy
 
 Consider:
-
 $$
 2x+3y=13
 $$
-
 $$
 x-y=1
 $$
@@ -358,13 +319,10 @@ y = 2.2
 ```
 
 Thus:
-
 $$
 \boxed{x=3.2,\quad y=2.2}
 $$
-
 or exactly:
-
 $$
 \boxed{x=\frac{16}{5},\quad y=\frac{11}{5}}
 $$
@@ -432,7 +390,6 @@ Output:
 ```
 
 Therefore:
-
 $$
 \boxed{x=1,\quad y=2}
 $$
@@ -442,17 +399,13 @@ $$
 # 12. Python Code for Graphing a System
 
 The following example graphs:
-
 $$
 x+y=3
 $$
-
 and
-
 $$
 x-y=-1
 $$
-
 Their solution is $(1,2)$.
 
 ```python
@@ -485,7 +438,6 @@ plt.show()
 ```
 
 The graph shows two lines intersecting at:
-
 $$
 \boxed{(1,2)}
 $$
@@ -495,46 +447,35 @@ $$
 # 13. Important Difference: Singular Systems
 
 When:
-
 $$
 \det(A)=0
 $$
 
 the coefficient matrix is **singular**.
-
 A singular system does **not automatically mean no solution**.
 
 It can have either:
-
 1. **No solution**, or
 2. **Infinitely many solutions**.
 
 For example:
-
 ### No solution
-
 $$
 y=2x+1
 $$
-
 $$
 y=2x-3
 $$
-
 The lines are parallel.
 
 ### Infinitely many solutions
-
 $$
 y=2x+1
 $$
-
 $$
 2y=4x+2
 $$
-
 The equations represent the same line.
-
 Therefore, additional checks such as matrix rank or row reduction are needed.
 
 ---
@@ -542,55 +483,42 @@ Therefore, additional checks such as matrix rank or row reduction are needed.
 # 14. Practice Problems
 
 ### Problem 1
-
 Solve:
-
 $$
 x+y=7
 $$
-
 $$
 x-y=1
 $$
 
 ### Problem 2
-
 Determine the type and solve:
-
 $$
 2x+4y=8
 $$
-
 $$
 x+2y=4
 $$
 
 ### Problem 3
-
 Determine the type:
-
 $$
 y=3x+2
 $$
-
 $$
 y=3x-5
 $$
 
 ### Problem 4
-
 Solve using Python:
-
 $$
 3x+2y=12
 $$
-
 $$
 x-y=1
 $$
 
 ### Problem 5
-
 Explain geometrically why coincident lines have infinitely many solutions.
 
 ---
