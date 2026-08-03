@@ -1,5 +1,12 @@
-# Row Reduction and Echelon Forms
-## Reading Material for Linear Algebra
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+### Current Topic: Row Reduction and Echelon Forms - Basics, graphical interpretation, solved examples, and Python implementation
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
 
 ### Learning objectives
 After studying this material, you should be able to:
