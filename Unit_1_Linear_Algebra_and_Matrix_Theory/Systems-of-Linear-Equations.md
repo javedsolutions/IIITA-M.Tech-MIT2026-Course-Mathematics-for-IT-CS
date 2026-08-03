@@ -225,32 +225,45 @@ $$
 ## 8. Worked Example Using Elimination
 
 Solve:
+
 $$
 2x+3y=13
 $$
+
 $$
 x-y=1
 $$
+
 Multiply the second equation by 3:
+
 $$
 3x-3y=3
 $$
+
 Add the equations:
+
 $$
 5x=16
 $$
+
 Therefore:
+
 $$
 x=\frac{16}{5}
 $$
+
 Substitute into $x-y=1$:
+
 $$
 \frac{16}{5}-y=1
 $$
+
 $$
 y=\frac{11}{5}
 $$
+
 ### Solution
+
 $$
 \boxed{(x,y)=\left(\frac{16}{5},\frac{11}{5}\right)}
 $$
@@ -280,9 +293,11 @@ Python provides several useful libraries:
 ## 10.1 Solve a System Using NumPy
 
 Consider:
+
 $$
 2x+3y=13
 $$
+
 $$
 x-y=1
 $$
@@ -319,10 +334,13 @@ y = 2.2
 ```
 
 Thus:
+
 $$
 \boxed{x=3.2,\quad y=2.2}
 $$
+
 or exactly:
+
 $$
 \boxed{x=\frac{16}{5},\quad y=\frac{11}{5}}
 $$
@@ -390,6 +408,7 @@ Output:
 ```
 
 Therefore:
+
 $$
 \boxed{x=1,\quad y=2}
 $$
@@ -399,13 +418,17 @@ $$
 # 12. Python Code for Graphing a System
 
 The following example graphs:
+
 $$
 x+y=3
 $$
+
 and
+
 $$
 x-y=-1
 $$
+
 Their solution is $(1,2)$.
 
 ```python
@@ -438,6 +461,7 @@ plt.show()
 ```
 
 The graph shows two lines intersecting at:
+
 $$
 \boxed{(1,2)}
 $$
@@ -447,6 +471,7 @@ $$
 # 13. Important Difference: Singular Systems
 
 When:
+
 $$
 \det(A)=0
 $$
@@ -459,22 +484,29 @@ It can have either:
 2. **Infinitely many solutions**.
 
 For example:
+
 ### No solution
+
 $$
 y=2x+1
 $$
+
 $$
 y=2x-3
 $$
+
 The lines are parallel.
 
 ### Infinitely many solutions
+
 $$
 y=2x+1
 $$
+
 $$
 2y=4x+2
 $$
+
 The equations represent the same line.
 Therefore, additional checks such as matrix rank or row reduction are needed.
 
@@ -484,36 +516,44 @@ Therefore, additional checks such as matrix rank or row reduction are needed.
 
 ### Problem 1
 Solve:
+
 $$
 x+y=7
 $$
+
 $$
 x-y=1
 $$
 
 ### Problem 2
 Determine the type and solve:
+
 $$
 2x+4y=8
 $$
+
 $$
 x+2y=4
 $$
 
 ### Problem 3
 Determine the type:
+
 $$
 y=3x+2
 $$
+
 $$
 y=3x-5
 $$
 
 ### Problem 4
 Solve using Python:
+
 $$
 3x+2y=12
 $$
+
 $$
 x-y=1
 $$
