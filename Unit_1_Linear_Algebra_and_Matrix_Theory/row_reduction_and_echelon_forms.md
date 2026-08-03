@@ -23,12 +23,17 @@ After studying this material, you should be able to:
 
 A system such as
 
-\[ x+2y-z=3, \quad 2x+5y+z=8, \quad -x+y+2z=1 \]
+$$ x+2y-z=3, \quad 2x+5y+z=8, \quad -x+y+2z=1  $$
 
 can be represented by the augmented matrix
-\[
-\left[\begin{array}{ccc|c}1&2&-1&3\\2&5&1&8\\-1&1&2&1\end{array}\right].
-\]
+
+$$
+\left[\begin{array}{ccc|c}
+1&2&-1&3\\ 
+2&5&1&8\\ 
+-1&1&2&1 
+\end{array}\right]
+$$
 
 **Row reduction** transforms a matrix into a simpler equivalent matrix using elementary row operations. For a system of equations, these operations preserve the solution set.
 
@@ -42,21 +47,21 @@ There are exactly three elementary row operations.
 
 ### 2.1 Row replacement
 
-\[
-R_i \leftarrow R_i + cR_j.
-\]
+$$
+R_i \leftarrow R_i + cR_j
+$$
 
 ### 2.2 Row interchange
 
-\[
+$$
 R_i \leftrightarrow R_j.
-\]
+$$
 
 ### 2.3 Row scaling
 
-\[
+$$
 R_i\leftarrow cR_i,\qquad c\ne0.
-\]
+$$
 
 ![The three elementary row operations](figures/01_elementary_row_operations.png)
 
@@ -69,9 +74,15 @@ These operations preserve the solution set because they correspond to equivalent
 A **leading entry** is the first nonzero entry in a nonzero row. During row reduction, a leading entry used for elimination is called a **pivot**.
 
 For example,
-\[
-\begin{bmatrix}1&2&-1\\0&3&4\\0&0&5\end{bmatrix}
-\]
+
+$$
+\begin{bmatrix} 
+1 & 2 & -1 \\
+0 & 3 & 4 \\
+0 & 0 & 5
+\end{bmatrix}
+$$
+
 has pivots in columns 1, 2, and 3.
 
 Pivots help determine rank, variable types, and the number of solutions.
@@ -90,14 +101,15 @@ The pivots form a staircase.
 ![Pivot staircase in REF](figures/02_echelon_staircase.png)
 
 Example:
-\[
+
+$$
 \begin{bmatrix}
-1&2&-1&3\\
-0&1&4&2\\
-0&0&1&5\\
-0&0&0&0
-\end{bmatrix}.
-\]
+1 & 2 & -1 & 3\\
+0 & 1 & 4 & 2 \\
+0 & 0 & 1 & 5\\
+0 & 0 & 0 & 0
+\end{bmatrix}
+$$
 
 ---
 
@@ -108,14 +120,15 @@ A matrix is in **RREF** if it is in REF and also:
 5. Each pivot is the only nonzero entry in its column.
 
 Example:
-\[
+
+$$
 \begin{bmatrix}
 1&0&0&4\\
 0&1&0&-18\\
 0&0&1&5\\
 0&0&0&0
 \end{bmatrix}.
-\]
+$$
 
 ![REF versus RREF](figures/03_ref_vs_rref.png)
 
@@ -135,60 +148,69 @@ Example:
 **Gaussian elimination** reduces a matrix to REF and then uses back-substitution.
 
 Consider:
-\[
+
+$$
 \begin{aligned}
 x+2y-z&=3\\
 2x+5y+z&=8\\
 -x+y+2z&=1.
 \end{aligned}
-\]
+$$
 
 Start with
-\[
+
+$$
 \left[\begin{array}{ccc|c}
 1&2&-1&3\\
 2&5&1&8\\
 -1&1&2&1
 \end{array}\right].
-\]
+$$
 
 Apply
-\[
+
+$$
 R_2\leftarrow R_2-2R_1,\qquad
 R_3\leftarrow R_3+R_1.
-\]
+$$
 
 Then
-\[
+
+$$
 \left[\begin{array}{ccc|c}
 1&2&-1&3\\
 0&1&3&2\\
 0&3&1&4
 \end{array}\right].
-\]
+$$
 
 Next,
-\[
+
+$$
 R_3\leftarrow R_3-3R_2
-\]
+$$
+
 gives
-\[
+
+$$
 \left[\begin{array}{ccc|c}
 1&2&-1&3\\
 0&1&3&2\\
 0&0&-8&-2
 \end{array}\right].
-\]
+$$
 
 Back-substitution gives
-\[
+
+$$
 z=\frac14,\qquad y=\frac54,\qquad x=\frac12.
-\]
+$$
 
 Therefore,
-\[
+
+$$
 \boxed{(x,y,z)=\left(\frac12,\frac54,\frac14\right)}.
-\]
+$$
 
 ![Geometric interpretation of a unique solution](figures/05_solution_intersection.png)
 
@@ -199,24 +221,27 @@ Therefore,
 **Gauss–Jordan elimination** continues the process until RREF is reached.
 
 From
-\[
+
+$$
 \left[\begin{array}{ccc|c}
 1&2&-1&3\\
 0&1&3&2\\
 0&0&-8&-2
 \end{array}\right],
-\]
+$$
+
 scale the third row and eliminate above the third pivot, then eliminate above the second pivot.
 
 The final RREF is
-\[
+
+$$
 \boxed{
 \left[\begin{array}{ccc|c}
 1&0&0&\frac12\\
 0&1&0&\frac54\\
 0&0&1&\frac14
 \end{array}\right]}.
-\]
+$$
 
 Thus the solution can be read directly.
 
@@ -231,30 +256,34 @@ Thus the solution can be read directly.
 ## 8. Pivot Variables and Free Variables
 
 Consider
-\[
+
+$$
 \left[\begin{array}{ccc|c}
 1&0&2&5\\
 0&1&-1&3\\
 0&0&0&0
 \end{array}\right].
-\]
+$$
 
 The equations are
-\[
+
+$$
 x_1+2x_3=5,\qquad x_2-x_3=3.
-\]
+$$
 
-Columns 1 and 2 contain pivots, so \(x_1,x_2\) are pivot variables. Column 3 is non-pivot, so \(x_3\) is free.
+Columns 1 and 2 contain pivots, so $\(x_1,x_2\)$ are pivot variables. Column 3 is non-pivot, so $\(x_3\)$ is free.
 
-Let \(x_3=t\). Then
-\[
+Let $\(x_3=t\)$. Then
+
+$$
 x_1=5-2t,\qquad x_2=3+t.
-\]
+$$
 
 Hence
-\[
+
+$$
 \boxed{(x_1,x_2,x_3)=(5-2t,3+t,t)}.
-\]
+$$
 
 ![Pivot and free variables](figures/04_pivot_free_variables.png)
 
@@ -263,24 +292,31 @@ Hence
 ## 9. Rank
 
 The **rank** of a matrix is the number of pivots in its REF or RREF.
-
 For
-\[
-\begin{bmatrix}1&2&3\\0&1&4\\0&0&0\end{bmatrix},
-\]
+
+$$
+\begin{bmatrix}
+1&2&3\\
+0&1&4\\
+0&0&0
+\end{bmatrix},
+$$
+
 there are two pivots, so
-\[
-\boxed{\operatorname{rank}(A)=2}.
-\]
+
+$$
+\boxed{\text{rank}(A)=2}.
+$$
 
 ---
 
 ## 10. Consistency and Number of Solutions
 
 A system is inconsistent if row reduction produces
-\[
+
+$$
 [0\quad0\quad\cdots\quad0\mid b],\qquad b\ne0.
-\]
+$$
 
 This represents the impossible equation \(0=b\).
 
@@ -516,37 +552,45 @@ For learning row reduction, implementing Gauss–Jordan elimination yourself is 
 
 ### Problem 1
 Reduce to REF:
-\[
+
+$$
 \begin{bmatrix}
 1&2&3\\
 2&4&7\\
 1&1&2
 \end{bmatrix}.
-\]
+$$
 
 ### Problem 2
 Find the RREF:
-\[
-\begin{bmatrix}1&2&1\\2&4&2\\3&6&3\end{bmatrix}.
-\]
+
+$$
+\begin{bmatrix}
+1&2&1\\
+2&4&2\\
+3&6&3
+\end{bmatrix}
+$$
 
 ### Problem 3
 Classify the system:
-\[
+
+$$
 x+y+z=3,\quad
 2x+2y+2z=6,\quad
 x+y+z=4.
-\]
+$$
 
 ### Problem 4
 Identify pivot and free variables:
-\[
+
+$$
 \begin{bmatrix}
 1&0&2&0&5\\
 0&1&-1&0&3\\
 0&0&0&1&4
 \end{bmatrix}.
-\]
+$$
 
 ### Problem 5 — Python
 Use the `rref()` function to reduce:
@@ -580,36 +624,35 @@ The key ideas are:
 
 ### Quick reference
 
-\[
+$$
 R_i\leftrightarrow R_j
-\]
+$$
 
-\[
+$$
 R_i\leftarrow cR_i,\quad c\ne0
-\]
+$$
 
-\[
+$$
 R_i\leftarrow R_i+cR_j
-\]
+$$
 
-\[
+$$
 \boxed{
 \begin{array}{ll}
 \text{Unique} & \text{pivot in every variable column}\\
 \text{Infinite} & \text{free variable(s), no contradiction}\\
 \text{None} & [0\;0\;\cdots\;0\mid b],\ b\ne0
 \end{array}}
-\]
+$$
 
 ---
 
-## Figures included
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
-- `01_elementary_row_operations.png`
-- `02_echelon_staircase.png`
-- `03_ref_vs_rref.png`
-- `04_pivot_free_variables.png`
-- `05_solution_intersection.png`
-- `06_row_reduction_flowchart.png`
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
 
-The Markdown file uses relative paths such as `figures/01_elementary_row_operations.png`, so the figures display automatically when the Markdown file and `figures` folder remain together.
