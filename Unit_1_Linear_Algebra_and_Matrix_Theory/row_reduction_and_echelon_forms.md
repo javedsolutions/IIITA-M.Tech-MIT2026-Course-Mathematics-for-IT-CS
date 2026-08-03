@@ -22,9 +22,9 @@ After studying this material, you should be able to:
 ## 1. Introduction
 
 A system such as
-\[
-x+2y-z=3,\quad 2x+5y+z=8,\quad -x+y+2z=1
-\]
+
+\[ x+2y-z=3, \quad 2x+5y+z=8, \quad -x+y+2z=1 \]
+
 can be represented by the augmented matrix
 \[
 \left[\begin{array}{ccc|c}1&2&-1&3\\2&5&1&8\\-1&1&2&1\end{array}\right].
@@ -41,16 +41,19 @@ can be represented by the augmented matrix
 There are exactly three elementary row operations.
 
 ### 2.1 Row replacement
+
 \[
-R_i\leftarrow R_i+cR_j.
+R_i \leftarrow R_i + cR_j.
 \]
 
 ### 2.2 Row interchange
+
 \[
-R_i\leftrightarrow R_j.
+R_i \leftrightarrow R_j.
 \]
 
 ### 2.3 Row scaling
+
 \[
 R_i\leftarrow cR_i,\qquad c\ne0.
 \]
@@ -514,7 +517,11 @@ For learning row reduction, implementing Gauss–Jordan elimination yourself is 
 ### Problem 1
 Reduce to REF:
 \[
-\begin{bmatrix}1&2&3\\2&4&7\\1&1&2\end{bmatrix}.
+\begin{bmatrix}
+1&2&3\\
+2&4&7\\
+1&1&2
+\end{bmatrix}.
 \]
 
 ### Problem 2
