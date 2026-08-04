@@ -83,7 +83,9 @@ tions
   * *Topics:* Understanding structural dynamics.
   * *Readings:* Chapter 2.
 -->
-[Systems of Linear Equations](Unit_1_Linear_Algebra_and_Matrix_Theory/Systems-of-Linear-Equations.md), [Row Reduction and Echelon Forms](Unit_1_Linear_Algebra_and_Matrix_Theory/row_reduction_and_echelon_forms.md), Matrix Operations and Matrix Inverses,
+[Systems of Linear Equations](Unit_1_Linear_Algebra_and_Matrix_Theory/Systems-of-Linear-Equations.md), [Row Reduction and Echelon Forms](Unit_1_Linear_Algebra_and_Matrix_Theory/row_reduction_and_echelon_forms.md), 
+
+Matrix Operations and Matrix Inverses,
 
 Linear Dependence and Independence, Vector Spaces, Subspaces, Basis and Dimension.
 
@@ -97,7 +99,7 @@ Applications of Linear Algebra in Information Technology and Data Representation
 
 
 ### 🔹 Unit 2: Eigen Analysis and Matrix Decomposition
-Eigenvalues and Eigenvectors, Characteristic Equations, Diagonalization of Matrices,
+Eigenvalues and Eigenvectors, Characteristic Equations, Diagonalization of Matrices
 
 Symmetric Matrices, Positive Definite Matrices, Similar Matrices
 
