@@ -112,11 +112,11 @@ Applications in Data Compression, Recommendation Systems, Image Representation a
 ### 🎯 Unit 3: Probability and Random Variables
 [Events and Probability Spaces](Unit_3_Probability_and_Random_Variables/events_and_probability_spaces.md), [Conditional Probability](Unit_3_Probability_and_Random_Variables/conditional_probability.md), [Bayes’ Theorem, Independence of Events](Unit_3_Probability_and_Random_Variables/bayes_theorem_and_independence.md).
 
-[Random Variables and Probability Distributions](Unit_3_Probability_and_Random_Variables/random_variables_probability_distributions.md) - Discrete and Continuous Random Variables, Probability Mass Functions, Probability Density Functions and Cumulative Distribution Functions. 
+[Random Variables and Probability Distributions - Discrete and Continuous Random Variables, Probability Mass Functions, Probability Density Functions and Cumulative Distribution Functions](Unit_3_Probability_and_Random_Variables/random_variables_probability_distributions.md). 
 
 [Expectation, Variance, Covariance and Correlation](Unit_3_Probability_and_Random_Variables/expectation_variance_covariance_correlation.md) 
 
-[Common Probability Distributions](Unit_3_Probability_and_Random_Variables/common_probability_distributions.md) - Bernoulli, Binomial, Poisson, Uniform, Gaussian and Exponential Distributions. 
+[Common Probability Distributions - Bernoulli, Binomial, Poisson, Uniform, Gaussian and Exponential Distributions](Unit_3_Probability_and_Random_Variables/common_probability_distributions.md). 
 
 [Applications of Probability in Information Technology, AI and Data Analytics](Unit_3_Probability_and_Random_Variables/applications_probability_it_ai_data_analytics.md)
  
