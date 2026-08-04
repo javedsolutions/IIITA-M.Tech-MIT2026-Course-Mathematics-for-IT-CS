@@ -112,7 +112,7 @@ Applications in Data Compression, Recommendation Systems, Image Representation a
 
 [Random Variables and Probability Distributions](Unit_3_Probability_and_Random_Variables/random_variables_probability_distributions.md) - Discrete and Continuous Random Variables, Probability Mass Functions, Probability Density Functions and Cumulative Distribution Functions. 
 
-[Expectation, Variance, Covariance and Correlation](Unit_3_Probability_and_Random_Variables/expectation_variance_covariance_correlation.md)
+[Expectation, Variance, Covariance and Correlation](Unit_3_Probability_and_Random_Variables/expectation_variance_covariance_correlation.md) 
 
 Common Probability Distributions - Bernoulli, Binomial, Poisson, Uniform, Gaussian and Exponential Distributions. 
 
