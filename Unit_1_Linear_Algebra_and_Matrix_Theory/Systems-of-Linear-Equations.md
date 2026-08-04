@@ -123,6 +123,7 @@ $$
 $$
 \boxed{\varnothing}
 $$
+
 ![No solution: parallel lines](figures/no_solution.png)
 
 **Figure 2.** Parallel distinct lines represent an inconsistent system.
