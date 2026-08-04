@@ -116,20 +116,20 @@ Applications in Data Compression, Recommendation Systems, Image Representation a
 
 [Expectation, Variance, Covariance and Correlation](Unit_3_Probability_and_Random_Variables/expectation_variance_covariance_correlation.md) 
 
-Common Probability Distributions - Bernoulli, Binomial, Poisson, Uniform, Gaussian and Exponential Distributions. 
+[Common Probability Distributions](Unit_3_Probability_and_Random_Variables/common_probability_distributions.md) - Bernoulli, Binomial, Poisson, Uniform, Gaussian and Exponential Distributions. 
 
-Applications of Probability in Information Technology, AI and Data Analytics
+[Applications of Probability in Information Technology, AI and Data Analytics](Unit_3_Probability_and_Random_Variables/applications_probability_it_ai_data_analytics.md)
  
 ### 🎯 Unit 4: Stochastic Processes and Random Models
-Limit Theorems - Law of Large Numbers and Central Limit Theorem. 
+[Limit Theorems - Law of Large Numbers and Central Limit Theorem](Unit_4_Stochastic_Processes_and_Random_Models/limit_theorems_lln_clt.md). 
 
-Stochastic Processes and Deviations, 
+[Stochastic Processes and Deviations](Unit_4_Stochastic_Processes_and_Random_Models/stochastic_processes_and_deviations.md) 
 
-Markov Chains, Transition Probability Matrices, Steady State Analysis.
+[Markov Chains, Transition Probability Matrices, Steady State Analysis](Unit_4_Stochastic_Processes_and_Random_Models/markov_chains_transition_matrices.md).
 
-Random Walks and Their Applications, Introduction to Queueing and Network Models,
+[Random Walks and Their Applications](Unit_4_Stochastic_Processes_and_Random_Models/random_walks_and_applications.md), [Introduction to Queueing and Network Models](Unit_4_Stochastic_Processes_and_Random_Models/introduction_to_queueing_and_network_models.md),
 
-Mathematical Foundations for AI, Machine Learning and Information Systems.
+[Mathematical Foundations for AI, Machine Learning and Information Systems-Applications](Unit_4_Stochastic_Processes_and_Random_Models/stochastic_processes_random_models.md).
 
 ---
 ## 🗺️: Applications of Mathematics for IT Concepts in the real world
