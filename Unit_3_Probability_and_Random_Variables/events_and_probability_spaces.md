@@ -1,14 +1,19 @@
-# Events and Probability Spaces
-
-> A GitHub-ready reading material with intuitive explanations, figures, examples, and Python implementations.
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+### Current Topic: Events and Probability Spaces - intuitive explanations, figures, examples, and Python implementations
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
 ## Learning objectives
 
 After studying this material, you should be able to:
 
 - explain a random experiment, outcome, and sample space;
 - distinguish between an event and an outcome;
-- construct a probability space \((\Omega,\mathcal F,P)\);
+- construct a probability space $(\Omega,\mathcal F,P)$;
 - perform event operations such as union, intersection, complement, and difference;
 - use the axioms of probability;
 - calculate probabilities of equally likely events;
@@ -65,11 +70,11 @@ An **outcome** is one possible result of a random experiment.
 
 For a die roll:
 
-\[
+$$
 \omega \in \{1,2,3,4,5,6\}
-\]
+$$
 
-Here, \(\omega=4\) means that the observed outcome is 4.
+Here, $(\omega=4)$ means that the observed outcome is 4.
 
 It is important to distinguish:
 
@@ -80,31 +85,31 @@ It is important to distinguish:
 
 ## 4. Sample space
 
-The **sample space**, denoted by \(\Omega\), is the set of **all possible outcomes** of an experiment.
+The **sample space**, denoted by $(\Omega)$, is the set of **all possible outcomes** of an experiment.
 
 ### Example: one die
 
-\[
+$$
 \Omega=\{1,2,3,4,5,6\}
-\]
+$$
 
 The following figure visualizes the six possible outcomes.
 
-![Sample space of a die](figures/01_sample_space_die.png)
+![Sample space of a die](figures/01_sample_space_die.png){width=25%}
 
 ### Example: coin toss
 
 For one coin toss:
 
-\[
+$$
 \Omega=\{H,T\}
-\]
+$$
 
 For two coin tosses:
 
-\[
+$$
 \Omega=\{HH,HT,TH,TT\}
-\]
+$$
 
 The sample space must be chosen carefully so that all outcomes relevant to the experiment are represented.
 
@@ -116,40 +121,40 @@ An **event** is a subset of the sample space.
 
 If
 
-\[
+$$
 \Omega=\{1,2,3,4,5,6\},
-\]
+$$
 
 then:
 
-- \(A=\{2,4,6\}\): getting an even number;
-- \(B=\{1,2,3\}\): getting a number less than 4;
-- \(C=\{6\}\): getting a 6.
+- $(A=\{2,4,6\})$: getting an even number;
+- $(B=\{1,2,3\})$: getting a number less than 4;
+- $(C=\{6\})$: getting a 6.
 
-Since each event is a subset of \(\Omega\),
+Since each event is a subset of $(\Omega)$,
 
-\[
+$$
 A\subseteq\Omega.
-\]
+$$
 
 ### Event versus outcome
 
 The outcome 4 is a single element:
 
-\[
+$$
 4\in\Omega.
-\]
+$$
 
 The event "even number" is a set:
 
-\[
+$$
 \{2,4,6\}\subseteq\Omega.
-\]
+$$
 
 Thus, in set notation:
 
-- use \(\in\) for an outcome belonging to an event;
-- use \(\subseteq\) for an event being contained in the sample space.
+- use $(\in)$ for an outcome belonging to an event;
+- use $(\subseteq)$ for an event being contained in the sample space.
 
 ---
 
@@ -161,9 +166,9 @@ A **simple event** contains exactly one outcome.
 
 Example:
 
-\[
+$$
 A=\{6\}
-\]
+$$
 
 when rolling a die.
 
@@ -173,51 +178,51 @@ A **compound event** contains more than one outcome.
 
 Example:
 
-\[
+$$
 B=\{2,4,6\}.
-\]
+$$
 
 ### 6.3 Certain event
 
 The entire sample space is a certain event:
 
-\[
+$$
 P(\Omega)=1.
-\]
+$$
 
 ### 6.4 Impossible event
 
 The empty set is an impossible event:
 
-\[
+$$
 \varnothing.
-\]
+$$
 
 Therefore,
 
-\[
+$$
 P(\varnothing)=0.
-\]
+$$
 
 ### 6.5 Complementary event
 
-The complement of \(A\), written \(A^c\), contains all outcomes in \(\Omega\) that are not in \(A\).
+The complement of $(A)$, written $(A^c)$, contains all outcomes in $(\Omega)$ that are not in $(A)$.
 
-\[
+$$
 A^c=\Omega\setminus A.
-\]
+$$
 
 For
 
-\[
+$$
 \Omega=\{1,2,3,4,5,6\}, \quad A=\{2,4,6\},
-\]
+$$
 
 we have
 
-\[
+$$
 A^c=\{1,3,5\}.
-\]
+$$
 
 ---
 
@@ -227,39 +232,39 @@ Events behave like sets, so standard set operations can be used.
 
 ### 7.1 Union
 
-The union \(A\cup B\) means **A or B or both**.
+The union $(A\cup B)$ means **A or B or both**.
 
-\[
+$$
 A\cup B=\{\omega:\omega\in A\text{ or }\omega\in B\}.
-\]
+$$
 
 ### 7.2 Intersection
 
-The intersection \(A\cap B\) means **A and B occur together**.
+The intersection $(A\cap B)$ means **A and B occur together**.
 
-\[
+$$
 A\cap B=\{\omega:\omega\in A\text{ and }\omega\in B\}.
-\]
+$$
 
-![Union and intersection of events](figures/02_venn_events_union_intersection.png)
+![Union and intersection of events](figures/02_venn_events_union_intersection.png){width=50%}
 
 ### 7.3 Complement
 
-\[
+$$
 A^c=\Omega\setminus A.
-\]
+$$
 
-It means that \(A\) does not occur.
+It means that $(A)$ does not occur.
 
 ### 7.4 Difference
 
-\[
+$$
 A\setminus B
-\]
+$$
 
-contains outcomes that are in \(A\) but not in \(B\).
+contains outcomes that are in $(A)$ but not in $(B)$.
 
-![Event operations](figures/03_event_operations.png)
+![Event operations](figures/03_event_operations.png){width=25%}
 
 ---
 
@@ -1136,32 +1141,14 @@ The central ideas are:
 15. Give an example of two mutually exclusive events and explain why they cannot be independent when both have positive probability.
 
 ---
-
-## 25. Suggested next topics
-
-After Events and Probability Spaces, a natural learning sequence is:
-
-1. Conditional Probability
-2. Bayes' Theorem
-3. Independence
-4. Random Variables
-5. Discrete Probability Distributions
-6. Continuous Probability Distributions
-7. Expectation and Variance
-8. Law of Large Numbers
-9. Central Limit Theorem
-10. Statistical Inference
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
 ---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
 
-## Figures included
 
-The `figures/` directory contains the following GitHub-ready PNG figures:
 
-1. `01_sample_space_die.png` — sample space of a die
-2. `02_venn_events_union_intersection.png` — union and intersection of events
-3. `03_event_operations.png` — event operations
-4. `04_probability_tree.png` — two-stage probability tree
-5. `05_probability_space.png` — probability space \((\Omega,\mathcal F,P)\)
-
-All figures are referenced using relative paths, so the Markdown file renders correctly when uploaded to GitHub together with the `figures/` folder.
