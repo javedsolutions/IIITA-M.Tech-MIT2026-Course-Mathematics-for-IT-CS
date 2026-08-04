@@ -1,13 +1,18 @@
-# Bayes’ Theorem and Independence of Events
-
-> A GitHub-ready reading material with intuitive explanations, mathematical derivations, worked examples, figures, and Python implementations.
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+### Current Topic: Bayes’ Theorem and Independence of Events - intuitive explanations, mathematical derivations, worked examples, figures, and Python implementations
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
 ## Learning objectives
 
 After studying this material, you should be able to:
 
 - explain Bayes’ theorem intuitively and mathematically;
-- distinguish \(P(A\mid B)\) from \(P(B\mid A)\);
+- distinguish $(P(A\mid B))$ from $(P(B\mid A))$;
 - identify prior, likelihood, evidence, and posterior probabilities;
 - apply the law of total probability;
 - solve Bayes problems using tables and probability trees;
@@ -29,15 +34,15 @@ Suppose a medical test is positive. We may want to know:
 
 A common mistake is to use the test's sensitivity directly:
 
-\[
+$$
 P(+\mid D).
-\]
+$$
 
 But the question asks for:
 
-\[
+$$
 P(D\mid +).
-\]
+$$
 
 These are different probabilities.
 
@@ -47,17 +52,17 @@ Bayes’ theorem provides a systematic way to reverse the direction of condition
 
 ## 2. Conditional probability reminder
 
-For \(P(B)>0\),
+For $(P(B)>0)$,
 
-\[
+$$
 P(A\mid B)=\frac{P(A\cap B)}{P(B)}.
-\]
+$$
 
 Similarly,
 
-\[
+$$
 P(B\mid A)=\frac{P(A\cap B)}{P(A)}.
-\]
+$$
 
 Both expressions describe the same intersection, but they condition on different events.
 
@@ -67,34 +72,33 @@ Both expressions describe the same intersection, but they condition on different
 
 From conditional probability:
 
-\[
+$$
 P(A\cap B)=P(A\mid B)P(B).
-\]
+$$
 
 Also:
 
-\[
+$$
 P(A\cap B)=P(B\mid A)P(A).
-\]
+$$
 
 Equating the two:
 
-\[
+$$
 P(A\mid B)P(B)=P(B\mid A)P(A).
-\]
+$$
 
-Assuming \(P(B)>0\):
+Assuming $(P(B)>0)$:
 
-\[
+$$
 \boxed{
 P(A\mid B)=
 \frac{P(B\mid A)P(A)}{P(B)}
 }
-\]
+$$
 
 This is **Bayes’ theorem**.
 
-genui{"conditional_event_probability_learning_block_staging":{"type_id":"BAYES_THEOREM"}}
 
 ---
 
@@ -102,39 +106,39 @@ This is **Bayes’ theorem**.
 
 Bayes’ theorem answers:
 
-> After observing evidence \(B\), how should our belief about hypothesis \(A\) change?
+> After observing evidence $(B)$, how should our belief about hypothesis $(A)$ change?
 
 The four important quantities are:
 
 ### Prior
 
-\[
+$$
 P(A)
-\]
+$$
 
 The probability assigned to the hypothesis before seeing the new evidence.
 
 ### Likelihood
 
-\[
+$$
 P(B\mid A)
-\]
+$$
 
 How likely the observed evidence is if the hypothesis is true.
 
 ### Evidence
 
-\[
+$$
 P(B)
-\]
+$$
 
 The overall probability of observing the evidence.
 
 ### Posterior
 
-\[
+$$
 P(A\mid B)
-\]
+$$
 
 The updated probability of the hypothesis after observing the evidence.
 
@@ -142,67 +146,57 @@ The updated probability of the hypothesis after observing the evidence.
 
 A useful conceptual form is:
 
-\[
+$$
 \text{Posterior}
 \propto
 \text{Likelihood}\times\text{Prior}.
-\]
+$$
 
 ---
 
 ## 5. Bayes’ theorem using a Venn diagram
 
-The intersection \(A\cap B\) is the key connection between the two conditional probabilities.
+The intersection $(A\cap B)$ is the key connection between the two conditional probabilities.
 
 ![Bayes Venn diagram](figures/02_bayes_venn_intersection.png)
 
 We can write:
 
-\[
-P(A\mid B)
-=
-\frac{P(A\cap B)}{P(B)}
-\]
+$$
+P(A\mid B) = \frac{P(A\cap B)}{P(B)}
+$$
 
 and:
 
-\[
+$$
 P(A\cap B)=P(B\mid A)P(A).
-\]
+$$
 
 Substitution gives:
 
-\[
-P(A\mid B)
-=
-\frac{P(B\mid A)P(A)}{P(B)}.
-\]
+$$
+P(A\mid B) = \frac{P(B\mid A)P(A)}{P(B)}.
+$$
 
 ---
 
 ## 6. Bayes’ theorem and the law of total probability
 
-Often \(P(B)\) is not directly known.
+Often $(P(B))$ is not directly known.
 
-Suppose \(A\) and \(A^c\) partition the sample space. Then:
+Suppose $(A)$ and $(A^c)$ partition the sample space. Then:
 
 \[
-P(B)
-=
-P(B\mid A)P(A)
-+
-P(B\mid A^c)P(A^c).
+P(B) = P(B\mid A)P(A) + P(B\mid A^c)P(A^c).
 \]
 
 Therefore:
 
-\[
+$$
 \boxed{
-P(A\mid B)=
-\frac{P(B\mid A)P(A)}
-{P(B\mid A)P(A)+P(B\mid A^c)P(A^c)}
+P(A\mid B) = \frac{P(B\mid A)P(A)}{P(B\mid A)P(A)+P(B\mid A^c)P(A^c)}
 }
-\]
+$$
 
 This form is extremely useful for diagnostic-test problems.
 
@@ -218,66 +212,55 @@ Suppose:
 
 Let:
 
-\[
+$$
 D=\text{disease},
 \qquad
 +=\text{positive test}.
-\]
+$$
 
 Given:
 
-\[
+$$
 P(D)=0.01,
-\]
+$$
 
-\[
+$$
 P(+\mid D)=0.95,
-\]
+$$
 
-\[
+$$
 P(+\mid D^c)=0.05.
-\]
+$$
 
 We want:
 
-\[
+$$
 P(D\mid +).
-\]
+$$
 
 First calculate the probability of a positive result:
 
-\[
-P(+)
-=
-P(+\mid D)P(D)
-+
-P(+\mid D^c)P(D^c).
-\]
+$$
+P(+) = P(+\mid D)P(D) + P(+\mid D^c)P(D^c).
+$$
 
 Thus:
 
-\[
-P(+)
-=
-(0.95)(0.01)+(0.05)(0.99)
-=
-0.059.
-\]
+$$
+P(+) = (0.95)(0.01)+(0.05)(0.99) = 0.059
+$$
 
 Now apply Bayes’ theorem:
 
-\[
-P(D\mid +)
-=
-\frac{(0.95)(0.01)}{0.059}
-\approx0.161.
-\]
+$$
+P(D\mid +) = \frac{(0.95)(0.01)}{0.059} \approx0.161.
+$$
 
 So:
 
-\[
+$$
 \boxed{P(D\mid +)\approx16.1\%}
-\]
+$$
 
 This result may initially seem surprising because the test has a 95% true-positive rate. The reason is the **base rate**: the disease is rare.
 
@@ -296,17 +279,17 @@ Among the 990 without disease, approximately 49.5 test positive.
 
 So there are roughly:
 
-\[
+$$
 9.5+49.5=59
-\]
+$$
 
 positive tests, but only about 9.5 are true positives.
 
 Hence:
 
-\[
+$$
 \frac{9.5}{59}\approx16.1\%.
-\]
+$$
 
 ![Bayes base-rate example](figures/03_bayes_base_rate_example.png)
 
@@ -352,7 +335,7 @@ Percentage: 16.10169491525424
 
 ## 10. Python implementation using total probability
 
-Instead of supplying \(P(B)\), we can calculate it.
+Instead of supplying $(P(B))$, we can calculate it.
 
 ```python
 def bayes_with_total_probability(
@@ -397,11 +380,11 @@ The path probability is obtained by multiplying the branch probabilities.
 
 For example:
 
-\[
+$$
 P(A\cap B)=P(A)P(B\mid A).
-\]
+$$
 
-To calculate \(P(A\mid B)\), compare the probability of the \(A\cap B\) path with the total probability of all paths that end in \(B\).
+To calculate $(P(A\mid B))$, compare the probability of the $(A\cap B)$ path with the total probability of all paths that end in $(B)$.
 
 ---
 
@@ -430,13 +413,13 @@ posterior_estimate = disease[positive].mean()
 print("Simulated posterior:", posterior_estimate)
 ```
 
-Because simulation is random, the result will vary slightly, but with a large \(n\) it should be close to 0.161.
+Because simulation is random, the result will vary slightly, but with a large $(n)$ it should be close to 0.161.
 
 ---
 
 ## 13. Common Bayes’ theorem mistakes
 
-### Mistake 1: Confusing \(P(A\mid B)\) and \(P(B\mid A)\)
+### Mistake 1: Confusing $(P(A\mid B))$ and $(P(B\mid A))$
 
 These are generally different.
 
@@ -448,19 +431,19 @@ A highly accurate test can still have a relatively low positive predictive value
 
 If:
 
-\[
+$$
 P(A)=0.01,
-\]
+$$
 
 then:
 
-\[
+$$
 P(A^c)=0.99.
-\]
+$$
 
 ### Mistake 4: Forgetting all routes to the evidence
 
-When calculating \(P(B)\), include every mutually exclusive route through which \(B\) can occur.
+When calculating $(P(B))$, include every mutually exclusive route through which $(B)$ can occur.
 
 ---
 
@@ -468,25 +451,23 @@ When calculating \(P(B)\), include every mutually exclusive route through which 
 
 ## 14. What is independence?
 
-Events \(A\) and \(B\) are independent if the occurrence of one event does not change the probability of the other.
+Events $(A)$ and $(B)$ are independent if the occurrence of one event does not change the probability of the other.
 
-If \(P(B)>0\):
+If $(P(B)>0)$:
 
-\[
+$$
 \boxed{
 P(A\mid B)=P(A)
 }
-\]
+$$
 
 Equivalently:
 
-\[
+$$
 \boxed{
 P(A\cap B)=P(A)P(B)
 }
-\]
-
-genui{"conditional_event_probability_learning_block_staging":{"type_id":"INDEPENDENT_PROBABILITY_INTERSECTION"}}
+$$
 
 ![Independent events](figures/04_independent_events.png)
 
@@ -498,64 +479,60 @@ Consider two fair coin tosses.
 
 Let:
 
-- \(A\): first toss is heads;
-- \(B\): second toss is heads.
+- $(A)$: first toss is heads;
+- $(B)$: second toss is heads.
 
 Then:
 
-\[
+$$
 P(A)=\frac12
-\]
+$$
 
 and:
 
-\[
+$$
 P(B)=\frac12.
-\]
+$$
 
 The probability that both occur is:
 
-\[
+$$
 P(A\cap B)=\frac14.
-\]
+$$
 
 Also:
 
-\[
-P(A)P(B)
-=
-\frac12\cdot\frac12
-=
-\frac14.
-\]
+$$
+P(A)P(B) = \frac12\cdot\frac12 = \frac14.
+$$
 
 Therefore:
 
-\[
+$$
 P(A\cap B)=P(A)P(B),
-\]
+$$
 
-so \(A\) and \(B\) are independent.
+so $(A)$ and $(B)$ are independent.
 
 ---
 
 ## 16. Conditional-probability view of independence
 
-If \(A\) and \(B\) are independent:
+If $(A)$ and $(B)$ are independent:
 
-\[
+$$
 P(A\mid B)=P(A).
-\]
+$$
 
 Similarly:
 
-\[
+$$
 P(B\mid A)=P(B).
-\]
+$$
 
 In words:
 
-> Knowing that \(B\) occurred gives no additional information about the probability of \(A\).
+> Knowing that $(B)$ occurred gives no additional information about the probability of $(A)$.
 
 This is often the most intuitive interpretation.
 
@@ -569,26 +546,26 @@ Two balls are drawn **without replacement**.
 
 Let:
 
-- \(A\): first ball is red;
-- \(B\): second ball is red.
+- $(A)$: first ball is red;
+- $(B)$: second ball is red.
 
 Then:
 
-\[
+$$
 P(B)=\frac35.
-\]
+$$
 
-But if \(A\) occurred, one red ball has been removed:
+But if $(A)$ occurred, one red ball has been removed:
 
-\[
+$$
 P(B\mid A)=\frac24=\frac12.
-\]
+$$
 
 Since:
 
-\[
+$$
 \frac12\neq\frac35,
-\]
+$$
 
 the events are dependent.
 
@@ -602,21 +579,21 @@ Now suppose the red ball is replaced after the first draw.
 
 Then:
 
-\[
+$$
 P(B)=\frac35
-\]
+$$
 
 and:
 
-\[
+$$
 P(B\mid A)=\frac35.
-\]
+$$
 
 Therefore:
 
-\[
+$$
 P(B\mid A)=P(B),
-\]
+$$
 
 so the events are independent.
 
@@ -635,31 +612,31 @@ These concepts are not the same.
 
 ### Mutually exclusive events
 
-Events \(A\) and \(B\) are mutually exclusive if they cannot happen together:
+Events $(A)$ and $(B)$ are mutually exclusive if they cannot happen together:
 
-\[
+$$
 A\cap B=\varnothing.
-\]
+$$
 
 Thus:
 
-\[
+$$
 P(A\cap B)=0.
-\]
+$$
 
 ### Independent events
 
 Events are independent if:
 
-\[
+$$
 P(A\cap B)=P(A)P(B).
-\]
+$$
 
 If two events are both mutually exclusive and independent, then:
 
-\[
+$$
 0=P(A)P(B).
-\]
+$$
 
 Therefore, at least one of them must have probability zero.
 
@@ -714,9 +691,9 @@ True
 
 A direct test for independence is:
 
-\[
+$$
 P(B\mid A)=P(B).
-\]
+$$
 
 ```python
 def conditional_probability(A, B, probabilities):
@@ -804,15 +781,15 @@ print("P(second red | first red) =", p_second_red_given_first_red)
 
 The results should be close to:
 
-\[
+$$
 P(B)=\frac35=0.6
-\]
+$$
 
 and:
 
-\[
+$$
 P(B\mid A)=\frac12=0.5.
-\]
+$$
 
 The difference demonstrates dependence.
 
@@ -822,31 +799,29 @@ The difference demonstrates dependence.
 
 For more than two events, independence becomes more subtle.
 
-Events \(A,B,C\) are **pairwise independent** if:
+Events $(A,B,C)$ are **pairwise independent** if:
 
-\[
+$$
 P(A\cap B)=P(A)P(B),
-\]
+$$
 
-\[
+$$
 P(A\cap C)=P(A)P(C),
-\]
+$$
 
 and:
 
-\[
+$$
 P(B\cap C)=P(B)P(C).
-\]
+$$
 
 But this does not necessarily guarantee **mutual independence**.
 
 For mutual independence, we also need:
 
-\[
-P(A\cap B\cap C)
-=
-P(A)P(B)P(C).
-\]
+$$
+P(A\cap B\cap C) = P(A)P(B)P(C).
+$$
 
 Therefore:
 
@@ -858,54 +833,54 @@ Therefore:
 
 ### Bayes’ theorem
 
-\[
+$$
 \boxed{
 P(A\mid B)=
 \frac{P(B\mid A)P(A)}{P(B)}
 }
-\]
+$$
 
 ### Total probability
 
-\[
+$$
 \boxed{
 P(B)=\sum_iP(B\mid A_i)P(A_i)
 }
-\]
+$$
 
 ### Independence
 
-\[
+$$
 \boxed{
 P(A\cap B)=P(A)P(B)
 }
-\]
+$$
 
 ### Conditional form of independence
 
-\[
+$$
 \boxed{
 P(A\mid B)=P(A)
 }
-\]
+$$
 
-when \(P(B)>0\).
+when $(P(B)>0)$
 
 ### Complement of an independent event
 
-If \(A\) and \(B\) are independent, then the following pairs are also independent:
+If $(A)$ and $(B)$ are independent, then the following pairs are also independent:
 
-\[
+$$
 A^c,B
-\]
+$$
 
-\[
+$$
 A,B^c
-\]
+$$
 
-\[
+$$
 A^c,B^c.
-\]
+$$
 
 ---
 
@@ -917,31 +892,31 @@ These concepts are related but answer different questions.
 
 Bayes asks:
 
-> How should evidence \(B\) update our belief about \(A\)?
+> How should evidence $(B)$ update our belief about $(A)$?
 
 It relates:
 
-\[
+$$
 P(A\mid B)
-\]
+$$
 
 to:
 
-\[
+$$
 P(B\mid A).
-\]
+$$
 
 ### Independence
 
 Independence asks:
 
-> Does knowing \(B\) change the probability of \(A\)?
+> Does knowing $(B)$ change the probability of $(A)$?
 
 If not:
 
-\[
+$$
 P(A\mid B)=P(A).
-\]
+$$
 
 Thus, independence can be viewed as a special situation in which the evidence provides no probabilistic information about the event.
 
@@ -951,28 +926,28 @@ Thus, independence can be viewed as a special situation in which the evidence pr
 
 When solving a Bayes problem:
 
-1. Define the hypothesis \(A\).
-2. Define the evidence \(B\).
-3. Identify the prior \(P(A)\).
-4. Identify the likelihood \(P(B\mid A)\).
-5. Calculate \(P(B)\), often using total probability.
+1. Define the hypothesis $(A)$.
+2. Define the evidence $(B)$.
+3. Identify the prior $(P(A))$.
+4. Identify the likelihood $(P(B\mid A))$.
+5. Calculate $(P(B))$, often using total probability.
 6. Apply Bayes’ theorem.
 7. Check that the posterior lies between 0 and 1.
 
 When checking independence:
 
-1. Identify \(A\) and \(B\).
-2. Calculate \(P(A)\) and \(P(B)\).
-3. Calculate \(P(A\cap B)\).
-4. Compare \(P(A\cap B)\) with \(P(A)P(B)\).
-5. Alternatively compare \(P(A\mid B)\) with \(P(A)\).
+1. Identify $(A)$ and $(B)$.
+2. Calculate $(P(A))$ and $(P(B))$.
+3. Calculate $(P(A\cap B))$.
+4. Compare $(P(A\cap B))$ with $(P(A)P(B))$.
+5. Alternatively compare $(P(A\mid B))$ with $(P(A))$.
 6. State clearly whether the events are independent.
 
 ---
 
 ## 28. Common mistakes
 
-- Confusing \(P(A\mid B)\) with \(P(B\mid A)\).
+- Confusing $(P(A\mid B))$ with $(P(B\mid A))$.
 - Ignoring the prior probability in Bayes’ theorem.
 - Ignoring the base rate of a rare event.
 - Forgetting the complement when computing total evidence.
@@ -990,11 +965,9 @@ When checking independence:
 
 Bayes’ theorem provides a mathematical framework for updating beliefs after observing evidence:
 
-\[
-P(A\mid B)
-=
-\frac{P(B\mid A)P(A)}{P(B)}.
-\]
+$$
+P(A\mid B) = \frac{P(B\mid A)P(A)}{P(B)}.
+$$
 
 Its four major components are:
 
@@ -1007,15 +980,15 @@ Its four major components are:
 
 Two events are independent when the occurrence of one does not alter the probability of the other:
 
-\[
+$$
 P(A\cap B)=P(A)P(B).
-\]
+$$
 
 Equivalently, when defined:
 
-\[
+$$
 P(A\mid B)=P(A).
-\]
+$$
 
 ### Big picture
 
@@ -1030,12 +1003,12 @@ Independence tells us **when evidence does not change beliefs**.
 1. State Bayes’ theorem.
 2. Derive Bayes’ theorem from the definition of conditional probability.
 3. Explain prior, likelihood, evidence, and posterior.
-4. Why is \(P(A\mid B)\) different from \(P(B\mid A)\)?
+4. Why is $(P(A\mid B))$ different from $(P(B\mid A))$?
 5. A disease affects 2% of a population. A test has sensitivity 95% and false-positive rate 4%. Find the probability of disease given a positive result.
 6. Implement the previous problem in Python.
 7. Simulate the diagnostic-test problem using NumPy.
 8. Define independent events.
-9. Show that independent events satisfy \(P(A\cap B)=P(A)P(B)\).
+9. Show that independent events satisfy $(P(A\cap B)=P(A)P(B))$.
 10. Explain independence using conditional probability.
 11. Give an example of independent events.
 12. Give an example of dependent events.
@@ -1043,38 +1016,15 @@ Independence tells us **when evidence does not change beliefs**.
 14. Explain why mutually exclusive events with nonzero probabilities cannot be independent.
 15. Distinguish pairwise independence from mutual independence.
 16. Write Python code to test independence for finite events.
-17. Simulate two independent coin tosses and compare \(P(B)\) with \(P(B\mid A)\).
+17. Simulate two independent coin tosses and compare $(P(B))$ with $(P(B\mid A))$.
 18. Simulate sampling without replacement and demonstrate dependence.
 
 ---
-
-# Figures included
-
-The `figures/` directory contains:
-
-1. `01_bayes_update_flow.png` — Bayesian updating: prior, evidence, likelihood, and posterior.
-2. `02_bayes_venn_intersection.png` — Venn interpretation of the intersection used by Bayes’ theorem.
-3. `03_bayes_base_rate_example.png` — base-rate effect in a diagnostic example.
-4. `04_independent_events.png` — visual explanation of independent events.
-5. `05_independence_vs_dependence.png` — comparison of independent and dependent events.
-6. `06_bayes_probability_tree.png` — probability-tree interpretation of Bayes’ theorem.
-
-Keep the `figures/` directory beside this Markdown file so GitHub can resolve the relative image paths.
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
 ---
-
-## Suggested GitHub structure
-
-```text
-bayes-independence/
-│
-├── bayes_theorem_and_independence.md
-│
-└── figures/
-    ├── 01_bayes_update_flow.png
-    ├── 02_bayes_venn_intersection.png
-    ├── 03_bayes_base_rate_example.png
-    ├── 04_independent_events.png
-    ├── 05_independence_vs_dependence.png
-    └── 06_bayes_probability_tree.png
-```
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
