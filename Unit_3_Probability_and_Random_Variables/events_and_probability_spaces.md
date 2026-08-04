@@ -95,7 +95,7 @@ $$
 
 The following figure visualizes the six possible outcomes.
 
-![Sample space of a die](figures/01_sample_space_die.png){width=25%}
+![Sample space of a die](figures/01_sample_space_die.png)
 
 ### Example: coin toss
 
@@ -246,7 +246,7 @@ $$
 A\cap B=\{\omega:\omega\in A\text{ and }\omega\in B\}.
 $$
 
-![Union and intersection of events](figures/02_venn_events_union_intersection.png){width=50%}
+![Union and intersection of events](figures/02_venn_events_union_intersection.png)
 
 ### 7.3 Complement
 
@@ -264,7 +264,7 @@ $$
 
 contains outcomes that are in $(A)$ but not in $(B)$.
 
-![Event operations](figures/03_event_operations.png){width=25%}
+![Event operations](figures/03_event_operations.png)
 
 ---
 
@@ -272,53 +272,53 @@ contains outcomes that are in $(A)$ but not in $(B)$.
 
 Two important identities are:
 
-\[
+$$
 (A\cup B)^c=A^c\cap B^c
-\]
+$$
 
 and
 
-\[
+$$
 (A\cap B)^c=A^c\cup B^c.
-\]
+$$
 
 These laws are useful for simplifying probability expressions.
 
 For example:
 
-\[
+$$
 P((A\cup B)^c)=P(A^c\cap B^c).
-\]
+$$
 
 ---
 
 ## 9. Mutually exclusive events
 
-Two events \(A\) and \(B\) are **mutually exclusive** if they cannot happen simultaneously.
+Two events $(A)$ and $(B)$ are **mutually exclusive** if they cannot happen simultaneously.
 
 Mathematically:
 
-\[
+$$
 A\cap B=\varnothing.
-\]
+$$
 
 For a single die roll:
 
-\[
+$$
 A=\{1,3,5\}, \quad B=\{2,4,6\}.
-\]
+$$
 
 Then
 
-\[
+$$
 A\cap B=\varnothing.
-\]
+$$
 
 For mutually exclusive events,
 
-\[
+$$
 P(A\cup B)=P(A)+P(B).
-\]
+$$
 
 ---
 
@@ -328,15 +328,15 @@ A collection of events is **exhaustive** if together they cover the entire sampl
 
 For example:
 
-\[
+$$
 A=\{\text{even}\}, \qquad B=\{\text{odd}\}.
-\]
+$$
 
 Then
 
-\[
+$$
 A\cup B=\Omega.
-\]
+$$
 
 If events are both mutually exclusive and exhaustive, exactly one of them occurs in every trial.
 
@@ -346,73 +346,69 @@ If events are both mutually exclusive and exhaustive, exactly one of them occurs
 
 Probability assigns a number between 0 and 1 to an event.
 
-\[
+$$
 0\leq P(A)\leq 1.
-\]
+$$
 
 Interpretation:
 
-- \(P(A)=0\): impossible;
-- \(P(A)=1\): certain;
+- $(P(A)=0)$: impossible;
+- $(P(A)=1)$: certain;
 - values between 0 and 1: varying degrees of likelihood.
 
 For equally likely finite outcomes:
 
-\[
+$$
 P(A)=\frac{|A|}{|\Omega|}.
-\]
+$$
 
 ### Example
 
 For a fair die, let
 
-\[
+$$
 A=\{2,4,6\}.
-\]
+$$
 
 There are 3 favorable outcomes and 6 total outcomes:
 
-\[
+$$
 P(A)=\frac{3}{6}=\frac12.
-\]
+$$
 
 ---
 
 ## 12. Probability axioms
 
-A probability measure \(P\) satisfies the following axioms.
+A probability measure $(P)$ satisfies the following axioms.
 
 ### Axiom 1: Non-negativity
 
-For every event \(A\),
+For every event $(A)$,
 
-\[
+$$
 P(A)\geq0.
-\]
+$$
 
 ### Axiom 2: Normalization
 
-\[
+$$
 P(\Omega)=1.
-\]
+$$
 
 ### Axiom 3: Countable additivity
 
-For pairwise disjoint events \(A_1,A_2,\ldots\),
+For pairwise disjoint events $(A_1,A_2,\ldots)$,
 
-\[
-P\left(\bigcup_{i=1}^{\infty}A_i\right)
-=
-\sum_{i=1}^{\infty}P(A_i).
-\]
+$$
+P\left(\bigcup_{i=1}^{\infty}A_i\right) = \sum_{i=1}^{\infty}P(A_i).
+$$
 
 For finite mutually exclusive events:
 
-\[
-P(A_1\cup A_2\cup\cdots\cup A_n)
-=
-\sum_{i=1}^{n}P(A_i).
-\]
+$$
+P(A_1\cup A_2\cup\cdots\cup A_n) = \sum_{i=1}^{n}P(A_i).
+$$
 
 These axioms form the mathematical foundation of probability.
 
@@ -422,37 +418,37 @@ These axioms form the mathematical foundation of probability.
 
 A **probability space** is commonly represented as
 
-\[
+$$
 (\Omega,\mathcal F,P).
-\]
+$$
 
 It consists of:
 
-### 13.1 Sample space \(\Omega\)
+### 13.1 Sample space $(\Omega)$
 
 The set of all possible outcomes.
 
-### 13.2 Event collection \(\mathcal F\)
+### 13.2 Event collection $(\mathcal F)$
 
-A collection of subsets of \(\Omega\) called the **sigma-algebra** (or \(\sigma\)-algebra).
+A collection of subsets of $(\Omega)$ called the **sigma-algebra** (or $(\sigma)$-algebra).
 
 It contains the events to which we assign probabilities.
 
 For a finite sample space, it is often convenient to take
 
-\[
+$$
 \mathcal F=2^\Omega,
-\]
+$$
 
-the power set of \(\Omega\).
+the power set of $(\Omega)$.
 
-### 13.3 Probability measure \(P\)
+### 13.3 Probability measure $(P)$
 
 A function
 
-\[
+$$
 P:\mathcal F\rightarrow[0,1]
-\]
+$$
 
 that satisfies the probability axioms.
 
@@ -462,20 +458,21 @@ that satisfies the probability axioms.
 
 ## 14. Sigma-algebra
 
-A collection \(\mathcal F\) is a sigma-algebra on \(\Omega\) if:
+A collection $(\mathcal F)$ is a sigma-algebra on $(\Omega)$ if:
 
-1. \(\Omega\in\mathcal F\);
-2. if \(A\in\mathcal F\), then \(A^c\in\mathcal F\);
-3. if \(A_1,A_2,\ldots\in\mathcal F\), then
-   \[
+1. $(\Omega\in\mathcal F)$;
+2. if $(A\in\mathcal F)$, then $(A^c\in\mathcal F)$;
+3. if $(A_1,A_2,\ldots\in\mathcal F)$, then
+
+$$
    \bigcup_{i=1}^{\infty}A_i\in\mathcal F.
-   \]
+ $$
 
-It follows that \(\varnothing\in\mathcal F\), and that sigma-algebras are also closed under countable intersections and set differences.
+It follows that $(\varnothing\in\mathcal F)$, and that sigma-algebras are also closed under countable intersections and set differences.
 
-### Why do we need \(\mathcal F\)?
+### Why do we need $(\mathcal F)$?
 
-For elementary finite probability problems, we often use all subsets of \(\Omega\), so the sigma-algebra can seem unnecessary.
+For elementary finite probability problems, we often use all subsets of $(\Omega)$, so the sigma-algebra can seem unnecessary.
 
 For more advanced probability—especially continuous random variables and measure theory—we cannot always assign probabilities consistently to every conceivable subset. The sigma-algebra specifies which subsets are treated as measurable events.
 
@@ -487,39 +484,39 @@ Suppose a fair die is rolled.
 
 ### Step 1: Define the sample space
 
-\[
+$$
 \Omega=\{1,2,3,4,5,6\}.
-\]
+$$
 
 ### Step 2: Choose the event collection
 
 For a finite elementary model:
 
-\[
+$$
 \mathcal F=2^\Omega.
-\]
+$$
 
 ### Step 3: Assign probabilities
 
 For a fair die:
 
-\[
+$$
 P(\{i\})=\frac16
-\]
+$$
 
-for each \(i\in\Omega\).
+for each $(i\in\Omega)$.
 
-For an event \(A\):
+For an event $(A)$:
 
-\[
+$$
 P(A)=\frac{|A|}{6}.
-\]
+$$
 
 Thus,
 
-\[
+$$
 P(\{2,4,6\})=\frac36=\frac12.
-\]
+$$
 
 ---
 
@@ -527,37 +524,35 @@ P(\{2,4,6\})=\frac36=\frac12.
 
 ### Complement rule
 
-\[
+$$
 P(A^c)=1-P(A).
-\]
+$$
 
 ### Addition rule
 
 For any two events:
 
-\[
-P(A\cup B)
-=
-P(A)+P(B)-P(A\cap B).
-\]
+$$
+P(A\cup B) = P(A)+P(B)-P(A\cap B).
+$$
 
-If \(A\) and \(B\) are mutually exclusive:
+If $(A)$ and $(B)$ are mutually exclusive:
 
-\[
+$$
 P(A\cup B)=P(A)+P(B).
-\]
+$$
 
 ### Bounds
 
-\[
+$$
 0\leq P(A)\leq1.
-\]
+$$
 
-If \(A\subseteq B\), then:
+If $(A\subseteq B)$, then:
 
-\[
+$$
 P(A)\leq P(B).
-\]
+$$
 
 ---
 
@@ -565,53 +560,53 @@ P(A)\leq P(B).
 
 Although conditional probability is developed more fully in later topics, it naturally extends the idea of probability spaces.
 
-For events \(A\) and \(B\), with \(P(B)>0\):
+For events $(A)$ and $(B)$, with $(P(B)>0)$:
 
-\[
+$$
 P(A\mid B)=\frac{P(A\cap B)}{P(B)}.
-\]
+$$
 
-It means the probability of \(A\) **given that \(B\) has occurred**.
+It means the probability of $(A)$ **given that $(B)$ has occurred**.
 
 Rearranging:
 
-\[
+$$
 P(A\cap B)=P(A\mid B)P(B).
-\]
+$$
 
 ---
 
 ## 18. Independence
 
-Events \(A\) and \(B\) are independent if knowing that one occurs does not change the probability of the other.
+Events $(A)$ and $(B)$ are independent if knowing that one occurs does not change the probability of the other.
 
 The mathematical condition is:
 
-\[
+$$
 P(A\cap B)=P(A)P(B).
-\]
+$$
 
-Equivalently, when \(P(B)>0\):
+Equivalently, when $(P(B)>0)$:
 
-\[
+$$
 P(A\mid B)=P(A).
-\]
+$$
 
 ### Important distinction
 
 **Mutually exclusive** and **independent** do not mean the same thing.
 
-If \(A\) and \(B\) are mutually exclusive and both have positive probability, then
+If $(A)$ and $(B)$ are mutually exclusive and both have positive probability, then
 
-\[
+$$
 P(A\cap B)=0,
-\]
+$$
 
 but
 
-\[
+$$
 P(A)P(B)>0.
-\]
+$$
 
 Therefore they cannot be independent.
 
@@ -621,7 +616,7 @@ Therefore they cannot be independent.
 
 A probability tree is useful when an experiment occurs in stages.
 
-For example, suppose an experiment first determines whether \(A\) occurs, then determines whether \(B\) occurs.
+For example, suppose an experiment first determines whether $(A)$ occurs, then determines whether $(B)$ occurs.
 
 ![Probability tree](figures/04_probability_tree.png)
 
@@ -629,9 +624,9 @@ The probability of a path is obtained by multiplying the probabilities along tha
 
 For example:
 
-\[
+$$
 P(A\cap B)=P(A)P(B\mid A).
-\]
+$$
 
 This idea is central to conditional probability and Bayes' theorem.
 
@@ -951,21 +946,21 @@ Let's combine the concepts.
 
 Suppose a fair die is rolled.
 
-\[
+$$
 \Omega=\{1,2,3,4,5,6\}.
-\]
+$$
 
 Define:
 
-\[
+$$
 A=\{2,4,6\}
-\]
+$$
 
 for an even result, and
 
-\[
+$$
 B=\{4,5,6\}
-\]
+$$
 
 for a result greater than 3.
 
@@ -973,47 +968,47 @@ Then:
 
 ### Union
 
-\[
+$$
 A\cup B=\{2,4,5,6\}.
-\]
+$$
 
 Therefore:
 
-\[
+$$
 P(A\cup B)=\frac46=\frac23.
-\]
+$$
 
 ### Intersection
 
-\[
+$$
 A\cap B=\{4,6\}.
-\]
+$$
 
 Therefore:
 
-\[
+$$
 P(A\cap B)=\frac26=\frac13.
-\]
+$$
 
 ### Complement of A
 
-\[
+$$
 A^c=\{1,3,5\}.
-\]
+$$
 
 Therefore:
 
-\[
+$$
 P(A^c)=\frac36=\frac12.
-\]
+$$
 
 ### Conditional probability
 
-\[
+$$
 P(A\mid B)=\frac{P(A\cap B)}{P(B)}
 =\frac{1/3}{1/2}
 =\frac23.
-\]
+$$
 
 Python:
 
@@ -1042,9 +1037,9 @@ print("P(A | B) =", P(A & B) / P(B))
 
 Incorrect:
 
-\[
+$$
 4=\{4\}.
-\]
+$$
 
 These are different mathematical objects. The first is an outcome; the second is a one-outcome event.
 
@@ -1052,17 +1047,17 @@ These are different mathematical objects. The first is an outcome; the second is
 
 Incorrect:
 
-\[
+$$
 P(A\cup B)=P(A)+P(B)
-\]
+$$
 
 for arbitrary events.
 
 Correct:
 
-\[
+$$
 P(A\cup B)=P(A)+P(B)-P(A\cap B).
-\]
+$$
 
 ### Mistake 3: Assuming mutually exclusive means independent
 
@@ -1074,7 +1069,7 @@ A probability cannot be negative or greater than 1.
 
 ### Mistake 5: Using an incomplete sample space
 
-If an outcome is possible but omitted from \(\Omega\), the probability model is incomplete.
+If an outcome is possible but omitted from $(\Omega)$, the probability model is incomplete.
 
 ---
 
@@ -1084,41 +1079,56 @@ The central ideas are:
 
 - A **random experiment** has uncertain outcomes.
 - An **outcome** is one possible result.
-- The **sample space** \(\Omega\) contains all possible outcomes.
+- The **sample space** $(\Omega)$ contains all possible outcomes.
 - An **event** is a subset of the sample space.
 - A **probability measure** assigns values from 0 to 1 to events.
 - A **probability space** is written as:
-  \[
-  (\Omega,\mathcal F,P).
-  \]
+
+$$
+  (\Omega, \mathcal F,P)
+$$
+  
 - Event operations include:
-  \[
+
+$$
   A\cup B,\quad A\cap B,\quad A^c,\quad A\setminus B.
-  \]
+$$
+
 - Mutually exclusive events satisfy:
-  \[
+
+$$
   A\cap B=\varnothing.
-  \]
+$$
+
 - For equally likely finite outcomes:
-  \[
+
+$$
   P(A)=\frac{|A|}{|\Omega|}.
-  \]
+$$
+
 - The complement rule is:
-  \[
+
+$$
   P(A^c)=1-P(A).
-  \]
+$$
+
 - The general addition rule is:
-  \[
+
+$$
   P(A\cup B)=P(A)+P(B)-P(A\cap B).
-  \]
+$$
+
 - Conditional probability is:
-  \[
+
+$$
   P(A\mid B)=\frac{P(A\cap B)}{P(B)}.
-  \]
+$$
+
 - Independence is characterized by:
-  \[
+
+$$
   P(A\cap B)=P(A)P(B).
-  \]
+$$
 
 ---
 
@@ -1129,13 +1139,13 @@ The central ideas are:
 3. Construct the sample space for two coin tosses.
 4. For a die roll, write the event corresponding to obtaining a prime number.
 5. Find the complement of the event "getting an odd number."
-6. Explain the difference between \(A\cup B\) and \(A\cap B\).
+6. Explain the difference between $(A\cup B)$ and $(A\cap B)$.
 7. What does it mean for two events to be mutually exclusive?
 8. State the three probability axioms.
-9. Explain the components of a probability space \((\Omega,\mathcal F,P)\).
+9. Explain the components of a probability space $((\Omega,\mathcal F,P))$.
 10. A fair die is rolled. Find the probability of obtaining a number greater than 4.
-11. A fair die is rolled. Let \(A=\{2,4,6\}\) and \(B=\{3,4,5,6\}\). Find \(P(A\cup B)\).
-12. Use Python to simulate 1,000,000 die rolls and estimate \(P(\text{even})\).
+11. A fair die is rolled. Let $(A=\{2,4,6\})$ and $(B=\{3,4,5,6\})$. Find $(P(A\cup B))$.
+12. Use Python to simulate 1,000,000 die rolls and estimate $(P(\text{even}))$.
 13. Use Python sets to verify De Morgan's law for two finite events.
 14. Construct a finite non-uniform probability space in Python and verify that its probabilities sum to 1.
 15. Give an example of two mutually exclusive events and explain why they cannot be independent when both have positive probability.
