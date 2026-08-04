@@ -50,7 +50,7 @@ tions
 
 ---
 
-## 📊 Tentative Grading Policy
+## 📊 Tentative Grading Policy 
 
 | Assessment | Weight | Due Date |
 | :--- | :---: | :--- |
@@ -61,7 +61,7 @@ tions
 | Lab Exam 2 | 10% | Week 14 |
 | Final Exam | 40% | Exam Week |
 
-### Tentative Grading Scale - It may change based on performance of students
+###  Tentative Grading Scale 🥇🥈🥉 - It may change based on performance of students
 * **A+:** 90% – 100%
 * **A:** 80% – 89%
 * **B+** 70% – 79%
@@ -73,7 +73,7 @@ tions
 
 ## 🗓️ Broad Course Contents Covered
 
-### 🎯 Unit 1: Linear Algebra and Matrix Theory
+### 🎯 Unit 1: Linear Algebra and Matrix Theory 🎯
 <!--
 * **Week 01: Introduction & Course Overview**
   * *Topics:* Expectations, setup, and core terminology.
@@ -83,53 +83,53 @@ tions
   * *Topics:* Understanding structural dynamics.
   * *Readings:* Chapter 2.
 -->
-[Systems of Linear Equations](Unit_1_Linear_Algebra_and_Matrix_Theory/Systems-of-Linear-Equations.md), [Row Reduction and Echelon Forms](Unit_1_Linear_Algebra_and_Matrix_Theory/row_reduction_and_echelon_forms.md), 
+* :large_blue_circle: [Systems of Linear Equations](Unit_1_Linear_Algebra_and_Matrix_Theory/Systems-of-Linear-Equations.md), :large_blue_circle: [Row Reduction and Echelon Forms](Unit_1_Linear_Algebra_and_Matrix_Theory/row_reduction_and_echelon_forms.md), 
 
-Matrix Operations and Matrix Inverses,
+* :large_blue_circle: Matrix Operations and Matrix Inverses,
 
-Linear Dependence and Independence, Vector Spaces, Subspaces, Basis and Dimension.
+* :large_blue_circle: Linear Dependence and Independence, Vector Spaces, Subspaces, Basis and Dimension.
 
-Orthogonality and Projections - Orthogonal Bases, Orthogonal Projections, Gram-Schmidt Orthogonalization,
+* :large_blue_circle: Orthogonality and Projections - Orthogonal Bases, Orthogonal Projections, Gram-Schmidt Orthogonalization,
 
-Least Squares Problems and Linear Models.
+* :large_blue_circle: Least Squares Problems and Linear Models.
 
-Determinants and Their Properties, Rank of a Matrix,
+* :large_blue_circle: Determinants and Their Properties, Rank of a Matrix,
 
-Applications of Linear Algebra in Information Technology and Data Representation.
+* :large_blue_circle: Applications of Linear Algebra in Information Technology and Data Representation.
 
 
-### 🎯 Unit 2: Eigen Analysis and Matrix Decomposition
-Eigenvalues and Eigenvectors, Characteristic Equations, Diagonalization of Matrices
+### 🎯 Unit 2: Eigen Analysis and Matrix Decomposition 🎯
+* :large_blue_circle: Eigenvalues and Eigenvectors, Characteristic Equations, Diagonalization of Matrices
 
-Symmetric Matrices, Positive Definite Matrices, Similar Matrices
+* :large_blue_circle: Symmetric Matrices, Positive Definite Matrices, Similar Matrices
 
-Linear Transformations. 
+* :large_blue_circle: Linear Transformations. 
 
-Singular Value Decomposition (SVD), Low-Rank Approximation, Matrix Factorization Concepts 
+* :large_blue_circle: Singular Value Decomposition (SVD), Low-Rank Approximation, Matrix Factorization Concepts 
 
-Applications in Data Compression, Recommendation Systems, Image Representation and Machine Learning.
+* :large_blue_circle: Applications in Data Compression, Recommendation Systems, Image Representation and Machine Learning.
 
-### 🎯 Unit 3: Probability and Random Variables
-[Events and Probability Spaces](Unit_3_Probability_and_Random_Variables/events_and_probability_spaces.md), [Conditional Probability](Unit_3_Probability_and_Random_Variables/conditional_probability.md), [Bayes’ Theorem, Independence of Events](Unit_3_Probability_and_Random_Variables/bayes_theorem_and_independence.md).
+### 🎯 Unit 3:  Probability and Random Variables 🎯
+* :red_circle: [Events and Probability Spaces](Unit_3_Probability_and_Random_Variables/events_and_probability_spaces.md), :red_circle: [Conditional Probability](Unit_3_Probability_and_Random_Variables/conditional_probability.md), :red_circle: [Bayes’ Theorem, Independence of Events](Unit_3_Probability_and_Random_Variables/bayes_theorem_and_independence.md).
 
-[Random Variables and Probability Distributions - Discrete and Continuous Random Variables, Probability Mass Functions, Probability Density Functions and Cumulative Distribution Functions](Unit_3_Probability_and_Random_Variables/random_variables_probability_distributions.md). 
+* :red_circle: [Random Variables and Probability Distributions - Discrete and Continuous Random Variables, Probability Mass Functions, Probability Density Functions and Cumulative Distribution Functions](Unit_3_Probability_and_Random_Variables/random_variables_probability_distributions.md). 
 
-[Expectation, Variance, Covariance and Correlation](Unit_3_Probability_and_Random_Variables/expectation_variance_covariance_correlation.md) 
+* :red_circle: [Expectation, Variance, Covariance and Correlation](Unit_3_Probability_and_Random_Variables/expectation_variance_covariance_correlation.md) 
 
-[Common Probability Distributions - Bernoulli, Binomial, Poisson, Uniform, Gaussian and Exponential Distributions](Unit_3_Probability_and_Random_Variables/common_probability_distributions.md). 
+* :red_circle: [Common Probability Distributions - Bernoulli, Binomial, Poisson, Uniform, Gaussian and Exponential Distributions](Unit_3_Probability_and_Random_Variables/common_probability_distributions.md). 
 
-[Applications of Probability in Information Technology, AI and Data Analytics](Unit_3_Probability_and_Random_Variables/applications_probability_it_ai_data_analytics.md)
+* :red_circle: [Applications of Probability in Information Technology, AI and Data Analytics](Unit_3_Probability_and_Random_Variables/applications_probability_it_ai_data_analytics.md)
  
-### 🎯 Unit 4: Stochastic Processes and Random Models
-[Limit Theorems - Law of Large Numbers and Central Limit Theorem](Unit_4_Stochastic_Processes_and_Random_Models/limit_theorems_lln_clt.md). 
+### 🎯 Unit 4:  Stochastic Processes and Random Models 🎯
+* :red_circle: [Limit Theorems - Law of Large Numbers and Central Limit Theorem](Unit_4_Stochastic_Processes_and_Random_Models/limit_theorems_lln_clt.md). 
 
-[Stochastic Processes and Deviations](Unit_4_Stochastic_Processes_and_Random_Models/stochastic_processes_and_deviations.md) 
+* :red_circle: [Stochastic Processes and Deviations](Unit_4_Stochastic_Processes_and_Random_Models/stochastic_processes_and_deviations.md) 
 
-[Markov Chains, Transition Probability Matrices, Steady State Analysis](Unit_4_Stochastic_Processes_and_Random_Models/markov_chains_transition_matrices.md).
+* :red_circle: [Markov Chains, Transition Probability Matrices, Steady State Analysis](Unit_4_Stochastic_Processes_and_Random_Models/markov_chains_transition_matrices.md).
 
-[Random Walks and Their Applications](Unit_4_Stochastic_Processes_and_Random_Models/random_walks_and_applications.md), [Introduction to Queueing and Network Models](Unit_4_Stochastic_Processes_and_Random_Models/introduction_to_queueing_and_network_models.md),
+* :red_circle: [Random Walks and Their Applications](Unit_4_Stochastic_Processes_and_Random_Models/random_walks_and_applications.md), :red_circle: [Introduction to Queueing and Network Models](Unit_4_Stochastic_Processes_and_Random_Models/introduction_to_queueing_and_network_models.md),
 
-[Mathematical Foundations for AI, Machine Learning and Information Systems-Applications](Unit_4_Stochastic_Processes_and_Random_Models/stochastic_processes_random_models.md).
+* :red_circle: [Mathematical Foundations for AI, Machine Learning and Information Systems-Applications](Unit_4_Stochastic_Processes_and_Random_Models/stochastic_processes_random_models.md).
 
 ---
 ## 🗺️: Applications of Mathematics for IT Concepts in the real world
