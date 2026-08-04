@@ -84,31 +84,49 @@ tions
   * *Readings:* Chapter 2.
 -->
 [Systems of Linear Equations](Unit_1_Linear_Algebra_and_Matrix_Theory/Systems-of-Linear-Equations.md), Row Reduction and Echelon Forms, Matrix Operations and Matrix Inverses,
+
 Linear Dependence and Independence, Vector Spaces, Subspaces, Basis and Dimension.
+
 Orthogonality and Projections - Orthogonal Bases, Orthogonal Projections, Gram-Schmidt Orthogonalization,
+
 Least Squares Problems and Linear Models.
+
 Determinants and Their Properties, Rank of a Matrix,
+
 Applications of Linear Algebra in Information Technology and Data Representation.
 
 
 ### 🔹 Unit 2: Eigen Analysis and Matrix Decomposition
 Eigenvalues and Eigenvectors, Characteristic Equations, Diagonalization of Matrices,
-Symmetric Matrices, Positive Definite Matrices, Similar Matrices and Linear Transformations. 
-Singular Value Decomposition (SVD), Low-Rank Approximation, Matrix Factorization Concepts, 
+
+Symmetric Matrices, Positive Definite Matrices, Similar Matrices
+
+Linear Transformations. 
+
+Singular Value Decomposition (SVD), Low-Rank Approximation, Matrix Factorization Concepts 
+
 Applications in Data Compression, Recommendation Systems, Image Representation and Machine Learning.
 
 ### 🔹 Unit 3: Probability and Random Variables
 Events and Probability Spaces, Conditional Probability, Bayes’ Theorem, Independence of Events.
+
 Random Variables and Probability Distributions - Discrete and Continuous Random Variables, Probability Mass Functions, Probability Density Functions and Cumulative Distribution Functions. 
-Expectation, Variance, Covariance and Correlation, 
+
+Expectation, Variance, Covariance and Correlation 
+
 Common Probability Distributions - Bernoulli, Binomial, Poisson, Uniform, Gaussian and Exponential Distributions. 
+
 Applications of Probability in Information Technology, AI and Data Analytics
  
 ### 🔹 Unit 4: Stochastic Processes and Random Models
 Limit Theorems - Law of Large Numbers and Central Limit Theorem. 
+
 Stochastic Processes and Deviations, 
+
 Markov Chains, Transition Probability Matrices, Steady State Analysis.
+
 Random Walks and Their Applications, Introduction to Queueing and Network Models,
+
 Mathematical Foundations for AI, Machine Learning and Information Systems.
 
 ---
