@@ -764,9 +764,7 @@ The CDF provides a very convenient way to calculate interval probabilities.
 For any random variable:
 
 $$
-\boxed{
-P(a<X\leq b)=F(b)-F(a)
-}
+\boxed{P(a<X\leq b) = F(b)-F(a)}
 $$
 
 For a continuous random variable:
