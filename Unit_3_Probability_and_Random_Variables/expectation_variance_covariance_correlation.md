@@ -50,31 +50,31 @@ The **expectation** or **expected value** of a random variable is its probabilit
 
 It is commonly denoted by:
 
-\[
+$$
 E[X]
-\]
+$$
 
 or:
 
-\[
+$$
 \mu_X.
-\]
+$$
 
 For a discrete random variable:
 
-\[
+$$
 \boxed{
 E[X]=\sum_x xP(X=x)
 }
-\]
+$$
 
-For a continuous random variable with PDF \(f_X(x)\):
+For a continuous random variable with PDF $(f_X(x))$:
 
-\[
+$$
 \boxed{
 E[X]=\int_{-\infty}^{\infty}x f_X(x)\,dx
 }
-\]
+$$
 
 Expectation can be interpreted as the long-run average value obtained if the random experiment is repeated many times.
 
@@ -84,7 +84,7 @@ Expectation can be interpreted as the long-run average value obtained if the ran
 
 Consider a random variable with:
 
-| \(X\) | \(P(X=x)\) |
+| $(X)$ | $(P(X=x))$ |
 |---:|---:|
 | 1 | 0.10 |
 | 2 | 0.20 |
@@ -94,23 +94,21 @@ Consider a random variable with:
 
 Then:
 
-\[
-E[X]
-=
-1(0.10)+2(0.20)+4(0.30)+7(0.25)+8(0.15)
-\]
+$$
+E[X] = 1(0.10)+2(0.20)+4(0.30)+7(0.25)+8(0.15)
+$$
 
-\[
+$$
 =4.85.
-\]
+$$
 
 So:
 
-\[
+$$
 \boxed{E[X]=4.85}
-\]
+$$
 
-The expected value does **not** have to be one of the possible values of \(X\).
+The expected value does **not** have to be one of the possible values of $(X)$.
 
 ![Expectation as balance point](figures/01_expectation_balance_point.png)
 
@@ -145,35 +143,31 @@ E[X] = 4.85
 
 Sometimes we need:
 
-\[
+$$
 E[g(X)]
-\]
+$$
 
-rather than \(E[X]\).
+rather than $(E[X])$.
 
 For a discrete random variable:
 
-\[
+$$
 \boxed{
-E[g(X)]
-=
-\sum_xg(x)P(X=x)
+E[g(X)] = \sum_xg(x)P(X=x)
 }
-\]
+$$
 
 For example:
 
-\[
+$$
 g(X)=X^2.
-\]
+$$
 
 Then:
 
-\[
-E[X^2]
-=
-\sum_xx^2P(X=x).
-\]
+$$
+E[X^2] = \sum_xx^2P(X=x).
+$$
 
 This quantity is particularly important when calculating variance.
 
@@ -183,31 +177,29 @@ This quantity is particularly important when calculating variance.
 
 One of the most useful properties is:
 
-\[
+$$
 \boxed{
 E[aX+b]=aE[X]+b
 }
-\]
+$$
 
 More generally:
 
-\[
+$$
 \boxed{
-E[aX+bY+c]
-=
-aE[X]+bE[Y]+c
+E[aX+bY+c] = aE[X]+bE[Y]+c
 }
-\]
+$$
 
 Importantly, **linearity of expectation does not require independence**.
 
-For random variables \(X\) and \(Y\):
+For random variables $(X)$ and $(Y)$:
 
-\[
+$$
 E[X+Y]=E[X]+E[Y].
-\]
+$$
 
-This is true whether \(X\) and \(Y\) are independent or dependent.
+This is true whether $(X)$ and $(Y)$ are independent or dependent.
 
 ---
 
@@ -219,26 +211,26 @@ Expectation describes the center of a distribution, but it does not describe how
 
 Let:
 
-\[
+$$
 \mu=E[X].
-\]
+$$
 
 Then:
 
-\[
+$$
 \boxed{
 Var(X)=E[(X-\mu)^2]
 }
-\]
+$$
 
 For a discrete random variable:
 
-\[
+$$
 \boxed{
 Var(X)=
 \sum_x(x-\mu)^2P(X=x)
 }
-\]
+$$
 
 The square is important because positive and negative deviations should not cancel.
 
@@ -248,19 +240,17 @@ The square is important because positive and negative deviations should not canc
 
 Expanding the square gives:
 
-\[
-Var(X)
-=
-E[X^2]-2E[X]E[X]+E[X]^2.
-\]
+$$
+Var(X) = E[X^2]-2E[X]E[X]+E[X]^2.
+$$
 
 Therefore:
 
-\[
+$$
 \boxed{
 Var(X)=E[X^2]-[E[X]]^2
 }
-\]
+$$
 
 This is often the easiest formula for manual calculations.
 
@@ -270,7 +260,7 @@ This is often the easiest formula for manual calculations.
 
 Suppose:
 
-| \(X\) | \(P(X=x)\) |
+| $(X)$ | $(P(X=x))$ |
 |---:|---:|
 | 1 | 0.10 |
 | 2 | 0.20 |
@@ -280,33 +270,29 @@ Suppose:
 
 We already found:
 
-\[
+$$
 E[X]=4.85.
-\]
+$$
 
 Calculate:
 
-\[
-E[X^2]
-=
-1^2(0.10)+2^2(0.20)+4^2(0.30)+7^2(0.25)+8^2(0.15)
-\]
+$$
+E[X^2] = 1^2(0.10)+2^2(0.20)+4^2(0.30)+7^2(0.25)+8^2(0.15)
+$$
 
-\[
+$$
 =28.85.
-\]
+$$
 
 Therefore:
 
-\[
-Var(X)
-=
-28.85-(4.85)^2
-\]
+$$
+Var(X) = 28.85-(4.85)^2
+$$
 
-\[
+$$
 \boxed{Var(X)=5.3275}.
-\]
+$$
 
 ![Variance and deviations](figures/02_variance_deviations.png)
 
@@ -316,25 +302,25 @@ Var(X)
 
 Variance is measured in squared units.
 
-If \(X\) is measured in meters, variance is measured in:
+If $(X)$ is measured in meters, variance is measured in:
 
-\[
+$$
 m^2.
-\]
+$$
 
 The **standard deviation** returns to the original measurement units:
 
-\[
+$$
 \boxed{
 \sigma_X=\sqrt{Var(X)}
 }
-\]
+$$
 
 For the previous example:
 
-\[
+$$
 \sigma_X=\sqrt{5.3275}\approx2.308.
-\]
+$$
 
 ---
 
@@ -361,27 +347,27 @@ print("Standard deviation =", std)
 
 There is an important distinction between a **population** and a **sample**.
 
-For a population of \(N\) observations:
+For a population of $(N)$ observations:
 
-\[
+$$
 \boxed{
 \sigma^2=
 \frac{1}{N}
 \sum_{i=1}^{N}(x_i-\mu)^2
 }
-\]
+$$
 
-For a sample of \(n\) observations:
+For a sample of $(n)$ observations:
 
-\[
+$$
 \boxed{
 s^2=
 \frac{1}{n-1}
 \sum_{i=1}^{n}(x_i-\bar{x})^2
 }
-\]
+$$
 
-The \(n-1\) denominator is called **Bessel's correction** and provides an unbiased estimator of the population variance under standard assumptions.
+The $(n-1)$ denominator is called **Bessel's correction** and provides an unbiased estimator of the population variance under standard assumptions.
 
 ---
 
@@ -411,13 +397,13 @@ Notice:
 np.var(data)
 ```
 
-uses \(n\), while:
+uses $(n)$, while:
 
 ```python
 np.var(data, ddof=1)
 ```
 
-uses \(n-1\).
+uses $(n-1)$.
 
 ---
 
@@ -429,11 +415,11 @@ The farther observations move from the mean, the larger their squared deviations
 
 The key relationship is:
 
-\[
+$$
 \boxed{
 Var(X)=E[(X-E[X])^2]
 }
-\]
+$$
 
 This is why an extreme observation can have a substantial effect on variance.
 
@@ -445,31 +431,27 @@ Variance describes the variability of one random variable.
 
 **Covariance** describes how two random variables vary together.
 
-For random variables \(X\) and \(Y\):
+For random variables $(X)$ and $(Y)$:
 
-\[
+$$
 \boxed{
-Cov(X,Y)
-=
-E[(X-E[X])(Y-E[Y])]
+Cov(X,Y) = E[(X-E[X])(Y-E[Y])]
 }
-\]
+$$
 
 Let:
 
-\[
+$$
 \mu_X=E[X],
 \qquad
 \mu_Y=E[Y].
-\]
+$$
 
 Then:
 
-\[
-Cov(X,Y)
-=
-E[(X-\mu_X)(Y-\mu_Y)].
-\]
+$$
+Cov(X,Y) = E[(X-\mu_X)(Y-\mu_Y)].
+$$
 
 ---
 
@@ -481,15 +463,15 @@ Consider deviations from the means.
 
 If:
 
-\[
+$$
 X-\mu_X>0
-\]
+$$
 
 and:
 
-\[
+$$
 Y-\mu_Y>0,
-\]
+$$
 
 their product is positive.
 
@@ -501,9 +483,9 @@ Therefore, observations moving in the same direction contribute positively to co
 
 If one deviation is positive and the other negative:
 
-\[
+$$
 (X-\mu_X)(Y-\mu_Y)<0.
-\]
+$$
 
 This contributes negatively to covariance.
 
@@ -517,19 +499,17 @@ This contributes negatively to covariance.
 
 Expanding the definition gives:
 
-\[
-Cov(X,Y)
-=
-E[XY]-E[X]E[Y].
-\]
+$$
+Cov(X,Y) = E[XY]-E[X]E[Y].
+$$
 
 Therefore:
 
-\[
+$$
 \boxed{
 Cov(X,Y)=E[XY]-E[X]E[Y]
 }
-\]
+$$
 
 This is often convenient for calculations.
 
@@ -541,9 +521,9 @@ The sign of covariance is important:
 
 | Covariance | Interpretation |
 |---|---|
-| \(Cov(X,Y)>0\) | X and Y tend to increase/decrease together |
-| \(Cov(X,Y)<0\) | X and Y tend to move in opposite directions |
-| \(Cov(X,Y)\approx0\) | Little linear co-movement |
+| $(Cov(X,Y)>0)$ | X and Y tend to increase/decrease together |
+| $(Cov(X,Y)<0)$ | X and Y tend to move in opposite directions |
+| $(Cov(X,Y)\approx0)$ | Little linear co-movement |
 
 However, covariance magnitude depends on the measurement units.
 
@@ -593,13 +573,13 @@ For several random variables, covariance can be organized into a **covariance ma
 
 For three variables:
 
-\[
+$$
 X_1,X_2,X_3,
-\]
+$$
 
 the covariance matrix is:
 
-\[
+$$
 \boxed{
 \Sigma=
 \begin{bmatrix}
@@ -608,7 +588,7 @@ Cov(X_2,X_1)&Var(X_2)&Cov(X_2,X_3)\\
 Cov(X_3,X_1)&Cov(X_3,X_2)&Var(X_3)
 \end{bmatrix}
 }
-\]
+$$
 
 Important properties:
 
@@ -645,25 +625,22 @@ Covariance tells us the direction of co-movement, but its numerical value depend
 
 The Pearson correlation coefficient is:
 
-\[
+$$
 \boxed{
-\rho_{X,Y}
-=
-\frac{Cov(X,Y)}
-{\sigma_X\sigma_Y}
+\rho_{X,Y} = \frac{Cov(X,Y)}{\sigma_X\sigma_Y}
 }
-\]
+$$
 
 For a sample:
 
-\[
+$$
 \boxed{
 r=
 \frac{s_{XY}}{s_Xs_Y}
 }
-\]
+$$
 
-where \(s_{XY}\) is sample covariance and \(s_X,s_Y\) are sample standard deviations.
+where $(s_{XY})$ is sample covariance and $(s_X,s_Y)$ are sample standard deviations.
 
 ---
 
@@ -671,17 +648,17 @@ where \(s_{XY}\) is sample covariance and \(s_X,s_Y\) are sample standard deviat
 
 Pearson correlation always lies between:
 
-\[
+$$
 \boxed{-1\leq\rho\leq1}
-\]
+$$
 
 Interpretation:
 
-- \(\rho=1\): perfect positive linear relationship;
-- \(\rho=-1\): perfect negative linear relationship;
-- \(\rho=0\): no linear correlation;
-- values close to \(1\): strong positive linear association;
-- values close to \(-1\): strong negative linear association.
+- $(\rho=1)$: perfect positive linear relationship;
+- $(\rho=-1)$: perfect negative linear relationship;
+- $(\rho=0)$: no linear correlation;
+- values close to $(1)$: strong positive linear association;
+- values close to $(-1)$: strong negative linear association.
 
 ![Strong positive correlation](figures/05_strong_positive_correlation.png)
 
@@ -696,7 +673,7 @@ Interpretation:
 | Property | Covariance | Correlation |
 |---|---|---|
 | Measures | Joint variation | Standardized linear association |
-| Range | Unbounded | \([-1,1]\) |
+| Range | Unbounded | $([-1,1])$ |
 | Units | Product of units | Unitless |
 | Scale-dependent | Yes | No |
 | Sign | Direction of co-movement | Direction of linear association |
@@ -742,11 +719,11 @@ print("p-value:", p_value)
 
 Suppose:
 
-\[
+$$
 Y=2X+\epsilon.
-\]
+$$
 
-Changing the units of \(X\) or \(Y\) changes covariance, but Pearson correlation remains unchanged under positive linear rescaling.
+Changing the units of $(X)$ or $(Y)$ changes covariance, but Pearson correlation remains unchanged under positive linear rescaling.
 
 For example, changing height from meters to centimeters changes numerical covariance but does not change the correlation.
 
@@ -758,7 +735,7 @@ For example, changing height from meters to centimeters changes numerical covari
 
 These quantities can be viewed as a progression:
 
-\[
+$$
 \boxed{
 \text{Expectation}
 \rightarrow
@@ -768,44 +745,39 @@ These quantities can be viewed as a progression:
 \rightarrow
 \text{Correlation}
 }
-\]
+$$
 
 ### Expectation
 
 Describes the center:
 
-\[
+$$
 E[X].
-\]
+$$
 
 ### Variance
 
 Describes the spread of one variable:
 
-\[
+$$
 Var(X)=E[(X-E[X])^2].
-\]
+$$
 
 ### Covariance
 
 Describes joint variation:
 
-\[
-Cov(X,Y)
-=
-E[(X-E[X])(Y-E[Y])].
-\]
+$$
+Cov(X,Y) = E[(X-E[X])(Y-E[Y])].
+$$
 
 ### Correlation
 
 Standardizes covariance:
 
-\[
-Corr(X,Y)
-=
-\frac{Cov(X,Y)}
-{\sqrt{Var(X)Var(Y)}}.
-\]
+$$
+Corr(X,Y) = \frac{Cov(X,Y)}{\sqrt{Var(X)Var(Y)}}.
+$$
 
 ---
 
@@ -813,45 +785,43 @@ Corr(X,Y)
 
 ## Variance is covariance with itself
 
-\[
+$$
 \boxed{
 Cov(X,X)=Var(X)
 }
-\]
+$$
 
 because:
 
-\[
-Cov(X,X)
-=
-E[(X-E[X])^2].
-\]
+$$
+Cov(X,X)=E[(X-E[X])^2].
+$$
 
 ---
 
 ## Independent variables have zero covariance
 
-If \(X\) and \(Y\) are independent:
+If $(X)$ and $(Y)$ are independent:
 
-\[
+$$
 E[XY]=E[X]E[Y].
-\]
+$$
 
 Therefore:
 
-\[
+$$
 \boxed{
 Cov(X,Y)=0
 }
-\]
+$$
 
 and, provided the variances are positive:
 
-\[
+$$
 \boxed{
 Corr(X,Y)=0.
 }
-\]
+$$
 
 ---
 
@@ -859,41 +829,41 @@ Corr(X,Y)=0.
 
 The converse is generally false:
 
-\[
+$$
 Cov(X,Y)=0
-\]
+$$
 
-does **not** imply that \(X\) and \(Y\) are independent.
+does **not** imply that $(X)$ and $(Y)$ are independent.
 
 A classic example is:
 
-\[
+$$
 X\sim Uniform(-1,1)
-\]
+$$
 
 and:
 
-\[
+$$
 Y=X^2.
-\]
+$$
 
-The relationship is clearly deterministic, so \(X\) and \(Y\) are not independent. Yet their covariance is zero because of symmetry.
+The relationship is clearly deterministic, so $(X)$ and $(Y)$ are not independent. Yet their covariance is zero because of symmetry.
 
 This is an important distinction:
 
-\[
+$$
 \boxed{
 \text{Independence} \Rightarrow \text{Zero covariance}
 }
-\]
+$$
 
 but generally:
 
-\[
+$$
 \boxed{
 \text{Zero covariance} \not\Rightarrow \text{Independence}.
 }
-\]
+$$
 
 ---
 
@@ -901,37 +871,33 @@ but generally:
 
 For two random variables:
 
-\[
+$$
 \boxed{
-Var(X+Y)
-=
-Var(X)+Var(Y)+2Cov(X,Y)
+Var(X+Y)=Var(X)+Var(Y)+2Cov(X,Y)
 }
-\]
+$$
 
 Similarly:
 
-\[
+$$
 \boxed{
-Var(X-Y)
-=
-Var(X)+Var(Y)-2Cov(X,Y)
+Var(X-Y)=Var(X)+Var(Y)-2Cov(X,Y)
 }
-\]
+$$
 
-If \(X\) and \(Y\) are independent:
+If $(X)$ and $(Y)$ are independent:
 
-\[
+$$
 Cov(X,Y)=0.
-\]
+$$
 
 Therefore:
 
-\[
+$$
 \boxed{
 Var(X+Y)=Var(X)+Var(Y)
 }
-\]
+$$
 
 This is one reason independence is especially useful in probability and statistics.
 
@@ -939,25 +905,21 @@ This is one reason independence is especially useful in probability and statisti
 
 # 29. General variance formula
 
-For constants \(a,b\):
+For constants $(a,b)$:
 
-\[
+$$
 \boxed{
-Var(aX+bY)
-=
-a^2Var(X)+b^2Var(Y)+2abCov(X,Y)
+Var(aX+bY) = a^2Var(X)+b^2Var(Y)+2abCov(X,Y)
 }
-\]
+$$
 
-If \(X\) and \(Y\) are independent:
+If $(X)$ and $(Y)$ are independent:
 
-\[
+$$
 \boxed{
-Var(aX+bY)
-=
-a^2Var(X)+b^2Var(Y).
+Var(aX+bY) = a^2Var(X)+b^2Var(Y).
 }
-\]
+$$
 
 ---
 
@@ -1016,9 +978,9 @@ plt.show()
 
 We can simulate correlated variables using:
 
-\[
+$$
 Y=\rho X+\epsilon.
-\]
+$$
 
 ```python
 import numpy as np
@@ -1045,7 +1007,7 @@ plt.title("Simulated Correlated Random Variables")
 plt.show()
 ```
 
-The empirical correlation should be close to the target value \(0.8\).
+The empirical correlation should be close to the target value $(0.8)$.
 
 ---
 
@@ -1147,11 +1109,11 @@ For example, two variables can be correlated because:
 
 Therefore:
 
-\[
+$$
 \boxed{
 \text{Correlation} \neq \text{Causation}
 }
-\]
+$$
 
 Correlation is evidence of statistical association, not by itself evidence of a causal mechanism.
 
@@ -1165,11 +1127,11 @@ A nonlinear relationship can have a correlation close to zero.
 
 For example, if:
 
-\[
+$$
 Y=X^2
-\]
+$$
 
-and \(X\) is symmetrically distributed around zero, Pearson correlation can be close to zero even though \(Y\) is completely determined by \(X\).
+and $(X)$ is symmetrically distributed around zero, Pearson correlation can be close to zero even though $(Y)$ is completely determined by $(X)$.
 
 Therefore, always inspect the data visually when possible.
 
@@ -1193,11 +1155,11 @@ For this reason, a scatter plot is often useful before interpreting a correlatio
 
 | Concept | Formula | Interpretation |
 |---|---|---|
-| Expectation | \(E[X]\) | Long-run average |
-| Variance | \(E[(X-\mu)^2]\) | Spread around mean |
-| Standard deviation | \(\sqrt{Var(X)}\) | Spread in original units |
-| Covariance | \(E[(X-\mu_X)(Y-\mu_Y)]\) | Joint variation |
-| Correlation | \(\frac{Cov(X,Y)}{\sigma_X\sigma_Y}\) | Standardized linear association |
+| Expectation | $(E[X])$ | Long-run average |
+| Variance | $(E[(X-\mu)^2])$ | Spread around mean |
+| Standard deviation | $(\sqrt{Var(X)})$ | Spread in original units |
+| Covariance | $(E[(X-\mu_X)(Y-\mu_Y)])$ | Joint variation |
+| Correlation | $(\frac{Cov(X,Y)}{\sigma_X\sigma_Y})$ | Standardized linear association |
 
 ---
 
@@ -1205,74 +1167,69 @@ For this reason, a scatter plot is often useful before interpreting a correlatio
 
 ### Expectation
 
-\[
+$$
 \boxed{
 E[X]=\sum_xxP(X=x)
 }
-\]
+$$
 
-for discrete \(X\).
+for discrete $(X)$.
 
 ### Variance
 
-\[
+$$
 \boxed{
 Var(X)=E[(X-E[X])^2]
 }
-\]
+$$
 
 and:
 
-\[
+$$
 \boxed{
 Var(X)=E[X^2]-[E[X]]^2
 }
-\]
+$$
 
 ### Standard deviation
 
-\[
+$$
 \boxed{
 \sigma_X=\sqrt{Var(X)}
 }
-\]
+$$
 
 ### Covariance
 
-\[
+$$
 \boxed{
 Cov(X,Y)=E[(X-E[X])(Y-E[Y])]
 }
-\]
+$$
 
 or:
 
-\[
+$$
 \boxed{
 Cov(X,Y)=E[XY]-E[X]E[Y]
 }
-\]
+$$
 
 ### Correlation
 
-\[
+$$
 \boxed{
-Corr(X,Y)
-=
-\frac{Cov(X,Y)}
-{\sqrt{Var(X)Var(Y)}}
+Corr(X,Y) = \frac{Cov(X,Y)}{\sqrt{Var(X)Var(Y)}}
 }
-\]
+$$
 
 ### Variance of a sum
 
-\[
+$$
 \boxed{
-Var(X+Y)
-=
-Var(X)+Var(Y)+2Cov(X,Y)
+Var(X+Y) = Var(X)+Var(Y)+2Cov(X,Y)
 }
-\]
+$$
 
 ---
 
@@ -1286,9 +1243,9 @@ The expected value is a weighted average. It is not necessarily the mode or even
 
 Variance uses:
 
-\[
+$$
 (X-\mu)^2.
-\]
+$$
 
 Without squaring, positive and negative deviations can cancel.
 
@@ -1325,12 +1282,12 @@ Correlation describes association, not necessarily causal influence.
 # 42. Practice questions
 
 1. Define expectation in your own words.
-2. Calculate \(E[X]\) for a discrete random variable with a given PMF.
+2. Calculate $(E[X])$ for a discrete random variable with a given PMF.
 3. Explain why expected value does not need to be a possible outcome.
 4. Derive the alternative variance formula:
-   \[
+   $$
    Var(X)=E[X^2]-[E[X]]^2.
-   \]
+   $$
 5. Calculate the variance and standard deviation of a fair die.
 6. Explain the difference between population and sample variance.
 7. Define covariance.
@@ -1338,15 +1295,15 @@ Correlation describes association, not necessarily causal influence.
 9. Explain what negative covariance means.
 10. Why does covariance depend on measurement units?
 11. Define Pearson correlation.
-12. Why is correlation restricted to \([-1,1]\)?
+12. Why is correlation restricted to $([-1,1])$?
 13. Explain the difference between covariance and correlation.
-14. Prove that \(Cov(X,X)=Var(X)\).
+14. Prove that $(Cov(X,X)=Var(X))$.
 15. Explain why independence implies zero covariance.
 16. Give an example showing that zero covariance does not necessarily imply independence.
 17. Derive:
-   \[
+ $$
    Var(X+Y)=Var(X)+Var(Y)+2Cov(X,Y).
-   \]
+$$
 18. Write Python code to calculate expectation from a PMF.
 19. Write Python code to calculate population and sample variance.
 20. Write Python code to calculate covariance.
