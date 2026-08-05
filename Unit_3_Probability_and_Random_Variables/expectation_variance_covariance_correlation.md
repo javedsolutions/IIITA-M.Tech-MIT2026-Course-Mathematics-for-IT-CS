@@ -1,7 +1,12 @@
-# Expectation, Variance, Covariance and Correlation
-
-> A GitHub-ready reading material with mathematical definitions, intuition, worked examples, Python implementations, visualizations, and practice questions.
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 3: Probability and Random Variable
+### Current Topic: Expectation, Variance, Covariance and Correlation
+#### with mathematical definitions, intuition, worked examples, Python implementations, visualizations, and practice questions
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
 ---
 
 ## Learning objectives
@@ -1352,50 +1357,7 @@ Correlation describes association, not necessarily causal influence.
 
 ---
 
-# 43. Figures included
-
-The `figures/` directory contains:
-
-1. `01_expectation_balance_point.png` — expectation as a probability-weighted balance point.
-2. `02_variance_deviations.png` — deviations from the mean and variance intuition.
-3. `03_positive_covariance.png` — positive covariance.
-4. `04_negative_covariance.png` — negative covariance.
-5. `05_strong_positive_correlation.png` — strong positive correlation.
-6. `06_near_zero_correlation.png` — near-zero linear correlation.
-7. `07_strong_negative_correlation.png` — strong negative correlation.
-8. `08_correlation_scale_invariance.png` — correlation and measurement scale.
-
----
-
-# 44. Suggested GitHub repository structure
-
-```text
-expectation-variance-covariance-correlation/
-│
-├── expectation_variance_covariance_correlation.md
-│
-└── figures/
-    ├── 01_expectation_balance_point.png
-    ├── 02_variance_deviations.png
-    ├── 03_positive_covariance.png
-    ├── 04_negative_covariance.png
-    ├── 05_strong_positive_correlation.png
-    ├── 06_near_zero_correlation.png
-    ├── 07_strong_negative_correlation.png
-    └── 08_correlation_scale_invariance.png
-```
-
-The Markdown uses relative image references such as:
-
-```markdown
-![Positive covariance](figures/03_positive_covariance.png)
-```
-
-Therefore, keep the `figures/` directory beside the Markdown file when uploading the material to GitHub.
-
----
-
-# 45. Final takeaway
+# 43. Final takeaway
 
 Expectation tells us **where a random variable is centered**.
 
@@ -1406,3 +1368,13 @@ Covariance tells us **how two variables vary together**.
 Correlation tells us **the direction and strength of their linear association on a standardized scale**.
 
 Together, these four concepts form an important foundation for probability, statistics, data science, machine learning, and statistical modeling.
+
+---
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
