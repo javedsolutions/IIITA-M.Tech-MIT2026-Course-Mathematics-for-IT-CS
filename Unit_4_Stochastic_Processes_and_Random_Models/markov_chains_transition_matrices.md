@@ -1348,7 +1348,7 @@ Markov chains provide a powerful framework for analyzing sequential random syste
 
 The most important ideas can be summarized as:
 
-\[
+$$
 \boxed{
 \text{Markov property}
 \Rightarrow
@@ -1360,7 +1360,7 @@ The most important ideas can be summarized as:
 \Rightarrow
 \text{long-run behavior}.
 }
-\]
+$$
 
 Once a stochastic system can be represented by states and transition probabilities, matrix algebra gives us a practical way to analyze its future behavior and, under appropriate conditions, its steady state.
 
