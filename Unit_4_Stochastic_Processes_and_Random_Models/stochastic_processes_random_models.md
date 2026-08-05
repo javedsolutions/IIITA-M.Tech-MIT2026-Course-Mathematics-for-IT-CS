@@ -51,7 +51,7 @@ A **stochastic process** provides a mathematical framework for describing such t
 
 A useful conceptual representation is:
 
-\[
+$$
 \boxed{
 \text{Randomness}
 +
@@ -59,7 +59,7 @@ A useful conceptual representation is:
 \rightarrow
 \text{Stochastic Process}
 }
-\]
+$$
 
 A stochastic process is therefore a collection of random variables indexed by time.
 
@@ -71,39 +71,39 @@ A deterministic model gives the same future state whenever its initial condition
 
 For example:
 
-\[
+$$
 x_{t+1}=x_t+5.
-\]
+$$
 
 If:
 
-\[
+$$
 x_0=10,
-\]
+$$
 
 then:
 
-\[
+$$
 x_1=15,\quad
 x_2=20,\quad
 x_3=25.
-\]
+$$
 
 There is no randomness.
 
 A stochastic model contains a random component:
 
-\[
+$$
 \boxed{
 X_{t+1}=X_t+\epsilon_t.
 }
-\]
+$$
 
 where:
 
-\[
+$$
 \epsilon_t
-\]
+$$
 
 is a random variable.
 
@@ -115,31 +115,31 @@ Different simulations can therefore produce different trajectories.
 
 A stochastic process is a collection:
 
-\[
+$$
 \boxed{
 \{X_t:t\in T\}
 }
-\]
+$$
 
 of random variables defined on a common probability space.
 
 Here:
 
-- \(t\) = time index;
-- \(X_t\) = random state at time \(t\);
-- \(T\) = index set.
+- $(t)$ = time index;
+- $(X_t)$ = random state at time $(t)$;
+- $(T)$ = index set.
 
 For discrete time:
 
-\[
+$$
 T=\{0,1,2,\ldots\}.
-\]
+$$
 
 For continuous time:
 
-\[
+$$
 T=[0,\infty).
-\]
+$$
 
 A stochastic process can be viewed as a random function of time.
 
@@ -151,15 +151,15 @@ A **sample path** is one realization of a stochastic process.
 
 If:
 
-\[
+$$
 \{X_t\}
-\]
+$$
 
 is a process, one simulation may generate:
 
-\[
+$$
 x_0,x_1,x_2,\ldots.
-\]
+$$
 
 Another simulation produces a different path.
 
@@ -175,21 +175,21 @@ This is one of the most important ideas in stochastic modeling:
 
 A discrete-time process is indexed by discrete values:
 
-\[
+$$
 t=0,1,2,\ldots
-\]
+$$
 
 Example:
 
-\[
+$$
 X_t=\text{number of users connected at time }t.
-\]
+$$
 
 A process might produce:
 
-\[
+$$
 5,7,6,8,10,9,\ldots
-\]
+$$
 
 at successive time points.
 
@@ -201,9 +201,9 @@ at successive time points.
 
 A continuous-time process is indexed by real-valued time:
 
-\[
+$$
 t\ge0.
-\]
+$$
 
 Examples include:
 
@@ -217,9 +217,9 @@ A continuous-time process can change at any instant.
 
 Examples include:
 
-\[
+$$
 X(t),\qquad t\ge0.
-\]
+$$
 
 ---
 
@@ -229,9 +229,9 @@ The state space can also be discrete or continuous.
 
 ### Discrete state
 
-\[
+$$
 X_t\in\{0,1,2,\ldots\}.
-\]
+$$
 
 Examples:
 
@@ -241,9 +241,9 @@ Examples:
 
 ### Continuous state
 
-\[
+$$
 X_t\in\mathbb R.
-\]
+$$
 
 Examples:
 
@@ -269,28 +269,28 @@ A **random model** describes a system using random variables and probability dis
 
 A general model can be written as:
 
-\[
+$$
 \boxed{
 X_{t+1}=f(X_t,\epsilon_t)
 }
-\]
+$$
 
 where:
 
-- \(X_t\) = current state;
-- \(f\) = system rule;
-- \(\epsilon_t\) = random input.
+- $(X_t)$ = current state;
+- $(f)$ = system rule;
+- $(\epsilon_t)$ = random input.
 
 For example:
 
-\[
+$$
 X_{t+1}=0.8X_t+\epsilon_t.
-\]
+$$
 
 This model has both:
 
-- a deterministic component \(0.8X_t\);
-- a random component \(\epsilon_t\).
+- a deterministic component $(0.8X_t)$;
+- a random component $(\epsilon_t)$.
 
 ---
 
@@ -322,21 +322,21 @@ The **state** summarizes the information needed to describe the system at a part
 
 For example, in a queue:
 
-\[
+$$
 X_t=\text{number of customers in the system}.
-\]
+$$
 
 In a server:
 
-\[
+$$
 X_t=\text{system load}.
-\]
+$$
 
 In a machine:
 
-\[
+$$
 X_t=\text{operating condition}.
-\]
+$$
 
 The choice of state is crucial when building a stochastic model.
 
@@ -348,13 +348,13 @@ A transition probability describes the probability of moving from one state to a
 
 For discrete states:
 
-\[
+$$
 \boxed{
 P(X_{t+1}=j\mid X_t=i)
 }
-\]
+$$
 
-is the probability of transitioning from state \(i\) to state \(j\).
+is the probability of transitioning from state $(i)$ to state $(j)$.
 
 Transition probabilities form the foundation of Markov models.
 
@@ -366,13 +366,12 @@ A stochastic process satisfies the **Markov property** if the future depends on 
 
 Mathematically:
 
-\[
+$$
 \boxed{
-P(X_{t+1}\mid X_t,X_{t-1},\ldots,X_0)
-=
+P(X_{t+1}\mid X_t,X_{t-1},\ldots,X_0)=
 P(X_{t+1}\mid X_t)
 }
-\]
+$$
 
 In words:
 
@@ -388,13 +387,13 @@ A discrete-time, discrete-state Markov process is commonly called a **Markov cha
 
 For states:
 
-\[
+$$
 S_1,S_2,\ldots,S_n,
-\]
+$$
 
 the transition matrix is:
 
-\[
+$$
 P=
 \begin{bmatrix}
 p_{11}&p_{12}&\cdots&p_{1n}\\
@@ -402,15 +401,15 @@ p_{21}&p_{22}&\cdots&p_{2n}\\
 \vdots&\vdots&\ddots&\vdots\\
 p_{n1}&p_{n2}&\cdots&p_{nn}
 \end{bmatrix}.
-\]
+$$
 
 Each row satisfies:
 
-\[
+$$
 \boxed{
 \sum_jp_{ij}=1.
 }
-\]
+$$
 
 ![Markov chain](figures/04_markov_chain.png)
 
@@ -454,23 +453,23 @@ A random walk is one of the simplest stochastic processes.
 
 For a one-dimensional symmetric random walk:
 
-\[
+$$
 \boxed{
 X_{t+1}=X_t+\epsilon_{t+1}
 }
-\]
+$$
 
 where:
 
-\[
+$$
 P(\epsilon_t=1)=\frac12
-\]
+$$
 
 and:
 
-\[
+$$
 P(\epsilon_t=-1)=\frac12.
-\]
+$$
 
 Thus the process moves one step upward or downward with equal probability.
 
@@ -512,23 +511,23 @@ plt.show()
 
 For a symmetric random walk starting at zero:
 
-\[
+$$
 E[X_n]=0.
-\]
+$$
 
 The variance is:
 
-\[
+$$
 \boxed{
 \operatorname{Var}(X_n)=n.
 }
-\]
+$$
 
 Therefore the typical spread grows approximately like:
 
-\[
+$$
 \sqrt n.
-\]
+$$
 
 This simple model provides intuition for more sophisticated stochastic processes.
 
@@ -557,30 +556,29 @@ A Poisson process models random arrivals over continuous time.
 
 Let:
 
-\[
+$$
 N(t)
-\]
+$$
 
-be the number of events observed by time \(t\).
+be the number of events observed by time $(t)$.
 
-For rate \(\lambda\):
+For rate $(\lambda)$:
 
-\[
+$$
 \boxed{
-N(t)\sim\operatorname{Poisson}(\lambda t).
+N(t)\sim\text{Poisson}(\lambda t).
 }
-\]
+$$
 
-The probability of \(k\) arrivals is:
+The probability of $(k)$ arrivals is:
 
-\[
+$$
 \boxed{
-P(N(t)=k)
-=
+P(N(t)=k)=
 e^{-\lambda t}
 \frac{(\lambda t)^k}{k!}.
 }
-\]
+$$
 
 ![Poisson process](figures/05_poisson_process.png)
 
@@ -592,26 +590,26 @@ For a Poisson process, interarrival times are exponentially distributed.
 
 If:
 
-\[
-T\sim\operatorname{Exponential}(\lambda),
-\]
+$$
+T\sim\text{Exponential}(\lambda),
+$$
 
 then:
 
-\[
+$$
 \boxed{
 f_T(t)=\lambda e^{-\lambda t},
 \quad t\ge0.
 }
-\]
+$$
 
 The expected interarrival time is:
 
-\[
+$$
 \boxed{
 E[T]=\frac1\lambda.
 }
-\]
+$$
 
 ---
 
@@ -653,27 +651,27 @@ Applications include:
 
 # 22. Counting Processes
 
-A counting process \(N(t)\) records the number of events occurring by time \(t\).
+A counting process $(N(t))$ records the number of events occurring by time $(t)$.
 
 Properties typically include:
 
-\[
+$$
 N(0)=0
-\]
+$$
 
 and:
 
-\[
+$$
 N(t)\ge0.
-\]
+$$
 
 A counting process is non-decreasing:
 
-\[
+$$
 t_1<t_2
 \Rightarrow
 N(t_1)\le N(t_2).
-\]
+$$
 
 The Poisson process is one important example.
 
@@ -683,20 +681,20 @@ The Poisson process is one important example.
 
 Brownian motion, also called a Wiener process, is a foundational continuous-time stochastic process.
 
-A standard Brownian motion \(B(t)\) satisfies:
+A standard Brownian motion $(B(t))$ satisfies:
 
-1. \(B(0)=0\);
+1. $(B(0)=0)$;
 2. independent increments;
-3. \(B(t)-B(s)\sim N(0,t-s)\) for \(t>s\);
+3. $(B(t)-B(s)\sim N(0,t-s))$ for $(t>s)$;
 4. sample paths are continuous.
 
 Thus:
 
-\[
+$$
 \boxed{
 B(t)-B(s)\sim N(0,t-s).
 }
-\]
+$$
 
 ![Brownian motion](figures/07_brownian_motion.png)
 
@@ -704,21 +702,20 @@ B(t)-B(s)\sim N(0,t-s).
 
 # 24. Brownian Motion Simulation
 
-For a small time step \(\Delta t\):
+For a small time step $(\Delta t)$:
 
-\[
+$$
 \boxed{
-B_{t+\Delta t}
-=
+B_{t+\Delta t}=
 B_t+\sqrt{\Delta t}Z_t
 }
-\]
+$$
 
 where:
 
-\[
+$$
 Z_t\sim N(0,1).
-\]
+$$
 
 Python:
 
@@ -756,21 +753,20 @@ plt.show()
 
 A generalized diffusion process can be represented as:
 
-\[
+$$
 \boxed{
-dX_t
-=
+dX_t=
 \mu(X_t,t)\,dt
 +
 \sigma(X_t,t)\,dB_t.
 }
-\]
+$$
 
 Here:
 
-- \(\mu\) = drift;
-- \(\sigma\) = volatility or diffusion coefficient;
-- \(B_t\) = Brownian motion.
+- $(\mu)$ = drift;
+- $(\sigma)$ = volatility or diffusion coefficient;
+- $(B_t)$ = Brownian motion.
 
 This equation provides a foundation for many continuous-time random models.
 
@@ -780,11 +776,11 @@ This equation provides a foundation for many continuous-time random models.
 
 A common model for a positive-valued quantity is:
 
-\[
+$$
 \boxed{
 dS_t=\mu S_t\,dt+\sigma S_t\,dB_t.
 }
-\]
+$$
 
 This is called geometric Brownian motion.
 
@@ -792,9 +788,8 @@ It has been used historically as a simplified model for asset prices.
 
 A discrete simulation can use:
 
-\[
-S_{t+\Delta t}
-=
+$$
+S_{t+\Delta t}=
 S_t
 \exp
 \left[
@@ -802,7 +797,7 @@ S_t
 +
 \sigma\sqrt{\Delta t}Z
 \right].
-\]
+$$
 
 ---
 
@@ -850,29 +845,28 @@ Some systems tend to return toward a long-run average.
 
 A simple model is:
 
-\[
+$$
 \boxed{
-X_{t+1}
-=
+X_{t+1}=
 X_t+\theta(\mu-X_t)\Delta t
 +
 \sigma\sqrt{\Delta t}Z_t.
 }
-\]
+$$
 
 If:
 
-\[
+$$
 X_t>\mu,
-\]
+$$
 
-the drift term tends to pull \(X_t\) downward.
+the drift term tends to pull $(X_t)$ downward.
 
 If:
 
-\[
+$$
 X_t<\mu,
-\]
+$$
 
 the drift tends to pull it upward.
 
@@ -882,15 +876,14 @@ the drift tends to pull it upward.
 
 The continuous-time version is:
 
-\[
+$$
 \boxed{
-dX_t
-=
+dX_t=
 \theta(\mu-X_t)\,dt
 +
 \sigma\,dB_t.
 }
-\]
+$$
 
 This is called the **Ornstein-Uhlenbeck process**.
 
@@ -946,23 +939,23 @@ plt.show()
 
 A simple autoregressive model is AR(1):
 
-\[
+$$
 \boxed{
 X_t=c+\phi X_{t-1}+\epsilon_t.
 }
-\]
+$$
 
 where:
 
-- \(c\) = intercept;
-- \(\phi\) = autoregressive coefficient;
-- \(\epsilon_t\) = random error.
+- $(c)$ = intercept;
+- $(\phi)$ = autoregressive coefficient;
+- $(\epsilon_t)$ = random error.
 
 If:
 
-\[
+$$
 |\phi|<1,
-\]
+$$
 
 the process is stationary under standard assumptions.
 
@@ -1000,31 +993,30 @@ plt.show()
 
 Stochastic observations may be dependent across time.
 
-The autocorrelation at lag \(k\) is:
+The autocorrelation at lag $(k)$ is:
 
-\[
+$$
 \boxed{
-\rho(k)
-=
+\rho(k)=
 \operatorname{Corr}(X_t,X_{t-k}).
 }
-\]
+$$
 
 If:
 
-\[
+$$
 \rho(k)\approx0,
-\]
+$$
 
-there is little linear dependence at lag \(k\).
+there is little linear dependence at lag $(k)$.
 
-For an AR(1) process with parameter \(\phi\), the theoretical autocorrelation is:
+For an AR(1) process with parameter $(\phi)$, the theoretical autocorrelation is:
 
-\[
+$$
 \boxed{
 \rho(k)=\phi^k
 }
-\]
+$$
 
 under the standard stationary model.
 
@@ -1038,13 +1030,13 @@ Stationarity means that the statistical behavior of a process does not change ov
 
 A **strictly stationary** process satisfies:
 
-\[
+$$
 (X_{t_1},\ldots,X_{t_n})
 \overset{d}{=}
 (X_{t_1+h},\ldots,X_{t_n+h})
-\]
+$$
 
-for all suitable \(h\).
+for all suitable $(h)$.
 
 A **weakly stationary** process generally requires:
 
@@ -1062,15 +1054,15 @@ Many statistical models assume stable relationships over time.
 
 If a process has a changing mean:
 
-\[
+$$
 E[X_t]
-\]
+$$
 
 or changing variance:
 
-\[
+$$
 \operatorname{Var}(X_t),
-\]
+$$
 
 a stationary model may be inappropriate.
 
@@ -1089,31 +1081,31 @@ White noise is a basic random process.
 
 A common model is:
 
-\[
+$$
 \boxed{
 X_t=\epsilon_t
 }
-\]
+$$
 
 where:
 
-\[
+$$
 E[\epsilon_t]=0
-\]
+$$
 
 and:
 
-\[
-\operatorname{Cov}(\epsilon_t,\epsilon_s)=0
-\]
+$$
+\text{Cov}(\epsilon_t,\epsilon_s)=0
+$$
 
-for \(t\ne s\).
+for $(t\ne s)$.
 
 Often:
 
-\[
+$$
 \epsilon_t\sim N(0,\sigma^2).
-\]
+$$
 
 White noise is frequently used as an innovation or error process.
 
@@ -1123,10 +1115,9 @@ White noise is frequently used as an innovation or error process.
 
 An MA(q) process can be written:
 
-\[
+$$
 \boxed{
-X_t
-=
+X_t=
 \mu
 +
 \epsilon_t
@@ -1135,7 +1126,7 @@ X_t
 +\cdots+
 \theta_q\epsilon_{t-q}.
 }
-\]
+$$
 
 An MA process depends on current and previous random shocks.
 
@@ -1152,16 +1143,15 @@ An ARMA(p,q) process combines:
 
 A simplified form is:
 
-\[
-X_t
-=
+$$
+X_t=
 c+
 \sum_{i=1}^{p}\phi_iX_{t-i}
 +
 \epsilon_t
 +
 \sum_{j=1}^{q}\theta_j\epsilon_{t-j}.
-\]
+$$
 
 ARMA models are useful for time-series forecasting when stationarity is reasonable.
 
@@ -1226,9 +1216,9 @@ This is an educational simulation. Formal birth-death models specify explicit tr
 
 Let:
 
-\[
+$$
 Q(t)
-\]
+$$
 
 be the number of customers in a queue.
 
@@ -1239,18 +1229,17 @@ The queue length changes because of:
 
 A simple representation is:
 
-\[
+$$
 \boxed{
-Q(t)
-=
+Q(t)=
 Q(0)+A(t)-D(t)
 }
-\]
+$$
 
 where:
 
-- \(A(t)\) = cumulative arrivals;
-- \(D(t)\) = cumulative departures.
+- $(A(t))$ = cumulative arrivals;
+- $(D(t))$ = cumulative departures.
 
 This is an example of how queueing systems can be modeled as stochastic processes.
 
@@ -1262,9 +1251,9 @@ Network traffic is inherently variable.
 
 A process may represent:
 
-\[
+$$
 X_t=\text{number of packets during interval }t.
-\]
+$$
 
 Possible models include:
 
@@ -1298,9 +1287,9 @@ Examples:
 
 A sequence can be represented as:
 
-\[
+$$
 X_1,X_2,\ldots,X_T.
-\]
+$$
 
 The dependence between observations is often essential.
 
@@ -1318,20 +1307,20 @@ Stochastic-process ideas therefore appear in:
 
 In a Hidden Markov Model (HMM):
 
-- the system has hidden states \(Z_t\);
-- observations \(X_t\) are generated from those states.
+- the system has hidden states $(Z_t)$;
+- observations $(X_t)$ are generated from those states.
 
 The structure is:
 
-\[
+$$
 Z_1\rightarrow Z_2\rightarrow Z_3\rightarrow\cdots
-\]
+$$
 
 with observations:
 
-\[
+$$
 X_1,X_2,X_3,\ldots
-\]
+$$
 
 conditioned on the hidden states.
 
@@ -1350,21 +1339,21 @@ A general state-space model has:
 
 ### State equation
 
-\[
+$$
 \boxed{
 X_t=f(X_{t-1},U_t)
 }
-\]
+$$
 
 ### Observation equation
 
-\[
+$$
 \boxed{
 Y_t=g(X_t,V_t)
 }
-\]
+$$
 
-where \(U_t\) and \(V_t\) are random noise terms.
+where $(U_t)$ and $(V_t)$ are random noise terms.
 
 This separates:
 
@@ -1381,15 +1370,15 @@ The Kalman filter is a classic algorithm for estimating a hidden state from nois
 
 A simplified model is:
 
-\[
+$$
 X_t=AX_{t-1}+W_t
-\]
+$$
 
 and:
 
-\[
+$$
 Y_t=CX_t+V_t.
-\]
+$$
 
 The algorithm alternates between:
 
@@ -1412,17 +1401,17 @@ In reinforcement learning, an agent interacts with an environment.
 
 A simplified transition model is:
 
-\[
+$$
 \boxed{
 P(S_{t+1},R_{t+1}\mid S_t,A_t)
 }
-\]
+$$
 
 where:
 
-- \(S_t\) = state;
-- \(A_t\) = action;
-- \(R_t\) = reward.
+- $(S_t)$ = state;
+- $(A_t)$ = action;
+- $(R_t)$ = reward.
 
 This creates a stochastic sequence of states and rewards.
 
@@ -1434,23 +1423,23 @@ Markov Decision Processes provide a formal framework for this setting.
 
 An MDP is commonly defined by:
 
-\[
+$$
 (S,A,P,R,\gamma)
-\]
+$$
 
 where:
 
-- \(S\) = state space;
-- \(A\) = action space;
-- \(P\) = transition probabilities;
-- \(R\) = reward function;
-- \(\gamma\) = discount factor.
+- $(S)$ = state space;
+- $(A)$ = action space;
+- $(P)$ = transition probabilities;
+- $(R)$ = reward function;
+- $(\gamma)$ = discount factor.
 
 The transition model is:
 
-\[
+$$
 P(s'\mid s,a).
-\]
+$$
 
 The agent chooses actions to maximize expected cumulative reward.
 
@@ -1460,9 +1449,9 @@ The agent chooses actions to maximize expected cumulative reward.
 
 Time-series analytics often begins with:
 
-\[
+$$
 \{X_t\}_{t=1}^T.
-\]
+$$
 
 Typical questions include:
 
@@ -1514,28 +1503,28 @@ Simulation is widely used in:
 
 Suppose we want:
 
-\[
+$$
 E[g(X)].
-\]
+$$
 
 Generate independent samples:
 
-\[
+$$
 X_1,\ldots,X_N.
-\]
+$$
 
 Then:
 
-\[
+$$
 \boxed{
 E[g(X)]
 \approx
 \frac1N
 \sum_{i=1}^{N}g(X_i).
 }
-\]
+$$
 
-The estimate generally becomes more stable as \(N\) increases.
+The estimate generally becomes more stable as $(N)$ increases.
 
 ![Simulation convergence](figures/09_simulation_convergence.png)
 
@@ -1545,21 +1534,21 @@ The estimate generally becomes more stable as \(N\) increases.
 
 Suppose:
 
-\[
+$$
 X\sim N(0,1)
-\]
+$$
 
 and we want:
 
-\[
+$$
 E[X^2].
-\]
+$$
 
 Theoretical result:
 
-\[
+$$
 E[X^2]=1.
-\]
+$$
 
 Simulation:
 
@@ -1638,31 +1627,30 @@ For cryptographic applications, use appropriate cryptographic randomness rather 
 
 # 55. Expectations of Stochastic Processes
 
-For a stochastic process \(X_t\), the mean function is:
+For a stochastic process $(X_t)$, the mean function is:
 
-\[
+$$
 \boxed{
 m_X(t)=E[X_t].
 }
-\]
+$$
 
 The variance function is:
 
-\[
+$$
 \boxed{
-v_X(t)=\operatorname{Var}(X_t).
+v_X(t)=\text{Var}(X_t).
 }
-\]
+$$
 
 The covariance function is:
 
-\[
+$$
 \boxed{
-C_X(s,t)
-=
-\operatorname{Cov}(X_s,X_t).
+C_X(s,t)=
+\text{Cov}(X_s,X_t).
 }
-\]
+$$
 
 These functions describe important statistical properties of a process.
 
@@ -1674,28 +1662,27 @@ For a stationary process, covariance depends only on the lag.
 
 Let:
 
-\[
+$$
 h=t-s.
-\]
+$$
 
 Then:
 
-\[
+$$
 \boxed{
-\gamma(h)
-=
-\operatorname{Cov}(X_t,X_{t-h}).
+\gamma(h)=
+\text{Cov}(X_t,X_{t-h}).
 }
-\]
+$$
 
 The autocorrelation function is:
 
-\[
+$$
 \boxed{
 \rho(h)=
 \frac{\gamma(h)}{\gamma(0)}.
 }
-\]
+$$
 
 These quantities are fundamental in time-series analysis.
 
@@ -1707,25 +1694,25 @@ Two random variables can be independent.
 
 Then:
 
-\[
+$$
 P(X,Y)=P(X)P(Y).
-\]
+$$
 
 Independence generally implies zero covariance when moments exist:
 
-\[
-\operatorname{Cov}(X,Y)=0.
-\]
+$$
+\text{Cov}(X,Y)=0.
+$$
 
 However:
 
-\[
+$$
 \boxed{
-\operatorname{Cov}(X,Y)=0
+\text{Cov}(X,Y)=0
 \not\Rightarrow
 X,Y\text{ are independent}
 }
-\]
+$$
 
 in general.
 
@@ -1739,27 +1726,27 @@ These two processes are often confused.
 
 ### White noise
 
-\[
+$$
 X_t=\epsilon_t
-\]
+$$
 
 has little or no serial dependence.
 
 ### Random walk
 
-\[
+$$
 X_t=X_{t-1}+\epsilon_t.
-\]
+$$
 
 The random walk accumulates shocks and is typically non-stationary.
 
 Thus:
 
-\[
+$$
 \boxed{
 \text{White noise} \ne \text{Random walk}
 }
-\]
+$$
 
 ---
 
@@ -1767,27 +1754,27 @@ Thus:
 
 For:
 
-\[
+$$
 X_t=X_{t-1}+\epsilon_t,
-\]
+$$
 
 with:
 
-\[
+$$
 X_0=0
-\]
+$$
 
 and independent zero-mean noise:
 
-\[
+$$
 E[X_t]=0
-\]
+$$
 
 but:
 
-\[
-\operatorname{Var}(X_t)=t\sigma^2.
-\]
+$$
+\text{Var}(X_t)=t\sigma^2.
+$$
 
 The variance changes with time.
 
@@ -1799,21 +1786,20 @@ Therefore the standard random walk is not weakly stationary.
 
 For a random walk:
 
-\[
+$$
 X_t=X_{t-1}+\epsilon_t,
-\]
+$$
 
 the first difference is:
 
-\[
+$$
 \boxed{
-\Delta X_t
-=
+\Delta X_t=
 X_t-X_{t-1}
 =
 \epsilon_t.
 }
-\]
+$$
 
 If the noise is stationary, differencing can transform a non-stationary process into a stationary series.
 
@@ -1825,31 +1811,31 @@ This is one reason differencing is important in time-series analysis.
 
 Suppose we observe:
 
-\[
+$$
 X_1,\ldots,X_t.
-\]
+$$
 
 A forecast can be written:
 
-\[
+$$
 \boxed{
 E[X_{t+h}\mid X_1,\ldots,X_t].
 }
-\]
+$$
 
 This is a conditional expectation.
 
 A probabilistic forecast can provide not only:
 
-\[
+$$
 \hat X_{t+h}
-\]
+$$
 
 but also an uncertainty distribution:
 
-\[
+$$
 P(X_{t+h}\mid X_1,\ldots,X_t).
-\]
+$$
 
 ---
 
@@ -1857,15 +1843,15 @@ P(X_{t+h}\mid X_1,\ldots,X_t).
 
 A point forecast:
 
-\[
+$$
 \hat X_{t+1}=100.
-\]
+$$
 
 A probabilistic forecast may say:
 
-\[
+$$
 X_{t+1}\sim N(100,10^2).
-\]
+$$
 
 The second statement communicates uncertainty.
 
@@ -1877,31 +1863,31 @@ This is especially important when decisions depend on risk.
 
 Let:
 
-\[
+$$
 T=\text{time to system failure}.
-\]
+$$
 
 The survival probability is:
 
-\[
+$$
 \boxed{
 S(t)=P(T>t).
 }
-\]
+$$
 
 The failure distribution is:
 
-\[
+$$
 F(t)=P(T\le t).
-\]
+$$
 
 The two satisfy:
 
-\[
+$$
 \boxed{
 S(t)=1-F(t).
 }
-\]
+$$
 
 Stochastic reliability models are used for:
 
@@ -1919,17 +1905,17 @@ The hazard rate describes the instantaneous failure rate conditional on survival
 
 For a continuous lifetime variable:
 
-\[
+$$
 \boxed{
 h(t)=
 \frac{f(t)}{S(t)}
 }
-\]
+$$
 
 where:
 
-- \(f(t)\) = density;
-- \(S(t)\) = survival function.
+- $(f(t))$ = density;
+- $(S(t))$ = survival function.
 
 Hazard models are useful for reliability and survival analysis.
 
@@ -1939,21 +1925,21 @@ Hazard models are useful for reliability and survival analysis.
 
 A queue can be modeled through a process:
 
-\[
+$$
 Q(t).
-\]
+$$
 
 Possible state changes:
 
-\[
+$$
 Q\rightarrow Q+1
-\]
+$$
 
 when an arrival occurs, and:
 
-\[
+$$
 Q\rightarrow Q-1
-\]
+$$
 
 when a service completion occurs.
 
@@ -1971,25 +1957,24 @@ This connects stochastic processes to:
 
 Let:
 
-\[
+$$
 I_t=\text{inventory level at time }t.
-\]
+$$
 
 Demand can be modeled as a random variable:
 
-\[
+$$
 D_t.
-\]
+$$
 
 Then:
 
-\[
+$$
 \boxed{
-I_{t+1}
-=
+I_{t+1}=
 I_t+\text{replenishment}_t-D_t.
 }
-\]
+$$
 
 Uncertain demand makes inventory a stochastic process.
 
@@ -2005,26 +1990,20 @@ This supports:
 
 Let:
 
-\[
+$$
 X_t=\text{population at time }t.
-\]
+$$
 
 A stochastic population model may be:
 
-\[
-X_{t+1}
-=
-X_t
-+
-B_t
--
-D_t
-\]
+$$
+X_{t+1}=X_t+B_t-D_t
+$$
 
 where:
 
-- \(B_t\) = births;
-- \(D_t\) = deaths.
+- $(B_t)$ = births;
+- $(D_t)$ = deaths.
 
 Both can be random.
 
@@ -2038,15 +2017,14 @@ A stochastic differential equation (SDE) includes random noise.
 
 General form:
 
-\[
+$$
 \boxed{
-dX_t
-=
+dX_t=
 \mu(X_t,t)dt
 +
 \sigma(X_t,t)dB_t.
 }
-\]
+$$
 
 The first term describes systematic change.
 
@@ -2066,29 +2044,28 @@ SDEs are used in:
 
 A simple numerical method for:
 
-\[
+$$
 dX_t=\mu(X_t,t)dt+\sigma(X_t,t)dB_t
-\]
+$$
 
 is:
 
-\[
+$$
 \boxed{
-X_{t+\Delta t}
-=
+X_{t+\Delta t}=
 X_t
 +
 \mu(X_t,t)\Delta t
 +
 \sigma(X_t,t)\sqrt{\Delta t}Z_t.
 }
-\]
+$$
 
 where:
 
-\[
+$$
 Z_t\sim N(0,1).
-\]
+$$
 
 This is the stochastic analogue of the Euler numerical method.
 
@@ -2314,9 +2291,9 @@ This illustrates the distinction between a process and a realization.
 
 Suppose we want:
 
-\[
+$$
 P(X_T>10).
-\]
+$$
 
 Simulate many paths and count how many satisfy the condition.
 
@@ -2355,19 +2332,19 @@ print("Estimated probability:", probability)
 
 If:
 
-\[
+$$
 \hat p
-\]
+$$
 
-is estimated from \(N\) independent Bernoulli simulation outcomes, a rough standard error is:
+is estimated from $(N)$ independent Bernoulli simulation outcomes, a rough standard error is:
 
-\[
+$$
 \boxed{
 SE(\hat p)
 \approx
 \sqrt{\frac{\hat p(1-\hat p)}{N}}.
 }
-\]
+$$
 
 Thus more simulations generally reduce Monte Carlo error.
 
@@ -2401,9 +2378,9 @@ This makes stochastic modeling highly relevant to modern data engineering and an
 
 An IoT device can produce:
 
-\[
+$$
 X_t=\text{sensor reading at time }t.
-\]
+$$
 
 The process may contain:
 
@@ -2425,17 +2402,17 @@ Models can be used for:
 
 Suppose:
 
-\[
+$$
 X_t
-\]
+$$
 
 represents vibration measurements from a machine.
 
 A stochastic model can estimate:
 
-\[
+$$
 P(\text{failure within }30\text{ days}\mid X_{1:t}).
-\]
+$$
 
 This supports proactive maintenance.
 
@@ -2461,19 +2438,19 @@ A time-series anomaly is an observation that is unlikely under the assumed proce
 
 For example:
 
-\[
+$$
 P(X_t\mid X_{t-1},X_{t-2},\ldots)
-\]
+$$
 
 may be unusually small.
 
 A likelihood-based anomaly score can be:
 
-\[
+$$
 \boxed{
 A_t=-\log P(X_t\mid\text{history}).
 }
-\]
+$$
 
 Large values indicate surprising observations.
 
@@ -2485,15 +2462,15 @@ Forecasting a stochastic process requires acknowledging uncertainty.
 
 Instead of:
 
-\[
+$$
 X_{t+1}=100,
-\]
+$$
 
 we may estimate:
 
-\[
+$$
 X_{t+1}\sim P(\cdot\mid X_{1:t}).
-\]
+$$
 
 This allows:
 
@@ -2512,11 +2489,11 @@ A useful stochastic-process question is:
 
 For example:
 
-\[
+$$
 P\left(
 \max_{0\le t\le T}X_t\ge a
 \right).
-\]
+$$
 
 Applications include:
 
@@ -2534,27 +2511,27 @@ These problems can often be solved analytically for simple models or approximate
 
 A stochastic model can produce:
 
-\[
+$$
 P(\text{event}\mid\text{data}).
-\]
+$$
 
 A decision then combines probability with consequences.
 
-For action \(a\):
+For action $(a)$:
 
-\[
+$$
 \boxed{
 EU(a)
 =
 E[U(a,S)\mid\text{data}]
 }
-\]
+$$
 
-where \(S\) is the uncertain state.
+where $(S)$ is the uncertain state.
 
 Thus:
 
-\[
+$$
 \boxed{
 \text{Stochastic model}
 \rightarrow
@@ -2564,7 +2541,7 @@ Thus:
 \rightarrow
 \text{Decision}
 }
-\]
+$$
 
 ---
 
@@ -2665,14 +2642,14 @@ Highly Active
 
 Define a transition matrix:
 
-\[
+$$
 P=
 \begin{bmatrix}
 0.7&0.3&0\\
 0.2&0.5&0.3\\
 0.1&0.4&0.5
 \end{bmatrix}.
-\]
+$$
 
 Simulate user states over 100 days.
 
@@ -2713,15 +2690,15 @@ Simulate 10,000 random walks.
 
 Estimate:
 
-\[
+$$
 P(X_{100}>20).
-\]
+$$
 
 Then repeat for:
 
-\[
+$$
 n=100,\quad500,\quad1000.
-\]
+$$
 
 Compare how the distribution changes.
 
@@ -2759,106 +2736,104 @@ This helps build intuition for:
 
 ### Stochastic process
 
-\[
+$$
 \boxed{
 \{X_t:t\in T\}
 }
-\]
+$$
 
 ### Markov property
 
-\[
+$$
 \boxed{
-P(X_{t+1}\mid X_t,X_{t-1},\ldots)
-=
+P(X_{t+1}\mid X_t,X_{t-1},\ldots)=
 P(X_{t+1}\mid X_t)
 }
-\]
+$$
 
 ### Random walk
 
-\[
+$$
 \boxed{
 X_{t+1}=X_t+\epsilon_{t+1}
 }
-\]
+$$
 
 ### Poisson process
 
-\[
+$$
 \boxed{
 N(t)\sim\operatorname{Poisson}(\lambda t)
 }
-\]
+$$
 
 ### Poisson probability
 
-\[
+$$
 \boxed{
-P(N(t)=k)
-=
+P(N(t)=k)=
 e^{-\lambda t}
 \frac{(\lambda t)^k}{k!}
 }
-\]
+$$
 
 ### Brownian increment
 
-\[
+$$
 \boxed{
 B(t)-B(s)\sim N(0,t-s)
 }
-\]
+$$
 
 ### Diffusion
 
-\[
+$$
 \boxed{
 dX_t=\mu(X_t,t)dt+\sigma(X_t,t)dB_t
 }
-\]
+$$
 
 ### AR(1)
 
-\[
+$$
 \boxed{
 X_t=c+\phi X_{t-1}+\epsilon_t
 }
-\]
+$$
 
 ### Autocorrelation
 
-\[
+$$
 \boxed{
 \rho(k)=\operatorname{Corr}(X_t,X_{t-k})
 }
-\]
+$$
 
 ### Monte Carlo expectation
 
-\[
+$$
 \boxed{
 E[g(X)]
 \approx
 \frac1N\sum_{i=1}^Ng(X_i)
 }
-\]
+$$
 
 ### Survival function
 
-\[
+$$
 \boxed{
 S(t)=P(T>t)
 }
-\]
+$$
 
 ### Hazard rate
 
-\[
+$$
 \boxed{
 h(t)=\frac{f(t)}{S(t)}
 }
-\]
+$$
 
 ---
 
@@ -2902,9 +2877,9 @@ Simulate 10 random-walk paths and plot them together.
 
 Estimate:
 
-\[
+$$
 P(X_{100}>20).
-\]
+$$
 
 ### Exercise 3 — Markov Chain
 
@@ -2926,9 +2901,9 @@ Simulate a mean-reverting process for several parameter values.
 
 Compare:
 
-\[
+$$
 \phi=0.2,\quad0.8,\quad0.99.
-\]
+$$
 
 Study their autocorrelation.
 
@@ -2952,7 +2927,7 @@ A stochastic process provides a mathematical language for systems that evolve un
 
 The central idea is:
 
-\[
+$$
 \boxed{
 \text{State at time }t
 +
@@ -2960,11 +2935,11 @@ The central idea is:
 \rightarrow
 \text{State at future time}
 }
-\]
+$$
 
 Different assumptions lead to different models:
 
-\[
+$$
 \boxed{
 \begin{array}{c}
 \text{Random Walk}\\
@@ -2977,7 +2952,7 @@ Different assumptions lead to different models:
 \text{Diffusion Models}
 \end{array}
 }
-\]
+$$
 
 These models form a bridge between probability theory and practical applications.
 
@@ -3002,7 +2977,7 @@ The most important practical lesson is:
 
 Good stochastic modeling combines:
 
-\[
+$$
 \boxed{
 \text{Probability}
 +
@@ -3014,6 +2989,6 @@ Good stochastic modeling combines:
 +
 \text{Validation}
 }
-\]
+$$
 
 
