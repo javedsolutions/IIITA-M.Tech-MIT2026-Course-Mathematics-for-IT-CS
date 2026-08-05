@@ -32,15 +32,15 @@ A **random variable** is a numerical function that assigns a number to each outc
 
 The notation is usually:
 
-\[
+$$
 X:\Omega\rightarrow\mathbb{R}
-\]
+$$
 
 where:
 
-- \(\Omega\) is the sample space;
-- \(X\) is the random variable;
-- \(X(\omega)\) is the numerical value assigned to outcome \(\omega\).
+- $(\Omega)$ is the sample space;
+- $(X)$ is the random variable;
+- $(X(\omega))$ is the numerical value assigned to outcome $(\omega)$.
 
 A random variable does not necessarily mean that the variable itself is "random" in the everyday sense. Rather, its value is determined by the outcome of a random experiment.
 
@@ -50,18 +50,18 @@ Suppose a coin is tossed three times.
 
 The sample space is:
 
-\[
+$$
 \Omega =
 \{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\}.
-\]
+$$
 
-Define \(X\) as:
+Define $(X)$ as:
 
 > the number of heads obtained.
 
 Then:
 
-| Outcome | \(X\) |
+| Outcome | $(X)$ |
 |---|---:|
 | HHH | 3 |
 | HHT | 2 |
@@ -72,11 +72,11 @@ Then:
 | TTH | 1 |
 | TTT | 0 |
 
-Therefore, \(X\) can take values:
+Therefore, $(X)$ can take values:
 
-\[
+$$
 X\in\{0,1,2,3\}.
-\]
+$$
 
 ---
 
@@ -109,7 +109,7 @@ The distinction is important because probabilities are represented differently.
 
 # 4. Discrete random variables
 
-A random variable \(X\) is **discrete** if its possible values form a finite or countably infinite set.
+A random variable $(X)$ is **discrete** if its possible values form a finite or countably infinite set.
 
 Examples include:
 
@@ -125,49 +125,49 @@ A discrete random variable can be represented by a **probability mass function**
 
 # 5. Probability Mass Function (PMF)
 
-For a discrete random variable \(X\), its probability mass function is:
+For a discrete random variable $(X)$, its probability mass function is:
 
-\[
+$$
 \boxed{p_X(x)=P(X=x)}
-\]
+$$
 
-The PMF gives the probability that \(X\) takes the specific value \(x\).
+The PMF gives the probability that $(X)$ takes the specific value $(x)$.
 
 A valid PMF must satisfy:
 
-\[
+$$
 p_X(x)\geq 0
-\]
+$$
 
-for every \(x\), and:
+for every $(x)$, and:
 
-\[
+$$
 \boxed{\sum_x p_X(x)=1}.
-\]
+$$
 
 ---
 
 # 6. Example: fair die
 
-Let \(X\) be the number obtained when a fair six-sided die is rolled.
+Let $(X)$ be the number obtained when a fair six-sided die is rolled.
 
 Then:
 
-\[
+$$
 X\in\{1,2,3,4,5,6\}
-\]
+$$
 
 and:
 
-\[
+$$
 P(X=x)=\frac16.
-\]
+$$
 
 ![PMF of a fair die](figures/03_fair_die_pmf.png)
 
 The PMF is:
 
-| \(x\) | \(P(X=x)\) |
+| $(x)$ | $(P(X=x))$ |
 |---:|---:|
 | 1 | \(1/6\) |
 | 2 | \(1/6\) |
@@ -178,9 +178,9 @@ The PMF is:
 
 For example:
 
-\[
+$$
 P(X=4)=\frac16.
-\]
+$$
 
 ---
 
@@ -188,39 +188,37 @@ P(X=4)=\frac16.
 
 Suppose:
 
-\[
+$$
 P(X=0)=0.1,
-\]
+$$
 
-\[
+$$
 P(X=1)=0.3,
-\]
+$$
 
-\[
+$$
 P(X=2)=0.4,
-\]
+$$
 
-\[
+$$
 P(X=3)=0.2.
-\]
+$$
 
 Then:
 
-\[
-P(X\leq2)
-=
-P(X=0)+P(X=1)+P(X=2)
-\]
+$$
+P(X\leq2) = P(X=0)+P(X=1)+P(X=2)
+$$
 
-\[
+$$
 =0.1+0.3+0.4=0.8.
-\]
+$$
 
 Similarly:
 
-\[
+$$
 P(X>1)=P(X=2)+P(X=3)=0.6.
-\]
+$$
 
 ---
 
@@ -254,23 +252,21 @@ Sum of probabilities: 1.0
 
 The expected value, or mean, of a discrete random variable is:
 
-\[
+$$
 \boxed{
 E[X]=\sum_x xP(X=x)
 }
-\]
+$$
 
 For the previous example:
 
-\[
-E[X]
-=
-0(0.1)+1(0.3)+2(0.4)+3(0.2)
-\]
+$$
+E[X] = 0(0.1)+1(0.3)+2(0.4)+3(0.2)
+$$
 
-\[
+$$
 =1.7.
-\]
+$$
 
 The expected value does not have to be one of the values that \(X\) can actually take.
 
@@ -303,39 +299,37 @@ Variance measures the spread of a random variable around its mean.
 
 The definition is:
 
-\[
+$$
 \boxed{
 Var(X)=E[(X-E[X])^2]
 }
-\]
+$$
 
 For a discrete random variable:
 
-\[
-Var(X)
-=
-\sum_x (x-\mu)^2P(X=x),
-\]
+$$
+Var(X) = \sum_x (x-\mu)^2P(X=x),
+$$
 
 where:
 
-\[
+$$
 \mu=E[X].
-\]
+$$
 
 An equivalent computational formula is:
 
-\[
+$$
 \boxed{
 Var(X)=E[X^2]-(E[X])^2
 }
-\]
+$$
 
 where:
 
-\[
+$$
 E[X^2]=\sum_xx^2P(X=x).
-\]
+$$
 
 ---
 
@@ -376,9 +370,9 @@ Examples include:
 
 For a continuous random variable, the probability of one exact point is:
 
-\[
+$$
 \boxed{P(X=x)=0}.
-\]
+$$
 
 This does **not** mean that continuous random variables have no probabilities.
 
@@ -388,31 +382,27 @@ Instead, probabilities are assigned to **intervals**.
 
 # 14. Probability Density Function (PDF)
 
-A continuous random variable \(X\) can be described by a probability density function \(f_X(x)\).
+A continuous random variable $(X)$ can be described by a probability density function $(f_X(x))$.
 
 The PDF must satisfy:
 
-\[
+$$
 f_X(x)\geq0
-\]
+$$
 
 and:
 
-\[
+$$
 \boxed{
 \int_{-\infty}^{\infty}f_X(x)\,dx=1
 }
-\]
+$$
 
-The probability that \(X\) falls between \(a\) and \(b\) is:
+The probability that $(X)$ falls between $(a)$ and $(b)$ is:
 
-\[
-\boxed{
-P(a\leq X\leq b)
-=
-\int_a^b f_X(x)\,dx
-}
-\]
+$$
+\boxed{P(a\leq X\leq b) = \int_a^b f_X(x)\,dx }
+$$
 
 Thus, **probability is area under the PDF**.
 
@@ -424,31 +414,31 @@ Thus, **probability is area under the PDF**.
 
 For a discrete random variable:
 
-\[
+$$
 P(X=x)
-\]
+$$
 
 can be positive.
 
 For a continuous random variable:
 
-\[
+$$
 P(X=x)=0.
-\]
+$$
 
-For example, if \(X\) represents the height of a randomly selected person, the probability of exactly:
+For example, if $(X)$ represents the height of a randomly selected person, the probability of exactly:
 
-\[
+$$
 X=170.000000\ldots\text{ cm}
-\]
+$$
 
 is modeled as zero.
 
 Instead, we calculate probabilities such as:
 
-\[
+$$
 P(169\leq X\leq171).
-\]
+$$
 
 ---
 
@@ -456,41 +446,37 @@ P(169\leq X\leq171).
 
 Suppose:
 
-\[
+$$
 X\sim Uniform(0,10).
-\]
+$$
 
 Its PDF is:
 
-\[
+$$
 f_X(x)=
 \begin{cases}
 \frac1{10},&0\leq x\leq10,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 What is:
 
-\[
+$$
 P(2\leq X\leq5)?
-\]
+$$
 
 The interval length is \(5-2=3\), so:
 
-\[
-P(2\leq X\leq5)
-=
-\int_2^5\frac1{10}\,dx
-=
-\frac3{10}.
-\]
+$$
+P(2\leq X\leq5) = \int_2^5\frac1{10}\,dx=\frac3{10}.
+$$
 
 Therefore:
 
-\[
+$$
 \boxed{P(2\leq X\leq5)=0.3}
-\]
+$$
 
 ---
 
@@ -526,30 +512,27 @@ The normal distribution is one of the most important continuous probability dist
 
 It is described by two parameters:
 
-- mean \(\mu\);
-- standard deviation \(\sigma>0\).
+- mean $(\mu)$;
+- standard deviation $(\sigma>0)$.
 
 We write:
 
-\[
+$$
 X\sim N(\mu,\sigma^2).
-\]
+$$
 
 Its PDF is:
 
-\[
+$$
 \boxed{
-f(x)=
-\frac{1}{\sigma\sqrt{2\pi}}
-e^{-\frac12\left(\frac{x-\mu}{\sigma}\right)^2}
-}
-\]
+f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac12\left(\frac{x-\mu}{\sigma}\right)^2}}
+$$
 
 The standard normal distribution has:
 
-\[
+$$
 \mu=0,\qquad\sigma=1.
-\]
+$$
 
 ![Normal PDF](figures/05_normal_pdf_probability_area.png)
 
@@ -561,17 +544,17 @@ For a continuous random variable, the probability of an interval is the area und
 
 For the standard normal distribution:
 
-\[
+$$
 P(-1\leq X\leq1)\approx0.6827.
-\]
+$$
 
 ![Normal PDF with probability area](figures/05_normal_pdf_probability_area.png)
 
 The total area under the normal curve is:
 
-\[
+$$
 1.
-\]
+$$
 
 ---
 
@@ -611,41 +594,41 @@ print(norm.ppf(0.95))
 
 # 21. Cumulative Distribution Function (CDF)
 
-The cumulative distribution function of a random variable \(X\) is:
+The cumulative distribution function of a random variable $(X)$ is:
 
-\[
+$$
 \boxed{
 F_X(x)=P(X\leq x)
 }
-\]
+$$
 
 The CDF works for **both discrete and continuous random variables**.
 
 It has the properties:
 
-\[
+$$
 0\leq F_X(x)\leq1
-\]
+$$
 
 and:
 
-\[
+$$
 F_X(x)
-\]
+$$
 
 is non-decreasing.
 
 Also:
 
-\[
+$$
 \lim_{x\to-\infty}F_X(x)=0
-\]
+$$
 
 and:
 
-\[
+$$
 \lim_{x\to\infty}F_X(x)=1.
-\]
+$$
 
 ---
 
@@ -653,23 +636,23 @@ and:
 
 For a discrete random variable:
 
-\[
+$$
 F_X(x)=\sum_{t\leq x}P(X=t).
-\]
+$$
 
 For a fair die:
 
-\[
+$$
 F_X(1)=\frac16,
-\]
+$$
 
-\[
+$$
 F_X(2)=\frac26,
-\]
+$$
 
-\[
+$$
 F_X(3)=\frac36,
-\]
+$$
 
 and so on.
 
@@ -706,29 +689,29 @@ plt.show()
 
 For a continuous random variable:
 
-\[
+$$
 \boxed{
 F_X(x)=\int_{-\infty}^{x}f_X(t)\,dt
 }
-\]
+$$
 
 Thus the CDF is the accumulated area under the PDF.
 
 For a continuous distribution, if the PDF is differentiable:
 
-\[
+$$
 \boxed{
 f_X(x)=F_X'(x)
 }
-\]
+$$
 
 and:
 
-\[
+$$
 \boxed{
 F_X(x)=\int_{-\infty}^{x}f_X(t)\,dt
 }
-\]
+$$
 
 ---
 
@@ -736,9 +719,9 @@ F_X(x)=\int_{-\infty}^{x}f_X(t)\,dt
 
 The standard normal CDF is:
 
-\[
+$$
 \Phi(x)=P(Z\leq x).
-\]
+$$
 
 It has an S-shaped curve.
 
@@ -746,9 +729,9 @@ It has an S-shaped curve.
 
 For example:
 
-\[
+$$
 \Phi(0)=0.5.
-\]
+$$
 
 This follows from symmetry: half of the normal distribution lies below its mean.
 
@@ -780,39 +763,37 @@ The CDF provides a very convenient way to calculate interval probabilities.
 
 For any random variable:
 
-\[
+$$
 \boxed{
 P(a<X\leq b)=F(b)-F(a)
 }
-\]
+$$
 
 For a continuous random variable:
 
-\[
+$$
 P(a\leq X\leq b)=F(b)-F(a)
-\]
+$$
 
 because:
 
-\[
+$$
 P(X=a)=P(X=b)=0.
-\]
+$$
 
 ### Example
 
 If:
 
-\[
+$$
 X\sim N(100,15^2),
-\]
+$$
 
 then:
 
-\[
-P(85\leq X\leq115)
-=
-F(115)-F(85).
-\]
+$$
+P(85\leq X\leq115) = F(115)-F(85).
+$$
 
 Python:
 
@@ -842,10 +823,10 @@ These three functions describe probability distributions in different ways.
 
 | Concept | Discrete | Continuous |
 |---|---|---|
-| PMF | \(P(X=x)\) | Not normally used |
-| PDF | Not normally used | \(f(x)\) |
-| CDF | \(P(X\leq x)\) | \(P(X\leq x)\) |
-| Point probability | Can be \(>0\) | Always 0 |
+| PMF | $(P(X=x))$ | Not normally used |
+| PDF | Not normally used | $(f(x))$ |
+| CDF | $(P(X\leq x))$ | $(P(X\leq x))$ |
+| Point probability | Can be $(>0)$ | Always 0 |
 | Interval probability | Sum of PMF values | Integral of PDF |
 | CDF calculation | Cumulative sum | Integral |
 
@@ -855,61 +836,61 @@ These three functions describe probability distributions in different ways.
 
 ## Discrete PMF
 
-\[
+$$
 \boxed{p(x)=P(X=x)}
-\]
+$$
 
 with:
 
-\[
+$$
 p(x)\geq0
-\]
+$$
 
 and:
 
-\[
+$$
 \sum_xp(x)=1.
-\]
+$$
 
 ## Continuous PDF
 
-\[
+$$
 \boxed{P(a\leq X\leq b)=\int_a^bf(x)\,dx}
-\]
+$$
 
 with:
 
-\[
+$$
 f(x)\geq0
-\]
+$$
 
 and:
 
-\[
+$$
 \int_{-\infty}^{\infty}f(x)\,dx=1.
-\]
+$$
 
 ## CDF
 
-\[
+$$
 \boxed{F(x)=P(X\leq x)}
-\]
+$$
 
 ## Discrete CDF
 
-\[
+$$
 \boxed{
 F(x)=\sum_{t\leq x}P(X=t)
 }
-\]
+$$
 
 ## Continuous CDF
 
-\[
+$$
 \boxed{
 F(x)=\int_{-\infty}^{x}f(t)\,dt
 }
-\]
+$$
 
 ---
 
@@ -919,19 +900,19 @@ F(x)=\int_{-\infty}^{x}f(t)\,dt
 
 For a discrete random variable:
 
-\[
+$$
 \boxed{
 E[X]=\sum_xxp(x)
 }
-\]
+$$
 
 For a continuous random variable:
 
-\[
+$$
 \boxed{
 E[X]=\int_{-\infty}^{\infty}xf(x)\,dx
 }
-\]
+$$
 
 The expected value represents the long-run average value in repeated experiments.
 
@@ -941,33 +922,33 @@ The expected value represents the long-run average value in repeated experiments
 
 Variance measures the spread:
 
-\[
+$$
 \boxed{
 Var(X)=E[(X-\mu)^2]
 }
-\]
+$$
 
 where:
 
-\[
+$$
 \mu=E[X].
-\]
+$$
 
 The equivalent formula is:
 
-\[
+$$
 \boxed{
 Var(X)=E[X^2]-[E(X)]^2
 }
-\]
+$$
 
 Standard deviation is:
 
-\[
+$$
 \boxed{
 \sigma=\sqrt{Var(X)}
 }
-\]
+$$
 
 ---
 
@@ -1037,9 +1018,9 @@ plt.show()
 
 Each empirical probability should be close to:
 
-\[
+$$
 \frac16\approx0.1667.
-\]
+$$
 
 ---
 
@@ -1183,9 +1164,9 @@ print("P(40 <= X <= 60) =", p)
 
 Suppose:
 
-\[
+$$
 X=\text{delivery time in minutes}.
-\]
+$$
 
 If delivery time is modeled as a continuous random variable:
 
@@ -1197,9 +1178,9 @@ If delivery time is modeled as a continuous random variable:
 
 For example:
 
-\[
+$$
 F(30)=P(X\leq30)
-\]
+$$
 
 means:
 
@@ -1213,53 +1194,53 @@ means:
 
 For a continuous random variable:
 
-\[
+$$
 f(x)
-\]
+$$
 
 is a density, not generally a probability.
 
 The probability comes from an area:
 
-\[
+$$
 P(a\leq X\leq b)=\int_a^bf(x)\,dx.
-\]
+$$
 
 ### Mistake 2: Assuming \(P(X=x)>0\) for a continuous variable
 
 For a continuous random variable:
 
-\[
+$$
 P(X=x)=0.
-\]
+$$
 
 ### Mistake 3: Forgetting that a PMF must sum to 1
 
-\[
+$$
 \sum_xP(X=x)=1.
-\]
+$$
 
 ### Mistake 4: Forgetting that a PDF must integrate to 1
 
-\[
+$$
 \int_{-\infty}^{\infty}f(x)\,dx=1.
-\]
+$$
 
 ### Mistake 5: Confusing PDF and CDF
 
 PDF:
 
-\[
+$$
 f(x)
-\]
+$$
 
 describes density.
 
 CDF:
 
-\[
+$$
 F(x)=P(X\leq x)
-\]
+$$
 
 describes accumulated probability.
 
@@ -1276,12 +1257,12 @@ The expected value can lie between possible values.
 | Random variable | Numerical mapping from outcomes | Represents random outcomes numerically |
 | Discrete RV | Countable possible values | Counts |
 | Continuous RV | Continuum of possible values | Measurements |
-| PMF | \(P(X=x)\) | Discrete probabilities |
-| PDF | \(f(x)\) | Continuous probability density |
-| CDF | \(P(X\leq x)\) | Cumulative probability |
-| Mean | \(E[X]\) | Center/long-run average |
-| Variance | \(Var(X)\) | Spread |
-| Standard deviation | \(\sqrt{Var(X)}\) | Spread in original units |
+| PMF | $(P(X=x))$ | Discrete probabilities |
+| PDF | $(f(x))$ | Continuous probability density |
+| CDF | $(P(X\leq x))$ | Cumulative probability |
+| Mean | $(E[X])$ | Center/long-run average |
+| Variance | $(Var(X))$ | Spread |
+| Standard deviation | $(\sqrt{Var(X)})$ | Spread in original units |
 
 ---
 
@@ -1293,7 +1274,7 @@ The expected value can lie between possible values.
 4. A PMF gives probabilities at individual discrete values.
 5. A PDF gives density, not point probability.
 6. Probability for a continuous interval is an area under the PDF.
-7. A CDF gives \(P(X\leq x)\).
+7. A CDF gives $(P(X\leq x))$.
 8. The CDF applies to both discrete and continuous distributions.
 9. Expected value describes the long-run average.
 10. Variance and standard deviation describe variability.
@@ -1310,15 +1291,15 @@ The expected value can lie between possible values.
 4. What is a PMF?
 5. State the two conditions that a valid PMF must satisfy.
 6. What is a PDF?
-7. Why is \(P(X=x)=0\) for a continuous random variable?
+7. Why is $(P(X=x)=0)$ for a continuous random variable?
 8. Explain why probability is represented by area under a PDF.
 9. Define the CDF.
 10. Explain the difference between PMF, PDF, and CDF.
 11. Construct the PMF for the number of heads obtained in three fair coin tosses.
 12. Calculate the expected value of a fair six-sided die.
 13. Calculate the variance of a fair six-sided die.
-14. For \(X\sim Uniform(0,10)\), calculate \(P(2\leq X\leq5)\).
-15. For \(X\sim N(0,1)\), calculate \(P(-1\leq X\leq1)\).
+14. For $(X\sim Uniform(0,10))$, calculate $(P(2\leq X\leq5))$.
+15. For $(X\sim N(0,1))$, calculate $(P(-1\leq X\leq1))$.
 16. Write Python code to plot a PMF.
 17. Write Python code to calculate a CDF from a PMF.
 18. Write Python code to plot a normal PDF.
@@ -1328,46 +1309,11 @@ The expected value can lie between possible values.
 22. Generate and plot an empirical CDF for simulated normal data.
 
 ---
-
-# 44. Figures included
-
-The `figures/` directory contains:
-
-1. `01_discrete_vs_continuous_discrete_pmf.png` — discrete random variable visualization.
-2. `02_continuous_pdf_area.png` — continuous density and probability as area.
-3. `03_fair_die_pmf.png` — PMF of a fair die.
-4. `04_discrete_cdf_step_function.png` — discrete CDF as a step function.
-5. `05_normal_pdf_probability_area.png` — normal PDF and interval probability.
-6. `06_normal_cdf.png` — standard normal CDF.
-7. `07_pmf_pdf_cdf_comparison.png` — conceptual comparison of PMF, PDF, and CDF.
-8. `08_histogram_and_pdf.png` — simulated histogram compared with theoretical PDF.
-
-Keep the `figures/` folder beside this Markdown file so GitHub can render all images correctly.
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
 ---
-
-# 45. Suggested GitHub repository structure
-
-```text
-random-variables-probability-distributions/
-│
-├── random_variables_probability_distributions.md
-│
-└── figures/
-    ├── 01_discrete_vs_continuous_discrete_pmf.png
-    ├── 02_continuous_pdf_area.png
-    ├── 03_fair_die_pmf.png
-    ├── 04_discrete_cdf_step_function.png
-    ├── 05_normal_pdf_probability_area.png
-    ├── 06_normal_cdf.png
-    ├── 07_pmf_pdf_cdf_comparison.png
-    └── 08_histogram_and_pdf.png
-```
-
-The Markdown references the figures using relative paths such as:
-
-```markdown
-![Normal PDF](figures/05_normal_pdf_probability_area.png)
-```
-
-Therefore, uploading the Markdown file and `figures/` folder together will make the diagrams render automatically on GitHub.
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
