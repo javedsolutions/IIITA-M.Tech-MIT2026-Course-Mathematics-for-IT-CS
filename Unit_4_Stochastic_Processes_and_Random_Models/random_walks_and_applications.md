@@ -415,7 +415,7 @@ Let $(U)$ be the number of $(+1)$ steps.
 Then:
 
 $$
-U\sim\operatorname{Binomial}\left(n,\frac12\right).
+U\sim\text{Binomial}\left(n,\frac12\right).
 $$
 
 The number of $(-1)$ steps is:
@@ -1485,7 +1485,7 @@ $$
 
 $$
 \boxed{
-\operatorname{Var}(S_n)=n
+\text{Var}(S_n)=n
 }
 $$
 
@@ -1493,7 +1493,7 @@ $$
 
 $$
 \boxed{
-\operatorname{SD}(S_n)=\sqrt n
+\text{SD}(S_n)=\sqrt n
 }
 $$
 
@@ -1561,7 +1561,7 @@ The probability of hitting a target depends on dimension, drift, boundaries, and
 2. What is a symmetric random walk?
 3. What is a biased random walk?
 4. Derive $(E[S_n])$ for a random walk with $(P(X_i=1)=p)$.
-5. Derive $(\operatorname{Var}(S_n))$.
+5. Derive $(\text{Var}(S_n))$.
 6. Why does the standard deviation of a symmetric random walk grow as $(\sqrt n)$?
 7. What is mean squared displacement?
 8. Explain the relationship between a random walk and the binomial distribution.
@@ -1616,7 +1616,7 @@ $$
 
 $$
 \boxed{
-\operatorname{Var}(S_n)=4np(1-p)
+\text{Var}(S_n)=4np(1-p)
 }
 $$
 
@@ -1625,7 +1625,7 @@ $$
 $$
 \boxed{
 E[S_n]=0,\qquad
-\operatorname{Var}(S_n)=n
+\text{Var}(S_n)=n
 }
 $$
 
@@ -1633,7 +1633,7 @@ $$
 
 $$
 \boxed{
-\operatorname{SD}(S_n)=\sqrt n
+\text{SD}(S_n)=\sqrt n
 }
 $$
 
