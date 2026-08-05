@@ -93,17 +93,17 @@ The arrival process describes when customers or jobs enter the system.
 
 The **arrival rate** is usually denoted by:
 
-\[
+$$
 \boxed{\lambda}
-\]
+$$
 
 and represents the average number of arrivals per unit time.
 
 For example:
 
-\[
+$$
 \lambda=10\text{ customers/hour}.
-\]
+$$
 
 ---
 
@@ -113,25 +113,25 @@ The service process describes how long it takes to serve a customer.
 
 The **service rate** is usually denoted by:
 
-\[
+$$
 \boxed{\mu}
-\]
+$$
 
 and represents the average service capacity of one server.
 
 For example:
 
-\[
+$$
 \mu=12\text{ customers/hour}.
-\]
+$$
 
 The corresponding average service time is:
 
-\[
+$$
 \boxed{
 E[S]=\frac1\mu.
 }
-\]
+$$
 
 ---
 
@@ -181,41 +181,41 @@ Common disciplines include:
 
 # 4. Arrival, Waiting, Service, and Departure
 
-Suppose a customer arrives at time \(A\), begins service at \(B\), and finishes at \(D\).
+Suppose a customer arrives at time $(A)$, begins service at $(B)$, and finishes at $(D)$.
 
 Then:
 
 ### Waiting time
 
-\[
+$$
 \boxed{
 W_q=B-A
 }
-\]
+$$
 
 ### Service time
 
-\[
+$$
 \boxed{
 S=D-B
 }
-\]
+$$
 
 ### Time in system
 
-\[
+$$
 \boxed{
 W=D-A
 }
-\]
+$$
 
 Therefore:
 
-\[
+$$
 \boxed{
 W=W_q+S.
 }
-\]
+$$
 
 ![Queueing timeline](figures/02_queueing_timeline.png)
 
@@ -227,27 +227,27 @@ These simple quantities are among the most important performance measures in que
 
 Let:
 
-\[
+$$
 L_q
-\]
+$$
 
 denote the average number of customers waiting in the queue.
 
 Let:
 
-\[
+$$
 L
-\]
+$$
 
 denote the average number of customers in the entire system, including those currently being served.
 
 Therefore:
 
-\[
+$$
 \boxed{
 L=L_q+\text{average number in service}.
 }
-\]
+$$
 
 For a single server, the average number in service is closely related to utilization.
 
@@ -257,34 +257,34 @@ For a single server, the average number in service is closely related to utiliza
 
 For a single server:
 
-\[
+$$
 \boxed{
 \rho=\frac{\lambda}{\mu}.
 }
-\]
+$$
 
-The quantity \(\rho\) is called **utilization**.
+The quantity $(\rho)$ is called **utilization**.
 
 Interpretation:
 
-- \(\rho=0.30\): server is lightly loaded;
-- \(\rho=0.70\): moderately loaded;
-- \(\rho=0.90\): heavily loaded;
-- \(\rho\to1\): system approaches saturation.
+- $(\rho=0.30)$: server is lightly loaded;
+- $(\rho=0.70)$: moderately loaded;
+- $(\rho=0.90)$: heavily loaded;
+- $(\rho\to1)$: system approaches saturation.
 
 For many basic stable single-server models:
 
-\[
+$$
 \boxed{
 \rho<1.
 }
-\]
+$$
 
 If:
 
-\[
+$$
 \rho\ge1,
-\]
+$$
 
 the long-run queue generally cannot remain stable under the simplest assumptions.
 
@@ -300,33 +300,33 @@ When utilization approaches one, there is little spare capacity to absorb fluctu
 
 For an M/M/1 queue:
 
-\[
+$$
 \boxed{
 W=\frac{1}{\mu-\lambda}
 }
-\]
+$$
 
 and:
 
-\[
+$$
 \boxed{
 W_q=\frac{\lambda}{\mu(\mu-\lambda)}.
 }
-\]
+$$
 
 Equivalently:
 
-\[
+$$
 \boxed{
 W=\frac{1}{\mu(1-\rho)}.
 }
-\]
+$$
 
 As:
 
-\[
+$$
 \rho\to1,
-\]
+$$
 
 the waiting time becomes very large.
 
@@ -344,25 +344,25 @@ One of the most useful results in queueing theory is **Little's Law**.
 
 Under suitable long-run stability conditions:
 
-\[
+$$
 \boxed{
 L=\lambda W.
 }
-\]
+$$
 
 where:
 
-- \(L\) = average number of customers in the system;
-- \(\lambda\) = average arrival rate;
-- \(W\) = average time spent in the system.
+- $(L)$ = average number of customers in the system;
+- $(\lambda)$ = average arrival rate;
+- $(W)$ = average time spent in the system.
 
 Similarly:
 
-\[
+$$
 \boxed{
 L_q=\lambda W_q.
 }
-\]
+$$
 
 Little's Law is remarkably general.
 
@@ -376,33 +376,33 @@ It does not require a particular distribution such as exponential arrivals or se
 
 Suppose:
 
-\[
+$$
 \lambda=20\text{ customers/hour}
-\]
+$$
 
 and the average time in the system is:
 
-\[
+$$
 W=0.25\text{ hour}.
-\]
+$$
 
 Then:
 
-\[
+$$
 L=\lambda W.
-\]
+$$
 
 Therefore:
 
-\[
+$$
 L=20(0.25)=5.
-\]
+$$
 
 So the average number of customers in the system is:
 
-\[
+$$
 \boxed{5}.
-\]
+$$
 
 ---
 
@@ -410,35 +410,35 @@ So the average number of customers in the system is:
 
 A widely used notation is **Kendall's notation**:
 
-\[
+$$
 \boxed{
 A/S/c
 }
-\]
+$$
 
 where:
 
-- \(A\) describes the arrival-time distribution;
-- \(S\) describes the service-time distribution;
-- \(c\) is the number of servers.
+- $(A)$ describes the arrival-time distribution;
+- $(S)$ describes the service-time distribution;
+- $(c)$ is the number of servers.
 
 Examples:
 
-\[
+$$
 M/M/1
-\]
+$$
 
-\[
+$$
 M/M/c
-\]
+$$
 
-\[
+$$
 M/G/1
-\]
+$$
 
-\[
+$$
 G/G/1
-\]
+$$
 
 The notation can be extended with additional parameters describing capacity and queue discipline.
 
@@ -446,18 +446,18 @@ The notation can be extended with additional parameters describing capacity and 
 
 # 11. Meaning of "M" in Queueing Models
 
-In Kendall notation, \(M\) traditionally means **Markovian**.
+In Kendall notation, $(M)$ traditionally means **Markovian**.
 
 In common queueing models:
 
-- \(M\) arrivals correspond to a Poisson arrival process;
-- \(M\) service corresponds to exponentially distributed service times.
+- $(M)$ arrivals correspond to a Poisson arrival process;
+- $(M)$ service corresponds to exponentially distributed service times.
 
 Thus:
 
-\[
+$$
 M/M/1
-\]
+$$
 
 means:
 
@@ -469,55 +469,54 @@ means:
 
 # 12. Poisson Arrivals
 
-If arrivals follow a Poisson process with rate \(\lambda\), then the number of arrivals in a time interval \(t\) has distribution:
+If arrivals follow a Poisson process with rate $(\lambda)$, then the number of arrivals in a time interval $(t)$ has distribution:
 
-\[
+$$
 \boxed{
-P(N(t)=k)
-=
+P(N(t)=k)=
 e^{-\lambda t}
 \frac{(\lambda t)^k}{k!}.
 }
-\]
+$$
 
 The mean number of arrivals is:
 
-\[
+$$
 E[N(t)]=\lambda t.
-\]
+$$
 
 The interarrival times are exponentially distributed:
 
-\[
-T\sim\operatorname{Exponential}(\lambda).
-\]
+$$
+T\sim\text{Exponential}(\lambda).
+$$
 
 ---
 
 # 13. Exponential Service Times
 
-If service time \(S\) is exponential with rate \(\mu\):
+If service time $(S)$ is exponential with rate $(\mu)$:
 
-\[
+$$
 \boxed{
 f_S(s)=\mu e^{-\mu s},
 \quad s\ge0.
 }
-\]
+$$
 
 The expected service time is:
 
-\[
+$$
 \boxed{
 E[S]=\frac1\mu.
 }
-\]
+$$
 
 The exponential distribution has the memoryless property:
 
-\[
+$$
 P(S>s+t\mid S>s)=P(S>t).
-\]
+$$
 
 This property makes exponential service mathematically convenient.
 
@@ -537,19 +536,19 @@ It assumes:
 
 Its utilization is:
 
-\[
+$$
 \boxed{
 \rho=\frac{\lambda}{\mu}.
 }
-\]
+$$
 
 For stability:
 
-\[
+$$
 \boxed{
 \rho<1.
 }
-\]
+$$
 
 ---
 
@@ -557,34 +556,34 @@ For stability:
 
 Let:
 
-\[
+$$
 P_n
-\]
+$$
 
-be the long-run probability of having \(n\) customers in the system.
+be the long-run probability of having $(n)$ customers in the system.
 
 For M/M/1:
 
-\[
+$$
 \boxed{
 P_n=(1-\rho)\rho^n,
 \quad n=0,1,2,\ldots
 }
-\]
+$$
 
 Therefore:
 
-\[
+$$
 P_0=1-\rho.
-\]
+$$
 
-The probability of having at least \(n\) customers is:
+The probability of having at least $(n)$ customers is:
 
-\[
+$$
 \boxed{
 P(N\ge n)=\rho^n.
 }
-\]
+$$
 
 ---
 
@@ -594,19 +593,19 @@ The queue length can be represented as a birth-death process.
 
 An arrival changes:
 
-\[
+$$
 n\to n+1
-\]
+$$
 
-at rate \(\lambda\).
+at rate $(\lambda)$.
 
 A service completion changes:
 
-\[
+$$
 n\to n-1
-\]
+$$
 
-at rate \(\mu\), provided \(n>0\).
+at rate $(\mu)$, provided $(n>0)$.
 
 ![M/M/1 state diagram](figures/08_mm1_state_diagram.png)
 
@@ -620,35 +619,35 @@ For a stable M/M/1 queue:
 
 ### Average number in system
 
-\[
+$$
 \boxed{
 L=\frac{\rho}{1-\rho}
 }
-\]
+$$
 
 ### Average number waiting
 
-\[
+$$
 \boxed{
 L_q=\frac{\rho^2}{1-\rho}
 }
-\]
+$$
 
 ### Average time in system
 
-\[
+$$
 \boxed{
 W=\frac{1}{\mu-\lambda}
 }
-\]
+$$
 
 ### Average waiting time
 
-\[
+$$
 \boxed{
 W_q=\frac{\rho}{\mu-\lambda}
 }
-\]
+$$
 
 These quantities satisfy Little's Law.
 
@@ -658,39 +657,39 @@ These quantities satisfy Little's Law.
 
 Suppose:
 
-\[
+$$
 \lambda=8\text{ customers/hour}
-\]
+$$
 
 and:
 
-\[
+$$
 \mu=10\text{ customers/hour}.
-\]
+$$
 
 Then:
 
-\[
+$$
 \rho=\frac8{10}=0.8.
-\]
+$$
 
 The average number in the system is:
 
-\[
+$$
 L=\frac{0.8}{1-0.8}=4.
-\]
+$$
 
 The average time in the system is:
 
-\[
+$$
 W=\frac1{10-8}=0.5\text{ hour}.
-\]
+$$
 
 Thus:
 
-\[
+$$
 W=30\text{ minutes}.
-\]
+$$
 
 Notice how a service capacity only 25% greater than the arrival rate can still produce substantial waiting.
 
@@ -784,27 +783,27 @@ Examples:
 - hospital treatment rooms;
 - cloud-computing workers.
 
-An \(M/M/c\) model has:
+An $(M/M/c)$ model has:
 
 - Poisson arrivals;
 - exponential service times;
-- \(c\) identical parallel servers.
+- $(c)$ identical parallel servers.
 
 ![Multi-server queue](figures/05_multi_server_queue.png)
 
 The total service capacity is approximately:
 
-\[
+$$
 c\mu.
-\]
+$$
 
 A basic stability condition is:
 
-\[
+$$
 \boxed{
 \lambda<c\mu.
 }
-\]
+$$
 
 ---
 
@@ -859,13 +858,13 @@ These policies can produce significantly different waiting-time distributions.
 
 # 24. Finite-Capacity Queues
 
-Suppose a system can contain at most \(K\) customers.
+Suppose a system can contain at most $(K)$ customers.
 
 Then:
 
-\[
+$$
 N(t)\le K.
-\]
+$$
 
 When the system is full, a new arrival may:
 
@@ -917,7 +916,7 @@ Customers enter from outside and eventually leave.
 
 For example:
 
-\[
+$$
 \text{Users}
 \rightarrow
 \text{Web Server}
@@ -925,7 +924,7 @@ For example:
 \text{Database}
 \rightarrow
 \text{Response}.
-\]
+$$
 
 The number of customers in the network can vary over time.
 
@@ -950,32 +949,30 @@ For example, a computer system may have a fixed number of jobs repeatedly cyclin
 
 # 28. Routing in Queueing Networks
 
-After service at node \(i\), a customer may move to node \(j\).
+After service at node $(i)$, a customer may move to node $(j)$.
 
 Define:
 
-\[
-p_{ij}
-=
+$$
+p_{ij}=
 P(\text{next node}=j\mid\text{current node}=i).
-\]
+$$
 
 The matrix:
 
-\[
-P=
-[p_{ij}]
-\]
+$$
+P=[p_{ij}]
+$$
 
 is called a **routing matrix**.
 
 Each row must satisfy:
 
-\[
+$$
 \boxed{
 \sum_jp_{ij}=1
 }
-\]
+$$
 
 when every completed job must move somewhere.
 
@@ -985,37 +982,36 @@ when every completed job must move somewhere.
 
 For an open network, let:
 
-\[
+$$
 \gamma_i
-\]
+$$
 
-be the total arrival rate to node \(i\).
+be the total arrival rate to node $(i)$.
 
 Let:
 
-\[
+$$
 e_i
-\]
+$$
 
-be the external arrival rate to node \(i\).
+be the external arrival rate to node $(i)$.
 
 Then:
 
-\[
+$$
 \boxed{
-\gamma_i
-=
+\gamma_i=
 e_i+\sum_j\gamma_jp_{ji}.
 }
-\]
+$$
 
 In vector form:
 
-\[
+$$
 \boxed{
 \gamma=e+\gamma P.
 }
-\]
+$$
 
 Depending on row/column convention, the equivalent matrix equation may be written differently.
 
@@ -1029,33 +1025,33 @@ Suppose there are two nodes.
 
 External arrival rates:
 
-\[
+$$
 e_1=5,\qquad e_2=2.
-\]
+$$
 
 Suppose:
 
-\[
+$$
 p_{12}=0.2
-\]
+$$
 
 and:
 
-\[
+$$
 p_{21}=0.1.
-\]
+$$
 
 Then:
 
-\[
+$$
 \gamma_1=5+0.1\gamma_2
-\]
+$$
 
 and:
 
-\[
+$$
 \gamma_2=2+0.2\gamma_1.
-\]
+$$
 
 These equations can be solved simultaneously to obtain the effective arrival rate at each node.
 
@@ -1065,15 +1061,15 @@ These equations can be solved simultaneously to obtain the effective arrival rat
 
 Using the row-vector convention:
 
-\[
+$$
 \gamma=e+\gamma P.
-\]
+$$
 
 Rearrange:
 
-\[
+$$
 \gamma(I-P)=e.
-\]
+$$
 
 ```python
 import numpy as np
@@ -1110,23 +1106,23 @@ print(gamma)
 
 A queueing network is stable only if the workload entering each service station can be handled by its capacity.
 
-For node \(i\):
+For node $(i)$:
 
-\[
+$$
 \boxed{
 \gamma_i<c_i\mu_i
 }
-\]
+$$
 
-for a simple \(M/M/c_i\)-style station.
+for a simple $(M/M/c_i)$-style station.
 
 For a single-server node:
 
-\[
+$$
 \boxed{
 \gamma_i<\mu_i.
 }
-\]
+$$
 
 If demand persistently exceeds service capacity, queues can grow without bound.
 
@@ -1156,7 +1152,7 @@ Bottleneck identification is a major reason for using queueing network models.
 
 A simple queueing network can have sequential stations:
 
-\[
+$$
 \text{Queue 1}
 \rightarrow
 \text{Server 1}
@@ -1166,7 +1162,7 @@ A simple queueing network can have sequential stations:
 \text{Server 2}
 \rightarrow
 \text{Departure}.
-\]
+$$
 
 This is called a **tandem queue**.
 
@@ -1185,7 +1181,7 @@ A bottleneck at one station can cause congestion throughout the network.
 
 Consider a web application:
 
-\[
+$$
 \text{Users}
 \rightarrow
 \text{Web Server}
@@ -1193,7 +1189,7 @@ Consider a web application:
 \text{Application Server}
 \rightarrow
 \text{Database}.
-\]
+$$
 
 Each component can be modeled as a service station.
 
@@ -1213,7 +1209,7 @@ This is why queueing models are useful in performance engineering.
 
 A manufacturing system may look like:
 
-\[
+$$
 \text{Raw Material}
 \rightarrow
 \text{Machining}
@@ -1223,7 +1219,7 @@ A manufacturing system may look like:
 \text{Inspection}
 \rightarrow
 \text{Shipping}.
-\]
+$$
 
 Each stage may have:
 
@@ -1247,7 +1243,7 @@ Queueing network models help estimate:
 
 A simplified healthcare network may be:
 
-\[
+$$
 \text{Registration}
 \rightarrow
 \text{Triage}
@@ -1257,27 +1253,27 @@ A simplified healthcare network may be:
 \text{Laboratory}
 \rightarrow
 \text{Discharge}.
-\]
+$$
 
 Patients may take different routes depending on their condition.
 
 For example:
 
-\[
+$$
 \text{Doctor}
 \rightarrow
 \text{Discharge}
-\]
+$$
 
 or:
 
-\[
+$$
 \text{Doctor}
 \rightarrow
 \text{Laboratory}
 \rightarrow
 \text{Doctor}.
-\]
+$$
 
 This creates routing and feedback.
 
@@ -1289,47 +1285,47 @@ Important metrics include:
 
 ### Arrival rate
 
-\[
+$$
 \lambda
-\]
+$$
 
 ### Service rate
 
-\[
+$$
 \mu
-\]
+$$
 
 ### Utilization
 
-\[
+$$
 \rho=\frac{\lambda}{\mu}
-\]
+$$
 
 for a single server.
 
 ### Average queue length
 
-\[
+$$
 L_q
-\]
+$$
 
 ### Average system size
 
-\[
+$$
 L
-\]
+$$
 
 ### Average waiting time
 
-\[
+$$
 W_q
-\]
+$$
 
 ### Average time in system
 
-\[
+$$
 W
-\]
+$$
 
 ### Throughput
 
@@ -1349,15 +1345,15 @@ For a stable system, long-run throughput often equals the long-run external arri
 
 For example:
 
-\[
+$$
 \lambda=100\text{ requests/second}
-\]
+$$
 
 and a stable system processing all requests has approximately:
 
-\[
+$$
 \text{throughput}=100\text{ requests/second}.
-\]
+$$
 
 In a bottlenecked system, throughput may be constrained by the bottleneck capacity.
 
@@ -1367,15 +1363,14 @@ In a bottlenecked system, throughput may be constrained by the bottleneck capaci
 
 For a computer system:
 
-\[
+$$
 \boxed{
-\text{Response time}
-=
+\text{Response time}=
 \text{queueing delay}
 +
 \text{service time}.
 }
-\]
+$$
 
 A system may have fast servers but poor response time if the queueing delay is large.
 
@@ -1416,9 +1411,9 @@ Consider two service systems with the same average service time.
 
 System A:
 
-\[
+$$
 S=1\text{ minute}
-\]
+$$
 
 for every customer.
 
@@ -1430,9 +1425,9 @@ System B may experience longer queues because bursts of long services temporaril
 
 This is why queueing theory cannot usually be reduced to:
 
-\[
+$$
 \text{arrival rate} \quad\text{vs.}\quad \text{average service rate}.
-\]
+$$
 
 ---
 
@@ -1442,17 +1437,17 @@ A system can be mathematically stable but still provide unacceptable service.
 
 For example:
 
-\[
+$$
 \rho=0.95
-\]
+$$
 
 is less than one, so a basic M/M/1 queue is stable.
 
 But:
 
-\[
+$$
 W=\frac{1}{\mu(1-\rho)}
-\]
+$$
 
 can be very large.
 
@@ -1477,27 +1472,27 @@ Queueing models can help answer:
 
 For example, if:
 
-\[
+$$
 \lambda=90
-\]
+$$
 
 and a server can process:
 
-\[
+$$
 \mu=100,
-\]
+$$
 
 then:
 
-\[
+$$
 \rho=0.9.
-\]
+$$
 
 If demand rises to 98:
 
-\[
+$$
 \rho=0.98.
-\]
+$$
 
 The system is still technically stable in the basic model, but delay may increase dramatically.
 
@@ -1507,7 +1502,7 @@ The system is still technically stable in the basic model, but delay may increas
 
 A queueing system can be viewed as a stochastic dynamical system:
 
-\[
+$$
 \boxed{
 \text{Arrivals}
 \rightarrow
@@ -1519,7 +1514,7 @@ A queueing system can be viewed as a stochastic dynamical system:
 \rightarrow
 \text{New State}.
 }
-\]
+$$
 
 The state might contain:
 
@@ -1538,17 +1533,17 @@ Many queueing models can be represented as Markov chains.
 
 For an M/M/1 queue, the state is simply:
 
-\[
+$$
 N(t)=\text{number of customers in the system}.
-\]
+$$
 
 The process moves between neighboring states:
 
-\[
+$$
 0\leftrightarrow1\leftrightarrow2\leftrightarrow3\leftrightarrow\cdots
-\]
+$$
 
-with arrival transitions at rate \(\lambda\) and service transitions at rate \(\mu\).
+with arrival transitions at rate $(\lambda)$ and service transitions at rate $(\mu)$.
 
 Thus queueing theory and Markov-chain theory are closely connected.
 
@@ -1560,15 +1555,15 @@ Queue lengths are stochastic processes because they evolve randomly over time.
 
 Examples include:
 
-\[
+$$
 N(t)
-\]
+$$
 
 for the number of customers, and:
 
-\[
+$$
 D(t)
-\]
+$$
 
 for the number of departures.
 
@@ -1658,9 +1653,9 @@ Where do customers come from?
 
 Estimate:
 
-\[
+$$
 \lambda.
-\]
+$$
 
 ### Step 4 — Identify servers
 
@@ -1670,9 +1665,9 @@ What resources provide service?
 
 Estimate:
 
-\[
+$$
 \mu.
-\]
+$$
 
 ### Step 6 — Identify queue discipline
 
@@ -1686,9 +1681,9 @@ Where does a completed job go next?
 
 For example:
 
-\[
+$$
 M/M/1,\quad M/M/c,\quad G/G/1
-\]
+$$
 
 or a queueing network.
 
@@ -1751,19 +1746,17 @@ A strong practical approach often combines both.
 
 A simulation can estimate quantities such as:
 
-\[
-\hat L
-=
+$$
+\hat L=
 \frac1T\int_0^T N(t)\,dt.
-\]
+$$
 
 Similarly:
 
-\[
-\hat W
-=
+$$
+\hat W=
 \frac1N\sum_{i=1}^{N}W_i.
-\]
+$$
 
 By running many arrivals and long simulation periods, estimates become more reliable.
 
@@ -1842,13 +1835,13 @@ Finite buffers can cause blocking or lost customers.
 
 ### Mistake 5: Confusing queue length and system size
 
-\(L_q\) excludes the customer currently in service.
+$(L_q)$ excludes the customer currently in service.
 
-\(L\) includes customers waiting and in service.
+$(L)$ includes customers waiting and in service.
 
 ### Mistake 6: Using an unstable model
 
-For a basic M/M/1 system, \(\lambda\ge\mu\) means the steady-state formulas do not apply.
+For a basic M/M/1 system, $(\lambda\ge\mu)$ means the steady-state formulas do not apply.
 
 ---
 
@@ -1856,95 +1849,95 @@ For a basic M/M/1 system, \(\lambda\ge\mu\) means the steady-state formulas do n
 
 ### Utilization
 
-\[
+$$
 \boxed{
 \rho=\frac{\lambda}{\mu}
 }
-\]
+$$
 
 for one server.
 
 ### Little's Law
 
-\[
+$$
 \boxed{
 L=\lambda W
 }
-\]
+$$
 
 ### Queue version
 
-\[
+$$
 \boxed{
 L_q=\lambda W_q
 }
-\]
+$$
 
 ### M/M/1 stability
 
-\[
+$$
 \boxed{
 \lambda<\mu
 }
-\]
+$$
 
 ### M/M/1 average number in system
 
-\[
+$$
 \boxed{
 L=\frac{\rho}{1-\rho}
 }
-\]
+$$
 
 ### M/M/1 average number in queue
 
-\[
+$$
 \boxed{
 L_q=\frac{\rho^2}{1-\rho}
 }
-\]
+$$
 
 ### M/M/1 average time in system
 
-\[
+$$
 \boxed{
 W=\frac{1}{\mu-\lambda}
 }
-\]
+$$
 
 ### M/M/1 average waiting time
 
-\[
+$$
 \boxed{
 W_q=\frac{\rho}{\mu-\lambda}
 }
-\]
+$$
 
 ### M/M/c stability
 
-\[
+$$
 \boxed{
 \lambda<c\mu
 }
-\]
+$$
 
 ### Network traffic equation
 
 Using the row-vector convention:
 
-\[
+$$
 \boxed{
 \gamma=e+\gamma P
 }
-\]
+$$
 
 or:
 
-\[
+$$
 \boxed{
 \gamma(I-P)=e.
 }
-\]
+$$
 
 ---
 
@@ -1954,7 +1947,7 @@ Queueing theory studies systems in which customers, jobs, packets, or other enti
 
 The fundamental structure is:
 
-\[
+$$
 \boxed{
 \text{Arrival}
 \rightarrow
@@ -1964,37 +1957,37 @@ The fundamental structure is:
 \rightarrow
 \text{Departure}.
 }
-\]
+$$
 
 Important quantities include:
 
-\[
+$$
 \lambda,\quad\mu,\quad\rho,\quad L_q,\quad L,\quad W_q,\quad W.
-\]
+$$
 
 The most important introductory relationship is:
 
-\[
+$$
 \boxed{
 L=\lambda W.
 }
-\]
+$$
 
 For a basic M/M/1 queue:
 
-\[
+$$
 \boxed{
 \rho=\frac{\lambda}{\mu}
 }
-\]
+$$
 
 and stability requires:
 
-\[
+$$
 \boxed{
 \rho<1.
 }
-\]
+$$
 
 As utilization approaches one, waiting times can increase sharply.
 
@@ -2019,16 +2012,16 @@ These ideas form the foundation for more advanced topics including:
 
 1. What is a queueing system?
 2. Define arrival rate and service rate.
-3. Explain the difference between \(L_q\) and \(L\).
-4. Explain the difference between \(W_q\) and \(W\).
+3. Explain the difference between $(L_q)$ and $(L)$.
+4. Explain the difference between $(W_q)$ and $(W)$.
 5. Define utilization.
-6. Why must a basic M/M/1 queue satisfy \(\lambda<\mu\)?
+6. Why must a basic M/M/1 queue satisfy $(\lambda<\mu)$?
 7. State Little's Law.
-8. A system receives 30 jobs/hour and has an average time in system of 6 minutes. Find \(L\).
+8. A system receives 30 jobs/hour and has an average time in system of 6 minutes. Find $(L)$.
 9. Explain FIFO, LIFO, and priority scheduling.
 10. What assumptions define an M/M/1 queue?
 11. Derive the M/M/1 utilization.
-12. Calculate \(L,L_q,W,W_q\) for \(\lambda=8,\mu=10\).
+12. Calculate $(L,L_q,W,W_q)$ for $(\lambda=8,\mu=10)$.
 13. Explain why delay rises rapidly near full utilization.
 14. What is an M/M/c queue?
 15. Explain open and closed queueing networks.
