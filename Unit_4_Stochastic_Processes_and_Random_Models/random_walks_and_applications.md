@@ -1,10 +1,14 @@
-# Random Walks and Their Applications
-
-> A GitHub-ready reading material on random walks, their mathematical foundations, important properties, hitting times, gambler's ruin, multidimensional random walks, random walks with drift, and applications in probability, statistics, physics, computer science, and finance.
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 4: Stochastic Processes and Random Models
+* ### Current Topic: Random Walks and Their Applications
+* #### random walks, their mathematical foundations, important properties, hitting times, gambler's ruin, multidimensional random walks, random walks with drift, and applications in probability, statistics, physics, computer science, and finance.
 ---
-
-## Learning Objectives
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
+## 🎯 Learning Objectives
 
 After studying this chapter, you should be able to:
 
@@ -1737,43 +1741,12 @@ Random walks therefore form a bridge between elementary probability and advanced
 
 ---
 
-# 52. Figures Included
-
-The `figures/` directory contains:
-
-1. `01_random_walk_sample_paths.png` — multiple one-dimensional random-walk paths.
-2. `02_random_walk_distribution_spread.png` — probability distribution spreading with time.
-3. `03_mean_squared_displacement.png` — simulated and theoretical mean squared displacement.
-4. `04_gamblers_ruin.png` — sample gambler's ruin paths between absorbing boundaries.
-5. `05_hitting_probability.png` — probability of reaching the upper boundary first.
-6. `06_two_dimensional_random_walk.png` — a two-dimensional random-walk trajectory.
-7. `07_random_walk_maximum.png` — empirical distribution of the maximum position.
-8. `08_random_walk_with_drift.png` — random walks with positive drift and expected trajectory.
-
-The Markdown file uses relative paths such as:
-
-```markdown
-![Two-dimensional random walk](figures/06_two_dimensional_random_walk.png)
-```
-
-so GitHub will render the figures automatically when the Markdown file and `figures/` directory are uploaded together.
+---
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
 ---
-
-# 53. Recommended GitHub Structure
-
-```text
-random-walks/
-│
-├── random_walks_and_applications.md
-│
-└── figures/
-    ├── 01_random_walk_sample_paths.png
-    ├── 02_random_walk_distribution_spread.png
-    ├── 03_mean_squared_displacement.png
-    ├── 04_gamblers_ruin.png
-    ├── 05_hitting_probability.png
-    ├── 06_two_dimensional_random_walk.png
-    ├── 07_random_walk_maximum.png
-    └── 08_random_walk_with_drift.png
-```
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
