@@ -47,21 +47,19 @@ A **Markov chain** is a mathematical model for a system that moves randomly betw
 
 Let:
 
-\[
+$$
 X_0,X_1,X_2,\ldots
-\]
+$$
 
 be a stochastic process.
 
 It is a **Markov chain** if:
 
-\[
+$$
 \boxed{
-P(X_{n+1}=j\mid X_n=i,X_{n-1},\ldots,X_0)
-=
-P(X_{n+1}=j\mid X_n=i)
+P(X_{n+1}=j\mid X_n=i,X_{n-1},\ldots,X_0)=P(X_{n+1}=j\mid X_n=i)
 }
-\]
+$$
 
 In words:
 
@@ -77,19 +75,17 @@ The past may have influenced the current state, but once the current state is kn
 
 Imagine a weather model with three states:
 
-- \(S\): Sunny
-- \(C\): Cloudy
-- \(R\): Rainy
+- $(S)$: Sunny
+- $(C)$: Cloudy
+- $(R)$: Rainy
 
 Suppose today's weather is Sunny.
 
 If tomorrow's weather probabilities depend only on today's weather, then:
 
-\[
-P(X_{n+1}=R\mid X_n=S,X_{n-1},\ldots)
-=
-P(X_{n+1}=R\mid X_n=S).
-\]
+$$
+P(X_{n+1}=R\mid X_n=S,X_{n-1},\ldots)=P(X_{n+1}=R\mid X_n=S).
+$$
 
 The weather from several days ago does not provide additional information once today's state is known.
 
@@ -106,9 +102,9 @@ A Markov chain consists of:
 
 For example:
 
-\[
+$$
 \mathcal S=\{A,B,C\}.
-\]
+$$
 
 The process occupies one state at each time step.
 
@@ -116,17 +112,17 @@ A transition is movement from one state to another.
 
 For example:
 
-\[
+$$
 A\rightarrow B
-\]
+$$
 
-means the system moves from state \(A\) to state \(B\).
+means the system moves from state $(A)$ to state $(B)$.
 
 A transition may also remain in the same state:
 
-\[
+$$
 A\rightarrow A.
-\]
+$$
 
 This is called a **self-transition**.
 
@@ -134,34 +130,34 @@ This is called a **self-transition**.
 
 # 5. Transition Probabilities
 
-For states \(i\) and \(j\), define:
+For states $(i)$ and $(j)$, define:
 
-\[
+$$
 \boxed{
 p_{ij}=P(X_{n+1}=j\mid X_n=i)
 }
-\]
+$$
 
 where:
 
-- \(i\) is the current state;
-- \(j\) is the next state.
+- $(i)$ is the current state;
+- $(j)$ is the next state.
 
 For a finite-state Markov chain, the transition probabilities satisfy:
 
-\[
+$$
 p_{ij}\ge0
-\]
+$$
 
 and:
 
-\[
+$$
 \boxed{
 \sum_jp_{ij}=1
 }
-\]
+$$
 
-for every state \(i\).
+for every state $(i)$.
 
 Thus, every row of the transition matrix represents a probability distribution.
 
@@ -171,7 +167,7 @@ Thus, every row of the transition matrix represents a probability distribution.
 
 The transition probabilities can be organized into a matrix:
 
-\[
+$$
 \boxed{
 P=
 \begin{bmatrix}
@@ -181,24 +177,24 @@ p_{21}&p_{22}&\cdots&p_{2m}\\
 p_{m1}&p_{m2}&\cdots&p_{mm}
 \end{bmatrix}
 }
-\]
+$$
 
 where:
 
-\[
+$$
 p_{ij}=P(X_{n+1}=j\mid X_n=i).
-\]
+$$
 
 For three states:
 
-\[
+$$
 P=
 \begin{bmatrix}
 p_{AA}&p_{AB}&p_{AC}\\
 p_{BA}&p_{BB}&p_{BC}\\
 p_{CA}&p_{CB}&p_{CC}
 \end{bmatrix}.
-\]
+$$
 
 ![Transition matrix heatmap](figures/02_transition_probability_matrix.png)
 
@@ -210,25 +206,25 @@ A transition matrix must satisfy:
 
 ### Non-negativity
 
-\[
+$$
 p_{ij}\ge0.
-\]
+$$
 
 ### Row sums equal one
 
-\[
+$$
 \sum_jp_{ij}=1.
-\]
+$$
 
 Therefore:
 
-\[
+$$
 \boxed{
 P\mathbf 1=\mathbf1
 }
-\]
+$$
 
-where \(\mathbf1\) is a vector of ones.
+where $(\mathbf1)$ is a vector of ones.
 
 Such a matrix is called a **stochastic matrix** or **row-stochastic matrix**.
 
@@ -238,34 +234,34 @@ Such a matrix is called a **stochastic matrix** or **row-stochastic matrix**.
 
 Consider:
 
-\[
+$$
 P=
 \begin{bmatrix}
 0.7&0.2&0.1\\
 0.1&0.6&0.3\\
 0.2&0.2&0.6
 \end{bmatrix}.
-\]
+$$
 
 The first row means that if the process is currently in state \(A\):
 
-\[
+$$
 P(A\to A)=0.7
-\]
+$$
 
-\[
+$$
 P(A\to B)=0.2
-\]
+$$
 
-\[
+$$
 P(A\to C)=0.1.
-\]
+$$
 
 The probabilities sum to:
 
-\[
+$$
 0.7+0.2+0.1=1.
-\]
+$$
 
 ---
 
@@ -294,71 +290,71 @@ Row sums: [1. 1. 1.]
 
 # 10. One-Step Transition Probabilities
 
-The entries of \(P\) give one-step transition probabilities.
+The entries of $(P)$ give one-step transition probabilities.
 
 If:
 
-\[
+$$
 X_n=A,
-\]
+$$
 
 then:
 
-\[
+$$
 P(X_{n+1}=B\mid X_n=A)=p_{AB}.
-\]
+$$
 
 For the example matrix:
 
-\[
+$$
 P(A\to B)=0.2.
-\]
+$$
 
 Similarly:
 
-\[
+$$
 P(C\to A)=0.2.
-\]
+$$
 
 ---
 
 # 11. Multi-Step Transition Probabilities
 
-What if we want the probability of moving from state \(i\) to state \(j\) in two or more steps?
+What if we want the probability of moving from state $(i)$ to state $(j)$ in two or more steps?
 
 The answer is given by powers of the transition matrix.
 
 ### Two steps
 
-\[
+$$
 \boxed{
 P^{(2)}=P^2
 }
-\]
+$$
 
 ### Three steps
 
-\[
+$$
 \boxed{
 P^{(3)}=P^3
 }
-\]
+$$
 
-### \(n\) steps
+### $(n)$ steps
 
-\[
+$$
 \boxed{
 P^{(n)}=P^n.
 }
-\]
+$$
 
 The element:
 
-\[
+$$
 (P^n)_{ij}
-\]
+$$
 
-is the probability of being in state \(j\) after \(n\) steps given that the process started in state \(i\).
+is the probability of being in state $(j)$ after $(n)$ steps given that the process started in state $(i)$.
 
 ![Multi-step transition probabilities](figures/03_multistep_transition_probabilities.png)
 
@@ -368,35 +364,32 @@ is the probability of being in state \(j\) after \(n\) steps given that the proc
 
 For two steps:
 
-\[
+$$
 P(X_{n+2}=j\mid X_n=i)
-\]
+$$
 
 can be computed by conditioning on the intermediate state \(k\):
 
-\[
-P(X_{n+2}=j\mid X_n=i)
-=
-\sum_k
+$$
+P(X_{n+2}=j\mid X_n=i)=\sum_k
 P(X_{n+2}=j\mid X_{n+1}=k)
 P(X_{n+1}=k\mid X_n=i).
-\]
+$$
 
 Therefore:
 
-\[
+$$
 \boxed{
-p_{ij}^{(2)}
-=
+p_{ij}^{(2)}=
 \sum_kp_{ik}p_{kj}
 }
-\]
+$$
 
-which is exactly the \((i,j)\)-entry of:
+which is exactly the $((i,j))$-entry of:
 
-\[
+$$
 P^2.
-\]
+$$
 
 ---
 
@@ -427,39 +420,39 @@ print(P3)
 
 Suppose the initial distribution is:
 
-\[
+$$
 \pi_0=
 \begin{bmatrix}
 1&0&0
 \end{bmatrix}.
-\]
+$$
 
-This means the process starts in state \(A\) with probability 1.
+This means the process starts in state $(A)$ with probability 1.
 
 If:
 
-\[
+$$
 \pi_n=
 \begin{bmatrix}
 P(X_n=A)&P(X_n=B)&P(X_n=C)
 \end{bmatrix},
-\]
+$$
 
 then:
 
-\[
+$$
 \boxed{
 \pi_{n+1}=\pi_nP.
 }
-\]
+$$
 
-After \(n\) steps:
+After $(n)$ steps:
 
-\[
+$$
 \boxed{
 \pi_n=\pi_0P^n.
 }
-\]
+$$
 
 ---
 
@@ -469,11 +462,11 @@ The basic workflow is:
 
 ![Markov matrix workflow](figures/07_markov_matrix_workflow.png)
 
-\[
+$$
 \boxed{
 \pi_{n+1}=\pi_nP
 }
-\]
+$$
 
 Repeatedly applying this equation allows us to study the evolution of the probability distribution.
 
@@ -493,34 +486,34 @@ for n in range(10):
 
 A probability distribution:
 
-\[
+$$
 \pi=
 \begin{bmatrix}
 \pi_1&\pi_2&\cdots&\pi_m
 \end{bmatrix}
-\]
+$$
 
 is called a **stationary distribution** if:
 
-\[
+$$
 \boxed{
 \pi P=\pi.
 }
-\]
+$$
 
 It must also satisfy:
 
-\[
+$$
 \boxed{
 \sum_i\pi_i=1
 }
-\]
+$$
 
 and:
 
-\[
+$$
 \pi_i\ge0.
-\]
+$$
 
 The stationary distribution describes a probability distribution that remains unchanged after one transition.
 
@@ -530,12 +523,12 @@ The stationary distribution describes a probability distribution that remains un
 
 Suppose:
 
-\[
+$$
 \pi=
 \begin{bmatrix}
 0.6&0.4
 \end{bmatrix}.
-\]
+$$
 
 This means that in the long run, the process spends approximately:
 
@@ -552,57 +545,57 @@ It describes **long-run behavior** under appropriate conditions.
 
 Consider:
 
-\[
+$$
 P=
 \begin{bmatrix}
 0.8&0.2\\
 0.3&0.7
 \end{bmatrix}.
-\]
+$$
 
 Let:
 
-\[
+$$
 \pi=
 \begin{bmatrix}
 \pi_1&\pi_2
 \end{bmatrix}.
-\]
+$$
 
 We need:
 
-\[
+$$
 \pi P=\pi.
-\]
+$$
 
 Therefore:
 
-\[
+$$
 0.8\pi_1+0.3\pi_2=\pi_1
-\]
+$$
 
 and:
 
-\[
+$$
 0.2\pi_1+0.7\pi_2=\pi_2.
-\]
+$$
 
 Together with:
 
-\[
+$$
 \pi_1+\pi_2=1.
-\]
+$$
 
 Solving gives:
 
-\[
+$$
 \boxed{
 \pi=
 \begin{bmatrix}
 0.6&0.4
 \end{bmatrix}.
 }
-\]
+$$
 
 ---
 
@@ -634,11 +627,11 @@ Expected result:
 [0.6 0.4]
 ```
 
-We use \(P^T\) because the stationary equation for a row vector is:
+We use $(P^T)$ because the stationary equation for a row vector is:
 
-\[
+$$
 \pi P=\pi.
-\]
+$$
 
 ---
 
@@ -648,19 +641,19 @@ An alternative is to repeatedly apply the transition matrix.
 
 Start with:
 
-\[
+$$
 \pi_0=[1,0].
-\]
+$$
 
 Then:
 
-\[
+$$
 \pi_1=\pi_0P
-\]
+$$
 
-\[
+$$
 \pi_2=\pi_1P
-\]
+$$
 
 and so on.
 
@@ -684,9 +677,9 @@ print(pi)
 
 The result approaches:
 
-\[
+$$
 [0.6,0.4].
-\]
+$$
 
 ![Steady-state convergence](figures/04_steady_state_convergence.png)
 
@@ -698,19 +691,19 @@ For many well-behaved Markov chains, different initial distributions converge to
 
 For example, we can start with:
 
-\[
+$$
 [1,0],
-\]
+$$
 
-\[
+$$
 [0,1],
-\]
+$$
 
 or:
 
-\[
+$$
 [0.2,0.8].
-\]
+$$
 
 Under suitable conditions, all converge to the same steady state.
 
@@ -728,13 +721,13 @@ Informally:
 
 > The chain is one communicating system rather than separate disconnected groups.
 
-For states \(i\) and \(j\), there must exist some \(n\ge1\) such that:
+For states $(i)$ and $(j)$, there must exist some $(n\ge1)$ such that:
 
-\[
+$$
 (P^n)_{ij}>0.
-\]
+$$
 
-If this holds for every pair \(i,j\), the chain is irreducible.
+If this holds for every pair $(i,j)$, the chain is irreducible.
 
 ---
 
@@ -742,18 +735,18 @@ If this holds for every pair \(i,j\), the chain is irreducible.
 
 A state can have a **period** describing the possible return times to that state.
 
-The period of state \(i\) is:
+The period of state $(i)$ is:
 
-\[
+$$
 d(i)=
 \gcd\{n\ge1:(P^n)_{ii}>0\}.
-\]
+$$
 
 If:
 
-\[
+$$
 d(i)=1,
-\]
+$$
 
 the state is **aperiodic**.
 
@@ -772,17 +765,17 @@ For a finite Markov chain, a common sufficient setting for steady-state converge
 
 Such a chain has a unique stationary distribution, and under the standard finite-state assumptions:
 
-\[
+$$
 \boxed{
 \pi_0P^n\to\pi
 }
-\]
+$$
 
 as:
 
-\[
+$$
 n\to\infty.
-\]
+$$
 
 The limiting distribution does not depend on the initial distribution.
 
@@ -790,13 +783,13 @@ The limiting distribution does not depend on the initial distribution.
 
 # 25. Absorbing Markov Chains
 
-A state \(i\) is **absorbing** if:
+A state $(i)$ is **absorbing** if:
 
-\[
+$$
 \boxed{
 p_{ii}=1.
 }
-\]
+$$
 
 Once the process enters an absorbing state, it never leaves.
 
@@ -832,27 +825,27 @@ A major question is:
 
 After rearranging states, a transition matrix can often be written as:
 
-\[
+$$
 P=
 \begin{bmatrix}
 Q&R\\
 0&I
 \end{bmatrix}.
-\]
+$$
 
 Here:
 
-- \(Q\) describes transitions among transient states;
-- \(R\) describes transitions from transient to absorbing states;
-- \(I\) represents absorbing states.
+- $(Q)$ describes transitions among transient states;
+- $(R)$ describes transitions from transient to absorbing states;
+- $(I)$ represents absorbing states.
 
 The **fundamental matrix** is:
 
-\[
+$$
 \boxed{
 N=(I-Q)^{-1}.
 }
-\]
+$$
 
 It can be used to calculate quantities such as expected numbers of visits to transient states and absorption probabilities.
 
@@ -862,20 +855,20 @@ It can be used to calculate quantities such as expected numbers of visits to tra
 
 Suppose the chain has stationary distribution:
 
-\[
+$$
 \pi=[0.6,0.4].
-\]
+$$
 
 If the system is observed for a very long period, the fraction of time spent in each state approaches these values under appropriate ergodicity assumptions.
 
 Thus:
 
-\[
+$$
 \boxed{
 \text{Long-run fraction in state }i
 \approx\pi_i.
 }
-\]
+$$
 
 This interpretation makes stationary distributions especially useful in applications.
 
@@ -885,13 +878,13 @@ This interpretation makes stationary distributions especially useful in applicat
 
 Suppose:
 
-\[
+$$
 P=
 \begin{bmatrix}
 0.8&0.2\\
 0.4&0.6
 \end{bmatrix}
-\]
+$$
 
 where:
 
@@ -900,15 +893,15 @@ where:
 
 Then:
 
-\[
+$$
 P(\text{Sunny tomorrow}\mid\text{Sunny today})=0.8.
-\]
+$$
 
 And:
 
-\[
+$$
 P(\text{Rainy tomorrow}\mid\text{Sunny today})=0.2.
-\]
+$$
 
 The transition matrix allows us to answer questions about weather several days ahead.
 
@@ -983,29 +976,29 @@ The observed long-run fraction should approach the theoretical stationary probab
 
 If:
 
-\[
+$$
 \pi P=\pi,
-\]
+$$
 
 then:
 
-\[
+$$
 \pi P^2=(\pi P)P=\pi P=\pi.
-\]
+$$
 
 By induction:
 
-\[
+$$
 \boxed{
 \pi P^n=\pi
 }
-\]
+$$
 
 for every:
 
-\[
+$$
 n\ge1.
-\]
+$$
 
 Therefore, once a Markov chain starts in its stationary distribution, its distribution remains unchanged over time.
 
@@ -1015,23 +1008,21 @@ Therefore, once a Markov chain starts in its stationary distribution, its distri
 
 A Markov chain satisfies **detailed balance** with respect to \(\pi\) if:
 
-\[
+$$
 \boxed{
-\pi_i p_{ij}
-=
-\pi_j p_{ji}
+\pi_i p_{ij}=\pi_j p_{ji}
 }
-\]
+$$
 
-for all states \(i,j\).
+for all states $(i,j)$.
 
-This means the stationary probability flow from \(i\) to \(j\) equals the flow from \(j\) to \(i\).
+This means the stationary probability flow from $(i)$ to $(j)$ equals the flow from $(j)$ to $(i)$.
 
 If a distribution satisfies detailed balance, it is stationary:
 
-\[
+$$
 \pi P=\pi.
-\]
+$$
 
 Reversible Markov chains are important in statistical physics and Monte Carlo methods.
 
@@ -1147,69 +1138,68 @@ up to numerical rounding.
 
 ### Markov property
 
-\[
+$$
 \boxed{
-P(X_{n+1}=j\mid X_n=i,\ldots,X_0)
-=
+P(X_{n+1}=j\mid X_n=i,\ldots,X_0)=
 P(X_{n+1}=j\mid X_n=i)
 }
-\]
+$$
 
 ### Transition probability
 
-\[
+$$
 \boxed{
 p_{ij}=P(X_{n+1}=j\mid X_n=i)
 }
-\]
+$$
 
 ### Transition matrix
 
-\[
+$$
 \boxed{
 P=[p_{ij}]
 }
-\]
+$$
 
 ### Multi-step transition matrix
 
-\[
+$$
 \boxed{
 P^{(n)}=P^n
 }
-\]
+$$
 
 ### Distribution update
 
-\[
+$$
 \boxed{
 \pi_{n+1}=\pi_nP
 }
-\]
+$$
 
-### Distribution after \(n\) steps
+### Distribution after $(n)$ steps
 
-\[
+$$
 \boxed{
 \pi_n=\pi_0P^n
 }
-\]
+$$
 
 ### Stationary distribution
 
-\[
+$$
 \boxed{
 \pi P=\pi
 }
-\]
+$$
 
 with:
 
-\[
+$$
 \boxed{
 \sum_i\pi_i=1,\qquad\pi_i\ge0.
 }
-\]
+$$
 
 ---
 
@@ -1257,18 +1247,18 @@ The states may continue changing. The **probability distribution** remains stabl
 4. What is a transition probability?
 5. What conditions must a transition matrix satisfy?
 6. Construct a transition matrix for a two-state weather model.
-7. What does \(P^2\) represent?
-8. What does \(P^n\) represent?
-9. If \(\pi_0=[1,0]\), how do you calculate \(\pi_3\)?
+7. What does $(P^2)$ represent?
+8. What does $(P^n)$ represent?
+9. If $(\pi_0=[1,0])$, how do you calculate $(\pi_3)$?
 10. Define a stationary distribution.
-11. Solve \(\pi P=\pi\) for a two-state chain.
+11. Solve $(\pi P=\pi)$ for a two-state chain.
 12. Explain the meaning of a steady-state probability.
 13. What does irreducibility mean?
 14. What is an aperiodic Markov chain?
 15. What is an absorbing state?
 16. Explain the difference between transient and absorbing states.
 17. Simulate a two-state Markov chain in Python.
-18. Write Python code to compute \(P^5\).
+18. Write Python code to compute $(P^5)$.
 19. Write Python code to find a stationary distribution.
 20. Simulate several different initial distributions and check whether they converge to the same steady state.
 21. Explain why the stationary distribution does not mean that individual states stop changing.
@@ -1280,51 +1270,51 @@ The states may continue changing. The **probability distribution** remains stabl
 
 A Markov chain models a random system that moves between states while satisfying the Markov property:
 
-\[
+$$
 \boxed{
 \text{Future depends on the present, not the full past.}
 }
-\]
+$$
 
 The transition probability matrix:
 
-\[
+$$
 P=[p_{ij}]
-\]
+$$
 
 contains the probabilities of moving between states.
 
 Matrix powers provide multi-step probabilities:
 
-\[
+$$
 \boxed{
 P^n.
 }
-\]
+$$
 
 Probability distributions evolve according to:
 
-\[
+$$
 \boxed{
 \pi_{n+1}=\pi_nP.
 }
-\]
+$$
 
 A stationary distribution satisfies:
 
-\[
+$$
 \boxed{
 \pi P=\pi.
 }
-\]
+$$
 
 Under suitable conditions such as irreducibility and aperiodicity for a finite chain, the distribution can converge to a unique steady state:
 
-\[
+$$
 \boxed{
 \pi_0P^n\to\pi.
 }
-\]
+$$
 
 The central picture is therefore:
 
