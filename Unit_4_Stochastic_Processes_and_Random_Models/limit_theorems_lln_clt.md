@@ -48,33 +48,33 @@ These theorems form much of the theoretical foundation of statistical inference.
 
 Suppose:
 
-\[
+$$
 X_1,X_2,\ldots,X_n
-\]
+$$
 
 are independent and identically distributed (i.i.d.) random variables.
 
 Let:
 
-\[
+$$
 E[X_i]=\mu
-\]
+$$
 
 and:
 
-\[
+$$
 Var(X_i)=\sigma^2<\infty.
-\]
+$$
 
 The sample mean is:
 
-\[
+$$
 \boxed{
 \bar X_n=\frac{1}{n}\sum_{i=1}^{n}X_i
 }
-\]
+$$
 
-The two limit theorems tell us different things about what happens as \(n\) becomes large.
+The two limit theorems tell us different things about what happens as $(n)$ becomes large.
 
 ---
 
@@ -86,17 +86,17 @@ The **Law of Large Numbers** states, informally:
 
 Mathematically, under appropriate assumptions:
 
-\[
+$$
 \boxed{
 \bar X_n\to\mu
 }
-\]
+$$
 
 as:
 
-\[
+$$
 n\to\infty.
-\]
+$$
 
 ![LLN convergence](figures/01_lln_convergence.png)
 
@@ -110,31 +110,31 @@ Imagine repeatedly rolling a fair six-sided die.
 
 The expected value is:
 
-\[
+$$
 E[X]=\frac{1+2+3+4+5+6}{6}=3.5.
-\]
+$$
 
 For a small number of rolls, the average can be far from 3.5.
 
 For example:
 
-\[
+$$
 \frac{1+6}{2}=3.5
-\]
+$$
 
 but another two-roll result might be:
 
-\[
+$$
 \frac{2+6}{2}=4.
-\]
+$$
 
 As more rolls are observed, unusually high and unusually low values tend to balance each other.
 
 The average becomes more stable around:
 
-\[
+$$
 \mu=3.5.
-\]
+$$
 
 ---
 
@@ -142,37 +142,37 @@ The average becomes more stable around:
 
 Suppose:
 
-\[
+$$
 X_i=
 \begin{cases}
 1 & \text{heads}\\
 0 & \text{tails}
 \end{cases}
-\]
+$$
 
 for a fair coin.
 
 Then:
 
-\[
+$$
 E[X_i]=0.5.
-\]
+$$
 
 The sample mean:
 
-\[
+$$
 \bar X_n=\frac{X_1+\cdots+X_n}{n}
-\]
+$$
 
 is exactly the observed proportion of heads.
 
 The LLN says:
 
-\[
+$$
 \boxed{\bar X_n\to0.5}
-\]
+$$
 
-as \(n\) becomes large.
+as $(n)$ becomes large.
 
 ---
 
@@ -208,21 +208,21 @@ The LLN is not restricted to coin tosses.
 
 Suppose:
 
-\[
+$$
 X_i\sim N(5,4).
-\]
+$$
 
 Then:
 
-\[
+$$
 E[X_i]=5.
-\]
+$$
 
-As \(n\) increases:
+As $(n)$ increases:
 
-\[
+$$
 \bar X_n\to5.
-\]
+$$
 
 ![LLN for sample mean](figures/01_lln_convergence.png)
 
@@ -252,19 +252,19 @@ There are different mathematical versions of the LLN.
 
 The weak law states:
 
-\[
+$$
 \boxed{
 \bar X_n\xrightarrow{P}\mu
 }
-\]
+$$
 
 The notation means **convergence in probability**.
 
-For every \(\epsilon>0\):
+For every $(\epsilon>0)$:
 
-\[
+$$
 P(|\bar X_n-\mu|>\epsilon)\to0.
-\]
+$$
 
 In words:
 
@@ -274,11 +274,11 @@ In words:
 
 The strong law states:
 
-\[
+$$
 \boxed{
 \bar X_n\xrightarrow{a.s.}\mu
 }
-\]
+$$
 
 This means **almost sure convergence**.
 
@@ -286,9 +286,9 @@ The strong law provides a stronger form of convergence than the weak law under t
 
 For introductory statistics, the key intuition is simply:
 
-\[
+$$
 \boxed{\text{More observations} \Rightarrow \text{more stable averages}}
-\]
+$$
 
 ---
 
@@ -298,9 +298,9 @@ The LLN does **not** mean that individual observations become predictable.
 
 For example, if a fair coin is tossed 10,000 times, the next toss is still approximately:
 
-\[
+$$
 P(H)=0.5.
-\]
+$$
 
 The LLN concerns the **average or proportion**, not the certainty of individual outcomes.
 
@@ -314,45 +314,45 @@ The **Central Limit Theorem** is one of the most important results in statistics
 
 Under standard assumptions:
 
-\[
+$$
 X_1,\ldots,X_n
-\]
+$$
 
 are i.i.d. with:
 
-\[
+$$
 E[X_i]=\mu
-\]
+$$
 
 and:
 
-\[
+$$
 Var(X_i)=\sigma^2<\infty.
-\]
+$$
 
 Then:
 
-\[
+$$
 \boxed{
 \frac{\bar X_n-\mu}{\sigma/\sqrt n}
 \xrightarrow{d}
 N(0,1)
 }
-\]
+$$
 
 as:
 
-\[
+$$
 n\to\infty.
-\]
+$$
 
-Equivalently, for sufficiently large \(n\):
+Equivalently, for sufficiently large $(n)$:
 
-\[
+$$
 \boxed{
 \bar X_n\approx N\left(\mu,\frac{\sigma^2}{n}\right)
 }
-\]
+$$
 
 ![CLT sample means](figures/03_clt_sample_means.png)
 
@@ -368,12 +368,12 @@ A single observation from that population is not Normally distributed.
 
 But now:
 
-1. Draw a random sample of size \(n\).
+1. Draw a random sample of size $(n)$.
 2. Calculate its mean.
 3. Repeat this thousands of times.
 4. Plot all the sample means.
 
-As \(n\) increases, the histogram of sample means becomes increasingly bell-shaped.
+As $(n)$ increases, the histogram of sample means becomes increasingly bell-shaped.
 
 ![Population versus sampling distribution](figures/05_population_vs_sampling_distribution.png)
 
@@ -385,31 +385,31 @@ This is the key idea behind the CLT.
 
 The standard deviation of the sampling distribution of the sample mean is:
 
-\[
+$$
 \boxed{
 SE(\bar X)=\frac{\sigma}{\sqrt n}
 }
-\]
+$$
 
 This is called the **standard error of the mean**.
 
-As \(n\) increases:
+As $(n)$ increases:
 
-\[
+$$
 SE(\bar X)\downarrow.
-\]
+$$
 
 ![Standard error](figures/04_standard_error.png)
 
 For example, if:
 
-\[
+$$
 \sigma=10,
-\]
+$$
 
 then:
 
-| \(n\) | Standard error |
+| $(n)$ | Standard error |
 |---:|---:|
 | 1 | 10 |
 | 4 | 5 |
@@ -425,37 +425,31 @@ Notice that increasing the sample size by a factor of 4 cuts the standard error 
 
 For independent observations:
 
-\[
+$$
 Var(X_1+\cdots+X_n)=n\sigma^2.
-\]
+$$
 
 Therefore:
 
-\[
-Var(\bar X_n)
-=
-Var\left(\frac{X_1+\cdots+X_n}{n}\right).
-\]
+$$
+Var(\bar X_n) = Var\left(\frac{X_1+\cdots+X_n}{n}\right).
+$$
 
 So:
 
-\[
-Var(\bar X_n)
-=
-\frac{n\sigma^2}{n^2}
-=
-\frac{\sigma^2}{n}.
-\]
+$$
+Var(\bar X_n)=\frac{n\sigma^2}{n^2}=\frac{\sigma^2}{n}.
+$$
 
 Hence:
 
-\[
+$$
 \boxed{
 SD(\bar X_n)=\frac{\sigma}{\sqrt n}
 }
-\]
+$$
 
-This is the mathematical reason the standard error decreases at the rate \(1/\sqrt n\).
+This is the mathematical reason the standard error decreases at the rate $(1/\sqrt n)$.
 
 ---
 
@@ -517,7 +511,7 @@ for n in sample_sizes:
     plt.show()
 ```
 
-As \(n\) grows, the sampling distribution becomes increasingly Normal.
+As $(n)$ grows, the sampling distribution becomes increasingly Normal.
 
 ---
 
@@ -528,28 +522,28 @@ The LLN and CLT are related, but they answer different questions.
 | Law of Large Numbers | Central Limit Theorem |
 |---|---|
 | Focuses on sample average | Focuses on distribution of sample average |
-| Says average approaches \(\mu\) | Says standardized average becomes Normal |
+| Says average approaches $(\mu)$ | Says standardized average becomes Normal |
 | About convergence | About distribution/shape |
 | Explains consistency | Enables statistical inference |
 | Does not specify Normality | Specifically gives Normal approximation |
 
 A useful summary:
 
-\[
+$$
 \boxed{
 LLN:\quad \bar X_n\to\mu
 }
-\]
+$$
 
 while:
 
-\[
+$$
 \boxed{
 CLT:\quad
 \frac{\bar X_n-\mu}{\sigma/\sqrt n}
 \Rightarrow N(0,1)
 }
-\]
+$$
 
 ---
 
@@ -559,11 +553,11 @@ The two theorems can be understood as describing different aspects of increasing
 
 ### LLN
 
-As \(n\) increases:
+As $(n)$ increases:
 
-\[
+$$
 \bar X_n\rightarrow\mu.
-\]
+$$
 
 So the sampling distribution becomes concentrated around the true mean.
 
@@ -571,9 +565,9 @@ So the sampling distribution becomes concentrated around the true mean.
 
 At the same time, after suitable standardization:
 
-\[
+$$
 \frac{\bar X_n-\mu}{\sigma/\sqrt n}
-\]
+$$
 
 has an approximately Normal distribution.
 
@@ -588,47 +582,47 @@ Thus:
 
 Suppose exam scores have:
 
-\[
+$$
 \mu=70,\qquad\sigma=12.
-\]
+$$
 
 A random sample of:
 
-\[
+$$
 n=36
-\]
+$$
 
 students is selected.
 
 The standard error is:
 
-\[
+$$
 SE=\frac{12}{\sqrt{36}}=2.
-\]
+$$
 
 By the CLT:
 
-\[
+$$
 \bar X\approx N(70,2^2).
-\]
+$$
 
 Suppose we want:
 
-\[
+$$
 P(\bar X>74).
-\]
+$$
 
 Standardize:
 
-\[
+$$
 z=\frac{74-70}{2}=2.
-\]
+$$
 
 Therefore:
 
-\[
+$$
 P(\bar X>74)\approx P(Z>2).
-\]
+$$
 
 Python:
 
@@ -658,32 +652,32 @@ The CLT can also be written for sums.
 
 Let:
 
-\[
+$$
 S_n=X_1+\cdots+X_n.
-\]
+$$
 
 Then:
 
-\[
+$$
 \boxed{
 \frac{S_n-n\mu}{\sigma\sqrt n}
 \xrightarrow{d}N(0,1)
 }
-\]
+$$
 
-For large \(n\):
+For large $(n)$:
 
-\[
+$$
 \boxed{
 S_n\approx N(n\mu,n\sigma^2)
 }
-\]
+$$
 
 The sample-mean version follows because:
 
-\[
+$$
 \bar X_n=\frac{S_n}{n}.
-\]
+$$
 
 ---
 
@@ -693,9 +687,9 @@ The CLT is one reason the Normal distribution is used so extensively in statisti
 
 For large samples:
 
-\[
+$$
 \bar X\approx N\left(\mu,\frac{\sigma^2}{n}\right).
-\]
+$$
 
 This approximation supports:
 
@@ -715,7 +709,7 @@ The classical CLT requires conditions such as:
 2. observations come from the same distribution in the classical i.i.d. form;
 3. the population has finite variance.
 
-How large \(n\) needs to be depends on the population.
+How large $(n)$ needs to be depends on the population.
 
 ### Approximately symmetric population
 
@@ -729,7 +723,7 @@ A larger sample may be needed.
 
 The Normal approximation may require special care, and the classical finite-variance CLT may not apply.
 
-Therefore, **"CLT works for \(n\ge30\)" is only a rule of thumb, not a universal theorem.**
+Therefore, **"CLT works for $(n\ge30)$" is only a rule of thumb, not a universal theorem.**
 
 ---
 
@@ -763,23 +757,23 @@ Many algorithms and theoretical results rely on averages, empirical distribution
 
 Suppose we want to estimate:
 
-\[
+$$
 E[X]
-\]
+$$
 
 using simulation.
 
-Generate \(n\) observations and calculate:
+Generate $(n)$ observations and calculate:
 
-\[
+$$
 \hat\mu_n=\frac1n\sum_{i=1}^nX_i.
-\]
+$$
 
 The LLN tells us:
 
-\[
+$$
 \hat\mu_n\to E[X].
-\]
+$$
 
 Python:
 
@@ -830,53 +824,53 @@ Mean approaches μ       Standardized mean
 
 ### Sample mean
 
-\[
+$$
 \boxed{
 \bar X_n=\frac{1}{n}\sum_{i=1}^{n}X_i
 }
-\]
+$$
 
 ### Law of Large Numbers
 
-\[
+$$
 \boxed{
 \bar X_n\to\mu
 }
-\]
+$$
 
 ### Standard error
 
-\[
+$$
 \boxed{
 SE(\bar X)=\frac{\sigma}{\sqrt n}
 }
-\]
+$$
 
 ### Central Limit Theorem
 
-\[
+$$
 \boxed{
 \frac{\bar X_n-\mu}{\sigma/\sqrt n}
 \Rightarrow N(0,1)
 }
-\]
+$$
 
 ### Equivalent approximate distribution
 
-\[
+$$
 \boxed{
 \bar X_n\approx N\left(\mu,\frac{\sigma^2}{n}\right)
 }
-\]
+$$
 
 ### CLT for sums
 
-\[
+$$
 \boxed{
 \frac{S_n-n\mu}{\sigma\sqrt n}
 \Rightarrow N(0,1)
 }
-\]
+$$
 
 ---
 
@@ -890,19 +884,19 @@ SE(\bar X)=\frac{\sigma}{\sqrt n}
 
 **False.** The **sampling distribution of the mean** becomes approximately Normal.
 
-### Misconception 3: \(n=30\) always guarantees the CLT.
+### Misconception 3: $(n=30)$ always guarantees the CLT.
 
 **False.** The required sample size depends on the population distribution and its properties.
 
 ### Misconception 4: More data makes the standard deviation of individual observations smaller.
 
-**False.** The population standard deviation \(\sigma\) does not change simply because we collect more observations.
+**False.** The population standard deviation $(\sigma)$ does not change simply because we collect more observations.
 
 What decreases is the standard error:
 
-\[
+$$
 \frac{\sigma}{\sqrt n}.
-\]
+$$
 
 ### Misconception 5: LLN and CLT are the same theorem.
 
@@ -913,20 +907,20 @@ What decreases is the standard error:
 # 27. Practice Questions
 
 1. State the Law of Large Numbers in your own words.
-2. What does \(\bar X_n\to\mu\) mean intuitively?
+2. What does $(\bar X_n\to\mu)$ mean intuitively?
 3. Explain the difference between weak and strong LLN.
 4. Why does the sample average of repeated coin tosses approach 0.5?
 5. State the classical Central Limit Theorem.
 6. What is the standard error of the sample mean?
-7. Why does the standard error decrease as \(1/\sqrt n\)?
+7. Why does the standard error decrease as $(1/\sqrt n)$?
 8. Explain why the CLT can apply to a skewed population.
 9. What is the difference between the LLN and CLT?
-10. If \(\sigma=20\) and \(n=100\), calculate the standard error.
-11. If \(\mu=50,\sigma=10,n=25\), describe the approximate distribution of \(\bar X\).
+10. If $(\sigma=20)$ and $(n=100)$, calculate the standard error.
+11. If $(\mu=50,\sigma=10,n=25)$, describe the approximate distribution of $(\bar X)$.
 12. Write Python code to demonstrate the LLN.
 13. Write Python code to demonstrate the CLT.
 14. Simulate an Exponential population and compare its shape with the sampling distribution of its mean.
-15. Explain why \(n=30\) should not be treated as a universal CLT rule.
+15. Explain why $(n=30)$ should not be treated as a universal CLT rule.
 
 ---
 
@@ -934,19 +928,19 @@ What decreases is the standard error:
 
 The two limit theorems provide two complementary ideas:
 
-\[
+$$
 \boxed{
 \text{LLN: Large samples make averages stable.}
 }
-\]
+$$
 
 and:
 
-\[
+$$
 \boxed{
 \text{CLT: Large samples make standardized averages approximately Normal.}
 }
-\]
+$$
 
 The LLN explains **convergence toward the true mean**, while the CLT explains **the distribution of the remaining random variation around that mean**.
 
