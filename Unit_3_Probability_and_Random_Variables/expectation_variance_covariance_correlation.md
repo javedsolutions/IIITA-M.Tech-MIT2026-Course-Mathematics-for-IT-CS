@@ -1285,9 +1285,11 @@ Correlation describes association, not necessarily causal influence.
 2. Calculate $(E[X])$ for a discrete random variable with a given PMF.
 3. Explain why expected value does not need to be a possible outcome.
 4. Derive the alternative variance formula:
-   $$
+
+$$
    Var(X)=E[X^2]-[E[X]]^2.
-   $$
+$$
+
 5. Calculate the variance and standard deviation of a fair die.
 6. Explain the difference between population and sample variance.
 7. Define covariance.
@@ -1301,9 +1303,11 @@ Correlation describes association, not necessarily causal influence.
 15. Explain why independence implies zero covariance.
 16. Give an example showing that zero covariance does not necessarily imply independence.
 17. Derive:
- $$
+
+$$
    Var(X+Y)=Var(X)+Var(Y)+2Cov(X,Y).
 $$
+
 18. Write Python code to calculate expectation from a PMF.
 19. Write Python code to calculate population and sample variance.
 20. Write Python code to calculate covariance.
