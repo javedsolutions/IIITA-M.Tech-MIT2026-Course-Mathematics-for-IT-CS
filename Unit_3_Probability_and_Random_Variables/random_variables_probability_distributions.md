@@ -1,7 +1,12 @@
-# Random Variables and Probability Distributions
-
-> GitHub-ready reading material covering discrete and continuous random variables, probability mass functions (PMFs), probability density functions (PDFs), cumulative distribution functions (CDFs), examples, mathematical properties, Python implementations, and simulations.
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 3: Probability and Random Variables
+### Current Topic: Random Variables and Probability Distributions 
+#### Covering discrete and continuous random variables, probability mass functions (PMFs), probability density functions (PDFs), cumulative distribution functions (CDFs), examples, mathematical properties, Python implementations, and simulations
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
 ---
 
 ## 1. Learning objectives
