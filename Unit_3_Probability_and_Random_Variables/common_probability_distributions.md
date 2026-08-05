@@ -1,9 +1,13 @@
-# Common Probability Distributions
-
-**Bernoulli, Binomial, Poisson, Uniform, Gaussian and Exponential Distributions**
-
-This chapter introduces six fundamental probability distributions, their assumptions, formulas, properties, applications, visual intuition, and Python implementations.
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 3: Probability and Random Variables
+### Current Topic: Common Probability Distributions - Bernoulli, Binomial, Poisson, Uniform, Gaussian and Exponential Distributions
+#### Introduces six fundamental probability distributions, their assumptions, formulas, properties, applications, visual intuition, and Python implementations.
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
 ## Learning objectives
 
 You will learn to:
@@ -31,35 +35,35 @@ A probability distribution describes how probability is assigned to values of a 
 
 For a discrete random variable:
 
-\[
+$$
 p_X(x)=P(X=x)
-\]
+$$
 
 and:
 
-\[
+$$
 p_X(x)\ge0,\qquad \sum_xp_X(x)=1.
-\]
+$$
 
 ### PDF
 
 For a continuous random variable:
 
-\[
+$$
 \int_{-\infty}^{\infty}f_X(x)dx=1
-\]
+$$
 
 and:
 
-\[
+$$
 P(a\le X\le b)=\int_a^b f_X(x)dx.
-\]
+$$
 
 Importantly:
 
-\[
+$$
 P(X=x)=0
-\]
+$$
 
 for an individual point of a continuous distribution.
 
@@ -69,25 +73,25 @@ for an individual point of a continuous distribution.
 
 The Bernoulli distribution models **one experiment with two outcomes**.
 
-\[
+$$
 X=
 \begin{cases}
 1 & \text{success}\\
 0 & \text{failure}
 \end{cases}
-\]
+$$
 
-If the probability of success is \(p\), then:
+If the probability of success is $(p)$, then:
 
-\[
+$$
 P(X=1)=p,\qquad P(X=0)=1-p.
-\]
+$$
 
 ### PMF
 
-\[
+$$
 \boxed{P(X=x)=p^x(1-p)^{1-x}}
-\]
+$$
 
 ![Bernoulli PMF](figures/01_bernoulli_pmf.png)
 
@@ -101,13 +105,13 @@ P(X=1)=p,\qquad P(X=0)=1-p.
 
 ### Mean and variance
 
-\[
+$$
 \boxed{E[X]=p}
-\]
+$$
 
-\[
+$$
 \boxed{Var(X)=p(1-p)}
-\]
+$$
 
 ### Python
 
@@ -139,45 +143,45 @@ print(samples.mean())
 
 # 3. Binomial Distribution
 
-The Binomial distribution counts the number of successes in \(n\) independent Bernoulli trials, each having success probability \(p\).
+The Binomial distribution counts the number of successes in $(n)$ independent Bernoulli trials, each having success probability $(p)$.
 
-\[
+$$
 \boxed{X\sim Binomial(n,p)}
-\]
+$$
 
 ### PMF
 
-\[
+$$
 \boxed{
 P(X=k)={n\choose k}p^k(1-p)^{n-k}
 }
-\]
+$$
 
 where:
 
-\[
+$$
 {n\choose k}=\frac{n!}{k!(n-k)!}.
-\]
+$$
 
 ![Binomial PMF](figures/02_binomial_pmf.png)
 
 ### Mean and variance
 
-\[
+$$
 \boxed{E[X]=np}
-\]
+$$
 
-\[
+$$
 \boxed{Var(X)=np(1-p)}
-\]
+$$
 
 ### Example
 
-If a player makes a free throw with probability \(p=0.8\) and takes 10 shots:
+If a player makes a free throw with probability $(p=0.8)$ and takes 10 shots:
 
-\[
+$$
 X\sim Binomial(10,0.8).
-\]
+$$
 
 ### Python
 
@@ -194,18 +198,18 @@ print(probability)
 
 | Bernoulli | Binomial |
 |---|---|
-| One trial | \(n\) trials |
+| One trial | $(n)$ trials |
 | Two outcomes | Counts successes |
-| Values 0 or 1 | Values 0 through \(n\) |
-| Parameter \(p\) | Parameters \(n,p\) |
-| Mean \(p\) | Mean \(np\) |
-| Variance \(p(1-p)\) | Variance \(np(1-p)\) |
+| Values 0 or 1 | Values 0 through $(n)$ |
+| Parameter $(p)$ | Parameters $(n,p)$ |
+| Mean $(p)$ | Mean $(np)$ |
+| Variance $(p(1-p))$ | Variance $(np(1-p))$ |
 
 A Bernoulli distribution is a special case:
 
-\[
+$$
 \boxed{Bernoulli(p)=Binomial(1,p)}
-\]
+$$
 
 ---
 
@@ -220,39 +224,39 @@ Examples:
 - defects per meter;
 - website requests per second.
 
-If the expected number of events is \(\lambda\):
+If the expected number of events is $(\lambda)$:
 
-\[
+$$
 X\sim Poisson(\lambda).
-\]
+$$
 
 ### PMF
 
-\[
+$$
 \boxed{
 P(X=k)=\frac{e^{-\lambda}\lambda^k}{k!}
 }
-\]
+$$
 
 ![Poisson PMF](figures/03_poisson_pmf.png)
 
 ### Mean and variance
 
-\[
+$$
 \boxed{E[X]=\lambda}
-\]
+$$
 
-\[
+$$
 \boxed{Var(X)=\lambda}
-\]
+$$
 
 ### Example
 
 If a help desk receives 4 calls per hour:
 
-\[
+$$
 X\sim Poisson(4).
-\]
+$$
 
 The probability of exactly 3 calls is:
 
@@ -265,23 +269,23 @@ print(poisson.pmf(3, mu=4))
 
 # 6. Binomial-Poisson approximation
 
-When \(n\) is large, \(p\) is small, and \(np=\lambda\):
+When $(n)$ is large, $(p)$ is small, and $(np=\lambda)$:
 
-\[
+$$
 \boxed{Binomial(n,p)\approx Poisson(np)}
-\]
+$$
 
 Example:
 
-\[
+$$
 n=1000,\quad p=0.004,\quad np=4.
-\]
+$$
 
 Thus:
 
-\[
+$$
 Binomial(1000,0.004)\approx Poisson(4).
-\]
+$$
 
 ---
 
@@ -289,32 +293,32 @@ Binomial(1000,0.004)\approx Poisson(4).
 
 The continuous Uniform distribution has constant density on an interval.
 
-\[
+$$
 X\sim Uniform(a,b)
-\]
+$$
 
 with:
 
-\[
+$$
 \boxed{
 f(x)=
 \begin{cases}
 \frac1{b-a},&a\le x\le b\\
 0,&\text{otherwise}
 \end{cases}}
-\]
+$$
 
 ![Uniform PDF](figures/04_uniform_pdf.png)
 
 ### Mean and variance
 
-\[
+$$
 \boxed{E[X]=\frac{a+b}{2}}
-\]
+$$
 
-\[
+$$
 \boxed{Var(X)=\frac{(b-a)^2}{12}}
-\]
+$$
 
 ### Python
 
@@ -340,49 +344,49 @@ plt.show()
 
 The Gaussian, or Normal, distribution is a central model for continuous measurements and naturally occurring variation.
 
-\[
+$$
 \boxed{X\sim N(\mu,\sigma^2)}
-\]
+$$
 
 ### PDF
 
-\[
+$$
 \boxed{
 f(x)=
 \frac{1}{\sigma\sqrt{2\pi}}
 e^{-\frac{(x-\mu)^2}{2\sigma^2}}
 }
-\]
+$$
 
 ![Gaussian PDF](figures/05_gaussian_pdf.png)
 
-The curve is bell-shaped and symmetric about \(\mu\).
+The curve is bell-shaped and symmetric about $(\mu)$.
 
 ### Standard Normal
 
 When:
 
-\[
+$$
 \mu=0,\qquad\sigma=1,
-\]
+$$
 
 we have:
 
-\[
+$$
 X\sim N(0,1).
-\]
+$$
 
 ### z-score
 
-\[
+$$
 \boxed{z=\frac{x-\mu}{\sigma}}
-\]
+$$
 
 Example: if \(x=85\), \(\mu=70\), and \(\sigma=10\):
 
-\[
+$$
 z=1.5.
-\]
+$$
 
 ### Python
 
@@ -399,9 +403,9 @@ print(norm.cdf(1.5))
 
 For a Gaussian distribution, approximately:
 
-- 68% of values fall within \(1\sigma\) of the mean;
-- 95% fall within \(2\sigma\);
-- 99.7% fall within \(3\sigma\).
+- 68% of values fall within $(1\sigma)$ of the mean;
+- 95% fall within $(2\sigma)$;
+- 99.7% fall within $(3\sigma)$.
 
 ![Gaussian empirical rule](figures/06_gaussian_empirical_rule.png)
 
@@ -413,47 +417,47 @@ This is also called the **empirical rule**.
 
 The Exponential distribution models **waiting time between events** in a Poisson process.
 
-If the event rate is \(\lambda\):
+If the event rate is $(\lambda)$:
 
-\[
+$$
 X\sim Exponential(\lambda).
-\]
+$$
 
 ### PDF
 
-\[
+$$
 \boxed{f(x)=\lambda e^{-\lambda x}},\qquad x\ge0
-\]
+$$
 
 ![Exponential PDF](figures/07_exponential_pdf.png)
 
 ### CDF and survival probability
 
-\[
+$$
 \boxed{F(x)=1-e^{-\lambda x}}
-\]
+$$
 
-\[
+$$
 \boxed{P(X>t)=e^{-\lambda t}}
-\]
+$$
 
 ### Mean and variance
 
-\[
+$$
 \boxed{E[X]=\frac1\lambda}
-\]
+$$
 
-\[
+$$
 \boxed{Var(X)=\frac1{\lambda^2}}
-\]
+$$
 
 ### Example
 
-At rate \(\lambda=2\) customers/minute:
+At rate $(\lambda=2)$ customers/minute:
 
-\[
+$$
 E[X]=0.5\text{ minutes}.
-\]
+$$
 
 ### Python
 
@@ -472,11 +476,11 @@ print(expon.sf(1, scale=1/rate))
 
 The Exponential distribution satisfies:
 
-\[
+$$
 \boxed{
 P(X>s+t\mid X>s)=P(X>t)
 }
-\]
+$$
 
 So the remaining waiting time does not depend on how long you have already waited.
 
@@ -484,16 +488,16 @@ So the remaining waiting time does not depend on how long you have already waite
 
 # 12. Poisson and Exponential Connection
 
-For a Poisson process with rate \(\lambda\):
+For a Poisson process with rate $(\lambda)$:
 
 - **Poisson** models the number of events in an interval.
 - **Exponential** models the waiting time between events.
 
 Thus:
 
-\[
+$$
 \boxed{\text{Poisson counts} \longleftrightarrow \text{Exponential waiting times}}
-\]
+$$
 
 ---
 
@@ -514,12 +518,12 @@ Thus:
 
 | Distribution | Mean | Variance |
 |---|---:|---:|
-| Bernoulli(\(p\)) | \(p\) | \(p(1-p)\) |
-| Binomial(\(n,p\)) | \(np\) | \(np(1-p)\) |
-| Poisson(\(\lambda\)) | \(\lambda\) | \(\lambda\) |
-| Uniform(\(a,b\)) | \((a+b)/2\) | \((b-a)^2/12\) |
-| Gaussian(\(\mu,\sigma^2\)) | \(\mu\) | \(\sigma^2\) |
-| Exponential(\(\lambda\)) | \(1/\lambda\) | \(1/\lambda^2\) |
+| Bernoulli($(p)$) | $(p)$ | $(p(1-p))$ |
+| Binomial($(n,p)$) | $(np)$ | $(np(1-p))$ |
+| Poisson($(\lambda)$) | $(\lambda)$ | $(\lambda)$ |
+| Uniform($(a,b)$) | $((a+b)/2)$ | $((b-a)^2/12)$ |
+| Gaussian($(\mu,\sigma^2)$) | $(\mu)$ | $(\sigma^2)$ |
+| Exponential($(\lambda)$) | $(1/\lambda)$ | $(1/\lambda^2)$ |
 
 ---
 
@@ -540,9 +544,9 @@ exponential_samples = rng.exponential(2, 1000)
 
 The Exponential sampler's `2` is a **scale**, corresponding to rate:
 
-\[
+$$
 \lambda=1/2.
-\]
+$$
 
 ---
 
@@ -566,7 +570,7 @@ print(expon.pdf(2, scale=2))
 
 1. Treating a PDF value as a probability. For continuous variables, probability is an area.
 2. Using Binomial when trials are not independent or the success probability is not constant.
-3. Treating Poisson \(\lambda\) as a probability rather than an expected count/rate.
+3. Treating Poisson $(\lambda)$ as a probability rather than an expected count/rate.
 4. Confusing Exponential rate and scale.
 5. Assuming every real dataset is Gaussian without checking the model.
 
@@ -579,13 +583,13 @@ print(expon.pdf(2, scale=2))
 3. Give three applications of Bernoulli trials.
 4. Derive the Bernoulli mean and variance.
 5. Explain how Binomial is built from Bernoulli trials.
-6. Calculate \(P(X=3)\) for \(X\sim Binomial(10,0.4)\).
+6. Calculate $(P(X=3))$ for $(X\sim Binomial(10,0.4))$.
 7. When is Poisson appropriate?
-8. Calculate \(P(X=2)\) for \(X\sim Poisson(3)\).
+8. Calculate $(P(X=2))$ for $(X\sim Poisson(3))$.
 9. Explain the Poisson approximation to Binomial.
-10. Find the mean and variance of \(Uniform(2,8)\).
+10. Find the mean and variance of $(Uniform(2,8))$.
 11. Explain the 68–95–99.7 rule.
-12. Calculate the z-score for \(x=85,\mu=70,\sigma=10\).
+12. Calculate the z-score for $(x=85,\mu=70,\sigma=10)$.
 13. Define the Exponential distribution.
 14. Explain the Poisson-Exponential relationship.
 15. Explain the memoryless property.
@@ -595,48 +599,7 @@ print(expon.pdf(2, scale=2))
 
 ---
 
-# 19. Figures Included
-
-The `figures/` directory contains:
-
-1. `01_bernoulli_pmf.png` — Bernoulli PMF.
-2. `02_binomial_pmf.png` — Binomial PMF.
-3. `03_poisson_pmf.png` — Poisson PMF.
-4. `04_uniform_pdf.png` — Uniform PDF.
-5. `05_gaussian_pdf.png` — Gaussian PDF.
-6. `06_gaussian_empirical_rule.png` — 68–95–99.7 rule.
-7. `07_exponential_pdf.png` — Exponential PDF.
-8. `08_discrete_vs_continuous.png` — discrete versus continuous probability.
-
----
-
-# 20. GitHub Structure
-
-```text
-common-probability-distributions/
-├── common_probability_distributions.md
-└── figures/
-    ├── 01_bernoulli_pmf.png
-    ├── 02_binomial_pmf.png
-    ├── 03_poisson_pmf.png
-    ├── 04_uniform_pdf.png
-    ├── 05_gaussian_pdf.png
-    ├── 06_gaussian_empirical_rule.png
-    ├── 07_exponential_pdf.png
-    └── 08_discrete_vs_continuous.png
-```
-
-The Markdown uses relative paths such as:
-
-```markdown
-![Bernoulli PMF](figures/01_bernoulli_pmf.png)
-```
-
-so GitHub will render the figures when the Markdown file and `figures/` directory are uploaded together.
-
----
-
-# 21. Summary
+# 19. Summary
 
 - **Bernoulli:** one binary trial.
 - **Binomial:** number of successes in fixed Bernoulli trials.
@@ -646,3 +609,13 @@ so GitHub will render the figures when the Markdown file and `figures/` director
 - **Exponential:** waiting time between events.
 
 The most important modeling skill is to select a distribution whose assumptions match the process that generated the data.
+
+---
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
