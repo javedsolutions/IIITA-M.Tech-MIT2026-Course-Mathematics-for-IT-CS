@@ -1,10 +1,14 @@
-# Introduction to Queueing and Network Models
-
-> A GitHub-ready reading material introducing queueing systems, basic queueing terminology, performance measures, classical queueing models, Little's Law, utilization, multi-server systems, queue disciplines, and queueing networks.
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 4: Stochastic Processes and Random Models
+* ### Current Topic: Introduction to Queueing and Network Models  
+* #### Introducing queueing systems, basic queueing terminology, performance measures, classical queueing models, Little's Law, utilization, multi-server systems, queue disciplines, and queueing networks.
 ---
-
-## Learning Objectives
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
+## 🎯 Learning Objectives
 
 After studying this chapter, you should be able to:
 
@@ -2040,46 +2044,11 @@ These ideas form the foundation for more advanced topics including:
 25. Design a simple queueing network for a web application.
 
 ---
-
-# 58. Figures Included
-
-The `figures/` directory contains:
-
-1. `01_basic_queueing_system.png` — arrival, queue, server, and departure flow.
-2. `02_queueing_timeline.png` — arrival, waiting, service, and time-in-system intervals.
-3. `03_littles_law.png` — conceptual relationship between arrival rate and average system size.
-4. `04_utilization_vs_delay.png` — M/M/1 delay increasing sharply near full utilization.
-5. `05_multi_server_queue.png` — one queue feeding multiple parallel servers.
-6. `06_queueing_network_topology.png` — example network of interacting service stations.
-7. `07_open_closed_networks.png` — comparison of open and closed queueing networks.
-8. `08_mm1_state_diagram.png` — birth-death state diagram for M/M/1.
-9. `09_queue_length_simulation.png` — simulated queue-length evolution.
-
-The Markdown uses relative image paths such as:
-
-```markdown
-![Basic queueing system](figures/01_basic_queueing_system.png)
-```
-
-Therefore, GitHub will render the figures automatically when the Markdown file and `figures/` directory are uploaded together.
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
 ---
-
-# 59. Recommended GitHub Repository Structure
-
-```text
-introduction-to-queueing/
-│
-├── introduction_to_queueing_and_network_models.md
-│
-└── figures/
-    ├── 01_basic_queueing_system.png
-    ├── 02_queueing_timeline.png
-    ├── 03_littles_law.png
-    ├── 04_utilization_vs_delay.png
-    ├── 05_multi_server_queue.png
-    ├── 06_queueing_network_topology.png
-    ├── 07_open_closed_networks.png
-    ├── 08_mm1_state_diagram.png
-    └── 09_queue_length_simulation.png
-```
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
