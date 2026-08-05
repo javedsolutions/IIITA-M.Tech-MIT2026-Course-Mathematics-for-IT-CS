@@ -1,9 +1,13 @@
-# Introduction to Applications of Probability in Information Technology, AI and Data Analytics
-
-> A GitHub-ready reading material on how probability provides the mathematical foundation for uncertainty, prediction, inference, machine learning, information technology, and data analytics.
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 3: Probability and Random Variable
+### Current Topic: Applications of Probability in Information Technology, AI and Data Analytics
+#### Reading material on how probability provides the mathematical foundation for uncertainty, prediction, inference, machine learning, information technology, and data analytics
 ---
-
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
 ## Learning Objectives
 
 After completing this chapter, you should be able to:
@@ -42,7 +46,7 @@ Probability provides a formal language for answering such questions.
 
 A useful conceptual pipeline is:
 
-\[
+$$
 \boxed{
 \text{Data}
 \rightarrow
@@ -54,7 +58,7 @@ A useful conceptual pipeline is:
 \rightarrow
 \text{Decision}
 }
-\]
+$$
 
 ![Probability to decision pipeline](figures/01_probability_to_decision_pipeline.png)
 
@@ -94,37 +98,37 @@ Probability allows these situations to be modeled mathematically.
 
 # 3. Probability and Uncertainty
 
-Suppose an event \(A\) represents:
+Suppose an event $(A)$ represents:
 
 > A server becomes unavailable during the next hour.
 
 Its probability is:
 
-\[
+$$
 P(A).
-\]
+$$
 
 The value lies between 0 and 1:
 
-\[
+$$
 \boxed{
 0\le P(A)\le1.
 }
-\]
+$$
 
 Interpretation:
 
-- \(P(A)=0\): impossible under the model;
-- \(P(A)=1\): certain under the model;
-- \(P(A)=0.5\): equal probability of occurrence and non-occurrence.
+- $(P(A)=0)$: impossible under the model;
+- $(P(A)=1)$: certain under the model;
+- $(P(A)=0.5)$: equal probability of occurrence and non-occurrence.
 
 Probability can also be expressed as a percentage.
 
 For example:
 
-\[
+$$
 P(A)=0.02=2\%.
-\]
+$$
 
 ---
 
@@ -134,24 +138,24 @@ A **sample space** is the set of possible outcomes.
 
 For example, if a system status is represented by:
 
-\[
+$$
 \{\text{Healthy},\text{Failed}\},
-\]
+$$
 
 then:
 
-\[
+$$
 \Omega=
 \{\text{Healthy},\text{Failed}\}.
-\]
+$$
 
 An **event** is a subset of the sample space.
 
 For example:
 
-\[
+$$
 A=\{\text{Failed}\}.
-\]
+$$
 
 Events can be:
 
@@ -167,69 +171,67 @@ These concepts form the basis for probability-based reasoning.
 
 # 5. Basic Probability Rules
 
-For an event \(A\):
+For an event $(A)$:
 
-\[
+$$
 0\le P(A)\le1.
-\]
+$$
 
 The probability of the sample space is:
 
-\[
+$$
 \boxed{
 P(\Omega)=1.
 }
-\]
+$$
 
 The probability of the empty event is:
 
-\[
+$$
 \boxed{
 P(\varnothing)=0.
 }
-\]
+$$
 
 For the complement:
 
-\[
+$$
 \boxed{
 P(A^c)=1-P(A).
 }
-\]
+$$
 
 For two events:
 
-\[
+$$
 \boxed{
 P(A\cup B)=P(A)+P(B)-P(A\cap B).
 }
-\]
+$$
 
 ---
 
 # 6. Conditional Probability
 
-Suppose we want the probability of \(A\) given that \(B\) has occurred.
+Suppose we want the probability of $(A)$ given that $(B)$ has occurred.
 
 This is written:
 
-\[
+$$
 \boxed{
 P(A\mid B)
 }
-\]
+$$
 
 and is defined by:
 
-\[
+$$
 \boxed{
-P(A\mid B)
-=
-\frac{P(A\cap B)}{P(B)}
+P(A\mid B) = \frac{P(A\cap B)}{P(B)}
 }
-\]
+$$
 
-when \(P(B)>0\).
+when $(P(B)>0)$.
 
 Conditional probability is fundamental in:
 
@@ -252,35 +254,35 @@ Suppose:
 
 Let:
 
-\[
+$$
 M=\text{malicious}
-\]
+$$
 
 and:
 
-\[
+$$
 F=\text{flagged}.
-\]
+$$
 
 Then:
 
-\[
+$$
 P(M)=0.05
-\]
+$$
 
-\[
+$$
 P(F\mid M)=0.90
-\]
+$$
 
-\[
+$$
 P(F\mid M^c)=0.10.
-\]
+$$
 
 The important question is:
 
-\[
+$$
 P(M\mid F)?
-\]
+$$
 
 This is not simply 90%.
 
@@ -292,35 +294,29 @@ Bayes' theorem is required.
 
 Bayes' theorem is:
 
-\[
+$$
 \boxed{
-P(A\mid B)
-=
-\frac{P(B\mid A)P(A)}
-{P(B)}
+P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}
 }
-\]
+$$
 
 The denominator can be expanded using the law of total probability.
 
 For a binary case:
 
-\[
+$$
 P(B)=P(B\mid A)P(A)
 +
 P(B\mid A^c)P(A^c).
-\]
+$$
 
 Therefore:
 
-\[
+$$
 \boxed{
-P(A\mid B)
-=
-\frac{P(B\mid A)P(A)}
-{P(B\mid A)P(A)+P(B\mid A^c)P(A^c)}
+P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B\mid A)P(A)+P(B\mid A^c)P(A^c)}
 }
-\]
+$$
 
 ---
 
@@ -330,7 +326,7 @@ Bayesian reasoning updates an initial belief using evidence.
 
 The basic structure is:
 
-\[
+$$
 \boxed{
 \text{Posterior}
 \propto
@@ -338,7 +334,7 @@ The basic structure is:
 \times
 \text{Prior}
 }
-\]
+$$
 
 where:
 
@@ -389,21 +385,21 @@ print("P(Malicious | Flagged) =", posterior)
 
 # 11. Independence
 
-Two events \(A\) and \(B\) are independent if:
+Two events $(A)$ and $(B)$ are independent if:
 
-\[
+$$
 \boxed{
 P(A\cap B)=P(A)P(B).
 }
-\]
+$$
 
 Equivalently:
 
-\[
+$$
 \boxed{
 P(A\mid B)=P(A).
 }
-\]
+$$
 
 Independence is useful when modeling systems in which one event does not influence another.
 
@@ -424,15 +420,15 @@ A **random variable** maps outcomes of a random experiment to numerical values.
 
 For example:
 
-\[
+$$
 X=\text{number of failed login attempts in one hour}.
-\]
+$$
 
-Then \(X\) might take values:
+Then $(X)$ might take values:
 
-\[
+$$
 0,1,2,3,\ldots
-\]
+$$
 
 Random variables can be:
 
@@ -454,23 +450,23 @@ Examples:
 
 A **probability mass function (PMF)** is:
 
-\[
+$$
 \boxed{
 P(X=x).
 }
-\]
+$$
 
 It must satisfy:
 
-\[
+$$
 P(X=x)\ge0
-\]
+$$
 
 and:
 
-\[
+$$
 \sum_xP(X=x)=1.
-\]
+$$
 
 ---
 
@@ -487,25 +483,23 @@ Examples:
 
 A continuous random variable is described by a **probability density function (PDF)**:
 
-\[
+$$
 f_X(x).
-\]
+$$
 
 Probabilities are obtained by integration:
 
-\[
+$$
 \boxed{
-P(a\le X\le b)
-=
-\int_a^b f_X(x)\,dx.
+P(a\le X\le b)=\int_a^b f_X(x)\,dx.
 }
-\]
+$$
 
 For a continuous variable:
 
-\[
+$$
 P(X=x)=0
-\]
+$$
 
 for an individual exact point.
 
@@ -515,11 +509,11 @@ for an individual exact point.
 
 The **CDF** is:
 
-\[
+$$
 \boxed{
 F_X(x)=P(X\le x).
 }
-\]
+$$
 
 It works for both discrete and continuous random variables.
 
@@ -529,9 +523,9 @@ The CDF is useful for answering questions such as:
 
 That is:
 
-\[
+$$
 P(X\le100).
-\]
+$$
 
 ---
 
@@ -541,24 +535,24 @@ The Gaussian or normal distribution is widely used in statistics and data analyt
 
 Its density is:
 
-\[
+$$
 \boxed{
 f(x)=
 \frac{1}{\sigma\sqrt{2\pi}}
 e^{-\frac{(x-\mu)^2}{2\sigma^2}}.
 }
-\]
+$$
 
 Parameters:
 
-- \(\mu\) = mean;
-- \(\sigma\) = standard deviation.
+- $(\mu)$ = mean;
+- $(\sigma)$ = standard deviation.
 
 For a standard normal variable:
 
-\[
+$$
 Z\sim N(0,1).
-\]
+$$
 
 ![Gaussian distribution](figures/03_gaussian_distribution.png)
 
@@ -572,19 +566,19 @@ The **expected value** represents a probability-weighted average.
 
 For a discrete variable:
 
-\[
+$$
 \boxed{
 E[X]=\sum_xxP(X=x).
 }
-\]
+$$
 
 For a continuous variable:
 
-\[
+$$
 \boxed{
 E[X]=\int_{-\infty}^{\infty}xf_X(x)\,dx.
 }
-\]
+$$
 
 Expected values are used in:
 
@@ -600,31 +594,27 @@ Expected values are used in:
 
 Variance measures the spread around the mean.
 
-\[
+$$
 \boxed{
-\operatorname{Var}(X)
-=
-E[(X-E[X])^2].
+\operatorname{Var}(X)=E[(X-E[X])^2].
 }
-\]
+$$
 
 Equivalent form:
 
-\[
+$$
 \boxed{
-\operatorname{Var}(X)
-=
-E[X^2]-(E[X])^2.
+\operatorname{Var}(X)=E[X^2]-(E[X])^2.
 }
-\]
+$$
 
 The standard deviation is:
 
-\[
+$$
 \boxed{
 \sigma_X=\sqrt{\operatorname{Var}(X)}.
 }
-\]
+$$
 
 In data analytics, variance is important for understanding uncertainty and variability.
 
@@ -663,30 +653,30 @@ The Law of Large Numbers states, informally, that averages of many independent o
 
 Suppose:
 
-\[
+$$
 X_1,X_2,\ldots,X_n
-\]
+$$
 
 are independent observations with expected value:
 
-\[
+$$
 E[X]=\mu.
-\]
+$$
 
 Then the sample mean:
 
-\[
+$$
 \bar X_n=
 \frac1n\sum_{i=1}^nX_i
-\]
+$$
 
 approaches:
 
-\[
+$$
 \mu
-\]
+$$
 
-as \(n\) becomes large under standard assumptions.
+as $(n)$ becomes large under standard assumptions.
 
 ![Law of Large Numbers](figures/04_law_of_large_numbers.png)
 
@@ -702,19 +692,19 @@ Under standard conditions, the distribution of a suitably normalized sample mean
 
 If:
 
-\[
+$$
 E[X]=\mu
-\]
+$$
 
 and:
 
-\[
+$$
 \operatorname{Var}(X)=\sigma^2,
-\]
+$$
 
 then approximately:
 
-\[
+$$
 \boxed{
 \bar X
 \approx
@@ -722,9 +712,9 @@ N\left(
 \mu,\frac{\sigma^2}{n}
 \right)
 }
-\]
+$$
 
-for sufficiently large \(n\).
+for sufficiently large $(n)$.
 
 ![Sampling distribution](figures/05_sampling_distribution.png)
 
@@ -772,44 +762,44 @@ Examples:
 
 Predict:
 
-\[
+$$
 P(Y=k\mid X=x).
-\]
+$$
 
 ### Regression
 
 Estimate:
 
-\[
+$$
 P(Y\mid X=x).
-\]
+$$
 
 ### Generative modeling
 
 Learn:
 
-\[
+$$
 P(X)
-\]
+$$
 
 or:
 
-\[
+$$
 P(X,Y).
-\]
+$$
 
 ### Bayesian modeling
 
 Infer:
 
-\[
+$$
 P(\theta\mid D).
-\]
+$$
 
 where:
 
-- \(\theta\) = model parameters;
-- \(D\) = observed data.
+- $(\theta)$ = model parameters;
+- $(D)$ = observed data.
 
 ---
 
@@ -817,15 +807,15 @@ where:
 
 Instead of simply predicting:
 
-\[
+$$
 \text{Class}=1,
-\]
+$$
 
 a classifier may produce:
 
-\[
+$$
 P(Y=1\mid X)=0.92.
-\]
+$$
 
 This means the model estimates a 92% probability for class 1 under its model.
 
@@ -841,14 +831,11 @@ Logistic regression models the probability of a binary outcome.
 
 A common form is:
 
-\[
+$$
 \boxed{
-P(Y=1\mid X)
-=
-\frac{1}
-{1+e^{-(\beta_0+\beta_1x_1+\cdots+\beta_px_p)}}
+P(Y=1\mid X)=\frac{1}{1+e^{-(\beta_0+\beta_1x_1+\cdots+\beta_px_p)}}
 }
-\]
+$$
 
 The output lies between 0 and 1.
 
@@ -886,17 +873,17 @@ plt.show()
 
 A probability model may output:
 
-\[
+$$
 P(Y=1\mid X)=0.7.
-\]
+$$
 
 A classification threshold can then be selected.
 
-For threshold \(0.5\):
+For threshold $(0.5)$:
 
-\[
+$$
 0.7>0.5
-\]
+$$
 
 so the predicted class is 1.
 
@@ -926,27 +913,27 @@ From these values we can calculate:
 
 ### Accuracy
 
-\[
+$$
 \boxed{
 \frac{TP+TN}{TP+TN+FP+FN}
 }
-\]
+$$
 
 ### Precision
 
-\[
+$$
 \boxed{
 \frac{TP}{TP+FP}
 }
-\]
+$$
 
 ### Recall
 
-\[
+$$
 \boxed{
 \frac{TP}{TP+FN}
 }
-\]
+$$
 
 These measures help evaluate probabilistic classifiers after a decision threshold is applied.
 
@@ -956,27 +943,27 @@ These measures help evaluate probabilistic classifiers after a decision threshol
 
 Suppose:
 
-\[
+$$
 S=\text{message is spam}
-\]
+$$
 
 and:
 
-\[
+$$
 W=\text{message contains a particular word}.
-\]
+$$
 
 A Bayesian spam filter may estimate:
 
-\[
+$$
 P(S\mid W).
-\]
+$$
 
 Using multiple features:
 
-\[
+$$
 P(S\mid W_1,W_2,\ldots,W_n).
-\]
+$$
 
 This illustrates how probability transforms observed features into a prediction.
 
@@ -986,17 +973,15 @@ This illustrates how probability transforms observed features into a prediction.
 
 Recommendation systems often estimate probabilities such as:
 
-\[
+$$
 P(\text{click}\mid\text{user,item,context}).
-\]
+$$
 
 For example:
 
-\[
-P(\text{watch}\mid\text{user history,movie})
-=
-0.73.
-\]
+$$
+P(\text{watch}\mid\text{user history,movie})=0.73.
+$$
 
 The system can rank candidate items by predicted probability.
 
@@ -1016,9 +1001,9 @@ Search systems estimate relevance and uncertainty.
 
 A simplified model might estimate:
 
-\[
+$$
 P(\text{relevant}\mid\text{query,document}).
-\]
+$$
 
 Documents can then be ranked by predicted relevance.
 
@@ -1041,28 +1026,25 @@ Language models assign probabilities to sequences of tokens.
 
 For a sequence:
 
-\[
+$$
 w_1,w_2,\ldots,w_n,
-\]
+$$
 
 the chain rule gives:
 
-\[
+$$
 \boxed{
-P(w_1,\ldots,w_n)
-=
-\prod_{i=1}^{n}
-P(w_i\mid w_1,\ldots,w_{i-1}).
+P(w_1,\ldots,w_n)=\prod_{i=1}^{n}P(w_i\mid w_1,\ldots,w_{i-1}).
 }
-\]
+$$
 
 This is fundamental to probabilistic language modeling.
 
 A model may estimate:
 
-\[
+$$
 P(\text{next word}\mid\text{previous context}).
-\]
+$$
 
 Probability is therefore central to predictive language systems.
 
@@ -1072,20 +1054,20 @@ Probability is therefore central to predictive language systems.
 
 Computer vision systems often estimate:
 
-\[
+$$
 P(Y\mid X)
-\]
+$$
 
 where:
 
-- \(X\) = image;
-- \(Y\) = object or class.
+- $(X)$ = image;
+- $(Y)$ = object or class.
 
 For example:
 
-\[
+$$
 P(\text{cat}\mid\text{image})=0.94.
-\]
+$$
 
 The model may produce a probability distribution across many possible classes.
 
@@ -1105,26 +1087,23 @@ Neural networks often produce scores that can be converted into probabilities.
 
 For multi-class classification, the **softmax** function is:
 
-\[
+$$
 \boxed{
-P(Y=k\mid X)
-=
-\frac{e^{z_k}}
-{\sum_j e^{z_j}}.
+P(Y=k\mid X)=\frac{e^{z_k}}{\sum_j e^{z_j}}.
 }
-\]
+$$
 
 The resulting values satisfy:
 
-\[
+$$
 0\le P(Y=k\mid X)\le1
-\]
+$$
 
 and:
 
-\[
+$$
 \sum_kP(Y=k\mid X)=1.
-\]
+$$
 
 ---
 
@@ -1134,16 +1113,16 @@ For classification, a common probabilistic loss is cross-entropy.
 
 For one observation:
 
-\[
+$$
 \boxed{
 L=-\sum_k y_k\log(\hat p_k)
 }
-\]
+$$
 
 where:
 
-- \(y_k\) = true class indicator;
-- \(\hat p_k\) = predicted probability.
+- $(y_k)$ = true class indicator;
+- $(\hat p_k)$ = predicted probability.
 
 The model is rewarded for assigning high probability to the correct class.
 
@@ -1155,42 +1134,35 @@ Thus probability is directly embedded in the training objective.
 
 Suppose observed data are:
 
-\[
+$$
 D=\{x_1,x_2,\ldots,x_n\}.
-\]
+$$
 
 A model has parameter \(\theta\).
 
 The likelihood is:
 
-\[
+$$
 \boxed{
-L(\theta\mid D)
-=
-\prod_{i=1}^{n}p(x_i\mid\theta).
+L(\theta\mid D)=\prod_{i=1}^{n}p(x_i\mid\theta).
 }
-\]
+$$
 
 Maximum likelihood estimation chooses:
 
-\[
+$$
 \boxed{
-\hat\theta
-=
-\arg\max_\theta L(\theta\mid D).
+\hat\theta = \arg\max_\theta L(\theta\mid D).
 }
-\]
+$$
 
 In practice, the log-likelihood is often maximized:
 
-\[
+$$
 \boxed{
-\hat\theta
-=
-\arg\max_\theta
-\sum_i\log p(x_i\mid\theta).
+\hat\theta = \arg\max_\theta\sum_i\log p(x_i\mid\theta).
 }
-\]
+$$
 
 Maximum likelihood is fundamental to statistical modeling and machine learning.
 
@@ -1232,19 +1204,19 @@ Bayesian inference treats parameters as uncertain quantities.
 
 The central equation is:
 
-\[
+$$
 \boxed{
 P(\theta\mid D)
 \propto
 P(D\mid\theta)P(\theta)
 }
-\]
+$$
 
 where:
 
-- \(P(\theta)\) = prior;
-- \(P(D\mid\theta)\) = likelihood;
-- \(P(\theta\mid D)\) = posterior.
+- $(P(\theta))$ = prior;
+- $(P(D\mid\theta))$ = likelihood;
+- $(P(\theta\mid D))$ = posterior.
 
 Bayesian methods are useful when:
 
@@ -1259,9 +1231,9 @@ Bayesian methods are useful when:
 
 Suppose an AI system predicts that an event has probability:
 
-\[
+$$
 P(A)=0.8.
-\]
+$$
 
 Whether the system should act depends not only on the probability but also on the consequences.
 
@@ -1272,21 +1244,19 @@ Suppose:
 
 Expected utility can be written:
 
-\[
-EU(\text{action})
-=
-\sum_sP(s\mid x)U(\text{action},s).
-\]
+$$
+EU(\text{action}) = \sum_sP(s\mid x)U(\text{action},s).
+$$
 
 Thus:
 
-\[
+$$
 \boxed{
 \text{Probability}+\text{Utility}
 \rightarrow
 \text{Decision}.
 }
-\]
+$$
 
 This is a foundation of decision theory.
 
@@ -1296,33 +1266,29 @@ This is a foundation of decision theory.
 
 Risk can be represented as:
 
-\[
+$$
 \boxed{
-\text{Risk}
-=
-\text{Probability of event}
-\times
-\text{Impact}.
+\text{Risk} = \text{Probability of event}\times\text{Impact}.
 }
-\]
+$$
 
 For example:
 
-\[
+$$
 P(\text{failure})=0.02
-\]
+$$
 
 and:
 
-\[
+$$
 \text{impact}=\$100,000.
-\]
+$$
 
 Expected loss:
 
-\[
+$$
 0.02(100000)=\$2,000.
-\]
+$$
 
 This idea is useful in:
 
@@ -1349,9 +1315,9 @@ Probability is used in:
 
 A security system might estimate:
 
-\[
+$$
 P(\text{attack}\mid\text{observed behavior}).
-\]
+$$
 
 A high probability can trigger an alert.
 
@@ -1365,9 +1331,9 @@ An observation far from the expected distribution may be considered anomalous.
 
 For example:
 
-\[
+$$
 P(X=x\mid\text{normal})
-\]
+$$
 
 can be very small for unusual observations.
 
@@ -1375,11 +1341,11 @@ can be very small for unusual observations.
 
 A probabilistic anomaly detector may use:
 
-\[
+$$
 \boxed{
 -\log P(X)
 }
-\]
+$$
 
 as an anomaly score.
 
@@ -1415,39 +1381,33 @@ Consider a network with components that can fail.
 
 If components are independent:
 
-\[
+$$
 P(A\cap B)=P(A)P(B).
-\]
+$$
 
 For two components both required to work:
 
-\[
-P(\text{system works})
-=
-P(A)P(B).
-\]
+$$
+P(\text{system works})=P(A)P(B).
+$$
 
 If:
 
-\[
+$$
 P(A)=0.99
-\]
+$$
 
 and:
 
-\[
+$$
 P(B)=0.98,
-\]
+$$
 
 then:
 
-\[
-P(\text{system works})
-=
-0.99(0.98)
-=
-0.9702.
-\]
+$$
+P(\text{system works})=0.99(0.98)=0.9702.
+$$
 
 Thus system reliability is approximately 97.02%.
 
@@ -1461,33 +1421,29 @@ The system fails only if both servers fail.
 
 If:
 
-\[
+$$
 P(F_1)=p_1
-\]
+$$
 
 and:
 
-\[
+$$
 P(F_2)=p_2,
-\]
+$$
 
 then:
 
-\[
-P(\text{failure})
-=
-p_1p_2.
-\]
+$$
+P(\text{failure})=p_1p_2.
+$$
 
 Therefore:
 
-\[
+$$
 \boxed{
-P(\text{success})
-=
-1-p_1p_2.
+P(\text{success})=1-p_1p_2.
 }
-\]
+$$
 
 Redundancy can therefore greatly improve reliability.
 
@@ -1522,9 +1478,9 @@ Probability can help model missingness.
 
 For example:
 
-\[
+$$
 P(M=1\mid X)
-\]
+$$
 
 can represent the probability that a value is missing given other observed variables.
 
@@ -1545,23 +1501,23 @@ Suppose two website designs are compared:
 
 Let:
 
-\[
+$$
 p_A
-\]
+$$
 
 be the conversion probability for A and:
 
-\[
+$$
 p_B
-\]
+$$
 
 for B.
 
 Observed conversion rates provide estimates:
 
-\[
+$$
 \hat p_A,\qquad \hat p_B.
-\]
+$$
 
 Probability and statistical inference help determine whether observed differences are likely to reflect genuine performance differences rather than random variation.
 
@@ -1571,21 +1527,21 @@ Probability and statistical inference help determine whether observed difference
 
 A point forecast gives one value:
 
-\[
+$$
 \hat y=100.
-\]
+$$
 
 A probabilistic forecast gives a distribution:
 
-\[
+$$
 P(Y\mid X).
-\]
+$$
 
 For example:
 
-\[
+$$
 Y\sim N(100,15^2).
-\]
+$$
 
 Then the forecast communicates both:
 
@@ -1600,37 +1556,37 @@ This is often much more useful for decision-making.
 
 Suppose:
 
-\[
+$$
 Y\sim N(\mu,\sigma^2).
-\]
+$$
 
 An approximate 95% interval is:
 
-\[
+$$
 \boxed{
 \mu\pm1.96\sigma
 }
-\]
+$$
 
 under the normal model.
 
 For example:
 
-\[
+$$
 \mu=100,\quad\sigma=10.
-\]
+$$
 
 Then:
 
-\[
+$$
 100\pm19.6.
-\]
+$$
 
 So an approximate interval is:
 
-\[
+$$
 [80.4,119.6].
-\]
+$$
 
 The exact interpretation depends on whether the interval is a confidence interval, prediction interval, or Bayesian credible interval.
 
@@ -1649,11 +1605,11 @@ General structure:
 
 For example:
 
-\[
+$$
 E[g(X)]
 \approx
 \frac1N\sum_{i=1}^Ng(X_i).
-\]
+$$
 
 ---
 
@@ -1661,40 +1617,40 @@ E[g(X)]
 
 Randomly sample points in the square:
 
-\[
+$$
 [-1,1]\times[-1,1].
-\]
+$$
 
 The area of the square is:
 
-\[
+$$
 4.
-\]
+$$
 
 The area of the unit circle is:
 
-\[
+$$
 \pi.
-\]
+$$
 
 Therefore:
 
-\[
+$$
 \frac{\text{points inside circle}}
 {\text{total points}}
 \approx
 \frac{\pi}{4}.
-\]
+$$
 
 Thus:
 
-\[
+$$
 \boxed{
 \pi
 \approx
 4\frac{N_{\text{inside}}}{N}.
 }
-\]
+$$
 
 ![Monte Carlo estimation](figures/08_monte_carlo_pi.png)
 
@@ -1732,30 +1688,28 @@ A Markov model assumes that the next state depends on the current state accordin
 
 For states:
 
-\[
+$$
 S_1,S_2,\ldots,S_n,
-\]
+$$
 
 the transition probability is:
 
-\[
+$$
 \boxed{
-P_{ij}
-=
-P(X_{t+1}=S_j\mid X_t=S_i).
+P_{ij}=P(X_{t+1}=S_j\mid X_t=S_i).
 }
-\]
+$$
 
 The transition matrix is:
 
-\[
+$$
 P=
 \begin{bmatrix}
 P_{11}&P_{12}&\cdots\\
 P_{21}&P_{22}&\cdots\\
 \vdots&\vdots&\ddots
 \end{bmatrix}.
-\]
+$$
 
 ![Markov chain](figures/09_markov_chain_system_load.png)
 
@@ -1817,9 +1771,9 @@ Examples:
 
 A probabilistic model can represent:
 
-\[
+$$
 P(X_t\mid X_{t-1},X_{t-2},\ldots).
-\]
+$$
 
 This supports forecasting and anomaly detection.
 
@@ -1831,17 +1785,17 @@ Features can themselves be probabilistic.
 
 Examples:
 
-\[
+$$
 P(\text{customer churn}\mid\text{features})
-\]
+$$
 
-\[
+$$
 P(\text{fraud}\mid\text{transaction})
-\]
+$$
 
-\[
+$$
 P(\text{click}\mid\text{advertisement})
-\]
+$$
 
 These probability estimates can become new features for downstream models.
 
@@ -1871,9 +1825,9 @@ A model can have good accuracy but poor probability calibration.
 
 Suppose an AI model predicts:
 
-\[
+$$
 P(\text{fraud}\mid x)=0.1.
-\]
+$$
 
 Suppose:
 
@@ -1882,15 +1836,15 @@ Suppose:
 
 Expected cost of allowing:
 
-\[
+$$
 0.1(100)=10.
-\]
+$$
 
 Expected cost of rejecting:
 
-\[
+$$
 0.9(5)=4.5.
-\]
+$$
 
 Under these assumptions, rejecting may have lower expected cost.
 
@@ -1902,25 +1856,23 @@ This illustrates why **decision thresholds should depend on costs**, not just ac
 
 Probability is also the foundation of information theory.
 
-For an event with probability \(p\), information content can be defined as:
+For an event with probability $(p)$, information content can be defined as:
 
-\[
+$$
 \boxed{
 I(x)=-\log_2 p(x).
 }
-\]
+$$
 
 Rare events contain more information.
 
 For a discrete random variable:
 
-\[
+$$
 \boxed{
-H(X)
-=
--\sum_xp(x)\log_2p(x)
+H(X)=-\sum_xp(x)\log_2p(x)
 }
-\]
+$$
 
 is the **Shannon entropy**.
 
@@ -1940,21 +1892,19 @@ Applications include:
 
 Decision-tree algorithms often use entropy:
 
-\[
-H(Y)
-=
--\sum_yp(y)\log_2p(y).
-\]
+$$
+H(Y)=-\sum_yp(y)\log_2p(y).
+$$
 
 A feature can reduce uncertainty.
 
 The information gain is:
 
-\[
+$$
 \boxed{
 IG=H(Y)-H(Y\mid X).
 }
-\]
+$$
 
 Thus probability directly supports feature selection and tree construction.
 
@@ -1964,11 +1914,11 @@ Thus probability directly supports feature selection and tree construction.
 
 Suppose symbols have probabilities:
 
-\[
+$$
 P(A)=0.7,\quad
 P(B)=0.2,\quad
 P(C)=0.1.
-\]
+$$
 
 A compression algorithm can assign shorter codes to more probable symbols.
 
@@ -1988,15 +1938,15 @@ Cloud systems face uncertain workloads.
 
 Suppose:
 
-\[
+$$
 X=\text{number of requests per second}.
-\]
+$$
 
 We may model:
 
-\[
+$$
 P(X=x).
-\]
+$$
 
 This supports:
 
@@ -2008,9 +1958,9 @@ This supports:
 
 For example, a cloud platform might scale up when:
 
-\[
+$$
 P(X>\text{capacity})
-\]
+$$
 
 becomes too high.
 
@@ -2044,15 +1994,15 @@ Distributed systems contain uncertainty caused by:
 
 Probability can be used to model:
 
-\[
+$$
 P(\text{node failure})
-\]
+$$
 
 or:
 
-\[
+$$
 P(\text{request exceeds latency threshold}).
-\]
+$$
 
 This helps engineers design systems with appropriate redundancy and capacity.
 
@@ -2062,33 +2012,33 @@ This helps engineers design systems with appropriate redundancy and capacity.
 
 Let:
 
-\[
+$$
 T=\text{time to failure}.
-\]
+$$
 
 Then:
 
-\[
+$$
 P(T>t)
-\]
+$$
 
 is the reliability function.
 
 The reliability function is:
 
-\[
+$$
 \boxed{
 R(t)=P(T>t).
 }
-\]
+$$
 
-The failure probability by time \(t\) is:
+The failure probability by time $(t)$ is:
 
-\[
+$$
 \boxed{
 F(t)=1-R(t).
 }
-\]
+$$
 
 These concepts are useful for:
 
@@ -2134,23 +2084,23 @@ A model trained on one distribution may receive unfamiliar data.
 
 Let:
 
-\[
+$$
 X\sim P_{\text{train}}
-\]
+$$
 
 during training.
 
 At deployment, data may instead come from:
 
-\[
+$$
 P_{\text{test}}.
-\]
+$$
 
 If:
 
-\[
+$$
 P_{\text{test}}\ne P_{\text{train}},
-\]
+$$
 
 performance can degrade.
 
@@ -2176,23 +2126,21 @@ Generative AI models often represent probability distributions over possible out
 
 A simplified formulation is:
 
-\[
+$$
 P(X)
-\]
+$$
 
 or:
 
-\[
+$$
 P(Y\mid X).
-\]
+$$
 
 For sequence generation:
 
-\[
-P(x_1,\ldots,x_n)
-=
-\prod_iP(x_i\mid x_{<i}).
-\]
+$$
+P(x_1,\ldots,x_n)=\prod_iP(x_i\mid x_{<i}).
+$$
 
 Sampling from these distributions allows models to generate varied outputs.
 
@@ -2313,11 +2261,9 @@ For a variable \(X\), analysts may estimate:
 
 For example:
 
-\[
-\hat P(X>100)
-=
-\frac{\#\{x_i>100\}}{n}.
-\]
+$$
+\hat P(X>100)=\frac{\#\{x_i>100\}}{n}.
+$$
 
 This is an empirical probability estimate.
 
@@ -2350,32 +2296,29 @@ This estimates the probability that latency exceeds 130 ms.
 
 Correlation measures linear association.
 
-For random variables \(X\) and \(Y\):
+For random variables $(X)$ and $(Y)$:
 
-\[
+$$
 \boxed{
-\rho_{XY}
-=
-\frac{\operatorname{Cov}(X,Y)}
-{\sigma_X\sigma_Y}.
+\rho_{XY}=\frac{\operatorname{Cov}(X,Y)}{\sigma_X\sigma_Y}.
 }
-\]
+$$
 
 Important:
 
-\[
+$$
 \boxed{
 \text{Correlation does not imply causation.}
 }
-\]
+$$
 
 Also:
 
-\[
+$$
 \boxed{
 \text{Uncorrelated does not always mean independent.}
 }
-\]
+$$
 
 Independence is a stronger condition.
 
@@ -2385,19 +2328,19 @@ Independence is a stronger condition.
 
 Suppose a dataset contains a missing-value indicator:
 
-\[
+$$
 M=
 \begin{cases}
 1,&\text{value missing}\\
 0,&\text{value observed}.
 \end{cases}
-\]
+$$
 
 We can study:
 
-\[
+$$
 P(M=1\mid X).
-\]
+$$
 
 This can reveal whether missingness depends on other variables.
 
@@ -2411,9 +2354,9 @@ Suppose only 0.1% of transactions are fraudulent.
 
 Then:
 
-\[
+$$
 P(\text{fraud})=0.001.
-\]
+$$
 
 A classifier that predicts "not fraud" for every transaction has 99.9% accuracy but is useless for fraud detection.
 
@@ -2439,21 +2382,21 @@ A rare event can remain unlikely even after positive evidence.
 
 In general:
 
-\[
+$$
 P(A\mid B)
-\]
+$$
 
 depends on both:
 
-\[
+$$
 P(B\mid A)
-\]
+$$
 
 and:
 
-\[
+$$
 P(A).
-\]
+$$
 
 This is one reason Bayes' theorem is so important in AI and data analytics.
 
@@ -2463,33 +2406,27 @@ This is one reason Bayes' theorem is so important in AI and data analytics.
 
 Suppose:
 
-\[
+$$
 P(F)=0.01.
-\]
+$$
 
 A fraud detector has:
 
-\[
+$$
 P(A\mid F)=0.95
-\]
+$$
 
 and:
 
-\[
+$$
 P(A\mid F^c)=0.05.
-\]
+$$
 
 Then:
 
-\[
-P(F\mid A)
-=
-\frac{
-P(A\mid F)P(F)
-}{
-P(A\mid F)P(F)+P(A\mid F^c)P(F^c)
-}.
-\]
+$$
+P(F\mid A)=\frac{P(A\mid F)P(F)}{P(A\mid F)P(F)+P(A\mid F^c)P(F^c)}.
+$$
 
 Python:
 
@@ -2549,7 +2486,7 @@ A probability of 0.9 does not mean an event must occur.
 
 Always consider prior probability.
 
-### Mistake 3: Confusing \(P(A\mid B)\) and \(P(B\mid A)\)
+### Mistake 3: Confusing $(P(A\mid B))$ and $(P(B\mid A))$
 
 They are generally different.
 
@@ -2647,9 +2584,9 @@ Suppose we have:
 
 Goal:
 
-\[
+$$
 P(\text{failure within 1 hour}\mid X).
-\]
+$$
 
 A simple approach is logistic regression.
 
@@ -2698,9 +2635,9 @@ The output probability can be used for risk-aware capacity planning.
 
 A business may estimate:
 
-\[
+$$
 P(\text{churn}\mid X).
-\]
+$$
 
 Possible features:
 
@@ -2729,9 +2666,9 @@ Suppose normal network traffic has features:
 
 A probability model can estimate:
 
-\[
+$$
 P(X\mid\text{normal}).
-\]
+$$
 
 A low likelihood can indicate unusual behavior.
 
@@ -2782,116 +2719,105 @@ Security Alert
 
 ### Complement
 
-\[
+$$
 \boxed{
 P(A^c)=1-P(A)
 }
-\]
+$$
 
 ### Union
 
-\[
+$$
 \boxed{
 P(A\cup B)=P(A)+P(B)-P(A\cap B)
 }
-\]
+$$
 
 ### Conditional probability
 
-\[
+$$
 \boxed{
-P(A\mid B)
-=
-\frac{P(A\cap B)}{P(B)}
+P(A\mid B)=\frac{P(A\cap B)}{P(B)}
 }
-\]
+$$
 
 ### Bayes' theorem
 
-\[
+$$
 \boxed{
-P(A\mid B)
-=
-\frac{P(B\mid A)P(A)}
-{P(B)}
+P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}
 }
-\]
+$$
 
 ### Independence
 
-\[
+$$
 \boxed{
 P(A\cap B)=P(A)P(B)
 }
-\]
+$$
 
 ### Expected value
 
-\[
+$$
 \boxed{
 E[X]=\sum_xxP(X=x)
 }
-\]
+$$
 
-for discrete \(X\).
+for discrete $(X)$.
 
 ### Variance
 
-\[
+$$
 \boxed{
-\operatorname{Var}(X)
-=
-E[X^2]-(E[X])^2
+\operatorname{Var}(X)=E[X^2]-(E[X])^2
 }
-\]
+$$
 
 ### CDF
 
-\[
+$$
 \boxed{
 F_X(x)=P(X\le x)
 }
-\]
+$$
 
 ### Gaussian density
 
-\[
+$$
 \boxed{
 f(x)=
 \frac{1}{\sigma\sqrt{2\pi}}
 e^{-\frac{(x-\mu)^2}{2\sigma^2}}
 }
-\]
+$$
 
 ### Logistic probability
 
-\[
+$$
 \boxed{
-P(Y=1\mid X)
-=
-\frac{1}{1+e^{-z}}
+P(Y=1\mid X)=\frac{1}{1+e^{-z}}
 }
-\]
+$$
 
 ### Entropy
 
-\[
+$$
 \boxed{
-H(X)
-=
--\sum_xp(x)\log_2p(x)
+H(X)=-\sum_xp(x)\log_2p(x)
 }
-\]
+$$
 
 ### Monte Carlo expectation
 
-\[
+$$
 \boxed{
 E[g(X)]
 \approx
 \frac1N\sum_{i=1}^Ng(X_i)
 }
-\]
+$$
 
 ---
 
@@ -2900,7 +2826,7 @@ E[g(X)]
 1. Why is probability important in Information Technology?
 2. Define a sample space and event.
 3. Explain conditional probability.
-4. Distinguish \(P(A\mid B)\) from \(P(B\mid A)\).
+4. Distinguish $(P(A\mid B))$ from $(P(B\mid A))$.
 5. State Bayes' theorem.
 6. What does independence mean?
 7. Give three examples of probability applications in cybersecurity.
@@ -2909,12 +2835,12 @@ E[g(X)]
 10. Explain the Law of Large Numbers.
 11. Explain the Central Limit Theorem.
 12. Why is probability useful in machine learning?
-13. What does \(P(Y=k\mid X)\) represent in classification?
+13. What does $(P(Y=k\mid X))$ represent in classification?
 14. Explain the difference between accuracy and probability calibration.
 15. What is maximum likelihood estimation?
 16. Explain Bayesian updating.
 17. What is Monte Carlo simulation?
-18. Estimate \(\pi\) using random sampling in Python.
+18. Estimate $(\pi)$ using random sampling in Python.
 19. Explain how probability is used in recommendation systems.
 20. Explain probability-based anomaly detection.
 21. What is entropy?
@@ -2935,9 +2861,9 @@ Simulate 10,000 coin tosses and plot the running proportion of heads.
 
 Estimate:
 
-\[
+$$
 P(\text{sum}\ge10)
-\]
+$$
 
 using simulation.
 
@@ -2945,9 +2871,9 @@ using simulation.
 
 Implement a function that calculates:
 
-\[
+$$
 P(A\mid B).
-\]
+$$
 
 ### Exercise 4 — Gaussian Data
 
@@ -3000,21 +2926,21 @@ Probability is one of the most important mathematical foundations of modern comp
 
 In **Information Technology**, it helps model:
 
-\[
+$$
 \text{failure, latency, traffic, reliability, security}
-\]
+$$
 
 In **Artificial Intelligence**, it supports:
 
-\[
+$$
 \text{prediction, classification, inference, generation, decision-making}
-\]
+$$
 
 In **Data Analytics**, it provides:
 
-\[
+$$
 \text{sampling, estimation, uncertainty, forecasting, risk analysis}
-\]
+$$
 
 The central idea is simple:
 
@@ -3022,7 +2948,7 @@ The central idea is simple:
 
 The combination:
 
-\[
+$$
 \boxed{
 \text{Probability}
 +
@@ -3032,53 +2958,9 @@ The combination:
 +
 \text{Data}
 }
-\]
+$$
 
 forms a foundation for modern data-driven technology.
 
 ---
 
-# 92. Figures Included
-
-The `figures/` directory contains:
-
-1. `01_probability_to_decision_pipeline.png` — probability from data to decisions.
-2. `02_bayesian_updating.png` — prior and posterior probabilities.
-3. `03_gaussian_distribution.png` — Gaussian probability density.
-4. `04_law_of_large_numbers.png` — convergence of empirical probability.
-5. `05_sampling_distribution.png` — distribution of sample means.
-6. `06_probabilistic_classification.png` — logistic probability curve and observations.
-7. `07_confusion_matrix.png` — classification outcomes.
-8. `08_monte_carlo_pi.png` — Monte Carlo estimate of \(\pi\).
-9. `09_markov_chain_system_load.png` — Markov model of system load.
-10. `10_anomaly_detection.png` — normal observations and anomalous observations.
-
-The Markdown uses relative paths such as:
-
-```markdown
-![Bayesian updating](figures/02_bayesian_updating.png)
-```
-
-so GitHub will render the figures automatically when the Markdown file and `figures/` directory are uploaded together.
-
----
-
-# 93. Recommended GitHub Repository Structure
-
-```text
-applications-of-probability/
-│
-├── applications_probability_it_ai_data_analytics.md
-│
-└── figures/
-    ├── 01_probability_to_decision_pipeline.png
-    ├── 02_bayesian_updating.png
-    ├── 03_gaussian_distribution.png
-    ├── 04_law_of_large_numbers.png
-    ├── 05_sampling_distribution.png
-    ├── 06_probabilistic_classification.png
-    ├── 07_confusion_matrix.png
-    ├── 08_monte_carlo_pi.png
-    ├── 09_markov_chain_system_load.png
-    └── 10_anomaly_detection.png
-```
