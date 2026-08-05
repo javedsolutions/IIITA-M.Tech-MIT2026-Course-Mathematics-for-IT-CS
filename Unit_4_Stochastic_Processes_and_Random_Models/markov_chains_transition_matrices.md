@@ -1,9 +1,14 @@
-# Markov Chains, Transition Probability Matrices, and Steady-State Analysis
-
-> A GitHub-ready reading material introducing Markov chains, transition probabilities, transition matrices, multi-step transitions, stationary distributions, steady-state analysis, absorbing chains, and practical Python implementations.
-
-## Learning Objectives
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 4: Stochastic Processes and Random Models
+* ### Current Topic: Markov Chains, Transition Probability Matrices, and Steady-State Analysis
+* #### introducing Markov chains, transition probabilities, transition matrices, multi-step transitions, stationary distributions, steady-state analysis, absorbing chains, and practical Python implementations
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
+## 🎯 Learning Objectives
 After studying this chapter, you should be able to:
 
 - define a Markov chain and explain the Markov property;
@@ -1349,50 +1354,7 @@ Markov chains provide a powerful framework for analyzing sequential random syste
 
 ---
 
-# 41. Figures Included
-
-The `figures/` directory contains:
-
-1. `01_markov_chain_state_diagram.png` — states connected by transition probabilities.
-2. `02_transition_probability_matrix.png` — heatmap representation of a transition matrix.
-3. `03_multistep_transition_probabilities.png` — evolution of transition probabilities across multiple steps.
-4. `04_steady_state_convergence.png` — convergence toward a stationary distribution.
-5. `05_absorbing_markov_chain.png` — example of an absorbing chain.
-6. `06_initial_distribution_convergence.png` — different initial distributions approaching the same limiting distribution.
-7. `07_markov_matrix_workflow.png` — probability distribution evolution through matrix multiplication.
-
-All figures are generated for this reading material and referenced using relative paths so that GitHub can render them automatically.
-
----
-
-# 42. GitHub Repository Structure
-
-```text
-markov-chains/
-│
-├── markov_chains_transition_matrices.md
-│
-└── figures/
-    ├── 01_markov_chain_state_diagram.png
-    ├── 02_transition_probability_matrix.png
-    ├── 03_multistep_transition_probabilities.png
-    ├── 04_steady_state_convergence.png
-    ├── 05_absorbing_markov_chain.png
-    ├── 06_initial_distribution_convergence.png
-    └── 07_markov_matrix_workflow.png
-```
-
-The Markdown file uses paths such as:
-
-```markdown
-![Steady-state convergence](figures/04_steady_state_convergence.png)
-```
-
-Therefore, upload the Markdown file and `figures/` directory together to GitHub.
-
----
-
-# 43. Final Takeaway
+# 41. Final Takeaway
 
 The most important ideas can be summarized as:
 
@@ -1411,3 +1373,13 @@ The most important ideas can be summarized as:
 \]
 
 Once a stochastic system can be represented by states and transition probabilities, matrix algebra gives us a practical way to analyze its future behavior and, under appropriate conditions, its steady state.
+
+---
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
