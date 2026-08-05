@@ -1,6 +1,7 @@
 # :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
 ## Unit 4: Probability and Random Variables
-### Current Topic: Limit Theorems: Law of Large Numbers and Central Limit Theorem - two foundational results of probability and statistics: the **Law of Large Numbers (LLN)** and the **Central Limit Theorem (CLT)**.
+### Current Topic: Limit Theorems: Law of Large Numbers and Central Limit Theorem  
+#### Two foundational results of probability and statistics: the **Law of Large Numbers (LLN)** and the **Central Limit Theorem (CLT)**.
 ---
 ## 👥 Instructor Information
 * **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
