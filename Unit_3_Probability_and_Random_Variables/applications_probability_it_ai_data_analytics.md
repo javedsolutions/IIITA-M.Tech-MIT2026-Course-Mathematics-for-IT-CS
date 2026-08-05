@@ -596,7 +596,7 @@ Variance measures the spread around the mean.
 
 $$
 \boxed{
-\operatorname{Var}(X)=E[(X-E[X])^2].
+\text{Var}(X)=E[(X-E[X])^2].
 }
 $$
 
@@ -604,7 +604,7 @@ Equivalent form:
 
 $$
 \boxed{
-\operatorname{Var}(X)=E[X^2]-(E[X])^2.
+\text{Var}(X)=E[X^2]-(E[X])^2.
 }
 $$
 
@@ -612,7 +612,7 @@ The standard deviation is:
 
 $$
 \boxed{
-\sigma_X=\sqrt{\operatorname{Var}(X)}.
+\sigma_X=\sqrt{\text{Var}(X)}.
 }
 $$
 
@@ -699,7 +699,7 @@ $$
 and:
 
 $$
-\operatorname{Var}(X)=\sigma^2,
+\text{Var}(X)=\sigma^2,
 $$
 
 then approximately:
@@ -2139,8 +2139,9 @@ $$
 For sequence generation:
 
 $$
-P(x_1,\ldots,x_n)=\prod_iP(x_i\mid x_{<i}).
+P(x_1,\ldots,x_n)=\prod_{i=1}^{n} P(x_i\mid x_{<i})
 $$
+
 
 Sampling from these distributions allows models to generate varied outputs.
 
@@ -2249,7 +2250,7 @@ Working with observed counts often makes conditional probability intuitive.
 
 Data analytics often begins by examining distributions.
 
-For a variable \(X\), analysts may estimate:
+For a variable $(X)$, analysts may estimate:
 
 - mean;
 - variance;
@@ -2262,7 +2263,7 @@ For a variable \(X\), analysts may estimate:
 For example:
 
 $$
-\hat P(X>100)=\frac{\#\{x_i>100\}}{n}.
+\hat P(X>100)=\frac{\{x_i>100\}}{n}.
 $$
 
 This is an empirical probability estimate.
@@ -2300,7 +2301,7 @@ For random variables $(X)$ and $(Y)$:
 
 $$
 \boxed{
-\rho_{XY}=\frac{\operatorname{Cov}(X,Y)}{\sigma_X\sigma_Y}.
+\rho_{XY}=\frac{\text{Cov}(X,Y)}{\sigma_X\sigma_Y}.
 }
 $$
 
@@ -2771,7 +2772,7 @@ for discrete $(X)$.
 
 $$
 \boxed{
-\operatorname{Var}(X)=E[X^2]-(E[X])^2
+\text{Var}(X)=E[X^2]-(E[X])^2
 }
 $$
 
