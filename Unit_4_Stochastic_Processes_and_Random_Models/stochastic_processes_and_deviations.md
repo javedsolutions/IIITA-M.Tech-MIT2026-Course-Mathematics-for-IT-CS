@@ -1,9 +1,14 @@
-# Stochastic Processes and Deviations
-
-> A GitHub-ready introduction to stochastic processes, random walks, dependence across time, deviations from expected behavior, martingales, Brownian motion, and the basic ideas behind concentration and large deviations.
-
-## Learning Objectives
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 4: Stochastic Processes and Random Models
+* ### Current Topic: Stochastic Processes and Deviations 
+* #### introduction to stochastic processes, random walks, dependence across time, deviations from expected behavior, martingales, Brownian motion, and the basic ideas behind concentration and large deviations
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
+## 🎯 Learning Objectives
 After completing this chapter, you should be able to:
 
 - define a stochastic process and distinguish it from a single random variable;
@@ -1156,35 +1161,7 @@ All figures are generated specifically for this chapter and referenced using rel
 
 ---
 
-# 37. GitHub Repository Structure
-
-```text
-stochastic-processes-and-deviations/
-│
-├── stochastic_processes_and_deviations.md
-│
-└── figures/
-    ├── 01_stochastic_process_realizations.png
-    ├── 02_simple_random_walk.png
-    ├── 03_mean_and_deviation_band.png
-    ├── 04_brownian_motion.png
-    ├── 05_autocorrelation.png
-    ├── 06_martingale_random_walk.png
-    ├── 07_deviations_from_mean.png
-    └── 08_drifted_process.png
-```
-
-For example, the Markdown contains:
-
-```markdown
-![Brownian motion](figures/04_brownian_motion.png)
-```
-
-Therefore, GitHub will display the image automatically when the Markdown file and `figures` folder are uploaded together.
-
----
-
-# 38. Summary
+# 37. Summary
 
 A stochastic process models the evolution of a random quantity:
 
@@ -1218,3 +1195,13 @@ The central intuition is:
 \]
 
 Understanding this decomposition is fundamental to probability, statistics, time-series analysis, finance, engineering, and data science.
+
+---
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
