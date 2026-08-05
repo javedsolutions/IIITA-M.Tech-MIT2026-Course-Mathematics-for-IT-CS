@@ -1,7 +1,12 @@
-# Limit Theorems: Law of Large Numbers and Central Limit Theorem
-
-> A GitHub-ready reading material on two foundational results of probability and statistics: the **Law of Large Numbers (LLN)** and the **Central Limit Theorem (CLT)**.
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 4: Probability and Random Variables
+### Current Topic: Limit Theorems: Law of Large Numbers and Central Limit Theorem - two foundational results of probability and statistics: the **Law of Large Numbers (LLN)** and the **Central Limit Theorem (CLT)**.
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
 ## Learning Objectives
 
 After studying this chapter, you should be able to:
@@ -924,46 +929,7 @@ What decreases is the standard error:
 
 ---
 
-# 28. Figures Included
-
-The `figures/` directory contains:
-
-1. `01_lln_convergence.png` — running sample mean converging toward the population mean.
-2. `02_lln_bernoulli.png` — observed success proportion converging toward the Bernoulli probability.
-3. `03_clt_sample_means.png` — sample means becoming approximately Normal as sample size increases.
-4. `04_standard_error.png` — standard error decreasing as \(1/\sqrt n\).
-5. `05_population_vs_sampling_distribution.png` — skewed population versus the sampling distribution of sample means.
-
-All figures are generated specifically for this reading material and use relative paths so that GitHub can render them automatically.
-
----
-
-# 29. GitHub Repository Structure
-
-```text
-limit-theorems/
-│
-├── limit_theorems_lln_clt.md
-│
-└── figures/
-    ├── 01_lln_convergence.png
-    ├── 02_lln_bernoulli.png
-    ├── 03_clt_sample_means.png
-    ├── 04_standard_error.png
-    └── 05_population_vs_sampling_distribution.png
-```
-
-The Markdown uses paths such as:
-
-```markdown
-![LLN convergence](figures/01_lln_convergence.png)
-```
-
-Therefore, upload the Markdown file and the `figures` directory together to GitHub.
-
----
-
-# 30. Final Takeaway
+# 28. Final Takeaway
 
 The two limit theorems provide two complementary ideas:
 
@@ -984,3 +950,13 @@ and:
 The LLN explains **convergence toward the true mean**, while the CLT explains **the distribution of the remaining random variation around that mean**.
 
 Together, they provide the conceptual bridge from probability to statistical inference.
+
+---
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
