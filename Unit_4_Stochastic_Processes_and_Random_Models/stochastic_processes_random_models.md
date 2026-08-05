@@ -1,10 +1,14 @@
-# Stochastic Processes and Random Models
-
-> A GitHub-ready reading material introducing stochastic processes, random models, their mathematical structure, important classes, applications, and Python implementations.
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 4: Stochastic Processes and Random Models
+* ### Current Topic: Applications of Stochastic Processes and Random Models
+* #### introducing stochastic processes, random models, their mathematical structure, important classes, applications, and Python implementations.
 ---
-
-## Learning Objectives
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
+## 🎯 Learning Objectives
 
 After studying this chapter, you should be able to:
 
@@ -3012,49 +3016,4 @@ Good stochastic modeling combines:
 }
 \]
 
----
 
-# 97. Figures Included
-
-The `figures/` directory contains:
-
-1. `01_sample_paths_random_walk.png` — multiple sample paths.
-2. `02_discrete_time_process.png` — discrete-time stochastic process.
-3. `03_random_walk.png` — one-dimensional random walk.
-4. `04_markov_chain.png` — Markov chain transition diagram.
-5. `05_poisson_process.png` — random event arrivals.
-6. `06_ornstein_uhlenbeck.png` — mean-reverting process.
-7. `07_brownian_motion.png` — Brownian-motion sample path.
-8. `08_autocorrelation_ar1.png` — AR(1) autocorrelation.
-9. `09_simulation_convergence.png` — Monte Carlo convergence.
-10. `10_birth_death_process.png` — birth-death style process.
-
-All figures are generated as PNG files and referenced from the Markdown using relative paths.
-
----
-
-# 98. Recommended GitHub Repository Structure
-
-```text
-stochastic-processes-random-models/
-│
-├── stochastic_processes_random_models.md
-│
-└── figures/
-    ├── 01_sample_paths_random_walk.png
-    ├── 02_discrete_time_process.png
-    ├── 03_random_walk.png
-    ├── 04_markov_chain.png
-    ├── 05_poisson_process.png
-    ├── 06_ornstein_uhlenbeck.png
-    ├── 07_brownian_motion.png
-    ├── 08_autocorrelation_ar1.png
-    ├── 09_simulation_convergence.png
-    └── 10_birth_death_process.png
-```
-
-When this structure is uploaded to GitHub, figures will render automatically because the Markdown uses relative paths such as:
-
-```markdown
-![Random walk](figures/03_random_walk.png)
-```
