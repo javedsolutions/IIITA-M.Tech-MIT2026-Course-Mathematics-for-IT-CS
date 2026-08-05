@@ -1,7 +1,7 @@
 # :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
 ## Unit 4: Stochastic Processes and Random Models
 * ### Current Topic: Applications of Stochastic Processes and Random Models
-* #### introducing stochastic processes, random models, their mathematical structure, important classes, applications, and Python implementations.
+* #### Introducing stochastic processes, random models, their mathematical structure, important classes, applications, and Python implementations.
 ---
 ## 👥 Instructor Information
 * **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
