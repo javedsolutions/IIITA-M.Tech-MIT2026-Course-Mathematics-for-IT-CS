@@ -1,6 +1,13 @@
-# Orthogonality and Projections: Orthogonal Bases, Orthogonal Projections, and Gram-Schmidt Orthogonalization
-
-## Learning Objectives
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+* ### Current Topic: Orthogonality and Projections: Orthogonal Bases, Orthogonal Projections, and Gram-Schmidt Orthogonalization
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
 After studying this material, you should be able to:
 
@@ -1744,31 +1751,11 @@ $$
 
 ---
 
-# 45. Figure Files
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
-The accompanying figures are stored in the `figures/` directory:
-
-1. `01_orthogonal_vectors.png`
-2. `02_projection_vector.png`
-3. `03_projection_residual.png`
-4. `04_orthogonal_basis.png`
-5. `05_gram_schmidt.png`
-6. `06_subspace_projection.png`
-7. `07_qr_decomposition.png`
-
-Recommended GitHub structure:
-
-```text
-orthogonality_projections_material/
-├── orthogonality_and_projections.md
-└── figures/
-    ├── 01_orthogonal_vectors.png
-    ├── 02_projection_vector.png
-    ├── 03_projection_residual.png
-    ├── 04_orthogonal_basis.png
-    ├── 05_gram_schmidt.png
-    ├── 06_subspace_projection.png
-    └── 07_qr_decomposition.png
-```
-
-The Markdown file uses relative image paths, so the figures will render automatically on GitHub when the complete folder is uploaded.
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
