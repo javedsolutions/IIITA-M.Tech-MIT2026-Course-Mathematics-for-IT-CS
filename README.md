@@ -87,9 +87,9 @@ tions
 
 * :large_blue_circle: [Matrix Operations and Matrix Inverses](Unit_1_Linear_Algebra_and_Matrix_Theory/matrix_operations_and_inverses.md),
 
-* :large_blue_circle: [Linear Dependence and Independence](Unit_1_Linear_Algebra_and_Matrix_Theory/Linear_Dependence_and_Independence.md), [Vector Spaces](Unit_1_Linear_Algebra_and_Matrix_Theory/Vector_Spaces.md), [Subspaces](Unit_1_Linear_Algebra_and_Matrix_Theory/subspace.md), [Basis and Dimension](Unit_1_Linear_Algebra_and_Matrix_Theory/Basic_and_dimension.md).
+* :large_blue_circle: [Linear Dependence and Independence, Vector Spaces, Subspaces, Basis and Dimension](Unit_1_Linear_Algebra_and_Matrix_Theory/linear_dependence_vector_spaces.md).
 
-* :large_blue_circle: [Orthogonality and Projections - Orthogonal Bases, Orthogonal Projections, Gram-Schmidt Orthogonalization](Unit_1_Linear_Algebra_and_Matrix_Theory/Orthogonality_and_Projections.md),
+* :large_blue_circle: [Orthogonality and Projections - Orthogonal Bases, Orthogonal Projections, Gram-Schmidt Orthogonalization](Unit_1_Linear_Algebra_and_Matrix_Theory/orthogonality_and_projections.md),
 
 * :large_blue_circle: [Least Squares Problems and Linear Models](Unit_1_Linear_Algebra_and_Matrix_Theory/least_squares_and_linear_models.md).
 
