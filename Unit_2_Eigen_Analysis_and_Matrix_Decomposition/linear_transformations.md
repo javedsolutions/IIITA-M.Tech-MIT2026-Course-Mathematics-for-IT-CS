@@ -28,27 +28,27 @@ After studying this material, you should be able to:
 
 A **transformation** is a function that maps vectors from one vector space to another:
 
-\[
+$$
 T:V\rightarrow W.
-\]
+$$
 
 For example,
 
-\[
+$$
 T:\mathbb{R}^2\rightarrow\mathbb{R}^2
-\]
+$$
 
 might map
 
-\[
+$$
 \begin{bmatrix}x\\y\end{bmatrix}
-\]
+$$
 
 to
 
-\[
+$$
 \begin{bmatrix}x+y\\2x-y\end{bmatrix}.
-\]
+$$
 
 ![Mapping diagram](figures/02_mapping_diagram.png)
 
@@ -58,33 +58,33 @@ A linear transformation is a special type of function whose behavior is compatib
 
 ## 3. Definition of a linear transformation
 
-A function \(T:V\rightarrow W\) is **linear** if:
+A function $(T:V\rightarrow W)$ is **linear** if:
 
 ### Additivity
 
-\[
+$$
 T(\mathbf{u}+\mathbf{v})
 =
 T(\mathbf{u})+T(\mathbf{v}).
-\]
+$$
 
 ### Homogeneity
 
-For every scalar \(c\),
+For every scalar $(c)$,
 
-\[
+$$
 T(c\mathbf{u})=cT(\mathbf{u}).
-\]
+$$
 
 Together,
 
-\[
+$$
 \boxed{
 T(a\mathbf{u}+b\mathbf{v})
 =
 aT(\mathbf{u})+bT(\mathbf{v})
 }
-\]
+$$
 
 for all vectors and scalars.
 
@@ -94,19 +94,19 @@ for all vectors and scalars.
 
 ### 4.1 Scaling
 
-\[
+$$
 T(x,y)=(2x,3y)
-\]
+$$
 
 has matrix
 
-\[
+$$
 A=
 \begin{bmatrix}
 2&0\\
 0&3
 \end{bmatrix}.
-\]
+$$
 
 ```python
 import numpy as np
@@ -125,15 +125,15 @@ print("Transformed:", y)
 
 ### 4.2 Rotation
 
-A counterclockwise rotation through \(\theta\) is
+A counterclockwise rotation through $(\theta)$ is
 
-\[
+$$
 R_\theta=
 \begin{bmatrix}
 \cos\theta&-\sin\theta\\
 \sin\theta&\cos\theta
 \end{bmatrix}.
-\]
+$$
 
 ![Rotation](figures/03_rotation.png)
 
@@ -153,9 +153,9 @@ print(R @ x)
 
 ### 4.3 Reflection
 
-Reflection about the \(x\)-axis:
+Reflection about the $(x)$-axis:
 
-\[
+$$
 T(x,y)=(x,-y),
 \qquad
 A=
@@ -163,7 +163,7 @@ A=
 1&0\\
 0&-1
 \end{bmatrix}.
-\]
+$$
 
 ```python
 import numpy as np
@@ -176,9 +176,9 @@ print(A @ x)
 
 ### 4.4 Shear
 
-An \(x\)-direction shear is
+An $(x)$-direction shear is
 
-\[
+$$
 T(x,y)=(x+ky,y),
 \qquad
 A=
@@ -186,7 +186,7 @@ A=
 1&k\\
 0&1
 \end{bmatrix}.
-\]
+$$
 
 ![Shear](figures/04_shear.png)
 
@@ -201,9 +201,9 @@ print(A @ x)
 
 ### 4.5 Projection
 
-Projection onto the \(x\)-axis:
+Projection onto the $(x)$-axis:
 
-\[
+$$
 T(x,y)=(x,0),
 \qquad
 P=
@@ -211,7 +211,7 @@ P=
 1&0\\
 0&0
 \end{bmatrix}.
-\]
+$$
 
 ![Projection](figures/05_projection.png)
 
@@ -228,39 +228,39 @@ print(P @ x)
 
 ## 5. Matrix representation
 
-Every linear transformation from \(\mathbb{R}^n\) to \(\mathbb{R}^m\) can be represented by an \(m\times n\) matrix:
+Every linear transformation from $(\mathbb{R}^n)$ to $(\mathbb{R}^m)$ can be represented by an $(m\times n)$ matrix:
 
-\[
+$$
 \boxed{T(\mathbf{x})=A\mathbf{x}}.
-\]
+$$
 
 For example,
 
-\[
+$$
 A=
 \begin{bmatrix}
 1&2\\
 3&4
 \end{bmatrix}
-\]
+$$
 
 and
 
-\[
+$$
 \mathbf{x}=
 \begin{bmatrix}
 5\\1
 \end{bmatrix}
-\]
+$$
 
 give
 
-\[
+$$
 T(\mathbf{x})=
 \begin{bmatrix}
 7\\19
 \end{bmatrix}.
-\]
+$$
 
 ```python
 import numpy as np
@@ -273,16 +273,16 @@ print(A @ x)
 
 ### Why does this work?
 
-\[
+$$
 A(\mathbf{u}+\mathbf{v})
 =A\mathbf{u}+A\mathbf{v}
-\]
+$$
 
 and
 
-\[
+$$
 A(c\mathbf{u})=cA\mathbf{u}.
-\]
+$$
 
 Therefore matrix multiplication automatically satisfies linearity.
 
@@ -296,9 +296,9 @@ Linear transformations can stretch, compress, rotate, reflect, shear, or project
 
 A particularly useful property is
 
-\[
+$$
 \boxed{T(\mathbf{0})=\mathbf{0}}.
-\]
+$$
 
 If a transformation does not map zero to zero, it is not linear.
 
@@ -308,33 +308,33 @@ If a transformation does not map zero to zero, it is not linear.
 
 Consider
 
-\[
+$$
 T(x,y)=(x+2,y-3).
-\]
+$$
 
 Since
 
-\[
+$$
 T(0,0)=(0,-3)\neq(0,0),
-\]
+$$
 
 it is **not linear**.
 
 In contrast,
 
-\[
+$$
 T(x,y)=(x+2y,3x-y)
-\]
+$$
 
 is linear, with matrix
 
-\[
+$$
 A=
 \begin{bmatrix}
 1&2\\
 3&-1
 \end{bmatrix}.
-\]
+$$
 
 ```python
 import numpy as np
@@ -363,51 +363,51 @@ print("Linear?", np.allclose(left, right))
 
 For
 
-\[
+$$
 T(x,y)=(x^2,y),
-\]
+$$
 
-the squaring operation violates the linearity rules, so \(T\) is nonlinear.
+the squaring operation violates the linearity rules, so $(T)$ is nonlinear.
 
 Similarly,
 
-\[
+$$
 T(x)=3x+2
-\]
+$$
 
 is affine but not linear because
 
-\[
+$$
 T(0)=2\neq0.
-\]
+$$
 
 ---
 
 ## 9. Standard basis and matrix columns
 
-The standard basis of \(\mathbb{R}^2\) is
+The standard basis of $(\mathbb{R}^2)$ is
 
-\[
+$$
 \mathbf{e}_1=
 \begin{bmatrix}1\\0\end{bmatrix},
 \qquad
 \mathbf{e}_2=
 \begin{bmatrix}0\\1\end{bmatrix}.
-\]
+$$
 
 Since
 
-\[
+$$
 \mathbf{x}=x\mathbf{e}_1+y\mathbf{e}_2,
-\]
+$$
 
 linearity gives
 
-\[
+$$
 T(\mathbf{x})
 =
 xT(\mathbf{e}_1)+yT(\mathbf{e}_2).
-\]
+$$
 
 Therefore:
 
@@ -430,39 +430,39 @@ print("T(e2) =", A @ e2)
 
 The kernel is
 
-\[
+$$
 \boxed{
 \ker(T)=\{\mathbf{x}:T(\mathbf{x})=\mathbf{0}\}
 }.
-\]
+$$
 
-For \(T(\mathbf{x})=A\mathbf{x}\),
+For $(T(\mathbf{x})=A\mathbf{x})$,
 
-\[
+$$
 \ker(T)=\{\mathbf{x}:A\mathbf{x}=0\}.
-\]
+$$
 
 ![Kernel and image](figures/06_kernel_image.png)
 
 Example:
 
-\[
+$$
 A=
 \begin{bmatrix}
 1&2\\
 2&4
 \end{bmatrix}.
-\]
+$$
 
-Solving \(A\mathbf{x}=0\) gives
+Solving $(A\mathbf{x}=0)$ gives
 
-\[
+$$
 x+2y=0,
-\]
+$$
 
 so
 
-\[
+$$
 \ker(T)=
 \left\{
 t
@@ -470,7 +470,7 @@ t
 -2\\1
 \end{bmatrix}:t\in\mathbb{R}
 \right\}.
-\]
+$$
 
 ### Python
 
@@ -489,17 +489,17 @@ for vector in A.nullspace():
 
 The image is the set of all possible outputs:
 
-\[
+$$
 \boxed{
 \operatorname{Im}(T)=\{T(\mathbf{x}):\mathbf{x}\in V\}
 }.
-\]
+$$
 
 For a matrix transformation,
 
-\[
+$$
 \operatorname{Im}(T)=\operatorname{Col}(A).
-\]
+$$
 
 ```python
 import sympy as sp
@@ -514,29 +514,29 @@ for vector in A.columnspace():
 
 ## 12. Rank and nullity
 
-\[
+$$
 \operatorname{rank}(T)=\dim(\operatorname{Im}(T))
-\]
+$$
 
 and
 
-\[
+$$
 \operatorname{nullity}(T)=\dim(\ker(T)).
-\]
+$$
 
 The Rank-Nullity Theorem is
 
-\[
+$$
 \boxed{
 \dim(V)=\operatorname{rank}(T)+\operatorname{nullity}(T)
 }.
-\]
+$$
 
-For an \(m\times n\) matrix,
+For an $(m\times n)$ matrix,
 
-\[
+$$
 n=\operatorname{rank}(A)+\operatorname{nullity}(A).
-\]
+$$
 
 ```python
 import sympy as sp
@@ -557,35 +557,35 @@ print("Rank + Nullity:", rank + nullity)
 
 ### Injective
 
-\[
+$$
 T(\mathbf{u})=T(\mathbf{v})\Rightarrow\mathbf{u}=\mathbf{v}.
-\]
+$$
 
 For a linear transformation,
 
-\[
+$$
 \boxed{
 T\text{ is injective}\iff\ker(T)=\{\mathbf{0}\}
 }.
-\]
+$$
 
 ### Surjective
 
-\[
+$$
 \boxed{
 T\text{ is surjective}\iff\operatorname{Im}(T)=W
 }.
-\]
+$$
 
 ### Invertible
 
 For a square matrix,
 
-\[
+$$
 \boxed{
 A\text{ invertible}\iff\det(A)\neq0
 }.
-\]
+$$
 
 Equivalent conditions include:
 
@@ -613,27 +613,27 @@ else:
 
 For
 
-\[
+$$
 A=
 \begin{bmatrix}
 a&b\\
 c&d
 \end{bmatrix},
-\]
+$$
 
-\[
+$$
 \det(A)=ad-bc.
-\]
+$$
 
-For a 2D transformation, \(|\det(A)|\) is the area-scaling factor.
+For a 2D transformation, $(|\det(A)|)$ is the area-scaling factor.
 
 ![Determinant and area](figures/08_determinant_area_scaling.png)
 
 If
 
-\[
+$$
 \det(A)=0,
-\]
+$$
 
 the transformation collapses the plane into a lower-dimensional set and is not invertible.
 
@@ -643,39 +643,39 @@ the transformation collapses the plane into a lower-dimensional set and is not i
 
 If
 
-\[
+$$
 T(\mathbf{x})=A\mathbf{x}
-\]
+$$
 
 and
 
-\[
+$$
 S(\mathbf{x})=B\mathbf{x},
-\]
+$$
 
 then
 
-\[
+$$
 (S\circ T)(\mathbf{x})
 =
 B(A\mathbf{x})
 =
 (BA)\mathbf{x}.
-\]
+$$
 
 Thus,
 
-\[
+$$
 \boxed{[S\circ T]=BA}.
-\]
+$$
 
 ![Composition](figures/07_composition.png)
 
 Matrix multiplication is generally not commutative:
 
-\[
+$$
 AB\neq BA.
-\]
+$$
 
 ```python
 import numpy as np
@@ -696,19 +696,19 @@ Linear transformations also work in higher dimensions.
 
 For
 
-\[
+$$
 A=
 \begin{bmatrix}
 1&2&3\\
 4&5&6
 \end{bmatrix},
-\]
+$$
 
 we have
 
-\[
+$$
 T:\mathbb{R}^3\rightarrow\mathbb{R}^2.
-\]
+$$
 
 ```python
 import numpy as np
@@ -725,17 +725,17 @@ print(A @ x)
 
 The system
 
-\[
+$$
 A\mathbf{x}=\mathbf{b}
-\]
+$$
 
-can be viewed as finding an input \(\mathbf{x}\) whose transformation equals \(\mathbf{b}\).
+can be viewed as finding an input $(\mathbf{x})$ whose transformation equals $(\mathbf{b})$.
 
-If \(A\) is invertible,
+If $(A)$ is invertible,
 
-\[
+$$
 \mathbf{x}=A^{-1}\mathbf{b}.
-\]
+$$
 
 ```python
 import numpy as np
@@ -815,54 +815,54 @@ Observe the changes in rank, determinant, and output.
 
 ### Scaling
 
-\[
+$$
 \begin{bmatrix}s_x&0\\0&s_y\end{bmatrix}
-\]
+$$
 
 ### Rotation
 
-\[
+$$
 \begin{bmatrix}
 \cos\theta&-\sin\theta\\
 \sin\theta&\cos\theta
 \end{bmatrix}
-\]
+$$
 
-### Reflection about \(x\)-axis
+### Reflection about $(x)$-axis
 
-\[
+$$
 \begin{bmatrix}1&0\\0&-1\end{bmatrix}
-\]
+$$
 
-### Reflection about \(y\)-axis
+### Reflection about $(y)$-axis
 
-\[
+$$
 \begin{bmatrix}-1&0\\0&1\end{bmatrix}
-\]
+$$
 
-### Projection onto \(x\)-axis
+### Projection onto $(x)$-axis
 
-\[
+$$
 \begin{bmatrix}1&0\\0&0\end{bmatrix}
-\]
+$$
 
-### Projection onto \(y\)-axis
+### Projection onto $(y)$-axis
 
-\[
+$$
 \begin{bmatrix}0&0\\0&1\end{bmatrix}
-\]
+$$
 
-### \(x\)-direction shear
+### $(x)$-direction shear
 
-\[
+$$
 \begin{bmatrix}1&k\\0&1\end{bmatrix}
-\]
+$$
 
-### \(y\)-direction shear
+### $(y)$-direction shear
 
-\[
+$$
 \begin{bmatrix}1&0\\k&1\end{bmatrix}
-\]
+$$
 
 ---
 
@@ -870,7 +870,7 @@ Observe the changes in rank, determinant, and output.
 
 1. Define a linear transformation.
 2. State the two defining properties of linearity.
-3. Why must \(T(0)=0\)?
+3. Why must $(T(0)=0)$?
 4. Explain linear versus affine transformations.
 5. Define kernel and image.
 6. Explain rank and nullity.
@@ -878,13 +878,13 @@ Observe the changes in rank, determinant, and output.
 8. Explain injective and surjective transformations.
 9. When is a square matrix transformation invertible?
 10. Why does transformation order matter?
-11. Determine whether \(T(x,y)=(2x-y,3x+4y)\) is linear.
-12. Find the matrix of \(T(x,y)=(x+3y,2x-y)\).
-13. Find the kernel of \(\begin{bmatrix}1&2\\2&4\end{bmatrix}\).
+11. Determine whether $(T(x,y)=(2x-y,3x+4y))$ is linear.
+12. Find the matrix of $(T(x,y)=(x+3y,2x-y))$.
+13. Find the kernel of $(\begin{bmatrix}1&2\\2&4\end{bmatrix})$.
 14. Find its rank and nullity.
-15. Determine whether \(\begin{bmatrix}2&1\\4&2\end{bmatrix}\) is invertible.
-16. Write Python code to rotate a vector by \(90^\circ\).
-17. Write Python code to project a vector onto the \(x\)-axis.
+15. Determine whether $(\begin{bmatrix}2&1\\4&2\end{bmatrix})$ is invertible.
+16. Write Python code to rotate a vector by $(90^\circ)$.
+17. Write Python code to project a vector onto the $(x)$-axis.
 18. Implement a shear transformation and plot a square before and after.
 
 ---
@@ -893,16 +893,16 @@ Observe the changes in rank, determinant, and output.
 
 | Concept | Key formula |
 |---|---|
-| Linearity | \(T(a\mathbf u+b\mathbf v)=aT(\mathbf u)+bT(\mathbf v)\) |
-| Matrix transformation | \(T(\mathbf x)=A\mathbf x\) |
-| Kernel | \(\ker(T)=\{\mathbf x:T(\mathbf x)=0\}\) |
-| Image | \(\operatorname{Im}(T)=\{T(\mathbf x)\}\) |
-| Rank | \(\dim(\operatorname{Im}(T))\) |
-| Nullity | \(\dim(\ker(T))\) |
-| Rank-Nullity | \(n=\operatorname{rank}+\operatorname{nullity}\) |
-| Composition | \([S\circ T]=[S][T]\) |
-| Inverse | \(A^{-1}A=AA^{-1}=I\) |
-| Invertibility | \(\det(A)\neq0\) |
+| Linearity | $(T(a\mathbf u+b\mathbf v)=aT(\mathbf u)+bT(\mathbf v))$ |
+| Matrix transformation | $(T(\mathbf x)=A\mathbf x)$ |
+| Kernel | $(\ker(T)=\{\mathbf x:T(\mathbf x)=0\})$ |
+| Image | $(\operatorname{Im}(T)=\{T(\mathbf x)\})$ |
+| Rank | $(\dim(\operatorname{Im}(T)))$ |
+| Nullity | $(\dim(\ker(T)))$ |
+| Rank-Nullity | $(n=\operatorname{rank}+\operatorname{nullity})$ |
+| Composition | $([S\circ T]=[S][T])$ |
+| Inverse | $(A^{-1}A=AA^{-1}=I)$ |
+| Invertibility | $(\det(A)\neq0)$ |
 
 ---
 
