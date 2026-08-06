@@ -85,17 +85,17 @@ tions
 -->
 * :large_blue_circle: [Systems of Linear Equations](Unit_1_Linear_Algebra_and_Matrix_Theory/Systems-of-Linear-Equations.md), :large_blue_circle: [Row Reduction and Echelon Forms](Unit_1_Linear_Algebra_and_Matrix_Theory/row_reduction_and_echelon_forms.md), 
 
-* :large_blue_circle: Matrix Operations and Matrix Inverses,
+* :large_blue_circle: [Matrix Operations and Matrix Inverses](Unit_1_Linear_Algebra_and_Matrix_Theory/matrix_operations_and_inverses.md),
 
-* :large_blue_circle: Linear Dependence and Independence, Vector Spaces, Subspaces, Basis and Dimension.
+* :large_blue_circle: [Linear Dependence and Independence](Unit_1_Linear_Algebra_and_Matrix_Theory/Linear_Dependence_and_Independence.md), [Vector Spaces](Unit_1_Linear_Algebra_and_Matrix_Theory/Vector_Spaces.md), [Subspaces](Unit_1_Linear_Algebra_and_Matrix_Theory/subspace.md), [Basis and Dimension](Unit_1_Linear_Algebra_and_Matrix_Theory/Basic_and_dimension.md).
 
-* :large_blue_circle: Orthogonality and Projections - Orthogonal Bases, Orthogonal Projections, Gram-Schmidt Orthogonalization,
+* :large_blue_circle: [Orthogonality and Projections - Orthogonal Bases, Orthogonal Projections, Gram-Schmidt Orthogonalization](Unit_1_Linear_Algebra_and_Matrix_Theory/Orthogonality_and_Projections.md),
 
-* :large_blue_circle: Least Squares Problems and Linear Models.
+* :large_blue_circle: [Least Squares Problems and Linear Models](Unit_1_Linear_Algebra_and_Matrix_Theory/least_squares_and_linear_models.md).
 
-* :large_blue_circle: Determinants and Their Properties, Rank of a Matrix,
+* :large_blue_circle: [Determinants and Their Properties, Rank of a Matrix](Unit_1_Linear_Algebra_and_Matrix_Theory/Determinants_and_Matrix_Rank.md),
 
-* :large_blue_circle: Applications of Linear Algebra in Information Technology and Data Representation.
+* :large_blue_circle: [Applications of Linear Algebra in Information Technology and Data Representation](Unit_1_Linear_Algebra_and_Matrix_Theory/linear_algebra_application.md).
 
 
 ### 🎯 Unit 2: Eigen Analysis and Matrix Decomposition 🎯
