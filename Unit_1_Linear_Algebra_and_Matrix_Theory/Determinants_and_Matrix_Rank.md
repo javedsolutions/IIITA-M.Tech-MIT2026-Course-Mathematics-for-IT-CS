@@ -1,26 +1,14 @@
-markdown_content = """# Reading Material: Determinants, Matrix Rank, and Linear Systems
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+### Current Topic: Determinants, Matrix Rank, and Linear Systems - Basics, graphical interpretation, solved examples, and Python implementation
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
-## Table of Contents
-1. [Introduction](#1-introduction)
-2. [Determinants of Square Matrices](#2-determinants-of-square-matrices)
-   - [Geometric Intuition](#geometric-intuition)
-   - [Analytical Definitions & Computation](#analytical-definitions--computation)
-   - [Fundamental Properties of Determinants](#fundamental-properties-of-determinants)
-3. [Rank of a Matrix](#3-rank-of-a-matrix)
-   - [Linearly Independent Vectors & Vector Spaces](#linearly-independent-vectors--vector-spaces)
-   - [Row Echelon Form (REF) & Reduced Row Echelon Form (RREF)](#row-echelon-form-ref--reduced-row-echelon-form-rref)
-   - [Methods for Computing Matrix Rank](#methods-for-computing-matrix-rank)
-   - [The Rank-Nullity Theorem](#the-rank-nullity-theorem)
-   - [Properties of Matrix Rank](#properties-of-matrix-rank)
-4. [Applications to Systems of Linear Equations](#4-applications-to-systems-of-linear-equations)
-   - [Rouché–Capelli Theorem](#rouchécapelli-theorem)
-5. [Python Implementations](#5-python-implementations)
-   - [Computing Determinants (NumPy & SymPy)](#computing-determinants-numpy--sympy)
-   - [Determining Matrix Rank](#determining-matrix-rank)
-   - [Gaussian Elimination & RREF Implementation](#gaussian-elimination--rref-implementation)
-   - [Solving Systems of Linear Equations](#solving-systems-of-linear-equations)
-6. [Figures & Download Links](#6-figures--download-links)
-7. [Solved Practice Problems](#7-solved-practice-problems)
 
 ---
 
@@ -54,16 +42,34 @@ Geometrically, a matrix transformation $A$ maps the unit hypercube in $\mathbb{R
 ### Analytical Definitions & Computation
 
 #### 1. $2 \times 2$ Matrix
-For a matrix $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$:
-$$\det(A) = ad - bc$$
+
+For a matrix 
+
+$$
+A = \begin{pmatrix} a & b \\ 
+c & d \end{pmatrix}
+$$
+
+$\det(A) = ad - bc$
 
 #### 2. $3 \times 3$ Matrix (Sarrus' Rule / Laplace Expansion)
-For $A = \begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix}$:
+
+For 
+
+$$
+A = \begin{pmatrix} 
+a & b & c \\ 
+d & e & f \\
+g & h & i \end{pmatrix}
+$$:
+
 $$\det(A) = a(ei - fh) - b(di - fg) + c(dh - eg)$$
 
 #### 3. General $n \times n$ Matrix (Laplace Cofactor Expansion)
 For any row $i$:
+
 $$\det(A) = \sum_{j=1}^{n} (-1)^{i+j} a_{ij} M_{ij}$$
+
 where $M_{ij}$ is the minor (determinant of the $(n-1) \times (n-1)$ submatrix obtained by deleting row $i$ and column $j$). The quantity $C_{ij} = (-1)^{i+j} M_{ij}$ is called the **cofactor**.
 
 ---
@@ -90,6 +96,7 @@ The **rank** of a matrix $A \in \mathbb{R}^{m \times n}$, denoted as $\text{rank
 ### Linearly Independent Vectors & Vector Spaces
 
 A set of vectors $\{\mathbf{v}_1, \mathbf{v}_2, \dots, \mathbf{v}_k\}$ is **linearly independent** if:
+
 $$c_1 \mathbf{v}_1 + c_2 \mathbf{v}_2 + \dots + c_k \mathbf{v}_k = \mathbf{0} \implies c_1 = c_2 = \dots = c_k = 0$$
 
 - **Column Rank:** Maximum number of linearly independent columns.
@@ -153,12 +160,15 @@ A system of linear equations can be expressed as $A\mathbf{x} = \mathbf{b}$, whe
 ### Rouché–Capelli Theorem
 
 1. **Consistent System (At least one solution):**
+ 
    $$\text{rank}(A) = \text{rank}([A \mid \mathbf{b}])$$
+
    - **Unique Solution:** If $\text{rank}(A) = \text{rank}([A \mid \mathbf{b}]) = n$ (number of variables).
    - **Infinitely Many Solutions:** If $\text{rank}(A) = \text{rank}([A \mid \mathbf{b}]) < n$. The solution space has $n - \text{rank}(A)$ free parameters.
 
-2. **Inconsistent System (No solution):**
-   $$\text{rank}(A) \neq \text{rank}([A \mid \mathbf{b}])$$
+3. **Inconsistent System (No solution):**
+
+    $$\text{rank}(A) \neq \text{rank}([A \mid \mathbf{b}])$$
 
 ![System Solutions](figures/fig3_system_solutions.png)
 
@@ -191,3 +201,13 @@ print(f"Symbolic Determinant (SymPy): {det_sym}")
 # Concrete matrix in SymPy
 A_exact = sp.Matrix([[4, 2, 1], [0, 5, 3], [2, 1, 6]])
 print(f"Exact Determinant (SymPy): {A_exact.det()}")
+```
+---
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
