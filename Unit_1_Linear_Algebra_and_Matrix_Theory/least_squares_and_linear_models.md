@@ -1,21 +1,13 @@
-# Comprehensive Guide to Least Squares Problems and Linear Models
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+### Current Topic: Least Squares Problems and Linear Models - Basics, graphical interpretation, solved examples, and Python implementation
 ---
-
-## Table of Contents
-1. [Introduction to Linear Models](#1-introduction-to-linear-models)
-2. [Ordinary Least Squares (OLS) Formulation](#2-ordinary-least-squares-ols-formulation)
-3. [Geometric Interpretation of Least Squares](#3-geometric-interpretation-of-least-squares)
-4. [Numerical Methods for Solving OLS](#4-numerical-methods-for-solving-ols)
-   - [Normal Equations](#41-normal-equations)
-   - [QR Decomposition](#42-qr-decomposition)
-   - [Singular Value Decomposition (SVD)](#43-singular-value-decomposition-svd)
-5. [Statistical Assumptions & Gauss-Markov Theorem](#5-statistical-assumptions--gauss-markov-theorem)
-6. [Residual Analysis & Diagnostic Testing](#6-residual-analysis--diagnostic-testing)
-7. [Polynomial Regression & Complexity Control](#7-polynomial-regression--complexity-control)
-8. [Regularized Linear Models (Ridge, Lasso, ElasticNet)](#8-regularized-linear-models-ridge-lasso-elasticnet)
-9. [Complete Python Reference Implementation](#9-complete-python-reference-implementation)
-10. [Figures Download & Reference Links](#10-figures-download--reference-links)
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
 ---
 
@@ -295,3 +287,13 @@ if __name__ == '__main__':
     
     print("Estimated Parameters (Intercept + Coeffs):", model.beta)
     print("Evaluation Metrics:", evaluate_regression(y_raw, preds, p=3))
+
+
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
