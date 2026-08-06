@@ -1,12 +1,14 @@
-# Symmetric Matrices, Positive Definite Matrices, and Similar Matrices
-
-> **Subject:** Linear Algebra  
-> **Level:** Undergraduate / introductory computational linear algebra  
-> **Focus:** Definitions, properties, geometric interpretation, eigenvalues, quadratic forms, matrix similarity, diagonalization, and Python implementation.
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 2: Eigen Analysis and Matrix Decomposition
+* ### Current Topic: Symmetric Matrices, Positive Definite Matrices, and Similar Matrices
+* #### Definitions, properties, geometric interpretation, eigenvalues, quadratic forms, matrix similarity, diagonalization, and Python implementation.
 ---
-
-## 1. Learning Objectives
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
 After studying this material, you should be able to:
 
@@ -1963,3 +1965,13 @@ Together, these ideas are foundational for:
 - quadratic programming.
 
 Understanding these three concepts provides a strong bridge from elementary matrix algebra to advanced applications of linear algebra.
+
+
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
