@@ -7,7 +7,7 @@
 * **Email:** javed@iiita.ac.in
 * **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
 ---
-## 🎯 1. Learning Objectives
+## 🎯 Learning Objectives
 
 After studying this material, you should be able to:
 
@@ -57,9 +57,9 @@ A **scalar** is a single numerical value.
 
 Examples:
 
-\[
+$$
 5,\quad -3,\quad 2.75
-\]
+$$
 
 In IT, a scalar might represent:
 
@@ -75,7 +75,7 @@ In IT, a scalar might represent:
 
 A vector is an ordered collection of numbers.
 
-\[
+$$
 \mathbf{x} =
 \begin{bmatrix}
 x_1\\
@@ -83,18 +83,18 @@ x_2\\
 \vdots\\
 x_n
 \end{bmatrix}
-\]
+$$
 
 For example:
 
-\[
+$$
 \mathbf{x} =
 \begin{bmatrix}
 10\\
 20\\
 30
 \end{bmatrix}
-\]
+$$
 
 can represent three features of an object.
 
@@ -102,14 +102,14 @@ A vector is often used to represent a **data record**.
 
 For example, a student could be represented as:
 
-\[
+$$
 \mathbf{x} =
 \begin{bmatrix}
 20\\
 85\\
 90
 \end{bmatrix}
-\]
+$$
 
 where the components represent age, mathematics score, and programming score.
 
@@ -121,32 +121,32 @@ where the components represent age, mathematics score, and programming score.
 
 A matrix is a rectangular arrangement of numbers:
 
-\[
+$$
 A =
 \begin{bmatrix}
 1 & 2 & 3\\
 4 & 5 & 6
 \end{bmatrix}
-\]
+$$
 
 This matrix has 2 rows and 3 columns, so its shape is:
 
-\[
+$$
 2 \times 3
-\]
+$$
 
 Matrices are extremely useful in IT because they can represent many data records simultaneously.
 
 For example:
 
-\[
+$$
 X =
 \begin{bmatrix}
 20 & 85 & 90\\
 21 & 78 & 88\\
 19 & 92 & 95
 \end{bmatrix}
-\]
+$$
 
 can represent three students and three features.
 
@@ -198,7 +198,7 @@ Matrix shape: (2, 3)
 
 Given:
 
-\[
+$$
 \mathbf{x} =
 \begin{bmatrix}
 1\\
@@ -212,11 +212,11 @@ Given:
 5\\
 6
 \end{bmatrix}
-\]
+$$
 
 then:
 
-\[
+$$
 \mathbf{x}+\mathbf{y}
 =
 \begin{bmatrix}
@@ -224,7 +224,7 @@ then:
 7\\
 9
 \end{bmatrix}
-\]
+$$
 
 Python:
 
@@ -245,7 +245,7 @@ print(result)
 
 A vector can be multiplied by a scalar:
 
-\[
+$$
 3
 \begin{bmatrix}
 1\\
@@ -258,7 +258,7 @@ A vector can be multiplied by a scalar:
 6\\
 9
 \end{bmatrix}
-\]
+$$
 
 Python:
 
@@ -278,31 +278,31 @@ This is useful for scaling numerical features.
 
 The **dot product** of two vectors is:
 
-\[
+$$
 \mathbf{x}\cdot\mathbf{y}
 =
 x_1y_1+x_2y_2+\cdots+x_ny_n
-\]
+$$
 
 For:
 
-\[
+$$
 \mathbf{x}=[1,2,3]
-\]
+$$
 
 and
 
-\[
+$$
 \mathbf{y}=[4,5,6]
-\]
+$$
 
 we get:
 
-\[
+$$
 \mathbf{x}\cdot\mathbf{y}
 =
 1(4)+2(5)+3(6)=32
-\]
+$$
 
 Python:
 
@@ -334,12 +334,12 @@ A dot product is a basic building block for more sophisticated similarity measur
 
 ### Cosine similarity
 
-\[
+$$
 \cos(\theta)
 =
 \frac{\mathbf{x}\cdot\mathbf{y}}
 {\|\mathbf{x}\|\|\mathbf{y}\|}
-\]
+$$
 
 Python:
 
@@ -377,14 +377,14 @@ Suppose we have:
 
 The numerical portion can be written as:
 
-\[
+$$
 X =
 \begin{bmatrix}
 20 & 85 & 90\\
 21 & 78 & 88\\
 19 & 92 & 95
 \end{bmatrix}
-\]
+$$
 
 Python:
 
@@ -418,33 +418,33 @@ Matrix multiplication is one of the most important operations in data processing
 
 Suppose:
 
-\[
+$$
 A =
 \begin{bmatrix}
 1 & 2\\
 3 & 4
 \end{bmatrix}
-\]
+$$
 
 and
 
-\[
+$$
 B =
 \begin{bmatrix}
 5 & 6\\
 7 & 8
 \end{bmatrix}
-\]
+$$
 
 Then:
 
-\[
+$$
 AB =
 \begin{bmatrix}
 19 & 22\\
 43 & 50
 \end{bmatrix}
-\]
+$$
 
 Python:
 
@@ -476,17 +476,17 @@ Matrices can transform vectors.
 
 If:
 
-\[
+$$
 A =
 \begin{bmatrix}
 2 & 0\\
 0 & 2
 \end{bmatrix}
-\]
+$$
 
 then:
 
-\[
+$$
 A
 \begin{bmatrix}
 1\\
@@ -497,7 +497,7 @@ A
 2\\
 4
 \end{bmatrix}
-\]
+$$
 
 The matrix has scaled the vector by 2.
 
@@ -538,41 +538,41 @@ Computer graphics makes extensive use of matrices.
 
 A 2D point can be represented as:
 
-\[
+$$
 \mathbf{p}=
 \begin{bmatrix}
 x\\
 y
 \end{bmatrix}
-\]
+$$
 
 A scaling matrix is:
 
-\[
+$$
 S=
 \begin{bmatrix}
 s_x & 0\\
 0 & s_y
 \end{bmatrix}
-\]
+$$
 
 Then:
 
-\[
+$$
 \mathbf{p}'=S\mathbf{p}
-\]
+$$
 
 ## Rotation
 
 A 2D rotation matrix is:
 
-\[
+$$
 R(\theta)=
 \begin{bmatrix}
 \cos\theta & -\sin\theta\\
 \sin\theta & \cos\theta
 \end{bmatrix}
-\]
+$$
 
 Python:
 
@@ -610,14 +610,14 @@ A grayscale image can be represented as a matrix.
 
 For example:
 
-\[
+$$
 I=
 \begin{bmatrix}
 0 & 50 & 100\\
 150 & 200 & 255\\
 255 & 100 & 0
 \end{bmatrix}
-\]
+$$
 
 Each number represents the intensity of a pixel.
 
@@ -648,28 +648,28 @@ An actual image contains many more pixels, but the same principle applies.
 
 A color pixel can be represented using three values:
 
-\[
+$$
 [R,G,B]
-\]
+$$
 
 For example:
 
-\[
+$$
 [255,0,0]
-\]
+$$
 
 represents red.
 
 An RGB image can therefore be represented as a three-dimensional numerical array:
 
-\[
+$$
 H \times W \times 3
-\]
+$$
 
 where:
 
-- \(H\) = image height,
-- \(W\) = image width,
+- $(H)$ = image height,
+- $(W)$ = image width,
 - 3 = red, green, blue channels.
 
 ![RGB image as matrix](figures/03_rgb_image_matrix.png)
@@ -738,9 +738,9 @@ The sentence:
 
 could be represented as:
 
-\[
+$$
 [1,1,0,0]
-\]
+$$
 
 The vector contains numerical information about which vocabulary terms occur.
 
@@ -767,13 +767,13 @@ More advanced natural language processing uses dense vectors called **embeddings
 
 Suppose two documents are represented as vectors:
 
-\[
+$$
 d_1=[1,1,0,1]
-\]
+$$
 
-\[
+$$
 d_2=[1,0,1,1]
-\]
+$$
 
 We can compare them using cosine similarity.
 
@@ -806,14 +806,14 @@ A recommendation system can represent users and items using matrices.
 
 Suppose:
 
-\[
+$$
 R =
 \begin{bmatrix}
 5 & 4 & 0\\
 4 & 0 & 5\\
 0 & 5 & 4
 \end{bmatrix}
-\]
+$$
 
 Rows can represent users and columns can represent movies.
 
@@ -837,14 +837,14 @@ Large recommendation systems use more advanced methods such as **matrix factoriz
 
 A common conceptual model is:
 
-\[
+$$
 R \approx UV^T
-\]
+$$
 
 where:
 
-- \(U\) represents user features,
-- \(V\) represents item features.
+- $(U)$ represents user features,
+- $(V)$ represents item features.
 
 The system can use these latent representations to estimate missing ratings.
 
@@ -854,31 +854,31 @@ The system can use these latent representations to estimate missing ratings.
 
 Suppose a model has input features:
 
-\[
+$$
 \mathbf{x}=
 \begin{bmatrix}
 x_1\\
 x_2\\
 x_3
 \end{bmatrix}
-\]
+$$
 
 and weights:
 
-\[
+$$
 \mathbf{w}=
 \begin{bmatrix}
 w_1\\
 w_2\\
 w_3
 \end{bmatrix}
-\]
+$$
 
 A simple linear model is:
 
-\[
+$$
 y=\mathbf{w}^T\mathbf{x}+b
-\]
+$$
 
 Python:
 
@@ -907,24 +907,24 @@ This simple equation is a building block for:
 
 A linear regression model can be written as:
 
-\[
+$$
 \mathbf{y}=X\boldsymbol{\beta}+\boldsymbol{\epsilon}
-\]
+$$
 
 where:
 
-- \(X\) is the feature matrix,
-- \(\boldsymbol{\beta}\) contains model parameters,
-- \(\mathbf{y}\) contains target values,
-- \(\boldsymbol{\epsilon}\) is the error.
+- $(X)$ is the feature matrix,
+- $(\boldsymbol{\beta})$ contains model parameters,
+- $(\mathbf{y})$ contains target values,
+- $(\boldsymbol{\epsilon})$ is the error.
 
 For ordinary least squares:
 
-\[
+$$
 \hat{\boldsymbol{\beta}}
 =
 (X^TX)^{-1}X^T\mathbf{y}
-\]
+$$
 
 when the inverse exists.
 
@@ -991,11 +991,11 @@ The second principal component is orthogonal to the first and captures the next 
 
 Conceptually:
 
-\[
+$$
 X \rightarrow \text{PCA} \rightarrow Z
-\]
+$$
 
-where \(Z\) has fewer dimensions than \(X\).
+where $(Z)$ has fewer dimensions than $(X)$.
 
 ![PCA projection](figures/04_pca_projection.png)
 
@@ -1036,31 +1036,31 @@ PCA is useful for:
 
 Suppose an image is represented by a matrix:
 
-\[
+$$
 A
-\]
+$$
 
 A large matrix may contain redundant information.
 
 A matrix can sometimes be approximated by a lower-rank matrix:
 
-\[
+$$
 A \approx A_k
-\]
+$$
 
-where \(A_k\) retains the most important information.
+where $(A_k)$ retains the most important information.
 
 The **Singular Value Decomposition (SVD)** is:
 
-\[
+$$
 A=U\Sigma V^T
-\]
+$$
 
 A low-rank approximation keeps only the largest singular values:
 
-\[
+$$
 A_k=U_k\Sigma_kV_k^T
-\]
+$$
 
 Python example:
 
@@ -1104,7 +1104,7 @@ Consider a network with four nodes.
 
 An **adjacency matrix** records whether nodes are connected.
 
-\[
+$$
 A =
 \begin{bmatrix}
 0&1&1&0\\
@@ -1112,7 +1112,7 @@ A =
 1&1&0&1\\
 0&0&1&0
 \end{bmatrix}
-\]
+$$
 
 A value of 1 indicates a connection.
 
@@ -1167,7 +1167,7 @@ This is one of the most important ideas in applied linear algebra:
 
 A simplified machine learning pipeline can be viewed as:
 
-\[
+$$
 \text{Raw Data}
 \rightarrow
 \text{Numerical Representation}
@@ -1177,7 +1177,7 @@ A simplified machine learning pipeline can be viewed as:
 \text{Model}
 \rightarrow
 \text{Prediction}
-\]
+$$
 
 For example:
 
@@ -1218,11 +1218,11 @@ This is one reason linear algebra is so important for efficient computing.
 
 The Euclidean norm of a vector is:
 
-\[
+$$
 \|\mathbf{x}\|_2
 =
 \sqrt{x_1^2+x_2^2+\cdots+x_n^2}
-\]
+$$
 
 Python:
 
@@ -1236,9 +1236,9 @@ print("Norm:", np.linalg.norm(x))
 
 The result is:
 
-\[
+$$
 \sqrt{3^2+4^2}=5
-\]
+$$
 
 Norms are useful for:
 
@@ -1266,9 +1266,9 @@ A large numerical scale can dominate some algorithms.
 
 A simple vector normalization is:
 
-\[
+$$
 \hat{x}=\frac{x}{\|x\|}
-\]
+$$
 
 Python:
 
@@ -1291,23 +1291,23 @@ The resulting vector has approximately unit length.
 
 Many IT and engineering problems can be expressed as:
 
-\[
+$$
 A\mathbf{x}=\mathbf{b}
-\]
+$$
 
 For example:
 
-\[
+$$
 2x+y=5
-\]
+$$
 
-\[
+$$
 x+3y=6
-\]
+$$
 
 Matrix form:
 
-\[
+$$
 \begin{bmatrix}
 2&1\\
 1&3
@@ -1321,7 +1321,7 @@ y
 5\\
 6
 \end{bmatrix}
-\]
+$$
 
 Python:
 
@@ -1352,17 +1352,17 @@ Consider a dataset with one million observations and 100 features.
 
 Instead of processing each observation individually, we can represent the dataset as:
 
-\[
+$$
 X\in\mathbb{R}^{1,000,000\times100}
-\]
+$$
 
 Many calculations can then be expressed using matrix operations.
 
 For example:
 
-\[
+$$
 XW
-\]
+$$
 
 can process many observations simultaneously.
 
@@ -1470,16 +1470,16 @@ This is a simple example of how mathematical representation becomes a computatio
 
 | Concept | Mathematical form | IT application |
 |---|---|---|
-| Vector | \(\mathbf{x}\) | Data record, embedding |
-| Matrix | \(A\) | Dataset, image, network |
-| Dot product | \(\mathbf{x}^T\mathbf{y}\) | Similarity, prediction |
-| Matrix multiplication | \(AB\) | ML and graphics |
-| Norm | \(\|\mathbf{x}\|\) | Distance and normalization |
-| Linear system | \(A\mathbf{x}=\mathbf{b}\) | Modeling |
-| Linear transformation | \(A\mathbf{x}\) | Graphics and data transformation |
+| Vector | $(\mathbf{x})$ | Data record, embedding |
+| Matrix | $(A)$ | Dataset, image, network |
+| Dot product | $(\mathbf{x}^T\mathbf{y})$ | Similarity, prediction |
+| Matrix multiplication | $(AB)$ | ML and graphics |
+| Norm | $(\|\mathbf{x}\|)$ | Distance and normalization |
+| Linear system | $(A\mathbf{x}=\mathbf{b})$ | Modeling |
+| Linear transformation | $(A\mathbf{x})$ | Graphics and data transformation |
 | PCA | Projection onto principal components | Dimensionality reduction |
-| SVD | \(A=U\Sigma V^T\) | Compression and factorization |
-| Adjacency matrix | \(A_{ij}\) | Network representation |
+| SVD | $(A=U\Sigma V^T)$ | Compression and factorization |
+| Adjacency matrix | $(A_{ij})$ | Network representation |
 
 ---
 
@@ -1603,7 +1603,7 @@ print(pca.explained_variance_ratio_)
 
 This mini project combines several fundamental ideas:
 
-\[
+$$
 \boxed{
 \text{Data}
 \rightarrow
@@ -1615,7 +1615,7 @@ This mini project combines several fundamental ideas:
 \rightarrow
 \text{PCA}
 }
-\]
+$$
 
 ---
 
