@@ -1,6 +1,13 @@
-# Matrix Operations and Matrix Inverses
-
-## Learning Objectives
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+* ### Current Topic: Matrix Operations and Matrix Inverses - Types, graphical interpretation, solved examples, and Python implementation
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
 After studying this material, you should be able to:
 
@@ -1108,27 +1115,12 @@ $$
 
 ---
 
-## Figure Files
+---
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
-The accompanying figures are stored in the `figures/` directory:
-
-1. `01_matrix_representation.png`
-2. `02_matrix_addition.png`
-3. `03_matrix_multiplication.png`
-4. `04_inverse_transformation.png`
-5. `05_determinant_area_scaling.png`
-6. `06_singular_vs_nonsingular.png`
-
-For GitHub, keep this structure:
-
-```text
-matrix_operations_inverses_material/
-├── matrix_operations_and_inverses.md
-└── figures/
-    ├── 01_matrix_representation.png
-    ├── 02_matrix_addition.png
-    ├── 03_matrix_multiplication.png
-    ├── 04_inverse_transformation.png
-    ├── 05_determinant_area_scaling.png
-    └── 06_singular_vs_nonsingular.png
-```
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
