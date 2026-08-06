@@ -1,10 +1,14 @@
-# Linear Transformations — Reading Material with Python
-
-> **Topic:** Linear Algebra — Linear Transformations  
-> **Level:** Undergraduate / introductory linear algebra  
-> **Format:** GitHub-friendly Markdown with Python implementations and explanatory figures
-
-## 1. Learning objectives
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 2: Eigen Analysis and Matrix Decomposition
+* ### Current Topic: Linear Transformations — Reading Material with Python
+* #### Python implementations and explanatory figures
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
 After studying this material, you should be able to:
 
@@ -917,44 +921,19 @@ import sympy as sp
 ```
 
 ---
-
-## 24. Figures included
-
-The `figures/` directory contains:
-
-1. `01_linear_transformation_grid.png`
-2. `02_mapping_diagram.png`
-3. `03_rotation.png`
-4. `04_shear.png`
-5. `05_projection.png`
-6. `06_kernel_image.png`
-7. `07_composition.png`
-8. `08_determinant_area_scaling.png`
-
-The Markdown uses relative paths, so it can be uploaded directly to GitHub together with the `figures` folder.
-
----
-
-## 25. Suggested folder structure
-
-```text
-linear_transformations_material/
-│
-├── linear_transformations.md
-│
-└── figures/
-    ├── 01_linear_transformation_grid.png
-    ├── 02_mapping_diagram.png
-    ├── 03_rotation.png
-    ├── 04_shear.png
-    ├── 05_projection.png
-    ├── 06_kernel_image.png
-    ├── 07_composition.png
-    └── 08_determinant_area_scaling.png
-```
-
 ## Conclusion
 
 Linear transformations provide an important bridge between vector spaces and matrix computations. Once a transformation is represented by a matrix, geometric ideas such as rotation, scaling, projection, and shear can be studied using algebraic tools such as matrix multiplication, rank, nullity, and determinants.
 
 This foundation is useful for later topics including eigenvalues and eigenvectors, change of basis, diagonalization, least squares, machine learning, computer graphics, and data analysis.
+
+---
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
+
