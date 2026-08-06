@@ -107,7 +107,7 @@ tions
 
 * :large_blue_circle: [Singular Value Decomposition (SVD)](Unit_2_Eigen_Analysis_and_Matrix_Decomposition/singular_value_decomposition.md), [Low-Rank Approximation, Matrix Factorization Concepts](Unit_2_Eigen_Analysis_and_Matrix_Decomposition/low_rank_matrix_factorization.md) 
 
-* :large_blue_circle: [Applications in Data Compression](Applications/image_compression.ipynb), Recommendation Systems, Image Representation and Machine Learning.
+* :large_blue_circle: [Applications in Data Compression, Recommendation Systems, Image Representation and Machine Learning](Unit_2_Eigen_Analysis_and_Matrix_Decomposition/linear_algebra_applications_data_compression_recommendation_image_ml.md).
 
 ### 🎯 Unit 3:  Probability and Random Variables 🎯
 * :red_circle: [Events and Probability Spaces](Unit_3_Probability_and_Random_Variables/events_and_probability_spaces.md), :red_circle: [Conditional Probability](Unit_3_Probability_and_Random_Variables/conditional_probability.md), :red_circle: [Bayes’ Theorem, Independence of Events](Unit_3_Probability_and_Random_Variables/bayes_theorem_and_independence.md).
