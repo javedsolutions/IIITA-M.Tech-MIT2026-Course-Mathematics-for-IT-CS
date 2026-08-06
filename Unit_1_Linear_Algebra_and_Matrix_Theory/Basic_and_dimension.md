@@ -102,3 +102,14 @@ x = np.array([1, 2, 3], dtype=float)
 B = A[:, :2] # Basis matrix B formed by 2 basis vectors
 coords, _, _, _ = np.linalg.lstsq(B, x, rcond=None)
 print(f"\nCoordinates of x relative to Basis B: {coords}")
+
+---
+
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
