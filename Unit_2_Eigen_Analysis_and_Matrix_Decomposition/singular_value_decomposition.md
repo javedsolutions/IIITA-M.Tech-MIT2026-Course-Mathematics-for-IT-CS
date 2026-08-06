@@ -362,7 +362,7 @@ print(S**2)
 The rank is the number of nonzero singular values:
 
 $$
-\boxed{\operatorname{rank}(A)=\#\{i:\sigma_i>0\}}.
+\boxed{\text{rank}(A)=\#\{i:\sigma_i>0\}}.
 $$
 
 Because floating-point arithmetic may produce very small values instead of exact zero, use a tolerance.
@@ -415,8 +415,7 @@ print(np.linalg.norm(A, 2))
 The Frobenius norm is
 
 $$
-\|A\|_F
-=
+\|A\|_F=
 \sqrt{\sum_{i,j}a_{ij}^2}.
 $$
 
@@ -536,8 +535,7 @@ For the Frobenius norm,
 
 $$
 \boxed{
-\|A-A_k\|_F
-=
+\|A-A_k\|_F=
 \sqrt{\sigma_{k+1}^2+\sigma_{k+2}^2+\cdots}.
 }
 $$
@@ -931,8 +929,7 @@ $$
 ### Rank
 
 $$
-\operatorname{rank}(A)
-=
+\text{rank}(A)=
 \text{number of nonzero singular values}.
 $$
 
@@ -1190,49 +1187,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sympy as sp
 ```
-
----
-
-## 37. Figures included
-
-The `figures/` directory contains:
-
-1. `01_svd_pipeline.png` — SVD as three sequential operations.
-2. `02_circle_to_ellipse.png` — matrix mapping a unit circle to an ellipse.
-3. `03_singular_vectors.png` — singular vectors and their scaled images.
-4. `04_rank_k_approximation.png` — truncated SVD at different ranks.
-5. `05_singular_values.png` — visualization of singular-value magnitudes.
-6. `06_low_rank_compression.png` — low-rank approximation for image/data compression.
-7. `07_svd_pca.png` — SVD directions and PCA.
-8. `08_pseudoinverse.png` — SVD-based pseudoinverse concept.
-
----
-
-## 38. Suggested GitHub folder structure
-
-```text
-svd_reading_material/
-│
-├── singular_value_decomposition.md
-│
-└── figures/
-    ├── 01_svd_pipeline.png
-    ├── 02_circle_to_ellipse.png
-    ├── 03_singular_vectors.png
-    ├── 04_rank_k_approximation.png
-    ├── 05_singular_values.png
-    ├── 06_low_rank_compression.png
-    ├── 07_svd_pca.png
-    └── 08_pseudoinverse.png
-```
-
-The Markdown uses relative paths such as:
-
-```markdown
-![SVD pipeline](figures/01_svd_pipeline.png)
-```
-
-so the folder can be uploaded directly to GitHub and the figures will render automatically.
 
 ---
 
