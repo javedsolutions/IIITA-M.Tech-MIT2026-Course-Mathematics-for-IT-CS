@@ -44,7 +44,7 @@ $$
 Although $(A)$ contains nine entries, every row is a scalar multiple of the first row. Therefore,
 
 $$
-\operatorname{rank}(A)=1.
+\text{rank}(A)=1.
 $$
 
 ![Rank-1 matrix](figures/01_rank1_matrix.png)
@@ -146,7 +146,7 @@ A matrix is **full rank** when it reaches this maximum.
 A matrix is considered **low rank** when
 
 $$
-r=\operatorname{rank}(A)
+r=\text{rank}(A)
 $$
 
 is much smaller than $(\min(m,n))$.
@@ -188,15 +188,7 @@ $$
 Then
 
 $$
-\mathbf u\mathbf v^T
-=
-\begin{bmatrix}
-1\\2\\3
-\end{bmatrix}
-\begin{bmatrix}
-2&1&4
-\end{bmatrix}
-=
+\mathbf u\mathbf v^T=\begin{bmatrix}1\\2\\3\end{bmatrix}\begin{bmatrix}2&1&4\end{bmatrix}=
 \begin{bmatrix}
 2&1&4\\
 4&2&8\\
@@ -271,7 +263,7 @@ $$
 a matrix $(A_k)$ is a **rank-$(k)$ approximation** if
 
 $$
-\operatorname{rank}(A_k)\leq k.
+\rank{rank}(A_k)\leq k.
 $$
 
 We want $(A_k)$ to be close to $(A)$:
@@ -464,8 +456,7 @@ Using the Frobenius norm,
 
 $$
 \boxed{
-\|A-A_k\|_F
-=
+\|A-A_k\|_F=
 \sqrt{\sum_{i=k+1}^{r}\sigma_i^2}.
 }
 $$
@@ -498,7 +489,7 @@ $$
 \boxed{
 A_k
 =
-\arg\min_{\operatorname{rank}(B)\leq k}
+\arg\min_{\text{rank}(B)\leq k}
 \|A-B\|_F.
 }
 $$
@@ -1035,8 +1026,7 @@ When $(k\ll\min(m,n))$, this is a low-dimensional representation.
 We can minimize
 
 $$
-J(U,V)
-=
+J(U,V)=
 \sum_{(i,j)\in\Omega}
 (R_{ij}-\mathbf u_i^T\mathbf v_j)^2.
 $$
@@ -1653,8 +1643,7 @@ then
 
 $$
 \boxed{
-\operatorname{rank}(A)
-=
+\text{rank}(A)=
 \text{number of nonzero singular values}.
 }
 $$
@@ -1683,8 +1672,7 @@ and
 
 $$
 \boxed{
-\|A-A_k\|_F
-=
+\|A-A_k\|_F=
 \sqrt{
 \sum_{i=k+1}^{r}
 \sigma_i^2
@@ -1700,8 +1688,7 @@ The Frobenius norm satisfies
 
 $$
 \boxed{
-\|A\|_F^2
-=
+\|A\|_F^2=
 \sum_i\sigma_i^2.
 }
 $$
@@ -1730,8 +1717,7 @@ For a full-rank matrix,
 
 $$
 \boxed{
-\kappa_2(A)
-=
+\kappa_2(A)=
 \frac{\sigma_{\max}}{\sigma_{\min}}.
 }
 $$
