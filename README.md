@@ -99,13 +99,13 @@ tions
 
 
 ### 🎯 Unit 2: Eigen Analysis and Matrix Decomposition 🎯
-* :large_blue_circle: Eigenvalues and Eigenvectors, Characteristic Equations, Diagonalization of Matrices
+* :large_blue_circle: [Eigenvalues and Eigenvectors, Characteristic Equations, Diagonalization of Matrices](Unit_2_Eigen_Analysis_and_Matrix_Decomposition/eigenvalues_eigenvectors_characteristic_equations_diagonalization.md)
 
-* :large_blue_circle: Symmetric Matrices, Positive Definite Matrices, Similar Matrices
+* :large_blue_circle: [Symmetric Matrices, Positive Definite Matrices, Similar Matrices](Unit_2_Eigen_Analysis_and_Matrix_Decomposition/symmetric_positive_definite_similar_matrices.md)
 
-* :large_blue_circle: Linear Transformations. 
+* :large_blue_circle: [Linear Transformations](Unit_2_Eigen_Analysis_and_Matrix_Decomposition/linear_transformations.md). 
 
-* :large_blue_circle: Singular Value Decomposition (SVD), Low-Rank Approximation, Matrix Factorization Concepts 
+* :large_blue_circle: [Singular Value Decomposition (SVD)](Unit_2_Eigen_Analysis_and_Matrix_Decomposition/singular_value_decomposition.md), [Low-Rank Approximation, Matrix Factorization Concepts](Unit_2_Eigen_Analysis_and_Matrix_Decomposition/low_rank_matrix_factorization.md) 
 
 * :large_blue_circle: Applications in Data Compression, Recommendation Systems, Image Representation and Machine Learning.
 
