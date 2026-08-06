@@ -330,8 +330,7 @@ $$
 we get
 
 $$
-x^TAx
-=
+x^TAx=
 ax_1^2+2bx_1x_2+cx_2^2.
 $$
 
@@ -413,8 +412,7 @@ $$
 we have
 
 $$
-x^TAx
-=
+x^TAx=
 2x_1^2+3x_2^2.
 $$
 
@@ -903,7 +901,7 @@ then
 
 $$
 \boxed{
-\operatorname{eig}(A)=\operatorname{eig}(B).
+\text{eig}(A)=\text{eig}(B).
 }
 $$
 
@@ -917,8 +915,7 @@ Similar matrices have the same characteristic polynomial:
 
 $$
 \boxed{
-\det(\lambda I-A)
-=
+\det(\lambda I-A)=
 \det(\lambda I-B).
 }
 $$
@@ -937,18 +934,16 @@ Similarity preserves trace:
 
 $$
 \boxed{
-\operatorname{tr}(A)=\operatorname{tr}(B).
+\text{tr}(A)=\text{tr}(B).
 }
 $$
 
 This follows from the cyclic property of trace:
 
 $$
-\operatorname{tr}(S^{-1}AS)
-=
-\operatorname{tr}(ASS^{-1})
-=
-\operatorname{tr}(A).
+\text{tr}(S^{-1}AS) =
+\text{tr}(ASS^{-1}) =
+\text{tr}(A).
 $$
 
 ---
@@ -966,10 +961,8 @@ $$
 Indeed,
 
 $$
-\det(S^{-1}AS)
-=
-\det(S^{-1})\det(A)\det(S)
-=
+\det(S^{-1}AS)=
+\det(S^{-1})\det(A)\det(S)=
 \det(A).
 $$
 
@@ -981,9 +974,8 @@ Similarity preserves rank:
 
 $$
 \boxed{
-\operatorname{rank}(A)
-=
-\operatorname{rank}(B).
+\text{rank}(A)=
+\text{rank}(B).
 }
 $$
 
@@ -1225,8 +1217,7 @@ $$
 And
 
 $$
-\lambda_{\min}
-=
+\lambda_{\min}=
 \min_{x\neq0}
 \frac{x^TAx}{x^Tx}.
 $$
@@ -1373,18 +1364,15 @@ $$
 Then
 
 $$
-x^TAx
-=
-x^TQ\Lambda Q^Tx
-=
+x^TAx=
+x^TQ\Lambda Q^Tx=
 y^T\Lambda y.
 $$
 
 Therefore,
 
 $$
-x^TAx
-=
+x^TAx=
 \sum_i\lambda_i y_i^2.
 $$
 
