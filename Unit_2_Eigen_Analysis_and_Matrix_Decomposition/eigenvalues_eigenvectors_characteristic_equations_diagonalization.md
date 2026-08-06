@@ -781,7 +781,7 @@ For an $(n\times n)$ matrix,
 
 $$
 \boxed{
-\operatorname{tr}(A)=\lambda_1+\cdots+\lambda_n.
+\text{tr}(A)=\lambda_1+\cdots+\lambda_n.
 }
 $$
 
@@ -970,7 +970,7 @@ and
 
 $$
 e^{Dt}=
-\operatorname{diag}
+\text{diag}
 (e^{\lambda_1t},\ldots,e^{\lambda_nt}).
 $$
 
