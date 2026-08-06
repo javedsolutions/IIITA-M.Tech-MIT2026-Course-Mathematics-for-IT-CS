@@ -63,8 +63,7 @@ A function $(T:V\rightarrow W)$ is **linear** if:
 ### Additivity
 
 $$
-T(\mathbf{u}+\mathbf{v})
-=
+T(\mathbf{u}+\mathbf{v})=
 T(\mathbf{u})+T(\mathbf{v}).
 $$
 
@@ -80,8 +79,7 @@ Together,
 
 $$
 \boxed{
-T(a\mathbf{u}+b\mathbf{v})
-=
+T(a\mathbf{u}+b\mathbf{v})=
 aT(\mathbf{u})+bT(\mathbf{v})
 }
 $$
@@ -404,8 +402,7 @@ $$
 linearity gives
 
 $$
-T(\mathbf{x})
-=
+T(\mathbf{x})=
 xT(\mathbf{e}_1)+yT(\mathbf{e}_2).
 $$
 
