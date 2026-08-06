@@ -1,5 +1,16 @@
-# Comprehensive Reading Material: Matrix Operations and Matrix Inverses
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+### Current Topic: Matrix Operations and Matrix Inverses
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 Learning Objectives
 
+
+--
 ## 1. Introduction to Matrices
 A **matrix** is a rectangular array or table of numbers, symbols, or expressions arranged in rows and columns. Matrices are fundamental tools in linear algebra, widely used in computer graphics, machine learning, physics simulations, and optimization problems.
 
@@ -110,9 +121,11 @@ else:
 
 ---
 
-## 5. Download Figures
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
-All figures utilized in this reading material can be downloaded directly from the links below:
-- [Download Scalar Multiplication Figure (PNG)](figures/scalar_multiplication.png)
-- [Download Matrix Transformation Figure (PNG)](figures/matrix_transformation.png)
-- [Download Matrix Inverse Figure (PNG)](figures/matrix_inverse.png)
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
