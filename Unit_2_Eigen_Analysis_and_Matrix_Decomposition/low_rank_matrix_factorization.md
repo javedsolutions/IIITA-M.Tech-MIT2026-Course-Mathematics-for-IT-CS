@@ -32,20 +32,20 @@ A matrix can contain a large number of entries while still having relatively sim
 
 For example,
 
-\[
+$$
 A=
 \begin{bmatrix}
 1&2&3\\
 2&4&6\\
 3&6&9
 \end{bmatrix}.
-\]
+$$
 
-Although \(A\) contains nine entries, every row is a scalar multiple of the first row. Therefore,
+Although $(A)$ contains nine entries, every row is a scalar multiple of the first row. Therefore,
 
-\[
+$$
 \operatorname{rank}(A)=1.
-\]
+$$
 
 ![Rank-1 matrix](figures/01_rank1_matrix.png)
 
@@ -76,25 +76,25 @@ The **rank** of a matrix is the dimension of its column space, equivalently the 
 
 For
 
-\[
+$$
 A\in\mathbb{R}^{m\times n},
-\]
+$$
 
 we have
 
-\[
+$$
 \operatorname{rank}(A)\leq\min(m,n).
-\]
+$$
 
 For example,
 
-\[
+$$
 A=
 \begin{bmatrix}
 1&2\\
 2&4
 \end{bmatrix}
-\]
+$$
 
 has rank 1 because the second row is twice the first.
 
@@ -131,27 +131,27 @@ For numerical data, rank is determined using a tolerance because floating-point 
 
 Suppose
 
-\[
+$$
 A\in\mathbb{R}^{m\times n}.
-\]
+$$
 
 The maximum possible rank is
 
-\[
+$$
 \min(m,n).
-\]
+$$
 
 A matrix is **full rank** when it reaches this maximum.
 
 A matrix is considered **low rank** when
 
-\[
+$$
 r=\operatorname{rank}(A)
-\]
+$$
 
-is much smaller than \(\min(m,n)\).
+is much smaller than $(\min(m,n))$.
 
-For example, a \(1000\times1000\) matrix with rank 5 has a very strong low-dimensional structure.
+For example, a $(1000\times1000)$ matrix with rank 5 has a very strong low-dimensional structure.
 
 ---
 
@@ -159,21 +159,21 @@ For example, a \(1000\times1000\) matrix with rank 5 has a very strong low-dimen
 
 Every rank-1 matrix can be written as an outer product:
 
-\[
+$$
 \boxed{A=\mathbf{u}\mathbf{v}^T}
-\]
+$$
 
 where
 
-\[
+$$
 \mathbf{u}\in\mathbb{R}^{m},
 \qquad
 \mathbf{v}\in\mathbb{R}^{n}.
-\]
+$$
 
 For example,
 
-\[
+$$
 \mathbf u=
 \begin{bmatrix}
 1\\2\\3
@@ -183,11 +183,11 @@ For example,
 \begin{bmatrix}
 2\\1\\4
 \end{bmatrix}.
-\]
+$$
 
 Then
 
-\[
+$$
 \mathbf u\mathbf v^T
 =
 \begin{bmatrix}
@@ -202,7 +202,7 @@ Then
 4&2&8\\
 6&3&12
 \end{bmatrix}.
-\]
+$$
 
 ![Outer product](figures/02_outer_product.png)
 
@@ -232,27 +232,27 @@ A = u.reshape(-1, 1) @ v.reshape(1, -1)
 
 ---
 
-## 8. Rank-\(r\) Matrix as a Sum of Rank-1 Matrices
+## 8. Rank-$(r)$ Matrix as a Sum of Rank-1 Matrices
 
-A rank-\(r\) matrix can be represented as
+A rank-$(r)$ matrix can be represented as
 
-\[
+$$
 \boxed{
 A=
 \sum_{i=1}^{r}
 \mathbf u_i\mathbf v_i^T
 }
-\]
+$$
 
 with suitable scaling factors.
 
 More generally,
 
-\[
+$$
 A=
 \sum_{i=1}^{r}
 \sigma_i\mathbf u_i\mathbf v_i^T.
-\]
+$$
 
 This expression is particularly important because it leads directly to the **Singular Value Decomposition**.
 
@@ -264,35 +264,35 @@ This expression is particularly important because it leads directly to the **Sin
 
 Given a matrix
 
-\[
+$$
 A\in\mathbb{R}^{m\times n},
-\]
+$$
 
-a matrix \(A_k\) is a **rank-\(k\) approximation** if
+a matrix $(A_k)$ is a **rank-$(k)$ approximation** if
 
-\[
+$$
 \operatorname{rank}(A_k)\leq k.
-\]
+$$
 
-We want \(A_k\) to be close to \(A\):
+We want $(A_k)$ to be close to $(A)$:
 
-\[
+$$
 \boxed{
 A_k\approx A.
 }
-\]
+$$
 
 The approximation error can be measured using a matrix norm such as
 
-\[
+$$
 \|A-A_k\|_F
-\]
+$$
 
 or
 
-\[
+$$
 \|A-A_k\|_2.
-\]
+$$
 
 ---
 
@@ -325,29 +325,29 @@ This can lead to:
 
 For
 
-\[
+$$
 A\in\mathbb{R}^{m\times n},
-\]
+$$
 
 the Singular Value Decomposition is
 
-\[
+$$
 \boxed{
 A=U\Sigma V^T.
 }
-\]
+$$
 
 Here:
 
-- \(U\) contains left singular vectors;
-- \(V\) contains right singular vectors;
-- \(\Sigma\) contains singular values.
+- $(U)$ contains left singular vectors;
+- $(V)$ contains right singular vectors;
+- $(\Sigma)$ contains singular values.
 
 The singular values satisfy
 
-\[
+$$
 \sigma_1\geq\sigma_2\geq\cdots\geq0.
-\]
+$$
 
 ![Factorization pipeline](figures/03_factorization_pipeline.png)
 
@@ -357,7 +357,7 @@ The singular values satisfy
 
 SVD can be written as
 
-\[
+$$
 \boxed{
 A=
 \sigma_1\mathbf u_1\mathbf v_1^T+
@@ -365,41 +365,41 @@ A=
 \cdots+
 \sigma_r\mathbf u_r\mathbf v_r^T.
 }
-\]
+$$
 
 Each term
 
-\[
+$$
 \sigma_i\mathbf u_i\mathbf v_i^T
-\]
+$$
 
 has rank at most 1.
 
 Thus, a matrix is decomposed into a sum of rank-1 matrices.
 
-This gives us a natural way to approximate \(A\).
+This gives us a natural way to approximate $(A)$.
 
 ---
 
-## 13. Rank-\(k\) Approximation from SVD
+## 13. Rank-$(k)$ Approximation from SVD
 
-Keep only the first \(k\) singular values:
+Keep only the first $(k)$ singular values:
 
-\[
+$$
 \boxed{
 A_k=
 \sum_{i=1}^{k}
 \sigma_i\mathbf u_i\mathbf v_i^T
 }
-\]
+$$
 
 or equivalently,
 
-\[
+$$
 \boxed{
 A_k=U_k\Sigma_kV_k^T.
 }
-\]
+$$
 
 This is called the **truncated SVD**.
 
@@ -436,9 +436,9 @@ The singular values tell us how much of the matrix's structure is associated wit
 
 Suppose
 
-\[
+$$
 \sigma_1\gg\sigma_2\gg\sigma_3.
-\]
+$$
 
 Then the first singular direction is much more important than the later ones.
 
@@ -450,33 +450,33 @@ A rapidly decreasing singular-value spectrum is a strong indication that low-ran
 
 ## 16. Approximation Error
 
-For the rank-\(k\) approximation
+For the rank-$(k)$ approximation
 
-\[
+$$
 A_k=U_k\Sigma_kV_k^T,
-\]
+$$
 
-the error decreases as \(k\) increases.
+the error decreases as $(k)$ increases.
 
 ![Error versus rank](figures/05_error_vs_rank.png)
 
 Using the Frobenius norm,
 
-\[
+$$
 \boxed{
 \|A-A_k\|_F
 =
 \sqrt{\sum_{i=k+1}^{r}\sigma_i^2}.
 }
-\]
+$$
 
 Using the spectral norm,
 
-\[
+$$
 \boxed{
 \|A-A_k\|_2=\sigma_{k+1}.
 }
-\]
+$$
 
 ---
 
@@ -486,50 +486,50 @@ The **Eckart–Young theorem** is one of the most important results in low-rank 
 
 It states that the truncated SVD
 
-\[
+$$
 A_k=U_k\Sigma_kV_k^T
-\]
+$$
 
-is the best rank-\(k\) approximation to \(A\) under both the spectral norm and Frobenius norm.
+is the best rank-$(k)$ approximation to $(A)$ under both the spectral norm and Frobenius norm.
 
 In Frobenius norm,
 
-\[
+$$
 \boxed{
 A_k
 =
 \arg\min_{\operatorname{rank}(B)\leq k}
 \|A-B\|_F.
 }
-\]
+$$
 
-Thus, among all matrices with rank at most \(k\), the truncated SVD gives the smallest approximation error.
+Thus, among all matrices with rank at most $(k)$, the truncated SVD gives the smallest approximation error.
 
 ---
 
-## 18. Selecting the Rank \(k\)
+## 18. Selecting the Rank $(k)$
 
 A common strategy is to retain a specified percentage of the total squared singular values.
 
 The total energy is
 
-\[
+$$
 E=\sum_i\sigma_i^2.
-\]
+$$
 
-The cumulative energy through \(k\) singular values is
+The cumulative energy through $(k)$ singular values is
 
-\[
+$$
 E_k=\sum_{i=1}^{k}\sigma_i^2.
-\]
+$$
 
 The explained-energy ratio is
 
-\[
+$$
 \boxed{
 \frac{E_k}{E}.
 }
-\]
+$$
 
 ### Python
 
@@ -561,19 +561,19 @@ Matrix factorization expresses a matrix as a product of simpler matrices.
 
 General form:
 
-\[
+$$
 \boxed{
 A=BC
 }
-\]
+$$
 
 or
 
-\[
+$$
 \boxed{
 A=BCD.
 }
-\]
+$$
 
 Factorization can expose structure that is not obvious from the original matrix.
 
@@ -595,30 +595,30 @@ Important examples include:
 
 LU factorization writes
 
-\[
+$$
 \boxed{
 A=LU
 }
-\]
+$$
 
 where:
 
-- \(L\) is lower triangular;
-- \(U\) is upper triangular.
+- $(L)$ is lower triangular;
+- $(U)$ is upper triangular.
 
 With pivoting, the usual form is
 
-\[
+$$
 \boxed{
 PA=LU.
 }
-\]
+$$
 
 LU factorization is useful for solving systems
 
-\[
+$$
 A\mathbf{x}=\mathbf b.
-\]
+$$
 
 ---
 
@@ -626,17 +626,17 @@ A\mathbf{x}=\mathbf b.
 
 Consider
 
-\[
+$$
 A=
 \begin{bmatrix}
 4&3\\
 6&3
 \end{bmatrix}.
-\]
+$$
 
 A possible factorization is
 
-\[
+$$
 L=
 \begin{bmatrix}
 1&0\\
@@ -648,13 +648,13 @@ U=
 4&3\\
 0&-1.5
 \end{bmatrix}.
-\]
+$$
 
 Then
 
-\[
+$$
 LU=A.
-\]
+$$
 
 ### Python with SciPy
 
@@ -694,24 +694,24 @@ pip install scipy
 
 QR factorization expresses a matrix as
 
-\[
+$$
 \boxed{
 A=QR
 }
-\]
+$$
 
 where:
 
-- \(Q\) has orthonormal columns;
-- \(R\) is upper triangular.
+- $(Q)$ has orthonormal columns;
+- $(R)$ is upper triangular.
 
 The orthogonality property is
 
-\[
+$$
 \boxed{
 Q^TQ=I.
 }
-\]
+$$
 
 ![QR orthogonal directions](figures/09_qr_orthogonal_directions.png)
 
@@ -756,27 +756,27 @@ print(Q.T @ Q)
 
 For a symmetric positive-definite matrix,
 
-\[
+$$
 A=A^T
-\]
+$$
 
 and
 
-\[
+$$
 \mathbf{x}^TA\mathbf{x}>0
-\]
+$$
 
-for every nonzero \(\mathbf{x}\).
+for every nonzero $(\mathbf{x})$.
 
-Cholesky factorization expresses \(A\) as
+Cholesky factorization expresses $(A)$ as
 
-\[
+$$
 \boxed{
 A=LL^T
 }
-\]
+$$
 
-where \(L\) is lower triangular.
+where $(L)$ is lower triangular.
 
 ![Cholesky factorization](figures/10_cholesky_factorization.png)
 
@@ -813,32 +813,32 @@ Cholesky is computationally efficient and is widely used in:
 
 # 26. Eigendecomposition
 
-For a square matrix \(A\), eigendecomposition has the form
+For a square matrix $(A)$, eigendecomposition has the form
 
-\[
+$$
 \boxed{
 A=V\Lambda V^{-1}
 }
-\]
+$$
 
 when the matrix is diagonalizable.
 
 Here,
 
-\[
+$$
 \Lambda=
 \begin{bmatrix}
 \lambda_1&0&\cdots\\
 0&\lambda_2&\cdots\\
 \vdots&\vdots&\ddots
 \end{bmatrix}.
-\]
+$$
 
 The eigenvectors satisfy
 
-\[
+$$
 A\mathbf v_i=\lambda_i\mathbf v_i.
-\]
+$$
 
 ### Python
 
@@ -865,33 +865,33 @@ print(eigenvectors)
 
 For
 
-\[
+$$
 A=U\Sigma V^T,
-\]
+$$
 
 we have
 
-\[
+$$
 A^TA=V\Sigma^T\Sigma V^T.
-\]
+$$
 
 Therefore,
 
-\[
+$$
 \boxed{
 \lambda_i(A^TA)=\sigma_i^2.
 }
-\]
+$$
 
-So the right singular vectors are eigenvectors of \(A^TA\).
+So the right singular vectors are eigenvectors of $(A^TA)$.
 
 Similarly,
 
-\[
+$$
 AA^T=U\Sigma\Sigma^TU^T,
-\]
+$$
 
-so the left singular vectors are eigenvectors of \(AA^T\).
+so the left singular vectors are eigenvectors of $(AA^T)$.
 
 This makes SVD particularly powerful for rectangular matrices, where ordinary eigendecomposition may not directly apply.
 
@@ -903,17 +903,17 @@ This makes SVD particularly powerful for rectangular matrices, where ordinary ei
 
 CUR approximates a matrix using selected columns and rows:
 
-\[
+$$
 \boxed{
 A\approx CUR.
 }
-\]
+$$
 
 Here:
 
-- \(C\) contains selected columns;
-- \(R\) contains selected rows;
-- \(U\) is a small linking matrix.
+- $(C)$ contains selected columns;
+- $(R)$ contains selected rows;
+- $(U)$ is a small linking matrix.
 
 ![CUR sampling](figures/08_cur_sampling.png)
 
@@ -925,19 +925,19 @@ CUR can be useful when interpretability matters because the factors correspond d
 
 Nonnegative Matrix Factorization (NMF) seeks
 
-\[
+$$
 \boxed{
 A\approx WH
 }
-\]
+$$
 
 subject to
 
-\[
+$$
 W\geq0,
 \qquad
 H\geq0.
-\]
+$$
 
 This is useful when the data naturally represents quantities such as:
 
@@ -991,9 +991,9 @@ pip install scikit-learn
 
 Suppose
 
-\[
+$$
 R\in\mathbb{R}^{m\times n}
-\]
+$$
 
 is a user-item rating matrix.
 
@@ -1001,32 +1001,32 @@ Many entries may be unknown.
 
 We can approximate it as
 
-\[
+$$
 \boxed{
 R\approx UV^T
 }
-\]
+$$
 
 where:
 
-- \(U\) represents latent user features;
-- \(V\) represents latent item features.
+- $(U)$ represents latent user features;
+- $(V)$ represents latent item features.
 
 If
 
-\[
+$$
 U\in\mathbb{R}^{m\times k},
 \qquad
 V\in\mathbb{R}^{n\times k},
-\]
+$$
 
 then
 
-\[
+$$
 UV^T\in\mathbb{R}^{m\times n}.
-\]
+$$
 
-When \(k\ll\min(m,n)\), this is a low-dimensional representation.
+When $(k\ll\min(m,n))$, this is a low-dimensional representation.
 
 ---
 
@@ -1034,12 +1034,12 @@ When \(k\ll\min(m,n)\), this is a low-dimensional representation.
 
 We can minimize
 
-\[
+$$
 J(U,V)
 =
 \sum_{(i,j)\in\Omega}
 (R_{ij}-\mathbf u_i^T\mathbf v_j)^2.
-\]
+$$
 
 A simple implementation:
 
@@ -1092,23 +1092,23 @@ This simple implementation illustrates the central idea. Production recommender 
 
 A grayscale image can be represented as
 
-\[
+$$
 A\in\mathbb{R}^{m\times n}.
-\]
+$$
 
 Each entry represents a pixel intensity.
 
 The SVD gives
 
-\[
+$$
 A=U\Sigma V^T.
-\]
+$$
 
-Keeping only the first \(k\) singular values gives
+Keeping only the first $(k)$ singular values gives
 
-\[
+$$
 A_k=U_k\Sigma_kV_k^T.
-\]
+$$
 
 This can significantly reduce the number of values required to store the image.
 
@@ -1146,57 +1146,57 @@ plt.show()
 
 # 34. Storage Savings
 
-The original \(m\times n\) matrix contains
+The original $(m\times n)$ matrix contains
 
-\[
+$$
 mn
-\]
+$$
 
 values.
 
-A rank-\(k\) SVD requires approximately
+A rank-$(k)$ SVD requires approximately
 
-\[
+$$
 mk+k+nk
-\]
+$$
 
 values:
 
-\[
+$$
 \boxed{
 k(m+n+1).
 }
-\]
+$$
 
 Therefore, SVD compression is useful when
 
-\[
+$$
 k\ll\min(m,n).
-\]
+$$
 
 For example, if
 
-\[
+$$
 m=n=1000
-\]
+$$
 
 and
 
-\[
+$$
 k=20,
-\]
+$$
 
 the original matrix has
 
-\[
+$$
 1,000,000
-\]
+$$
 
 entries, whereas the factorization needs approximately
 
-\[
+$$
 20(1000+1000+1)=40,020
-\]
+$$
 
 values.
 
@@ -1210,19 +1210,19 @@ Principal Component Analysis can be interpreted as finding a low-dimensional app
 
 Let
 
-\[
+$$
 X\in\mathbb{R}^{m\times n}
-\]
+$$
 
 be centered data.
 
 Its SVD is
 
-\[
+$$
 X=U\Sigma V^T.
-\]
+$$
 
-The first columns of \(V\) identify the most important directions.
+The first columns of $(V)$ identify the most important directions.
 
 ![PCA low-dimensional structure](figures/07_pca_low_dimensional_structure.png)
 
@@ -1277,13 +1277,13 @@ print(explained_ratio)
 
 | Factorization | Form | Main Use |
 |---|---|---|
-| LU | \(A=LU\) | Solving linear systems |
-| QR | \(A=QR\) | Least squares, orthogonalization |
-| Cholesky | \(A=LL^T\) | Symmetric positive-definite matrices |
-| Eigendecomposition | \(A=V\Lambda V^{-1}\) | Eigenvalue/eigenvector analysis |
-| SVD | \(A=U\Sigma V^T\) | Low-rank approximation, PCA, compression |
-| CUR | \(A\approx CUR\) | Interpretable low-rank approximation |
-| NMF | \(A\approx WH\) | Nonnegative latent features |
+| LU | $(A=LU)$ | Solving linear systems |
+| QR | $(A=QR)$ | Least squares, orthogonalization |
+| Cholesky | $(A=LL^T)$ | Symmetric positive-definite matrices |
+| Eigendecomposition | $(A=V\Lambda V^{-1})$ | Eigenvalue/eigenvector analysis |
+| SVD | $(A=U\Sigma V^T)$ | Low-rank approximation, PCA, compression |
+| CUR | $(A\approx CUR)$ | Interpretable low-rank approximation |
+| NMF | $(A\approx WH)$ | Nonnegative latent features |
 
 ---
 
@@ -1303,7 +1303,7 @@ print(explained_ratio)
 
 ### Use Cholesky when:
 
-- \(A\) is symmetric positive definite;
+- $(A)$ is symmetric positive definite;
 - a fast factorization is needed.
 
 ### Use eigendecomposition when:
@@ -1558,15 +1558,15 @@ In real datasets, mathematical rank may be full while the **effective rank** is 
 
 For example,
 
-\[
+$$
 \sigma_1,\sigma_2,\sigma_3
-\]
+$$
 
 may be large, while
 
-\[
+$$
 \sigma_4,\ldots,\sigma_n
-\]
+$$
 
 are very small.
 
@@ -1586,19 +1586,19 @@ This distinction is important in:
 
 Suppose
 
-\[
+$$
 A=A_{\text{signal}}+E
-\]
+$$
 
-where \(E\) is noise.
+where $(E)$ is noise.
 
 If the signal has a low-rank structure, then the dominant singular components may represent the signal while smaller singular components represent noise.
 
 A truncated SVD can therefore produce
 
-\[
+$$
 A_k\approx A_{\text{signal}}.
-\]
+$$
 
 Example:
 
@@ -1645,43 +1645,43 @@ plt.show()
 
 If
 
-\[
+$$
 A=U\Sigma V^T,
-\]
+$$
 
 then
 
-\[
+$$
 \boxed{
 \operatorname{rank}(A)
 =
 \text{number of nonzero singular values}.
 }
-\]
+$$
 
 ---
 
-## 46. Rank-\(k\) Approximation Error
+## 46. Rank-$(k)$ Approximation Error
 
 For truncated SVD,
 
-\[
+$$
 A_k=
 \sum_{i=1}^{k}
 \sigma_i\mathbf u_i\mathbf v_i^T,
-\]
+$$
 
 we have
 
-\[
+$$
 \boxed{
 \|A-A_k\|_2=\sigma_{k+1}
 }
-\]
+$$
 
 and
 
-\[
+$$
 \boxed{
 \|A-A_k\|_F
 =
@@ -1690,7 +1690,7 @@ and
 \sigma_i^2
 }.
 }
-\]
+$$
 
 ---
 
@@ -1698,13 +1698,13 @@ and
 
 The Frobenius norm satisfies
 
-\[
+$$
 \boxed{
 \|A\|_F^2
 =
 \sum_i\sigma_i^2.
 }
-\]
+$$
 
 Therefore, the squared singular values can be interpreted as contributions to the total matrix energy.
 
@@ -1714,13 +1714,13 @@ Therefore, the squared singular values can be interpreted as contributions to th
 
 The spectral norm is the largest singular value:
 
-\[
+$$
 \boxed{
 \|A\|_2=\sigma_1.
 }
-\]
+$$
 
-This gives the maximum amount by which \(A\) can stretch a unit vector.
+This gives the maximum amount by which $(A)$ can stretch a unit vector.
 
 ---
 
@@ -1728,13 +1728,13 @@ This gives the maximum amount by which \(A\) can stretch a unit vector.
 
 For a full-rank matrix,
 
-\[
+$$
 \boxed{
 \kappa_2(A)
 =
 \frac{\sigma_{\max}}{\sigma_{\min}}.
 }
-\]
+$$
 
 A large condition number indicates that the matrix may be sensitive to perturbations.
 
@@ -1799,13 +1799,13 @@ Reduce computational cost for large structured matrices.
 
 # 51. Computational Complexity
 
-For a dense \(m\times n\) matrix, computing a full SVD can be expensive.
+For a dense $(m\times n)$ matrix, computing a full SVD can be expensive.
 
 A rough conceptual complexity is related to
 
-\[
+$$
 O(mn\min(m,n)).
-\]
+$$
 
 For large matrices, **truncated or randomized SVD** methods can be much more efficient when only a small number of dominant components are required.
 
@@ -1832,17 +1832,17 @@ For very large matrices, randomized algorithms can approximate the dominant sing
 
 A common idea is:
 
-1. generate a random test matrix \(\Omega\);
-2. compute \(Y=A\Omega\);
-3. find an orthonormal basis \(Q\) for the range of \(Y\);
-4. approximate \(A\) using the smaller matrix \(Q^TA\);
+1. generate a random test matrix $(\Omega)$;
+2. compute $(Y=A\Omega)$;
+3. find an orthonormal basis $(Q)$ for the range of $(Y)$;
+4. approximate $(A)$ using the smaller matrix $(Q^TA)$;
 5. compute an SVD of the smaller matrix.
 
 The detailed randomized algorithm is beyond basic linear algebra, but the key idea is:
 
-\[
+$$
 A\approx QQ^TA.
-\]
+$$
 
 This can dramatically reduce computational cost.
 
@@ -1854,17 +1854,17 @@ This can dramatically reduce computational cost.
 
 | Concept | Mathematical Form | Main Idea |
 |---|---|---|
-| Rank | \(\operatorname{rank}(A)\) | Dimension of row/column space |
-| Rank-1 matrix | \(uv^T\) | Outer product |
-| Low-rank approximation | \(A\approx A_k\) | Approximate with small rank |
-| SVD | \(A=U\Sigma V^T\) | Orthogonal-scale-orthogonal factorization |
-| Truncated SVD | \(A_k=U_k\Sigma_kV_k^T\) | Best rank-\(k\) approximation |
-| LU | \(PA=LU\) | Triangular factors |
-| QR | \(A=QR\) | Orthogonal + triangular |
-| Cholesky | \(A=LL^T\) | SPD factorization |
-| Eigendecomposition | \(A=V\Lambda V^{-1}\) | Eigenvalue structure |
-| CUR | \(A\approx CUR\) | Actual rows/columns as factors |
-| NMF | \(A\approx WH\) | Nonnegative latent components |
+| Rank | $(\operatorname{rank}(A))$ | Dimension of row/column space |
+| Rank-1 matrix | $(uv^T)$ | Outer product |
+| Low-rank approximation | $(A\approx A_k)$ | Approximate with small rank |
+| SVD | $(A=U\Sigma V^T)$ | Orthogonal-scale-orthogonal factorization |
+| Truncated SVD | $(A_k=U_k\Sigma_kV_k^T)$ | Best rank-$(k)$ approximation |
+| LU | $(PA=LU)$ | Triangular factors |
+| QR | $(A=QR)$ | Orthogonal + triangular |
+| Cholesky | $(A=LL^T)$ | SPD factorization |
+| Eigendecomposition | $(A=V\Lambda V^{-1})$ | Eigenvalue structure |
+| CUR | $(A\approx CUR)$ | Actual rows/columns as factors |
+| NMF | $(A\approx WH)$ | Nonnegative latent components |
 
 ---
 
@@ -1893,30 +1893,30 @@ This can dramatically reduce computational cost.
 
 17. Find the rank of
 
-\[
+$$
 A=
 \begin{bmatrix}
 1&2&3\\
 2&4&6\\
 3&6&9
 \end{bmatrix}.
-\]
+$$
 
 18. Express a rank-1 matrix as an outer product.
 
 19. Compute the SVD of
 
-\[
+$$
 A=
 \begin{bmatrix}
 3&0\\
 0&2
 \end{bmatrix}.
-\]
+$$
 
 20. Construct a rank-1 approximation using SVD.
 
-21. Construct a rank-2 approximation of a \(5\times5\) matrix.
+21. Construct a rank-2 approximation of a $(5\times5)$ matrix.
 
 22. Plot the singular values of a matrix.
 
@@ -1980,31 +1980,31 @@ Low-rank approximation provides a powerful way to simplify large matrices while 
 
 The central idea is
 
-\[
+$$
 \boxed{
 A\approx A_k
 }
-\]
+$$
 
 where
 
-\[
+$$
 \operatorname{rank}(A_k)=k
-\]
+$$
 
-and \(k\) is substantially smaller than the dimensions of \(A\).
+and $(k)$ is substantially smaller than the dimensions of $(A)$.
 
 The Singular Value Decomposition provides the mathematically optimal solution:
 
-\[
+$$
 \boxed{
 A_k=U_k\Sigma_kV_k^T.
 }
-\]
+$$
 
 Matrix factorization extends this idea into a broader collection of techniques:
 
-\[
+$$
 \boxed{
 \text{Matrix}
 \rightarrow
@@ -2018,7 +2018,7 @@ CUR\\
 NMF
 \end{cases}
 }
-\]
+$$
 
 These methods form an important computational foundation for linear algebra, numerical computing, machine learning, artificial intelligence, data analytics, computer vision, and recommender systems.
 
