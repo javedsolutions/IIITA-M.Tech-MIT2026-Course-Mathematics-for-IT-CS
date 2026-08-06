@@ -1,4 +1,14 @@
-# Comprehensive Guide: Linear Dependence and Independence
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+### Current Topic: Linear Dependence and Independence
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 Learning Objectives
+---
 
 ## 1. Introduction & Core Concepts
 
@@ -6,7 +16,11 @@ In Linear Algebra, understanding whether a set of vectors contains redundant inf
 
 ### 1.1 Mathematical Definition
 
-Given a set of $k$ vectors $S = \{\vec{v}_1, \vec{v}_2, \dots, \vec{v}_k\}$ in a vector space $V$, consider the vector equation:
+Given a set of $k$ vectors 
+
+$$ S ={\vec{v}_1, \vec{v}_2, \dots, \vec{v}_k\}$$ 
+
+in a vector space $V$, consider the vector equation:
 
 $$c_1 \vec{v}_1 + c_2 \vec{v}_2 + \dots + c_k \vec{v}_k = \vec{0}$$
 
@@ -153,14 +167,11 @@ find_dependence_relation([v1, v2, v3])
 
 ---
 
-## 5. Figures and Download Links
-
-All figures generated for this document are stored locally and available for download:
-
-* [Download Figure 1: 2D Linear Dependence Plot](figures/fig1_2d_dependent.png)
-* [Download Figure 2: 2D Linear Independence Plot](figures/fig2_2d_independent.png)
-* [Download Figure 3: 3D Coplanar Dependence Plot](figures/fig3_3d_coplanar_dependent.png)
-* [Download Figure 4: Concept Map / Decision Tree Flowchart](figures/fig4_decision_tree.png)
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
 ---
-*Created as part of the Linear Algebra Educational Series.*
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
