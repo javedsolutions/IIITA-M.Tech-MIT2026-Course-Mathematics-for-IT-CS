@@ -15,6 +15,7 @@
 A **matrix** is a rectangular array or table of numbers, symbols, or expressions arranged in rows and columns. Matrices are fundamental tools in linear algebra, widely used in computer graphics, machine learning, physics simulations, and optimization problems.
 
 An $m \times n$ matrix $A$ has $m$ rows and $n$ columns:
+
 $$
 A = \begin{bmatrix} 
 a_{11} & a_{12} & \cdots & a_{1n} \\
@@ -30,12 +31,14 @@ $$
 
 ### 2.1 Matrix Addition and Subtraction
 Two matrices of the **same dimensions** can be added or subtracted element-by-element. If $A$ and $B$ are both $m \times n$ matrices:
+
 $$
 C = A + B \implies c_{ij} = a_{ij} + b_{ij}
 $$
 
 ### 2.2 Scalar Multiplication
 Multiplying a matrix by a scalar $c$ scales every individual element of the matrix:
+
 $$
 D = cA \implies d_{ij} = c \cdot a_{ij}
 $$
@@ -45,6 +48,7 @@ $$
 
 ### 2.3 Matrix Multiplication (Dot Product)
 To multiply an $m \times n$ matrix $A$ by an $n \times p$ matrix $B$, the inner dimensions must match ($n$). The resulting matrix $C = AB$ has dimensions $m \times p$, where each element is computed as the dot product of row $i$ of $A$ and column $j$ of $B$:
+
 $$
 c_{ij} = \sum_{k=1}^{n} a_{ik} b_{kj}
 $$
@@ -60,9 +64,11 @@ $$
 
 ### 3.1 Definition of the Inverse
 For a square matrix $A$ of size $n \times n$, its **matrix inverse** (denoted as $A^{-1}$) is a matrix such that:
+
 $$
 A A^{-1} = A^{-1} A = I_n
 $$
+
 where $I_n$ is the $n \times n$ **identity matrix** (a diagonal matrix with ones on the main diagonal and zeros elsewhere).
 
 ### 3.2 Conditions for Invertibility
