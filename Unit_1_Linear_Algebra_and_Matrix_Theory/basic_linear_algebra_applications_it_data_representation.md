@@ -1,6 +1,13 @@
-# Basic Linear Algebra Applications in IT and Data Representation
-
-## Learning Objectives
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+### Current Topic: Basic Linear Algebra Applications in IT and Data Representation
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
 After studying this material, you should be able to:
 
@@ -1632,16 +1639,6 @@ Therefore, understanding basic linear algebra gives students a mathematical foun
 
 ---
 
-## Figures Included
-
-The accompanying `figures/` directory contains:
-
-1. `01_vectors.png` — vectors as data representations.
-2. `02_matrix_transformation.png` — matrix transformation of a coordinate grid.
-3. `03_rgb_image_matrix.png` — RGB image representation using pixel vectors.
-4. `04_pca_projection.png` — PCA projection onto a principal direction.
-5. `05_least_squares.png` — linear regression using least squares.
-
 ## Python Requirements
 
 Install the required packages with:
@@ -1657,3 +1654,14 @@ The examples can then be run in:
 - VS Code,
 - PyCharm,
 - or a standard Python environment.
+
+---
+
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
