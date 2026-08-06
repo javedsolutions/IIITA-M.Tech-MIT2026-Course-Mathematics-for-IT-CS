@@ -1,5 +1,15 @@
-# Linear Algebra: A Comprehensive Guide to Subspaces
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+### Current Topic:  Subspaces - Basics, graphical interpretation, solved examples, and Python implementation
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
+---
 ## 1. Introduction to Vector Subspaces
 
 In linear algebra, a **vector subspace** (or simply **subspace**) is a subset of a vector space that is itself a vector space under the operations of addition and scalar multiplication inherited from the larger space.
@@ -104,3 +114,15 @@ U, S, Vt = np.linalg.svd(A)
 col_basis = U[:, :rank]
 print("\nBasis for Column Space C(A):")
 print(col_basis)
+
+
+---
+
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
