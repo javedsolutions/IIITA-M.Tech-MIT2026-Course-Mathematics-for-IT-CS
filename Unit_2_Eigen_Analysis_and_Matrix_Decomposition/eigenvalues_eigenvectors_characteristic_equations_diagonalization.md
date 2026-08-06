@@ -1,12 +1,14 @@
-# Eigenvalues and Eigenvectors, Characteristic Equations, and Diagonalization of Matrices
-
-> **Subject:** Linear Algebra  
-> **Level:** Undergraduate / introductory computational linear algebra  
-> **Focus:** Eigenvalues, eigenvectors, eigenspaces, characteristic equations, algebraic and geometric multiplicity, diagonalization, spectral decomposition, and Python implementation.
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 2: Eigen Analysis and Matrix Decomposition
+* ### Current Topic: Eigenvalues and Eigenvectors, Characteristic Equations, and Diagonalization of Matrices
+* #### Eigenvalues, eigenvectors, eigenspaces, characteristic equations, algebraic and geometric multiplicity, diagonalization, spectral decomposition, and Python implementation.
 ---
-
-## 1. Learning Objectives
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
 After studying this material, you should be able to:
 
@@ -1563,3 +1565,13 @@ Eigenvalue theory therefore provides a powerful framework for understanding line
 \]
 
 Mastering this sequence provides the foundation for more advanced topics such as **Jordan canonical form, spectral decomposition, singular value decomposition, PCA, and spectral methods in machine learning**.
+
+---
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
