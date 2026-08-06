@@ -78,7 +78,7 @@ Instead of storing every element of a large matrix $(A)$, we may approximate it 
 $$
 A\approx A_k,
 \qquad
-\operatorname{rank}(A_k)=k.
+\text{rank}(A_k)=k.
 $$
 
 The goal is to retain important information while reducing storage.
@@ -139,8 +139,7 @@ A common error measure is the Frobenius norm:
 
 $$
 \boxed{
-\|A-A_k\|_F
-=
+\|A-A_k\|_F=
 \sqrt{\sum_{i,j}(a_{ij}-(a_k)_{ij})^2}.
 }
 $$
@@ -751,7 +750,7 @@ It measures the number of independent directions represented by the matrix.
 A matrix is low rank when
 
 $$
-\operatorname{rank}(A)\ll\min(m,n).
+\text{rank}(A)\ll\min(m,n).
 $$
 
 Low-rank structure is useful because a large dataset can be represented with fewer parameters.
@@ -782,7 +781,7 @@ For a unit vector $(u)$,
 
 $$
 \boxed{
-\operatorname{proj}_u(x)=(x^Tu)u.
+\text{proj}_u(x)=(x^Tu)u.
 }
 $$
 
