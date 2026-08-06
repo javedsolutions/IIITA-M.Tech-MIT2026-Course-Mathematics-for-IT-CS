@@ -2,7 +2,6 @@
 ## Unit 2: Eigen Analysis and Matrix Decomposition
 * ### Current Topic: Linear Algebra Applications in Data Compression, Recommendation Systems, Image Representation, and Machine Learning
 * #### Eigenvalues, eigenvectors, eigenspaces, characteristic equations, algebraic and geometric multiplicity, diagonalization, spectral decomposition, and Python implementation.
----
 > **Prerequisites:** Vectors, matrices, matrix multiplication, transpose, and basic Python  
 > **Tools:** NumPy, Matplotlib, and optionally scikit-learn
 ---
