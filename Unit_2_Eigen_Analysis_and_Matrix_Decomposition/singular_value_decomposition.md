@@ -1,16 +1,20 @@
-# Singular Value Decomposition (SVD) — Reading Material with Python
-
-> **Topic:** Linear Algebra — Singular Value Decomposition  
-> **Level:** Undergraduate / introductory linear algebra  
-> **Format:** GitHub-friendly Markdown with mathematical explanations, Python implementations, and figures.
-
-## 1. Learning objectives
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 2: Eigen Analysis and Matrix Decomposition
+* ### Current Topic: Singular Value Decomposition (SVD) — Reading Material with Python
+* #### with mathematical explanations, Python implementations, and figures
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
 After studying this material, you should be able to:
 
 - explain Singular Value Decomposition (SVD);
-- write \(A=U\Sigma V^T\);
-- understand \(U,\Sigma,V^T\);
+- write $(A=U\Sigma V^T)$;
+- understand $(U,\Sigma,V^T)$;
 - compute SVD using NumPy;
 - interpret singular values geometrically;
 - determine matrix rank using singular values;
@@ -28,23 +32,23 @@ The **Singular Value Decomposition**, usually abbreviated as **SVD**, is one of 
 
 For a real matrix
 
-\[
+$$
 A\in\mathbb{R}^{m\times n},
-\]
+$$
 
 the SVD is
 
-\[
+$$
 \boxed{A=U\Sigma V^T}
-\]
+$$
 
-where \(U\) and \(V\) are orthogonal matrices and \(\Sigma\) contains the **singular values**.
+where $(U)$ and $(V)$ are orthogonal matrices and $(\Sigma)$ contains the **singular values**.
 
 The singular values are conventionally arranged as
 
-\[
+$$
 \sigma_1\geq\sigma_2\geq\cdots\geq\sigma_r>0.
-\]
+$$
 
 SVD separates a matrix transformation into three simpler operations:
 
@@ -58,25 +62,25 @@ SVD separates a matrix transformation into three simpler operations:
 
 ## 3. Geometric intuition
 
-For a \(2\times2\) matrix \(A\), consider the unit circle
+For a $(2\times2)$ matrix $(A)$, consider the unit circle
 
-\[
+$$
 \|\mathbf{x}\|=1.
-\]
+$$
 
-When \(A\) acts on the circle, the result is generally an ellipse.
+When $(A)$ acts on the circle, the result is generally an ellipse.
 
 ![Circle to ellipse](figures/02_circle_to_ellipse.png)
 
 The SVD explains this transformation:
 
-\[
+$$
 A\mathbf{x}=U\Sigma V^T\mathbf{x}.
-\]
+$$
 
 The operations occur from right to left:
 
-\[
+$$
 \mathbf{x}
 \xrightarrow{V^T}
 V^T\mathbf{x}
@@ -84,13 +88,13 @@ V^T\mathbf{x}
 \Sigma V^T\mathbf{x}
 \xrightarrow{U}
 U\Sigma V^T\mathbf{x}.
-\]
+$$
 
 Thus:
 
-- \(V^T\) changes the input coordinate system;
-- \(\Sigma\) stretches or compresses along perpendicular directions;
-- \(U\) changes the output coordinate system.
+- $(V^T)$ changes the input coordinate system;
+- $(\Sigma)$ stretches or compresses along perpendicular directions;
+- $(U)$ changes the output coordinate system.
 
 ---
 
@@ -98,78 +102,78 @@ Thus:
 
 For
 
-\[
+$$
 A\in\mathbb{R}^{m\times n},
-\]
+$$
 
 the full SVD is
 
-\[
+$$
 \boxed{A=U\Sigma V^T}.
-\]
+$$
 
 The dimensions are
 
-\[
+$$
 U\in\mathbb{R}^{m\times m},
 \qquad
 \Sigma\in\mathbb{R}^{m\times n},
 \qquad
 V\in\mathbb{R}^{n\times n}.
-\]
+$$
 
-Because \(U\) and \(V\) are orthogonal,
+Because $(U)$ and $(V)$ are orthogonal,
 
-\[
+$$
 U^TU=I,
 \qquad
 V^TV=I.
-\]
+$$
 
 Therefore,
 
-\[
+$$
 U^{-1}=U^T,
 \qquad
 V^{-1}=V^T.
-\]
+$$
 
 ---
 
 ## 5. Singular values
 
-The diagonal entries of \(\Sigma\) are the **singular values**:
+The diagonal entries of $(\Sigma)$ are the **singular values**:
 
-\[
+$$
 \Sigma=
 \begin{bmatrix}
 \sigma_1&0&\cdots\\
 0&\sigma_2&\cdots\\
 \vdots&\vdots&\ddots
 \end{bmatrix}.
-\]
+$$
 
 They satisfy
 
-\[
+$$
 \sigma_i\geq0.
-\]
+$$
 
 Usually,
 
-\[
+$$
 \boxed{\sigma_1\geq\sigma_2\geq\cdots\geq\sigma_r\geq0}.
-\]
+$$
 
 Singular values tell us how strongly the matrix stretches different directions.
 
-If \(\mathbf v_i\) is a right singular vector, then
+If $(\mathbf v_i)$ is a right singular vector, then
 
-\[
+$$
 \boxed{A\mathbf v_i=\sigma_i\mathbf u_i}
-\]
+$$
 
-where \(\mathbf u_i\) is the corresponding left singular vector.
+where $(\mathbf u_i)$ is the corresponding left singular vector.
 
 ![Singular vectors](figures/03_singular_vectors.png)
 
@@ -177,23 +181,23 @@ where \(\mathbf u_i\) is the corresponding left singular vector.
 
 ## 6. Right and left singular vectors
 
-The columns of \(V\) are the **right singular vectors**:
+The columns of $(V)$ are the **right singular vectors**:
 
-\[
+$$
 V=[\mathbf v_1\ \mathbf v_2\ \cdots].
-\]
+$$
 
-The columns of \(U\) are the **left singular vectors**:
+The columns of $(U)$ are the **left singular vectors**:
 
-\[
+$$
 U=[\mathbf u_1\ \mathbf u_2\ \cdots].
-\]
+$$
 
 The key relation is
 
-\[
+$$
 A\mathbf v_i=\sigma_i\mathbf u_i.
-\]
+$$
 
 ---
 
@@ -201,27 +205,27 @@ A\mathbf v_i=\sigma_i\mathbf u_i.
 
 If
 
-\[
+$$
 \operatorname{rank}(A)=r,
-\]
+$$
 
 the compact SVD is
 
-\[
+$$
 \boxed{A=U_r\Sigma_rV_r^T}
-\]
+$$
 
 with
 
-\[
+$$
 U_r\in\mathbb{R}^{m\times r},
 \quad
 \Sigma_r\in\mathbb{R}^{r\times r},
 \quad
 V_r\in\mathbb{R}^{n\times r}.
-\]
+$$
 
-The reduced SVD uses \(k=\min(m,n)\) singular directions and is often convenient in numerical computing.
+The reduced SVD uses $(k=\min(m,n))$ singular directions and is often convenient in numerical computing.
 
 ---
 
@@ -249,7 +253,7 @@ print("\nV^T =")
 print(Vt)
 ```
 
-NumPy returns the singular values as a one-dimensional array `S`, rather than returning \(\Sigma\) directly.
+NumPy returns the singular values as a one-dimensional array `S`, rather than returning $(\Sigma)$ directly.
 
 ---
 
@@ -287,41 +291,41 @@ True
 
 ---
 
-## 10. Why \(A^TA\) appears in SVD
+## 10. Why $(A^TA)$ appears in SVD
 
 Starting with
 
-\[
+$$
 A=U\Sigma V^T,
-\]
+$$
 
 we obtain
 
-\[
+$$
 A^TA
 =
 V\Sigma^T\Sigma V^T.
-\]
+$$
 
-Therefore, the columns of \(V\) are eigenvectors of \(A^TA\), and
+Therefore, the columns of $(V)$ are eigenvectors of $(A^TA)$, and
 
-\[
+$$
 \boxed{\lambda_i(A^TA)=\sigma_i^2}.
-\]
+$$
 
 Hence,
 
-\[
+$$
 \boxed{\sigma_i=\sqrt{\lambda_i}}.
-\]
+$$
 
 Similarly,
 
-\[
+$$
 AA^T=U\Sigma\Sigma^TU^T,
-\]
+$$
 
-so the columns of \(U\) are eigenvectors of \(AA^T\).
+so the columns of $(U)$ are eigenvectors of $(AA^T)$.
 
 ---
 
@@ -357,9 +361,9 @@ print(S**2)
 
 The rank is the number of nonzero singular values:
 
-\[
+$$
 \boxed{\operatorname{rank}(A)=\#\{i:\sigma_i>0\}}.
-\]
+$$
 
 Because floating-point arithmetic may produce very small values instead of exact zero, use a tolerance.
 
@@ -386,9 +390,9 @@ print("Rank:", rank)
 
 The spectral norm is the largest singular value:
 
-\[
+$$
 \boxed{\|A\|_2=\sigma_1}.
-\]
+$$
 
 ```python
 import numpy as np
@@ -410,20 +414,20 @@ print(np.linalg.norm(A, 2))
 
 The Frobenius norm is
 
-\[
+$$
 \|A\|_F
 =
 \sqrt{\sum_{i,j}a_{ij}^2}.
-\]
+$$
 
 Using singular values,
 
-\[
+$$
 \boxed{
 \|A\|_F=
 \sqrt{\sigma_1^2+\sigma_2^2+\cdots+\sigma_r^2}.
 }
-\]
+$$
 
 ```python
 import numpy as np
@@ -445,11 +449,11 @@ print(np.linalg.norm(A, "fro"))
 
 For a full-rank matrix,
 
-\[
+$$
 \boxed{
 \kappa_2(A)=\frac{\sigma_{\max}}{\sigma_{\min}}.
 }
-\]
+$$
 
 A large condition number indicates greater sensitivity to small perturbations.
 
@@ -473,22 +477,22 @@ print("Condition number:", S[0] / S[-1])
 
 SVD can be written in outer-product form:
 
-\[
+$$
 A=
 \sigma_1\mathbf u_1\mathbf v_1^T+
 \sigma_2\mathbf u_2\mathbf v_2^T+\cdots+
 \sigma_r\mathbf u_r\mathbf v_r^T.
-\]
+$$
 
-A rank-\(k\) approximation is
+A rank-$(k)$ approximation is
 
-\[
+$$
 \boxed{
 A_k=
 \sum_{i=1}^{k}
 \sigma_i\mathbf u_i\mathbf v_i^T
 }.
-\]
+$$
 
 ![Rank-k approximation](figures/04_rank_k_approximation.png)
 
@@ -498,9 +502,9 @@ A_k=
 
 The singular values are ordered:
 
-\[
+$$
 \sigma_1\geq\sigma_2\geq\cdots.
-\]
+$$
 
 Often, the first few singular values capture most of the important structure.
 
@@ -508,9 +512,9 @@ Often, the first few singular values capture most of the important structure.
 
 The truncated approximation
 
-\[
+$$
 A_k=U_k\Sigma_kV_k^T
-\]
+$$
 
 can therefore represent the main structure using substantially fewer parameters.
 
@@ -518,29 +522,29 @@ can therefore represent the main structure using substantially fewer parameters.
 
 ## 18. Eckart–Young theorem
 
-The **Eckart–Young theorem** states that the truncated SVD gives the best rank-\(k\) approximation under both the 2-norm and Frobenius norm.
+The **Eckart–Young theorem** states that the truncated SVD gives the best rank-$(k)$ approximation under both the 2-norm and Frobenius norm.
 
 For the spectral norm,
 
-\[
+$$
 \boxed{
 \|A-A_k\|_2=\sigma_{k+1}.
 }
-\]
+$$
 
 For the Frobenius norm,
 
-\[
+$$
 \boxed{
 \|A-A_k\|_F
 =
 \sqrt{\sigma_{k+1}^2+\sigma_{k+2}^2+\cdots}.
 }
-\]
+$$
 
 ---
 
-## 19. Python rank-\(k\) approximation
+## 19. Python rank-$(k)$ approximation
 
 ```python
 import numpy as np
@@ -571,21 +575,21 @@ print(A2)
 
 A grayscale image can be represented as a matrix
 
-\[
+$$
 A\in\mathbb{R}^{m\times n}.
-\]
+$$
 
 Its SVD is
 
-\[
+$$
 A=U\Sigma V^T.
-\]
+$$
 
-Keeping only the first \(k\) singular values gives
+Keeping only the first $(k)$ singular values gives
 
-\[
+$$
 A_k=U_k\Sigma_kV_k^T.
-\]
+$$
 
 ![Low-rank compression](figures/06_low_rank_compression.png)
 
@@ -609,31 +613,31 @@ plt.show()
 
 ## 21. Compression and storage
 
-An \(m\times n\) matrix contains
+An $(m\times n)$ matrix contains
 
-\[
+$$
 mn
-\]
+$$
 
 entries.
 
-A rank-\(k\) SVD representation stores approximately
+A rank-$(k)$ SVD representation stores approximately
 
-\[
+$$
 mk+k+nk
-\]
+$$
 
 numbers:
 
-\[
+$$
 \boxed{k(m+n+1)}.
-\]
+$$
 
 When
 
-\[
+$$
 k\ll\min(m,n),
-\]
+$$
 
 this can provide substantial compression.
 
@@ -643,13 +647,13 @@ this can provide substantial compression.
 
 SVD is closely connected to **Principal Component Analysis (PCA)**.
 
-For centered data \(X\),
+For centered data $(X)$,
 
-\[
+$$
 X=U\Sigma V^T.
-\]
+$$
 
-The rows/columns of \(V^T\), depending on the data convention, provide principal directions.
+The rows/columns of $(V^T)$, depending on the data convention, provide principal directions.
 
 The singular values describe the amount of variation associated with these directions.
 
@@ -689,12 +693,12 @@ print(explained_variance_ratio)
 
 The explained variance ratio is
 
-\[
+$$
 \boxed{
 \text{EVR}_i=
 \frac{\sigma_i^2}{\sum_j\sigma_j^2}.
 }
-\]
+$$
 
 ---
 
@@ -702,29 +706,29 @@ The explained variance ratio is
 
 For a square invertible matrix,
 
-\[
+$$
 A^{-1}
-\]
+$$
 
 is the inverse.
 
-For rectangular or singular matrices, the **Moore–Penrose pseudoinverse** \(A^+\) is useful.
+For rectangular or singular matrices, the **Moore–Penrose pseudoinverse** $(A^+)$ is useful.
 
 If
 
-\[
+$$
 A=U\Sigma V^T,
-\]
+$$
 
 then
 
-\[
+$$
 \boxed{
 A^+=V\Sigma^+U^T.
 }
-\]
+$$
 
-The nonzero singular values in \(\Sigma\) are replaced by their reciprocals.
+The nonzero singular values in $(\Sigma)$ are replaced by their reciprocals.
 
 ![Pseudoinverse](figures/08_pseudoinverse.png)
 
@@ -763,21 +767,21 @@ print(np.allclose(A @ A_pinv @ A, A))
 
 For an inconsistent system
 
-\[
+$$
 A\mathbf{x}=\mathbf b,
-\]
+$$
 
 we can find the least-squares solution minimizing
 
-\[
+$$
 \|A\mathbf{x}-\mathbf b\|_2.
-\]
+$$
 
 Using the pseudoinverse,
 
-\[
+$$
 \boxed{\hat{\mathbf{x}}=A^+\mathbf b}.
-\]
+$$
 
 ```python
 import numpy as np
@@ -803,25 +807,25 @@ print(A @ x_hat)
 
 ## 27. SVD from eigen-decomposition
 
-SVD can be understood using the eigen-decomposition of \(A^TA\).
+SVD can be understood using the eigen-decomposition of $(A^TA)$.
 
 Find
 
-\[
+$$
 A^TA\mathbf v_i=\lambda_i\mathbf v_i.
-\]
+$$
 
 Then
 
-\[
+$$
 \sigma_i=\sqrt{\lambda_i}.
-\]
+$$
 
-For nonzero \(\sigma_i\),
+For nonzero $(\sigma_i)$,
 
-\[
+$$
 \mathbf u_i=\frac{A\mathbf v_i}{\sigma_i}.
-\]
+$$
 
 ### Python
 
@@ -857,7 +861,7 @@ print("\nV:")
 print(V)
 ```
 
-For numerical work, prefer a direct SVD implementation such as `np.linalg.svd`, since explicitly forming \(A^TA\) can worsen conditioning.
+For numerical work, prefer a direct SVD implementation such as `np.linalg.svd`, since explicitly forming $(A^TA)$ can worsen conditioning.
 
 ---
 
@@ -898,63 +902,63 @@ U, S, Vt = analyze_svd(A)
 
 For
 
-\[
+$$
 A=U\Sigma V^T,
-\]
+$$
 
 we have:
 
 ### Orthogonality
 
-\[
+$$
 U^TU=I,
 \qquad
 V^TV=I.
-\]
+$$
 
 ### Singular values
 
-\[
+$$
 \sigma_i\geq0.
-\]
+$$
 
 ### Eigenvalue connection
 
-\[
+$$
 \sigma_i^2=\lambda_i(A^TA).
-\]
+$$
 
 ### Rank
 
-\[
+$$
 \operatorname{rank}(A)
 =
 \text{number of nonzero singular values}.
-\]
+$$
 
 ### Spectral norm
 
-\[
+$$
 \|A\|_2=\sigma_1.
-\]
+$$
 
 ### Frobenius norm
 
-\[
+$$
 \|A\|_F^2=\sum_i\sigma_i^2.
-\]
+$$
 
 ### Condition number
 
-\[
+$$
 \kappa_2(A)=\frac{\sigma_1}{\sigma_r}.
-\]
+$$
 
 ### Pseudoinverse
 
-\[
+$$
 A^+=V\Sigma^+U^T.
-\]
+$$
 
 ---
 
@@ -962,15 +966,15 @@ A^+=V\Sigma^+U^T.
 
 For
 
-\[
+$$
 A\mathbf{x}=U\Sigma V^T\mathbf{x},
-\]
+$$
 
 think of the transformation as:
 
-1. \(V^T\): rotate/reflect the input coordinate system;
-2. \(\Sigma\): stretch/compress along perpendicular directions;
-3. \(U\): rotate/reflect into the final coordinate system.
+1. $(V^T)$: rotate/reflect the input coordinate system;
+2. $(\Sigma)$: stretch/compress along perpendicular directions;
+3. $(U)$: rotate/reflect into the final coordinate system.
 
 This provides a powerful geometric interpretation of an arbitrary matrix.
 
@@ -1015,23 +1019,23 @@ SVD is used in:
 
 Consider
 
-\[
+$$
 A=
 \begin{bmatrix}
 3&0\\
 0&2
 \end{bmatrix}.
-\]
+$$
 
 The singular values are
 
-\[
+$$
 \sigma_1=3,\qquad\sigma_2=2.
-\]
+$$
 
 A valid SVD is
 
-\[
+$$
 A=
 I
 \begin{bmatrix}
@@ -1039,9 +1043,9 @@ I
 0&2
 \end{bmatrix}
 I^T.
-\]
+$$
 
-The transformation stretches the \(x\)-direction by \(3\) and the \(y\)-direction by \(2\).
+The transformation stretches the $(x)$-direction by $(3)$ and the $(y)$-direction by $(2)$.
 
 ```python
 import numpy as np
@@ -1075,7 +1079,7 @@ print("\nCorrect?", np.allclose(A, A_reconstructed))
 
 ## 33. Numerical considerations
 
-Although \(A^TA\) can theoretically be used to derive SVD, forming it explicitly can worsen numerical conditioning.
+Although $(A^TA)$ can theoretically be used to derive SVD, forming it explicitly can worsen numerical conditioning.
 
 For practical numerical work, prefer:
 
@@ -1097,11 +1101,11 @@ rank = np.sum(S > tol)
 ### Conceptual
 
 1. Define Singular Value Decomposition.
-2. Write \(A=U\Sigma V^T\) and describe each factor.
+2. Write $(A=U\Sigma V^T)$ and describe each factor.
 3. What are singular values?
 4. What is a right singular vector?
 5. What is a left singular vector?
-6. Explain the relation between SVD and \(A^TA\).
+6. Explain the relation between SVD and $(A^TA)$.
 7. How are singular values related to eigenvalues?
 8. How can SVD determine matrix rank?
 9. What is a low-rank approximation?
@@ -1115,25 +1119,25 @@ rank = np.sum(S > tol)
 
 15. Compute the SVD of
 
-\[
+$$
 A=
 \begin{bmatrix}
 3&1\\
 1&3
 \end{bmatrix}.
-\]
+$$
 
-16. Reconstruct \(A\) from \(U,\Sigma,V^T\).
+16. Reconstruct $(A)$ from $(U,\Sigma,V^T)$.
 
 17. Find the singular values of
 
-\[
+$$
 A=
 \begin{bmatrix}
 1&2\\
 2&4
 \end{bmatrix}.
-\]
+$$
 
 18. Determine its rank.
 
@@ -1155,20 +1159,20 @@ A=
 
 | Concept | Formula / idea |
 |---|---|
-| SVD | \(A=U\Sigma V^T\) |
-| Orthogonality | \(U^TU=I,\;V^TV=I\) |
-| Singular values | \(\sigma_i\geq0\) |
-| Right singular vectors | Columns of \(V\) |
-| Left singular vectors | Columns of \(U\) |
-| Key relation | \(A\mathbf v_i=\sigma_i\mathbf u_i\) |
-| Eigenvalue connection | \(\sigma_i^2=\lambda_i(A^TA)\) |
+| SVD | $(A=U\Sigma V^T)$ |
+| Orthogonality | $(U^TU=I,\;V^TV=I)$ |
+| Singular values | $(\sigma_i\geq0)$ |
+| Right singular vectors | Columns of $(V)$ |
+| Left singular vectors | Columns of $(U)$ |
+| Key relation | $(A\mathbf v_i=\sigma_i\mathbf u_i)$ |
+| Eigenvalue connection | $(\sigma_i^2=\lambda_i(A^TA))$ |
 | Rank | Number of nonzero singular values |
-| Spectral norm | \(\|A\|_2=\sigma_1\) |
-| Frobenius norm | \(\|A\|_F=\sqrt{\sum_i\sigma_i^2}\) |
-| Condition number | \(\kappa_2=\sigma_{\max}/\sigma_{\min}\) |
-| Rank-\(k\) approximation | \(A_k=U_k\Sigma_kV_k^T\) |
-| Pseudoinverse | \(A^+=V\Sigma^+U^T\) |
-| Least squares | \(\hat x=A^+b\) |
+| Spectral norm | $(\|A\|_2=\sigma_1)$ |
+| Frobenius norm | $(\|A\|_F=\sqrt{\sum_i\sigma_i^2})$ |
+| Condition number | $(\kappa_2=\sigma_{\max}/\sigma_{\min})$ |
+| Rank-$(k)$ approximation | $(A_k=U_k\Sigma_kV_k^T)$ |
+| Pseudoinverse | $(A^+=V\Sigma^+U^T)$ |
+| Least squares | $(\hat x=A^+b)$ |
 | PCA | SVD of centered data |
 
 ---
@@ -1238,15 +1242,15 @@ Singular Value Decomposition is a fundamental tool for understanding matrices al
 
 The central factorization
 
-\[
+$$
 \boxed{A=U\Sigma V^T}
-\]
+$$
 
 separates a matrix into orthogonal transformations and scaling. The singular values reveal the most important directions and magnitudes of the transformation.
 
 SVD connects several major concepts:
 
-\[
+$$
 \boxed{
 \text{SVD}
 \rightarrow
@@ -1260,6 +1264,16 @@ SVD connects several major concepts:
 \rightarrow
 \text{Least squares}
 }
-\]
+$$
 
 Because of these connections, SVD is one of the most useful tools in linear algebra, numerical computing, machine learning, data analytics, computer vision, and scientific computing.
+
+
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
