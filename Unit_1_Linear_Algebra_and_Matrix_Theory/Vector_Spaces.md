@@ -1,5 +1,15 @@
-# Comprehensive Guide: Vector Spaces
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+### Current Topic: Vector Spaces - Basics, graphical interpretation, solved examples, and Python implementation
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
+---
 ## 1. Fundamental Definition & Axioms
 
 A **Vector Space** (or linear space) $V$ over a field $F$ (typically real numbers $\mathbb{R}$ or complex numbers $\mathbb{C}$) is a set of objects, called **vectors**, equipped with two operations:
@@ -160,17 +170,13 @@ A_matrix = [
 print("--- Matrix Fundamental Subspaces ---")
 compute_fundamental_subspaces(A_matrix)
 ```
-
 ---
 
-## 4. Figures and Download Links
-
-All diagrammatic figures created for this guide are available for direct download below:
-
-* [Download Figure 1: Vector Addition & Scalar Multiplication Plot](vs_figures/fig1_vector_operations.png)
-* [Download Figure 2: Subspace - Plane through Origin Plot](vs_figures/fig2_subspace_plane.png)
-* [Download Figure 3: Basis Vectors & Coordinate Systems Plot](vs_figures/fig3_basis_coordinates.png)
-* [Download Figure 4: Four Fundamental Subspaces Diagram](vs_figures/fig4_fundamental_subspaces.png)
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
 ---
-*Created as part of the Linear Algebra Educational Series.*
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
