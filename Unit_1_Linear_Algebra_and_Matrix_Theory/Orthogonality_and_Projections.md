@@ -1,15 +1,14 @@
-# Study Guide: Orthogonality and Projections
-
-Welcome to this comprehensive reading material on **Orthogonality and Projections**. This study material covers essential concepts in linear algebra including Orthogonal Bases, Orthogonal Projections, and the Gram-Schmidt Orthogonalization process.
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+### Current Topic: Orthogonality and Projections - This study material covers essential concepts in linear algebra including Orthogonal Bases, Orthogonal Projections, and the Gram-Schmidt Orthogonalization process.
 ---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
-## 📥 Download Figures
-
-You can download all generated figures used in this document using the links below:
-- [Download Figure 1: Orthogonal Vectors](figures/orthogonal_vectors.png)
-- [Download Figure 2: Orthogonal Projection onto a Line](figures/orthogonal_projection.png)
-- [Download Figure 3: Gram-Schmidt Process Step](figures/gram_schmidt_process.png)
 
 ---
 
@@ -192,3 +191,14 @@ if __name__ == '__main__':
 | **Projection on Line** | $\hat{\mathbf{y}} = \frac{\mathbf{y} \cdot \mathbf{u}}{\|\mathbf{u}\|^2}\mathbf{u}$ | Error $\mathbf{z} = \mathbf{y} - \hat{\mathbf{y}} \perp \mathbf{u}$ |
 | **Projection Matrix** | $P = A(A^T A)^{-1}A^T$ | $P^T = P$ and $P^2 = P$ |
 | **Gram-Schmidt Step** | $\mathbf{v}_k = \mathbf{x}_k - \sum_{j=1}^{k-1} \mathrm{proj}_{\mathbf{v}_j}(\mathbf{x}_k)$ | Constructs orthogonal vectors recursively |
+
+---
+
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
