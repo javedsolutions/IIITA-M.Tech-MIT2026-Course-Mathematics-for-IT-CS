@@ -139,7 +139,7 @@ or
 $$
 \boxed{
 p(\lambda)=
-\lambda^2-\operatorname{tr}(A)\lambda+\det(A).
+\lambda^2-\text{tr}(A)\lambda+\det(A).
 }
 $$
 
@@ -853,7 +853,7 @@ For a $(2\times2)$ matrix,
 
 $$
 \boxed{
-A^2-\operatorname{tr}(A)A+\det(A)I=0.
+A^2-\text{tr}(A)A+\det(A)I=0.
 }
 $$
 
@@ -868,7 +868,7 @@ This provides another method for reducing high powers of matrices.
 For
 
 $$
-D=\operatorname{diag}(d_1,\ldots,d_n),
+D=\text{diag}(d_1,\ldots,d_n),
 $$
 
 the eigenvalues are simply
@@ -1262,7 +1262,7 @@ $$
 ### Trace
 
 $$
-\boxed{\operatorname{tr}(A)=\sum_i\lambda_i}
+\boxed{\text{tr}(A)=\sum_i\lambda_i}
 $$
 
 ### Determinant
