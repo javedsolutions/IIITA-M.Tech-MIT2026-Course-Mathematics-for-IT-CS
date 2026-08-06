@@ -83,7 +83,7 @@ $$
 we have
 
 $$
-\operatorname{rank}(A)\leq\min(m,n).
+\text{rank}(A)\leq\min(m,n).
 $$
 
 For example,
@@ -224,9 +224,9 @@ A = u.reshape(-1, 1) @ v.reshape(1, -1)
 
 ---
 
-## 8. Rank-$(r)$ Matrix as a Sum of Rank-1 Matrices
+## 8. Rank- $(r)$ Matrix as a Sum of Rank-1 Matrices
 
-A rank-$(r)$ matrix can be represented as
+A rank- $(r)$ matrix can be represented as
 
 $$
 \boxed{
@@ -373,7 +373,7 @@ This gives us a natural way to approximate $(A)$.
 
 ---
 
-## 13. Rank-$(k)$ Approximation from SVD
+## 13. Rank- $(k)$ Approximation from SVD
 
 Keep only the first $(k)$ singular values:
 
@@ -487,8 +487,7 @@ In Frobenius norm,
 
 $$
 \boxed{
-A_k
-=
+A_k=
 \arg\min_{\text{rank}(B)\leq k}
 \|A-B\|_F.
 }
