@@ -1,14 +1,13 @@
 # :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
 ## Unit 1: Linear Algebra and Matrix Theory
-### Current Topic: Systems of Linear Equations - Types, graphical interpretation, solved examples, and Python implementation
+* ### Current Topic: Systems of Linear Equations - Types, graphical interpretation, solved examples, and Python implementation
 ---
 ## 👥 Instructor Information
 * **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
 * **Email:** javed@iiita.ac.in
-* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
 ---
-
-## Learning Objectives
+## 🎯 1. Learning Objectives
 
 By the end of this material, you should be able to:
 
