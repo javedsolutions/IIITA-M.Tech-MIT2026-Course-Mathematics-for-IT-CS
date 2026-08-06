@@ -5,10 +5,10 @@
 ## 👥 Instructor Information
 * **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
 * **Email:** javed@iiita.ac.in
-* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
 ---
+## 🎯 1. Learning Objectives
 
-### Learning objectives
 After studying this material, you should be able to:
 - Explain row reduction and its purpose.
 - Perform the three elementary row operations.
