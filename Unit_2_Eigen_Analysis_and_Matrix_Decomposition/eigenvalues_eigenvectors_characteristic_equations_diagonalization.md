@@ -18,7 +18,7 @@ After studying this material, you should be able to:
 - find eigenvectors and eigenspaces;
 - distinguish algebraic multiplicity from geometric multiplicity;
 - determine whether a matrix is diagonalizable;
-- construct a diagonalization \(A=PDP^{-1}\);
+- construct a diagonalization $(A=PDP^{-1})$;
 - use diagonalization to compute matrix powers;
 - understand diagonalization of symmetric matrices;
 - implement eigenvalue and eigenvector computations in Python;
@@ -30,26 +30,26 @@ After studying this material, you should be able to:
 
 ## 2. The Basic Idea
 
-Let \(A\) be an \(n\times n\) matrix.
+Let $(A)$ be an $(n\times n)$ matrix.
 
-For a nonzero vector \(v\), if
+For a nonzero vector $(v)$, if
 
-\[
+$$
 \boxed{Av=\lambda v}
-\]
+$$
 
-for some scalar \(\lambda\), then:
+for some scalar $(\lambda)$, then:
 
-- \(v\) is an **eigenvector** of \(A\);
-- \(\lambda\) is the corresponding **eigenvalue**.
+- $(v)$ is an **eigenvector** of $(A)$;
+- $(\lambda)$ is the corresponding **eigenvalue**.
 
 The vector must be nonzero:
 
-\[
+$$
 \boxed{v\neq0}.
-\]
+$$
 
-The equation says that applying \(A\) to \(v\) changes only its magnitude and possibly reverses its direction; it does not change the line through the origin containing \(v\).
+The equation says that applying $(A)$ to $(v)$ changes only its magnitude and possibly reverses its direction; it does not change the line through the origin containing $(v)$.
 
 ![Eigenvector direction](figures/01_eigenvector_direction.png)
 
@@ -57,19 +57,19 @@ The equation says that applying \(A\) to \(v\) changes only its magnitude and po
 
 ## 3. Why Eigenvectors Are Special
 
-For a general vector \(x\), \(Ax\) will usually point in a different direction from \(x\).
+For a general vector $(x)$, $(Ax)$ will usually point in a different direction from $(x)$.
 
-For an eigenvector \(v\),
+For an eigenvector $(v)$,
 
-\[
+$$
 Av=\lambda v.
-\]
+$$
 
-Thus \(Av\) and \(v\) are parallel.
+Thus $(Av)$ and $(v)$ are parallel.
 
 ![General vector versus eigenvector](figures/02_general_vs_eigenvector.png)
 
-If \(\lambda>1\), the vector is stretched. If \(0<\lambda<1\), it is contracted. If \(\lambda<0\), its direction is reversed as well as scaled. If \(\lambda=0\), it is mapped to the zero vector.
+If $(\lambda>1)$, the vector is stretched. If $(0<\lambda<1)$, it is contracted. If $(\lambda<0)$, its direction is reversed as well as scaled. If $(\lambda=0)$, it is mapped to the zero vector.
 
 ---
 
@@ -79,27 +79,27 @@ If \(\lambda>1\), the vector is stretched. If \(0<\lambda<1\), it is contracted.
 
 Start with
 
-\[
+$$
 Av=\lambda v.
-\]
+$$
 
 Then
 
-\[
+$$
 (A-\lambda I)v=0.
-\]
+$$
 
-For a nonzero solution \(v\) to exist, \(A-\lambda I\) must be singular. Hence,
+For a nonzero solution $(v)$ to exist, $(A-\lambda I)$ must be singular. Hence,
 
-\[
+$$
 \boxed{\det(A-\lambda I)=0.}
-\]
+$$
 
 Equivalently, one may use
 
-\[
+$$
 \boxed{\det(\lambda I-A)=0.}
-\]
+$$
 
 This is the **characteristic equation**.
 
@@ -109,83 +109,83 @@ This is the **characteristic equation**.
 
 The polynomial
 
-\[
+$$
 \boxed{p(\lambda)=\det(\lambda I-A)}
-\]
+$$
 
-is the **characteristic polynomial** of \(A\).
+is the **characteristic polynomial** of $(A)$.
 
 Its roots are the eigenvalues.
 
 For
 
-\[
+$$
 A=
 \begin{bmatrix}
 a&b\\
 c&d
 \end{bmatrix},
-\]
+$$
 
-\[
+$$
 \boxed{
 p(\lambda)=
 \lambda^2-(a+d)\lambda+(ad-bc)
 }
-\]
+$$
 
 or
 
-\[
+$$
 \boxed{
 p(\lambda)=
 \lambda^2-\operatorname{tr}(A)\lambda+\det(A).
 }
-\]
+$$
 
 ---
 
-## 6. Example: A \(2\times2\) Matrix
+## 6. Example: A $(2\times2)$ Matrix
 
 Let
 
-\[
+$$
 A=
 \begin{bmatrix}
 4&1\\
 2&3
 \end{bmatrix}.
-\]
+$$
 
 Then
 
-\[
+$$
 \lambda I-A=
 \begin{bmatrix}
 \lambda-4&-1\\
 -2&\lambda-3
 \end{bmatrix}.
-\]
+$$
 
 Thus,
 
-\[
+$$
 p(\lambda)
 =(\lambda-4)(\lambda-3)-2
 =\lambda^2-7\lambda+10.
-\]
+$$
 
 So
 
-\[
+$$
 (\lambda-5)(\lambda-2)=0
-\]
+$$
 
 and therefore
 
-\[
+$$
 \boxed{\lambda_1=5,\qquad\lambda_2=2.}
-\]
+$$
 
 ![Characteristic polynomial](figures/03_characteristic_polynomial.png)
 
@@ -195,69 +195,69 @@ and therefore
 
 ## 7. Eigenvector Equation
 
-Once an eigenvalue \(\lambda\) is known, solve
+Once an eigenvalue $(\lambda)$ is known, solve
 
-\[
+$$
 \boxed{(A-\lambda I)v=0.}
-\]
+$$
 
-The nonzero solutions form the **eigenspace** associated with \(\lambda\).
+The nonzero solutions form the **eigenspace** associated with $(\lambda)$.
 
 For the example above:
 
-### For \(\lambda=5\)
+### For $(\lambda=5)$
 
-\[
+$$
 A-5I=
 \begin{bmatrix}
 -1&1\\
 2&-2
 \end{bmatrix}.
-\]
+$$
 
 Hence
 
-\[
+$$
 -x+y=0,
-\]
+$$
 
-so \(y=x\). One eigenvector is
+so $(y=x)$. One eigenvector is
 
-\[
+$$
 \boxed{
 v_1=
 \begin{bmatrix}
 1\\1
 \end{bmatrix}.
 }
-\]
+$$
 
-### For \(\lambda=2\)
+### For $(\lambda=2)$
 
-\[
+$$
 A-2I=
 \begin{bmatrix}
 2&1\\
 2&1
 \end{bmatrix}.
-\]
+$$
 
 Hence
 
-\[
+$$
 2x+y=0,
-\]
+$$
 
-so \(y=-2x\). One eigenvector is
+so $(y=-2x)$. One eigenvector is
 
-\[
+$$
 \boxed{
 v_2=
 \begin{bmatrix}
 1\\-2
 \end{bmatrix}.
 }
-\]
+$$
 
 ---
 
@@ -335,17 +335,17 @@ Use `np.allclose()` rather than exact equality because of floating-point arithme
 
 ## 11. Definition
 
-For eigenvalue \(\lambda\),
+For eigenvalue $(\lambda)$,
 
-\[
+$$
 \boxed{
 E_\lambda=\ker(A-\lambda I).
 }
-\]
+$$
 
-The eigenspace contains the zero vector and all eigenvectors associated with \(\lambda\). The eigenvectors themselves are the nonzero members.
+The eigenspace contains the zero vector and all eigenvectors associated with $(\lambda)$. The eigenvectors themselves are the nonzero members.
 
-In two dimensions, an eigenspace may be a line through the origin or, in the special case \(A=\lambda I\), the entire plane.
+In two dimensions, an eigenspace may be a line through the origin or, in the special case $(A=\lambda I)$, the entire plane.
 
 ---
 
@@ -357,15 +357,15 @@ The **algebraic multiplicity** is the multiplicity of an eigenvalue as a root of
 
 For
 
-\[
+$$
 p(\lambda)=(\lambda-2)^3(\lambda+1),
-\]
+$$
 
 we have
 
-\[
+$$
 AM(2)=3,\qquad AM(-1)=1.
-\]
+$$
 
 ---
 
@@ -373,21 +373,21 @@ AM(2)=3,\qquad AM(-1)=1.
 
 The **geometric multiplicity** is
 
-\[
+$$
 \boxed{
 GM(\lambda)=\dim\ker(A-\lambda I).
 }
-\]
+$$
 
 It is the dimension of the eigenspace.
 
 For every eigenvalue,
 
-\[
+$$
 \boxed{
 1\le GM(\lambda)\le AM(\lambda).
 }
-\]
+$$
 
 ---
 
@@ -395,23 +395,23 @@ For every eigenvalue,
 
 ## 14. Definition
 
-An \(n\times n\) matrix \(A\) is **diagonalizable** if there exists an invertible matrix \(P\) and diagonal matrix \(D\) such that
+An $(n\times n)$ matrix $(A)$ is **diagonalizable** if there exists an invertible matrix $(P)$ and diagonal matrix $(D)$ such that
 
-\[
+$$
 \boxed{
 A=PDP^{-1}.
 }
-\]
+$$
 
 Equivalently,
 
-\[
+$$
 \boxed{
 D=P^{-1}AP.
 }
-\]
+$$
 
-The columns of \(P\) are eigenvectors, and the diagonal entries of \(D\) are their corresponding eigenvalues.
+The columns of $(P)$ are eigenvectors, and the diagonal entries of $(D)$ are their corresponding eigenvalues.
 
 ---
 
@@ -419,26 +419,26 @@ The columns of \(P\) are eigenvectors, and the diagonal entries of \(D\) are the
 
 If
 
-\[
+$$
 A=PDP^{-1},
-\]
+$$
 
 then
 
-\[
+$$
 \boxed{A^k=PD^kP^{-1}}.
-\]
+$$
 
-Because \(D\) is diagonal,
+Because $(D)$ is diagonal,
 
-\[
+$$
 D^k=
 \begin{bmatrix}
 \lambda_1^k&0&\cdots\\
 0&\lambda_2^k&\cdots\\
 \vdots&\vdots&\ddots
 \end{bmatrix}.
-\]
+$$
 
 Therefore, matrix powers become much easier to compute.
 
@@ -448,27 +448,27 @@ Therefore, matrix powers become much easier to compute.
 
 # Part VIII — Example of Diagonalization
 
-## 16. Diagonalize a \(2\times2\) Matrix
+## 16. Diagonalize a $(2\times2)$ Matrix
 
 For
 
-\[
+$$
 A=
 \begin{bmatrix}
 4&1\\
 2&3
 \end{bmatrix},
-\]
+$$
 
 the eigenvalues are
 
-\[
+$$
 5,\quad2
-\]
+$$
 
 with eigenvectors
 
-\[
+$$
 v_1=
 \begin{bmatrix}
 1\\1
@@ -478,11 +478,11 @@ v_2=
 \begin{bmatrix}
 1\\-2
 \end{bmatrix}.
-\]
+$$
 
 Thus,
 
-\[
+$$
 P=
 \begin{bmatrix}
 1&1\\
@@ -494,13 +494,13 @@ D=
 5&0\\
 0&2
 \end{bmatrix}.
-\]
+$$
 
 Then
 
-\[
+$$
 \boxed{A=PDP^{-1}}.
-\]
+$$
 
 ---
 
@@ -545,19 +545,19 @@ print("\nCorrect:", np.allclose(A, A_reconstructed))
 
 ## 18. Distinct Eigenvalues
 
-If an \(n\times n\) matrix has \(n\) distinct eigenvalues, then it is diagonalizable.
+If an $(n\times n)$ matrix has $(n)$ distinct eigenvalues, then it is diagonalizable.
 
 For example,
 
-\[
+$$
 A=
 \begin{bmatrix}
 2&1\\
 0&3
 \end{bmatrix}
-\]
+$$
 
-has eigenvalues \(2\) and \(3\), so it is diagonalizable.
+has eigenvalues $(2)$ and $(3)$, so it is diagonalizable.
 
 ---
 
@@ -567,11 +567,11 @@ Repeated eigenvalues do **not** automatically mean that a matrix is not diagonal
 
 For example,
 
-\[
+$$
 A=2I
-\]
+$$
 
-has repeated eigenvalue \(2\), but every nonzero vector is an eigenvector. Hence it is diagonalizable.
+has repeated eigenvalue $(2)$, but every nonzero vector is an eigenvector. Hence it is diagonalizable.
 
 ---
 
@@ -579,43 +579,43 @@ has repeated eigenvalue \(2\), but every nonzero vector is an eigenvector. Hence
 
 Consider
 
-\[
+$$
 J=
 \begin{bmatrix}
 2&1\\
 0&2
 \end{bmatrix}.
-\]
+$$
 
 Its characteristic polynomial is
 
-\[
+$$
 (\lambda-2)^2.
-\]
+$$
 
 Thus,
 
-\[
+$$
 AM(2)=2.
-\]
+$$
 
 But solving
 
-\[
+$$
 (J-2I)v=0
-\]
+$$
 
 gives only a one-dimensional eigenspace, so
 
-\[
+$$
 GM(2)=1.
-\]
+$$
 
 Since
 
-\[
+$$
 GM(2)<AM(2),
-\]
+$$
 
 the matrix is not diagonalizable.
 
@@ -627,15 +627,15 @@ the matrix is not diagonalizable.
 
 ## 21. Criterion
 
-An \(n\times n\) matrix is diagonalizable if and only if it has \(n\) linearly independent eigenvectors.
+An $(n\times n)$ matrix is diagonalizable if and only if it has $(n)$ linearly independent eigenvectors.
 
 Equivalently,
 
-\[
+$$
 \boxed{
 \sum_\lambda GM(\lambda)=n.
 }
-\]
+$$
 
 A useful numerical check is the rank of the eigenvector matrix.
 
@@ -663,19 +663,19 @@ For nearly repeated eigenvalues, numerical rank decisions require appropriate to
 
 # Part XI — Matrix Powers
 
-## 22. Computing \(A^k\)
+## 22. Computing $(A^k)$
 
 If
 
-\[
+$$
 A=PDP^{-1},
-\]
+$$
 
 then
 
-\[
+$$
 A^k=PD^kP^{-1}.
-\]
+$$
 
 Python:
 
@@ -719,26 +719,26 @@ print("\nSame:",
 
 If
 
-\[
+$$
 A=A^T,
-\]
+$$
 
 then:
 
 1. all eigenvalues are real;
 2. eigenvectors belonging to distinct eigenvalues are orthogonal;
-3. \(A\) is diagonalizable;
-4. \(A\) can be orthogonally diagonalized.
+3. $(A)$ is diagonalizable;
+4. $(A)$ can be orthogonally diagonalized.
 
 Specifically,
 
-\[
+$$
 \boxed{
 A=Q\Lambda Q^T
 }
-\]
+$$
 
-where \(Q^TQ=I\).
+where $(Q^TQ=I)$.
 
 ![Orthogonal eigenvectors](figures/06_symmetric_orthogonal_eigenvectors.png)
 
@@ -777,13 +777,13 @@ For symmetric matrices, prefer `np.linalg.eigh()` over `np.linalg.eig()`.
 
 ## 25. Trace
 
-For an \(n\times n\) matrix,
+For an $(n\times n)$ matrix,
 
-\[
+$$
 \boxed{
 \operatorname{tr}(A)=\lambda_1+\cdots+\lambda_n.
 }
-\]
+$$
 
 The eigenvalues are counted with algebraic multiplicity.
 
@@ -791,21 +791,21 @@ The eigenvalues are counted with algebraic multiplicity.
 
 ## 26. Determinant
 
-\[
+$$
 \boxed{
 \det(A)=\lambda_1\lambda_2\cdots\lambda_n.
 }
-\]
+$$
 
 Therefore,
 
-\[
+$$
 \boxed{
 A\text{ is singular}
 \iff
 0\text{ is an eigenvalue}.
 }
-\]
+$$
 
 Python verification:
 
@@ -836,26 +836,26 @@ A square matrix satisfies its own characteristic equation.
 
 If
 
-\[
+$$
 p(\lambda)=
 \lambda^n+c_{n-1}\lambda^{n-1}+\cdots+c_0,
-\]
+$$
 
 then
 
-\[
+$$
 \boxed{
 p(A)=0.
 }
-\]
+$$
 
-For a \(2\times2\) matrix,
+For a $(2\times2)$ matrix,
 
-\[
+$$
 \boxed{
 A^2-\operatorname{tr}(A)A+\det(A)I=0.
 }
-\]
+$$
 
 This provides another method for reducing high powers of matrices.
 
@@ -867,15 +867,15 @@ This provides another method for reducing high powers of matrices.
 
 For
 
-\[
+$$
 D=\operatorname{diag}(d_1,\ldots,d_n),
-\]
+$$
 
 the eigenvalues are simply
 
-\[
+$$
 \boxed{d_1,\ldots,d_n}.
-\]
+$$
 
 ---
 
@@ -883,19 +883,19 @@ the eigenvalues are simply
 
 For an upper or lower triangular matrix, the eigenvalues are the diagonal entries:
 
-\[
+$$
 \boxed{\lambda_i=a_{ii}}.
-\]
+$$
 
 ---
 
 ## 30. Identity Matrix
 
-For \(I\),
+For $(I)$,
 
-\[
+$$
 \lambda=1
-\]
+$$
 
 is the only eigenvalue, and every nonzero vector is an eigenvector.
 
@@ -905,9 +905,9 @@ is the only eigenvalue, and every nonzero vector is an eigenvector.
 
 For the zero matrix,
 
-\[
+$$
 \lambda=0
-\]
+$$
 
 is the only eigenvalue, and every nonzero vector is an eigenvector.
 
@@ -919,21 +919,21 @@ is the only eigenvalue, and every nonzero vector is an eigenvector.
 
 For
 
-\[
+$$
 x_{k+1}=Ax_k,
-\]
+$$
 
 we have
 
-\[
+$$
 x_k=A^kx_0.
-\]
+$$
 
 The magnitudes of eigenvalues determine long-term behavior:
 
-- \(|\lambda|<1\): decay;
-- \(|\lambda|>1\): growth;
-- \(|\lambda|=1\): persistent behavior;
+- $(|\lambda|<1)$: decay;
+- $(|\lambda|>1)$: growth;
+- $(|\lambda|=1)$: persistent behavior;
 - negative eigenvalues can cause sign alternation.
 
 ---
@@ -942,47 +942,47 @@ The magnitudes of eigenvalues determine long-term behavior:
 
 For
 
-\[
+$$
 \frac{dx}{dt}=Ax,
-\]
+$$
 
 the solution is
 
-\[
+$$
 x(t)=e^{At}x(0).
-\]
+$$
 
 If
 
-\[
+$$
 A=PDP^{-1},
-\]
+$$
 
 then
 
-\[
+$$
 \boxed{
 e^{At}=Pe^{Dt}P^{-1}
 }
-\]
+$$
 
 and
 
-\[
+$$
 e^{Dt}=
 \operatorname{diag}
 (e^{\lambda_1t},\ldots,e^{\lambda_nt}).
-\]
+$$
 
 ---
 
 ## 34. Principal Component Analysis
 
-PCA uses eigenvalues and eigenvectors of a covariance matrix \(C\):
+PCA uses eigenvalues and eigenvectors of a covariance matrix $(C)$:
 
-\[
+$$
 Cv_i=\lambda_i v_i.
-\]
+$$
 
 The eigenvectors give principal directions, while the eigenvalues measure variance along those directions.
 
@@ -1123,13 +1123,13 @@ analyze_eigenvalues(A)
 
 ## 40. Mistake 1: Using the Zero Vector
 
-The zero vector satisfies \(A0=\lambda0\) for every \(\lambda\), so it does not identify eigenvalues.
+The zero vector satisfies $(A0=\lambda0)$ for every $(\lambda)$, so it does not identify eigenvalues.
 
 Eigenvectors must satisfy
 
-\[
+$$
 \boxed{v\neq0}.
-\]
+$$
 
 ## 41. Mistake 2: Confusing Eigenvalues and Eigenvectors
 
@@ -1163,25 +1163,25 @@ Eigenvectors corresponding to distinct eigenvalues are linearly independent.
 
 Therefore,
 
-\[
+$$
 \boxed{
 n\text{ distinct eigenvalues}
 \Rightarrow
 A\text{ is diagonalizable}.
 }
-\]
+$$
 
 ## 46. Diagonalization Criterion
 
-An \(n\times n\) matrix is diagonalizable if and only if it has \(n\) linearly independent eigenvectors.
+An $(n\times n)$ matrix is diagonalizable if and only if it has $(n)$ linearly independent eigenvectors.
 
 ## 47. Multiplicity Criterion
 
 For every eigenvalue,
 
-\[
+$$
 1\le GM(\lambda)\le AM(\lambda).
-\]
+$$
 
 The matrix is diagonalizable exactly when it has enough independent eigenvectors to form a basis.
 
@@ -1189,21 +1189,21 @@ The matrix is diagonalizable exactly when it has enough independent eigenvectors
 
 For a real symmetric matrix,
 
-\[
+$$
 \boxed{
 A=Q\Lambda Q^T.
 }
-\]
+$$
 
 ## 49. Singular Matrix Criterion
 
-\[
+$$
 \boxed{
 \det(A)=0
 \iff
 0\text{ is an eigenvalue}.
 }
-\]
+$$
 
 ---
 
@@ -1213,63 +1213,63 @@ A=Q\Lambda Q^T.
 
 ### Eigenvalue equation
 
-\[
+$$
 \boxed{Av=\lambda v}
-\]
+$$
 
 ### Characteristic equation
 
-\[
+$$
 \boxed{\det(A-\lambda I)=0}
-\]
+$$
 
 ### Characteristic polynomial
 
-\[
+$$
 \boxed{p(\lambda)=\det(\lambda I-A)}
-\]
+$$
 
 ### Eigenspace
 
-\[
+$$
 \boxed{E_\lambda=\ker(A-\lambda I)}
-\]
+$$
 
 ### Diagonalization
 
-\[
+$$
 \boxed{A=PDP^{-1}}
-\]
+$$
 
 ### Equivalent form
 
-\[
+$$
 \boxed{D=P^{-1}AP}
-\]
+$$
 
 ### Matrix powers
 
-\[
+$$
 \boxed{A^k=PD^kP^{-1}}
-\]
+$$
 
 ### Symmetric diagonalization
 
-\[
+$$
 \boxed{A=Q\Lambda Q^T}
-\]
+$$
 
 ### Trace
 
-\[
+$$
 \boxed{\operatorname{tr}(A)=\sum_i\lambda_i}
-\]
+$$
 
 ### Determinant
 
-\[
+$$
 \boxed{\det(A)=\prod_i\lambda_i}
-\]
+$$
 
 ---
 
@@ -1332,7 +1332,7 @@ A.eigenvects()
 
 1. Define an eigenvalue and eigenvector.
 2. Why must an eigenvector be nonzero?
-3. What does \(Av=\lambda v\) mean geometrically?
+3. What does $(Av=\lambda v)$ mean geometrically?
 4. Define the characteristic polynomial.
 5. What is the characteristic equation?
 6. Define an eigenspace.
@@ -1354,38 +1354,38 @@ A.eigenvects()
 ### Problem 1
 Find the eigenvalues and eigenvectors of
 
-\[
+$$
 A=\begin{bmatrix}2&1\\1&2\end{bmatrix}.
-\]
+$$
 
 ### Problem 2
 Find the characteristic polynomial of
 
-\[
+$$
 A=\begin{bmatrix}3&2\\1&4\end{bmatrix}.
-\]
+$$
 
 ### Problem 3
 Determine whether
 
-\[
+$$
 A=\begin{bmatrix}2&1\\0&2\end{bmatrix}
-\]
+$$
 
 is diagonalizable.
 
 ### Problem 4
 Diagonalize
 
-\[
+$$
 A=\begin{bmatrix}5&2\\2&5\end{bmatrix}.
-\]
+$$
 
 ### Problem 5
-Use Python to verify \(A=PDP^{-1}\).
+Use Python to verify $(A=PDP^{-1})$.
 
 ### Problem 6
-Compute \(A^{20}\) using diagonalization.
+Compute $(A^{20})$ using diagonalization.
 
 ### Problem 7
 Use SymPy to calculate a characteristic polynomial symbolically.
@@ -1393,16 +1393,16 @@ Use SymPy to calculate a characteristic polynomial symbolically.
 ### Problem 8
 Verify numerically that
 
-\[
+$$
 \operatorname{tr}(A)=\sum_i\lambda_i.
-\]
+$$
 
 ### Problem 9
 Verify numerically that
 
-\[
+$$
 \det(A)=\prod_i\lambda_i.
-\]
+$$
 
 ### Problem 10
 Generate random matrices and investigate numerically how eigenvalues and eigenvectors behave.
@@ -1422,9 +1422,9 @@ Build a Python program that reports:
 5. algebraic multiplicities;
 6. eigenspace dimensions;
 7. whether it is diagonalizable;
-8. \(P\) and \(D\) if diagonalization exists;
-9. a verification of \(A=PDP^{-1}\);
-10. \(A^k\) using diagonalization.
+8. $(P)$ and $(D)$ if diagonalization exists;
+9. a verification of $(A=PDP^{-1})$;
+10. $(A^k)$ using diagonalization.
 
 A basic starting point:
 
@@ -1486,45 +1486,45 @@ diagonalization_report(A)
 
 The central idea of eigenvalue theory is
 
-\[
+$$
 \boxed{Av=\lambda v}.
-\]
+$$
 
-A nonzero vector \(v\) is an eigenvector if applying \(A\) changes only its scale and possibly its direction.
+A nonzero vector $(v)$ is an eigenvector if applying $(A)$ changes only its scale and possibly its direction.
 
 To find eigenvalues, solve
 
-\[
+$$
 \boxed{\det(A-\lambda I)=0}.
-\]
+$$
 
 For each eigenvalue, solve
 
-\[
+$$
 \boxed{(A-\lambda I)v=0}
-\]
+$$
 
 to find its eigenvectors.
 
-Diagonalization organizes eigenvectors into \(P\) and eigenvalues into \(D\):
+Diagonalization organizes eigenvectors into $(P)$ and eigenvalues into $(D)$:
 
-\[
+$$
 \boxed{A=PDP^{-1}}.
-\]
+$$
 
 This gives
 
-\[
+$$
 \boxed{A^k=PD^kP^{-1}},
-\]
+$$
 
 which is especially useful for powers and dynamical systems.
 
 For real symmetric matrices,
 
-\[
+$$
 \boxed{A=Q\Lambda Q^T},
-\]
+$$
 
 where the eigenvectors can be chosen orthonormally and all eigenvalues are real.
 
@@ -1544,7 +1544,7 @@ Eigenvalue theory therefore provides a powerful framework for understanding line
 
 ## Suggested Learning Sequence
 
-\[
+$$
 \boxed{
 \text{Matrices}
 \rightarrow
@@ -1562,7 +1562,7 @@ Eigenvalue theory therefore provides a powerful framework for understanding line
 \rightarrow
 \text{Applications}
 }
-\]
+$$
 
 Mastering this sequence provides the foundation for more advanced topics such as **Jordan canonical form, spectral decomposition, singular value decomposition, PCA, and spectral methods in machine learning**.
 
