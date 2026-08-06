@@ -1,19 +1,13 @@
-# Applications of Linear Algebra in Information Technology and Data Representation
-
-## Course Reading Material & Technical Guide
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+### Current Topic: Applications of Linear Algebra in Information Technology and Data Representation - Python implementation
 ---
-
-## Table of Contents
-1. [Introduction to Linear Algebra in Modern IT](#1-introduction-to-linear-algebra-in-modern-it)
-2. [Data Representation: Vectors, Matrices, and Tensors](#2-data-representation-vectors-matrices-and-tensors)
-3. [Digital Image Processing & Computer Graphics](#3-digital-image-processing--computer-graphics)
-4. [Text Representation & Natural Language Processing (NLP)](#4-text-representation--natural-language-processing-nlp)
-5. [Dimensionality Reduction & Feature Extraction (PCA & SVD)](#5-dimensionality-reduction--feature-extraction-pca--svd)
-6. [Recommender Systems & Matrix Factorization](#6-recommender-systems--matrix-factorization)
-7. [Graph Theory, Networks, and Google's PageRank](#7-graph-theory-networks-and-googles-pagerank)
-8. [Summary & Further Reading](#8-summary--further-reading)
-9. [Figure Downloads](#9-figure-downloads)
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
 ---
 
@@ -91,8 +85,7 @@ print("Transformed Coordinates (Top-Left):", transformed_square[:, 2])
 In Information Retrieval and Natural Language Processing (NLP), unstructured text is converted into quantitative form using the **Vector Space Model (VSM)**.
 
 1. **Term-Document Matrix ($\mathbf{A}$):** Rows correspond to unique terms in the vocabulary, and columns correspond to documents.
-2. **TF-IDF Weighting:** $	ext{TF-IDF}(t, d, D) = 	ext{TF}(t, d) 	imes \log\left(rac{|D|}{|\{d \in D : t \in d\}|}
-ight)$
+2. **TF-IDF Weighting:** $	ext{TF-IDF}(t, d, D) = 	ext{TF}(t, d) 	times \log\left(rac{|D|}{|\{d \in D : t \in d\}|}wight)$
 3. **Cosine Similarity:** To measure the semantic similarity between two documents $\mathbf{u}$ and $\mathbf{v}$, we compute the normalized dot product:
 
 $$	ext{Cosine Similarity}(\mathbf{u}, \mathbf{v}) = rac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|_2 \|\mathbf{v}\|_2} = rac{\sum_{i=1}^n u_i v_i}{\sqrt{\sum_{i=1}^n u_i^2} \sqrt{\sum_{i=1}^n v_i^2}}$$
@@ -295,15 +288,11 @@ for i, score in enumerate(pr_scores):
 
 ---
 
-## 9. Figure Downloads
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
-You can view and download the high-resolution figures generated for this material directly from the repository links below:
-
-1. **Figure 1: 2D Affine Image Transformation**  
-   File: [`figures/fig1_image_transformation.png`](figures/fig1_image_transformation.png)
-2. **Figure 2: Vector Space Model & Cosine Similarity**  
-   File: [`figures/fig2_cosine_similarity.png`](figures/fig2_cosine_similarity.png)
-3. **Figure 3: Principal Component Analysis (PCA) Variance**  
-   File: [`figures/fig3_pca_variance.png`](figures/fig3_pca_variance.png)
-4. **Figure 4: PageRank Graph Network & Centrality**  
-   File: [`figures/fig4_pagerank_network.png`](figures/fig4_pagerank_network.png)
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
