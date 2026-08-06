@@ -488,14 +488,14 @@ The image is the set of all possible outputs:
 
 $$
 \boxed{
-\operatorname{Im}(T)=\{T(\mathbf{x}):\mathbf{x}\in V\}
+\text{Im}(T)=\{T(\mathbf{x}):\mathbf{x}\in V\}
 }.
 $$
 
 For a matrix transformation,
 
 $$
-\operatorname{Im}(T)=\operatorname{Col}(A).
+\text{Im}(T)=\text{Col}(A).
 $$
 
 ```python
@@ -512,27 +512,27 @@ for vector in A.columnspace():
 ## 12. Rank and nullity
 
 $$
-\operatorname{rank}(T)=\dim(\operatorname{Im}(T))
+\text{rank}(T)=\dim(\text{Im}(T))
 $$
 
 and
 
 $$
-\operatorname{nullity}(T)=\dim(\ker(T)).
+\text{nullity}(T)=\dim(\ker(T)).
 $$
 
 The Rank-Nullity Theorem is
 
 $$
 \boxed{
-\dim(V)=\operatorname{rank}(T)+\operatorname{nullity}(T)
+\dim(V)=\text{rank}(T)+\text{nullity}(T)
 }.
 $$
 
 For an $(m\times n)$ matrix,
 
 $$
-n=\operatorname{rank}(A)+\operatorname{nullity}(A).
+n=\text{rank}(A)+\text{nullity}(A).
 $$
 
 ```python
@@ -570,7 +570,7 @@ $$
 
 $$
 \boxed{
-T\text{ is surjective}\iff\operatorname{Im}(T)=W
+T\text{ is surjective}\iff\text{Im}(T)=W
 }.
 $$
 
