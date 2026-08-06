@@ -14,7 +14,7 @@ After studying this material, you should be able to:
 
 - define and identify symmetric matrices;
 - explain positive definite, positive semidefinite, and indefinite matrices;
-- evaluate quadratic forms such as \(x^TAx\);
+- evaluate quadratic forms such as $(x^TAx)$;
 - understand the relationship between positive definiteness and eigenvalues;
 - apply Sylvester's criterion;
 - explain Cholesky factorization;
@@ -31,38 +31,38 @@ After studying this material, you should be able to:
 
 ## 2. Definition of a Symmetric Matrix
 
-A square matrix \(A\) is **symmetric** if
+A square matrix $(A)$ is **symmetric** if
 
-\[
+$$
 \boxed{A=A^T}
-\]
+$$
 
-where \(A^T\) denotes the transpose of \(A\).
+where $(A^T)$ denotes the transpose of $(A)$.
 
 If
 
-\[
+$$
 A=[a_{ij}],
-\]
+$$
 
 then symmetry means
 
-\[
+$$
 \boxed{a_{ij}=a_{ji}}
-\]
+$$
 
-for every \(i,j\).
+for every $(i,j)$.
 
 For example,
 
-\[
+$$
 A=
 \begin{bmatrix}
 2&1&0\\
 1&3&2\\
 0&2&4
 \end{bmatrix}
-\]
+$$
 
 is symmetric because its entries mirror each other across the main diagonal.
 
@@ -74,30 +74,30 @@ is symmetric because its entries mirror each other across the main diagonal.
 
 ### Symmetric
 
-\[
+$$
 A=
 \begin{bmatrix}
 1&2&3\\
 2&4&5\\
 3&5&6
 \end{bmatrix}.
-\]
+$$
 
 ### Not symmetric
 
-\[
+$$
 B=
 \begin{bmatrix}
 1&2\\
 3&4
 \end{bmatrix}
-\]
+$$
 
 because
 
-\[
+$$
 b_{12}=2\neq3=b_{21}.
-\]
+$$
 
 ---
 
@@ -133,13 +133,13 @@ This is usually preferable in numerical computations.
 
 ## 5. Constructing a Symmetric Matrix
 
-Any square matrix \(B\) can be used to construct a symmetric matrix:
+Any square matrix $(B)$ can be used to construct a symmetric matrix:
 
-\[
+$$
 \boxed{
 A=B+B^T.
 }
-\]
+$$
 
 For example:
 
@@ -160,11 +160,11 @@ print("Symmetric:", np.allclose(A, A.T))
 
 Another common construction is
 
-\[
+$$
 \boxed{
 A=B^TB.
 }
-\]
+$$
 
 This matrix is always symmetric and positive semidefinite.
 
@@ -180,15 +180,15 @@ A fundamental theorem states:
 
 If
 
-\[
+$$
 A=A^T,
-\]
+$$
 
-then every eigenvalue \(\lambda\) of \(A\) satisfies
+then every eigenvalue $(\lambda)$ of $(A)$ satisfies
 
-\[
+$$
 \lambda\in\mathbb R.
-\]
+$$
 
 This is extremely useful in numerical linear algebra.
 
@@ -200,29 +200,29 @@ Eigenvectors corresponding to distinct eigenvalues of a real symmetric matrix ar
 
 Suppose
 
-\[
+$$
 A\mathbf v_1=\lambda_1\mathbf v_1
-\]
+$$
 
 and
 
-\[
+$$
 A\mathbf v_2=\lambda_2\mathbf v_2
-\]
+$$
 
 with
 
-\[
+$$
 \lambda_1\neq\lambda_2.
-\]
+$$
 
 Then
 
-\[
+$$
 \boxed{
 \mathbf v_1^T\mathbf v_2=0.
 }
-\]
+$$
 
 ---
 
@@ -230,23 +230,23 @@ Then
 
 The **spectral theorem** says that every real symmetric matrix can be orthogonally diagonalized.
 
-There exists an orthogonal matrix \(Q\) such that
+There exists an orthogonal matrix $(Q)$ such that
 
-\[
+$$
 \boxed{
 A=Q\Lambda Q^T
 }
-\]
+$$
 
 where
 
-\[
+$$
 Q^TQ=QQ^T=I
-\]
+$$
 
 and
 
-\[
+$$
 \Lambda=
 \begin{bmatrix}
 \lambda_1&0&\cdots&0\\
@@ -254,7 +254,7 @@ and
 \vdots&\vdots&\ddots&\vdots\\
 0&0&\cdots&\lambda_n
 \end{bmatrix}.
-\]
+$$
 
 ![Orthogonal diagonalization](figures/06_orthogonal_diagonalization.png)
 
@@ -301,19 +301,19 @@ because `eigh` is specifically designed for Hermitian/symmetric matrices and pro
 
 ## 10. Definition of a Quadratic Form
 
-For a symmetric matrix \(A\) and vector \(x\), the expression
+For a symmetric matrix $(A)$ and vector $(x)$, the expression
 
-\[
+$$
 \boxed{
 x^TAx
 }
-\]
+$$
 
 is called a **quadratic form**.
 
 For
 
-\[
+$$
 A=
 \begin{bmatrix}
 a&b\\
@@ -325,15 +325,15 @@ x=
 x_1\\
 x_2
 \end{bmatrix},
-\]
+$$
 
 we get
 
-\[
+$$
 x^TAx
 =
 ax_1^2+2bx_1x_2+cx_2^2.
-\]
+$$
 
 Quadratic forms are central to the definition of positive definite matrices.
 
@@ -362,27 +362,27 @@ print("x^T A x =", value)
 
 ## 12. Definition of Positive Definite Matrix
 
-A symmetric matrix \(A\) is **positive definite** if
+A symmetric matrix $(A)$ is **positive definite** if
 
-\[
+$$
 \boxed{
 x^TAx>0
 }
-\]
+$$
 
 for every nonzero vector
 
-\[
+$$
 x\neq0.
-\]
+$$
 
 We write
 
-\[
+$$
 \boxed{
 A\succ0.
 }
-\]
+$$
 
 The strict inequality is important.
 
@@ -392,43 +392,43 @@ The strict inequality is important.
 
 Consider
 
-\[
+$$
 A=
 \begin{bmatrix}
 2&0\\
 0&3
 \end{bmatrix}.
-\]
+$$
 
 For
 
-\[
+$$
 x=
 \begin{bmatrix}
 x_1\\
 x_2
 \end{bmatrix},
-\]
+$$
 
 we have
 
-\[
+$$
 x^TAx
 =
 2x_1^2+3x_2^2.
-\]
+$$
 
-For every \(x\neq0\),
+For every $(x\neq0)$,
 
-\[
+$$
 2x_1^2+3x_2^2>0.
-\]
+$$
 
 Therefore,
 
-\[
+$$
 \boxed{A\succ0.}
-\]
+$$
 
 ---
 
@@ -436,15 +436,15 @@ Therefore,
 
 The quadratic form
 
-\[
+$$
 x^TAx
-\]
+$$
 
 defines level curves
 
-\[
+$$
 x^TAx=c.
-\]
+$$
 
 For a positive definite matrix, these level curves are ellipses in two dimensions.
 
@@ -458,31 +458,31 @@ This is important in optimization because the contours of a strictly convex quad
 
 ## 15. Positive Semidefinite
 
-A symmetric matrix \(A\) is **positive semidefinite** if
+A symmetric matrix $(A)$ is **positive semidefinite** if
 
-\[
+$$
 \boxed{
 x^TAx\geq0
 }
-\]
+$$
 
-for all \(x\).
+for all $(x)$.
 
 We write
 
-\[
+$$
 \boxed{
 A\succeq0.
 }
-\]
+$$
 
 Unlike positive definite matrices, a positive semidefinite matrix may satisfy
 
-\[
+$$
 x^TAx=0
-\]
+$$
 
-for some nonzero \(x\).
+for some nonzero $(x)$.
 
 ---
 
@@ -490,17 +490,17 @@ for some nonzero \(x\).
 
 A symmetric matrix is **indefinite** if its quadratic form takes both positive and negative values.
 
-That is, there exist \(x\) and \(y\) such that
+That is, there exist $(x)$ and $(y)$ such that
 
-\[
+$$
 x^TAx>0
-\]
+$$
 
 and
 
-\[
+$$
 y^TAy<0.
-\]
+$$
 
 ![PD, PSD, and indefinite](figures/04_pd_psd_indefinite.png)
 
@@ -510,10 +510,10 @@ y^TAy<0.
 
 | Type | Condition |
 |---|---|
-| Positive definite | \(x^TAx>0\) for all \(x\neq0\) |
-| Positive semidefinite | \(x^TAx\geq0\) for all \(x\) |
-| Negative definite | \(x^TAx<0\) for all \(x\neq0\) |
-| Negative semidefinite | \(x^TAx\leq0\) for all \(x\) |
+| Positive definite | $(x^TAx>0)$ for all $(x\neq0)$ |
+| Positive semidefinite | $(x^TAx\geq0)$ for all $(x)$ |
+| Negative definite | $(x^TAx<0)$ for all $(x\neq0)$ |
+| Negative semidefinite | $(x^TAx\leq0)$ for all $(x)$ |
 | Indefinite | Both positive and negative values occur |
 
 ---
@@ -522,38 +522,38 @@ y^TAy<0.
 
 ## 18. Eigenvalue Characterization
 
-For a real symmetric matrix \(A\),
+For a real symmetric matrix $(A)$,
 
-\[
+$$
 \boxed{
 A\succ0
 \iff
 \lambda_i>0
 \quad\text{for all }i.
 }
-\]
+$$
 
 Similarly,
 
-\[
+$$
 \boxed{
 A\succeq0
 \iff
 \lambda_i\geq0
 \quad\text{for all }i.
 }
-\]
+$$
 
 And
 
-\[
+$$
 \boxed{
 A\prec0
 \iff
 \lambda_i<0
 \quad\text{for all }i.
 }
-\]
+$$
 
 Therefore, eigenvalues provide a convenient computational test.
 
@@ -593,55 +593,55 @@ A symmetric matrix is positive definite if and only if all its **leading princip
 
 For
 
-\[
+$$
 A=
 \begin{bmatrix}
 a&b\\
 b&c
 \end{bmatrix},
-\]
+$$
 
 positive definiteness requires
 
-\[
+$$
 a>0
-\]
+$$
 
 and
 
-\[
+$$
 \det(A)>0.
-\]
+$$
 
-For a \(3\times3\) matrix,
+For a $(3\times3)$ matrix,
 
-\[
+$$
 A=
 \begin{bmatrix}
 a&b&c\\
 b&d&e\\
 c&e&f
 \end{bmatrix},
-\]
+$$
 
 we require
 
-\[
+$$
 a>0,
-\]
+$$
 
-\[
+$$
 \begin{vmatrix}
 a&b\\
 b&d
 \end{vmatrix}>0,
-\]
+$$
 
 and
 
-\[
+$$
 \det(A)>0.
-\]
+$$
 
 ---
 
@@ -680,15 +680,15 @@ print(is_positive_definite_sylvester(A))
 
 ## 22. Cholesky Theorem
 
-A real symmetric matrix \(A\) is positive definite if and only if it has a Cholesky factorization
+A real symmetric matrix $(A)$ is positive definite if and only if it has a Cholesky factorization
 
-\[
+$$
 \boxed{
 A=LL^T
 }
-\]
+$$
 
-where \(L\) is lower triangular with positive diagonal entries.
+where $(L)$ is lower triangular with positive diagonal entries.
 
 ![Cholesky factorization](figures/07_cholesky_pd_matrix.png)
 
@@ -723,39 +723,39 @@ If `np.linalg.cholesky` raises an error, the matrix is not numerically positive 
 
 Consider
 
-\[
+$$
 f(x)=\frac12x^TAx-b^Tx+c.
-\]
+$$
 
 The gradient is
 
-\[
+$$
 \nabla f(x)=Ax-b
-\]
+$$
 
-when \(A\) is symmetric.
+when $(A)$ is symmetric.
 
 The Hessian is
 
-\[
+$$
 \boxed{
 \nabla^2 f(x)=A.
 }
-\]
+$$
 
 If
 
-\[
+$$
 A\succ0,
-\]
+$$
 
-then \(f(x)\) is strictly convex and has a unique global minimizer.
+then $(f(x))$ is strictly convex and has a unique global minimizer.
 
 The minimizer satisfies
 
-\[
+$$
 Ax=b.
-\]
+$$
 
 Therefore, positive definite matrices are fundamental in:
 
@@ -797,21 +797,21 @@ print("Gradient:", gradient)
 
 ## 26. Definition of Similar Matrices
 
-Two square matrices \(A\) and \(B\) are **similar** if there exists an invertible matrix \(S\) such that
+Two square matrices $(A)$ and $(B)$ are **similar** if there exists an invertible matrix $(S)$ such that
 
-\[
+$$
 \boxed{
 B=S^{-1}AS.
 }
-\]
+$$
 
 Equivalently,
 
-\[
+$$
 \boxed{
 A=SBS^{-1}.
 }
-\]
+$$
 
 Similarity means that the matrices represent the same linear transformation under different bases.
 
@@ -835,31 +835,31 @@ Thus:
 
 Let
 
-\[
+$$
 A=
 \begin{bmatrix}
 2&1\\
 0&3
 \end{bmatrix}
-\]
+$$
 
 and
 
-\[
+$$
 S=
 \begin{bmatrix}
 1&1\\
 1&2
 \end{bmatrix}.
-\]
+$$
 
 Define
 
-\[
+$$
 B=S^{-1}AS.
-\]
+$$
 
-Then \(A\) and \(B\) are similar.
+Then $(A)$ and $(B)$ are similar.
 
 ### Python
 
@@ -895,17 +895,17 @@ Similar matrices have the same eigenvalues.
 
 If
 
-\[
+$$
 B=S^{-1}AS,
-\]
+$$
 
 then
 
-\[
+$$
 \boxed{
 \operatorname{eig}(A)=\operatorname{eig}(B).
 }
-\]
+$$
 
 This is one of the most important properties of similarity.
 
@@ -915,13 +915,13 @@ This is one of the most important properties of similarity.
 
 Similar matrices have the same characteristic polynomial:
 
-\[
+$$
 \boxed{
 \det(\lambda I-A)
 =
 \det(\lambda I-B).
 }
-\]
+$$
 
 Therefore, they have the same:
 
@@ -935,21 +935,21 @@ Therefore, they have the same:
 
 Similarity preserves trace:
 
-\[
+$$
 \boxed{
 \operatorname{tr}(A)=\operatorname{tr}(B).
 }
-\]
+$$
 
 This follows from the cyclic property of trace:
 
-\[
+$$
 \operatorname{tr}(S^{-1}AS)
 =
 \operatorname{tr}(ASS^{-1})
 =
 \operatorname{tr}(A).
-\]
+$$
 
 ---
 
@@ -957,21 +957,21 @@ This follows from the cyclic property of trace:
 
 Similarity also preserves determinant:
 
-\[
+$$
 \boxed{
 \det(B)=\det(A).
 }
-\]
+$$
 
 Indeed,
 
-\[
+$$
 \det(S^{-1}AS)
 =
 \det(S^{-1})\det(A)\det(S)
 =
 \det(A).
-\]
+$$
 
 ---
 
@@ -979,13 +979,13 @@ Indeed,
 
 Similarity preserves rank:
 
-\[
+$$
 \boxed{
 \operatorname{rank}(A)
 =
 \operatorname{rank}(B).
 }
-\]
+$$
 
 ---
 
@@ -993,11 +993,11 @@ Similarity preserves rank:
 
 If
 
-\[
+$$
 B=S^{-1}AS,
-\]
+$$
 
-then \(A\) and \(B\) have the same:
+then $(A)$ and $(B)$ have the same:
 
 - eigenvalues;
 - characteristic polynomial;
@@ -1017,19 +1017,19 @@ For example, **symmetry is not generally preserved by arbitrary similarity trans
 
 ## 35. Diagonalization
 
-A matrix \(A\) is diagonalizable if there exists an invertible matrix \(P\) such that
+A matrix $(A)$ is diagonalizable if there exists an invertible matrix $(P)$ such that
 
-\[
+$$
 \boxed{
 A=PDP^{-1}
 }
-\]
+$$
 
-where \(D\) is diagonal.
+where $(D)$ is diagonal.
 
-This means that \(A\) is similar to a diagonal matrix.
+This means that $(A)$ is similar to a diagonal matrix.
 
-The diagonal entries of \(D\) are eigenvalues of \(A\).
+The diagonal entries of $(D)$ are eigenvalues of $(A)$.
 
 ---
 
@@ -1037,29 +1037,29 @@ The diagonal entries of \(D\) are eigenvalues of \(A\).
 
 Suppose
 
-\[
+$$
 A=
 \begin{bmatrix}
 2&1\\
 0&3
 \end{bmatrix}.
-\]
+$$
 
 Its eigenvalues are
 
-\[
+$$
 \lambda_1=2,
 \qquad
 \lambda_2=3.
-\]
+$$
 
-Since the eigenvalues are distinct, \(A\) is diagonalizable.
+Since the eigenvalues are distinct, $(A)$ is diagonalizable.
 
 Therefore,
 
-\[
+$$
 A=PDP^{-1}.
-\]
+$$
 
 ---
 
@@ -1107,37 +1107,37 @@ to test equality numerically.
 
 ## 38. Orthogonal Similarity
 
-If \(Q\) is orthogonal,
+If $(Q)$ is orthogonal,
 
-\[
+$$
 Q^TQ=I,
-\]
+$$
 
 then
 
-\[
+$$
 \boxed{
 B=Q^TAQ
 }
-\]
+$$
 
 is an orthogonal similarity transformation.
 
 For symmetric matrices, the spectral theorem gives
 
-\[
+$$
 \boxed{
 A=Q\Lambda Q^T.
 }
-\]
+$$
 
 Therefore,
 
-\[
+$$
 \boxed{
 Q^TAQ=\Lambda.
 }
-\]
+$$
 
 The matrix is reduced to diagonal form using an orthogonal change of basis.
 
@@ -1147,29 +1147,29 @@ The matrix is reduced to diagonal form using an orthogonal change of basis.
 
 For a general diagonalization,
 
-\[
+$$
 A=PDP^{-1}.
-\]
+$$
 
 For a symmetric matrix,
 
-\[
+$$
 \boxed{
 A=QDQ^T
 }
-\]
+$$
 
 with
 
-\[
+$$
 Q^T=Q^{-1}.
-\]
+$$
 
 This is numerically attractive because orthogonal transformations preserve Euclidean lengths:
 
-\[
+$$
 \|Qx\|_2=\|x\|_2.
-\]
+$$
 
 They also preserve angles and inner products.
 
@@ -1179,31 +1179,31 @@ They also preserve angles and inner products.
 
 ## 40. Definition
 
-For nonzero \(x\), the Rayleigh quotient is
+For nonzero $(x)$, the Rayleigh quotient is
 
-\[
+$$
 \boxed{
 R_A(x)=\frac{x^TAx}{x^Tx}.
 }
-\]
+$$
 
-If \(x\) is a unit vector,
+If $(x)$ is a unit vector,
 
-\[
+$$
 x^Tx=1,
-\]
+$$
 
 then
 
-\[
+$$
 R_A(x)=x^TAx.
-\]
+$$
 
 ![Rayleigh quotient](figures/08_rayleigh_quotient.png)
 
 For a symmetric matrix, the Rayleigh quotient satisfies
 
-\[
+$$
 \boxed{
 \lambda_{\min}
 \leq
@@ -1211,25 +1211,25 @@ R_A(x)
 \leq
 \lambda_{\max}.
 }
-\]
+$$
 
 Moreover,
 
-\[
+$$
 \lambda_{\max}
 =
 \max_{x\neq0}
 \frac{x^TAx}{x^Tx}.
-\]
+$$
 
 And
 
-\[
+$$
 \lambda_{\min}
 =
 \min_{x\neq0}
 \frac{x^TAx}{x^Tx}.
-\]
+$$
 
 ---
 
@@ -1304,9 +1304,9 @@ print(classify_symmetric_matrix(A))
 
 Suppose
 
-\[
+$$
 B=S^{-1}AS.
-\]
+$$
 
 We can verify the relationship in Python:
 
@@ -1354,49 +1354,49 @@ These concepts are closely connected.
 
 For a real symmetric matrix,
 
-\[
+$$
 A=A^T,
-\]
+$$
 
 the spectral theorem gives
 
-\[
+$$
 A=Q\Lambda Q^T.
-\]
+$$
 
-For any vector \(x\), let
+For any vector $(x)$, let
 
-\[
+$$
 y=Q^Tx.
-\]
+$$
 
 Then
 
-\[
+$$
 x^TAx
 =
 x^TQ\Lambda Q^Tx
 =
 y^T\Lambda y.
-\]
+$$
 
 Therefore,
 
-\[
+$$
 x^TAx
 =
 \sum_i\lambda_i y_i^2.
-\]
+$$
 
 This immediately explains why:
 
-\[
+$$
 \boxed{
 A\succ0
 \iff
 \lambda_i>0\;\forall i.
 }
-\]
+$$
 
 ---
 
@@ -1416,27 +1416,27 @@ For a positive definite matrix, every eigenvalue is positive, so there is no dir
 
 ## 46. Theorem 1: Spectral Theorem
 
-If \(A\) is a real symmetric matrix, then there exists an orthogonal matrix \(Q\) and diagonal matrix \(\Lambda\) such that
+If $(A)$ is a real symmetric matrix, then there exists an orthogonal matrix $(Q)$ and diagonal matrix $(\Lambda)$ such that
 
-\[
+$$
 \boxed{
 A=Q\Lambda Q^T.
 }
-\]
+$$
 
 ---
 
 ## 47. Theorem 2: Positive Definiteness
 
-For a real symmetric matrix \(A\),
+For a real symmetric matrix $(A)$,
 
-\[
+$$
 \boxed{
 A\succ0
 \iff
 \lambda_{\min}(A)>0.
 }
-\]
+$$
 
 ---
 
@@ -1444,11 +1444,11 @@ A\succ0
 
 A real symmetric matrix is positive definite if and only if it admits a Cholesky factorization
 
-\[
+$$
 \boxed{
 A=LL^T.
 }
-\]
+$$
 
 ---
 
@@ -1462,11 +1462,11 @@ A real symmetric matrix is positive definite if and only if all leading principa
 
 If
 
-\[
+$$
 B=S^{-1}AS
-\]
+$$
 
-for invertible \(S\), then \(A\) and \(B\) have the same eigenvalues, characteristic polynomial, determinant, trace, and rank.
+for invertible $(S)$, then $(A)$ and $(B)$ have the same eigenvalues, characteristic polynomial, determinant, trace, and rank.
 
 ---
 
@@ -1521,26 +1521,26 @@ Similarity is important for:
 
 If
 
-\[
+$$
 A=PDP^{-1},
-\]
+$$
 
 then
 
-\[
+$$
 A^k=PD^kP^{-1}.
-\]
+$$
 
-Since \(D\) is diagonal,
+Since $(D)$ is diagonal,
 
-\[
+$$
 D^k=
 \begin{bmatrix}
 \lambda_1^k&0&\cdots\\
 0&\lambda_2^k&\cdots\\
 \vdots&\vdots&\ddots
 \end{bmatrix}.
-\]
+$$
 
 This can make matrix powers much easier to calculate.
 
@@ -1625,13 +1625,13 @@ np.all(np.linalg.eigvalsh(A) > 0)
 
 | Concept | Definition | Main Property |
 |---|---|---|
-| Symmetric | \(A=A^T\) | Real eigenvalues |
-| Positive definite | \(x^TAx>0\) for \(x\neq0\) | All eigenvalues positive |
-| Positive semidefinite | \(x^TAx\geq0\) | All eigenvalues nonnegative |
+| Symmetric | $(A=A^T)$ | Real eigenvalues |
+| Positive definite | $(x^TAx>0)$ for $(x\neq0)$ | All eigenvalues positive |
+| Positive semidefinite | $(x^TAx\geq0)$ | All eigenvalues nonnegative |
 | Indefinite | Quadratic form has both signs | Positive and negative eigenvalues |
-| Similar | \(B=S^{-1}AS\) | Same eigenvalues |
-| Orthogonally similar | \(B=Q^TAQ\) | \(Q^TQ=I\) |
-| Diagonalizable | \(A=PDP^{-1}\) | Similar to diagonal matrix |
+| Similar | $(B=S^{-1}AS)$ | Same eigenvalues |
+| Orthogonally similar | $(B=Q^TAQ)$ | $(Q^TQ=I)$ |
+| Diagonalizable | $(A=PDP^{-1})$ | Similar to diagonal matrix |
 
 ---
 
@@ -1641,29 +1641,29 @@ It is important not to confuse these properties.
 
 A matrix can be symmetric without being positive definite:
 
-\[
+$$
 A=
 \begin{bmatrix}
 1&0\\
 0&-1
 \end{bmatrix}.
-\]
+$$
 
 It is symmetric, but
 
-\[
+$$
 x^TAx=x_1^2-x_2^2
-\]
+$$
 
 can be positive or negative.
 
 Therefore,
 
-\[
+$$
 \boxed{
 \text{symmetric}\not\Rightarrow\text{positive definite}.
 }
-\]
+$$
 
 However, positive definiteness is normally defined for symmetric matrices in this context.
 
@@ -1673,21 +1673,21 @@ However, positive definiteness is normally defined for symmetric matrices in thi
 
 For example,
 
-\[
+$$
 A=
 \begin{bmatrix}
 4&1\\
 1&3
 \end{bmatrix}
-\]
+$$
 
 is positive definite even though it is not diagonal.
 
 Its eigenvalue decomposition gives a diagonal representation:
 
-\[
+$$
 A=Q\Lambda Q^T.
-\]
+$$
 
 Thus, diagonalization reveals the principal directions of the quadratic form.
 
@@ -1721,13 +1721,13 @@ Thus, diagonalization reveals the principal directions of the quadratic form.
 
 1. Determine whether
 
-\[
+$$
 A=
 \begin{bmatrix}
 2&1\\
 1&2
 \end{bmatrix}
-\]
+$$
 
 is symmetric.
 
@@ -1735,27 +1735,27 @@ is symmetric.
 
 3. Compute the eigenvalues of
 
-\[
+$$
 A=
 \begin{bmatrix}
 4&1\\
 1&3
 \end{bmatrix}.
-\]
+$$
 
 4. Verify numerically that a symmetric matrix has real eigenvalues.
 
 5. Construct a symmetric matrix from a random matrix using
 
-\[
+$$
 A=B+B^T.
-\]
+$$
 
 6. Construct a positive semidefinite matrix using
 
-\[
+$$
 A=B^TB.
-\]
+$$
 
 7. Implement Sylvester's criterion.
 
@@ -1771,13 +1771,13 @@ A=B^TB.
 
 13. Numerically verify
 
-\[
+$$
 \lambda_{\min}
 \leq
 R_A(x)
 \leq
 \lambda_{\max}.
-\]
+$$
 
 14. Explore what happens to a quadratic form when one eigenvalue becomes negative.
 
@@ -1795,7 +1795,7 @@ Create a Python program that:
 4. classifies it as positive definite, positive semidefinite, negative definite, negative semidefinite, or indefinite;
 5. attempts Cholesky factorization;
 6. displays the quadratic form;
-7. plots two-dimensional quadratic-form contours for \(2\times2\) matrices.
+7. plots two-dimensional quadratic-form contours for $(2\times2)$ matrices.
 
 A starting point:
 
@@ -1860,49 +1860,49 @@ analyze_matrix(A)
 
 ### Symmetric matrix
 
-\[
+$$
 \boxed{A=A^T}
-\]
+$$
 
 ### Positive definite matrix
 
-\[
+$$
 \boxed{x^TAx>0\quad\forall x\neq0}
-\]
+$$
 
 ### Positive semidefinite matrix
 
-\[
+$$
 \boxed{x^TAx\geq0\quad\forall x}
-\]
+$$
 
 ### Eigenvalue test
 
-\[
+$$
 \boxed{A\succ0\iff\lambda_i>0\;\forall i}
-\]
+$$
 
 ### Spectral theorem
 
-\[
+$$
 \boxed{A=Q\Lambda Q^T}
-\]
+$$
 
 for every real symmetric matrix.
 
 ### Cholesky factorization
 
-\[
+$$
 \boxed{A=LL^T}
-\]
+$$
 
-for positive definite \(A\).
+for positive definite $(A)$.
 
 ### Similar matrices
 
-\[
+$$
 \boxed{B=S^{-1}AS}
-\]
+$$
 
 have the same eigenvalues, determinant, trace, rank, and characteristic polynomial.
 
@@ -1914,41 +1914,41 @@ Symmetric matrices occupy a special position in linear algebra because their str
 
 The chain
 
-\[
+$$
 \boxed{
 A=A^T
 \Rightarrow
 A=Q\Lambda Q^T
 }
-\]
+$$
 
 gives orthogonal eigenvectors and real eigenvalues.
 
 Positive definiteness adds another layer:
 
-\[
+$$
 \boxed{
 A\succ0
 \iff
 \lambda_i>0
 }
-\]
+$$
 
 and gives the equivalent Cholesky representation
 
-\[
+$$
 \boxed{
 A=LL^T.
 }
-\]
+$$
 
 Similarity provides a different but complementary viewpoint:
 
-\[
+$$
 \boxed{
 B=S^{-1}AS.
 }
-\]
+$$
 
 It tells us that two different-looking matrices may represent the same linear transformation in different coordinate systems.
 
