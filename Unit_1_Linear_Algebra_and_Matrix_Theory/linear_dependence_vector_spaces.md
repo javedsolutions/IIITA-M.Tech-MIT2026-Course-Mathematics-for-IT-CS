@@ -1,6 +1,13 @@
-# Linear Dependence and Independence, Vector Spaces, Subspaces, Basis and Dimension
-
-## Learning Objectives
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+* ### Current Topic: Linear Dependence and Independence, Vector Spaces, Subspaces, Basis and Dimension
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
 After studying this material, you should be able to:
 
@@ -1758,31 +1765,12 @@ $$
 
 ---
 
-# 42. Figure Files
+---
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
-The accompanying figures are stored in the `figures/` directory:
-
-1. `01_dependence_independence.png`
-2. `02_span_of_vector.png`
-3. `03_span_plane.png`
-4. `04_subspace_plane.png`
-5. `05_basis_R2.png`
-6. `06_dimension_basis.png`
-7. `07_basis_coordinates.png`
-
-For GitHub, keep the following structure:
-
-```text
-linear_dependence_vector_spaces_material/
-├── linear_dependence_vector_spaces.md
-└── figures/
-    ├── 01_dependence_independence.png
-    ├── 02_span_of_vector.png
-    ├── 03_span_plane.png
-    ├── 04_subspace_plane.png
-    ├── 05_basis_R2.png
-    ├── 06_dimension_basis.png
-    └── 07_basis_coordinates.png
-```
-
-The Markdown document uses relative image paths, so the figures will render correctly when the folder is uploaded to GitHub.
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
