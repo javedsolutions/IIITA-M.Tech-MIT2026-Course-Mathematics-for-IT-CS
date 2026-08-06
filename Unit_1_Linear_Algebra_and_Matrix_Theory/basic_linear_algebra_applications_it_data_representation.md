@@ -217,8 +217,7 @@ $$
 then:
 
 $$
-\mathbf{x}+\mathbf{y}
-=
+\mathbf{x}+\mathbf{y}=
 \begin{bmatrix}
 5\\
 7\\
@@ -251,8 +250,7 @@ $$
 1\\
 2\\
 3
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 3\\
 6\\
@@ -279,8 +277,7 @@ This is useful for scaling numerical features.
 The **dot product** of two vectors is:
 
 $$
-\mathbf{x}\cdot\mathbf{y}
-=
+\mathbf{x}\cdot\mathbf{y}=
 x_1y_1+x_2y_2+\cdots+x_ny_n
 $$
 
@@ -299,8 +296,7 @@ $$
 we get:
 
 $$
-\mathbf{x}\cdot\mathbf{y}
-=
+\mathbf{x}\cdot\mathbf{y}=
 1(4)+2(5)+3(6)=32
 $$
 
@@ -335,8 +331,7 @@ A dot product is a basic building block for more sophisticated similarity measur
 ### Cosine similarity
 
 $$
-\cos(\theta)
-=
+\cos(\theta)=
 \frac{\mathbf{x}\cdot\mathbf{y}}
 {\|\mathbf{x}\|\|\mathbf{y}\|}
 $$
@@ -491,8 +486,7 @@ A
 \begin{bmatrix}
 1\\
 2
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 2\\
 4
@@ -921,8 +915,7 @@ where:
 For ordinary least squares:
 
 $$
-\hat{\boldsymbol{\beta}}
-=
+\hat{\boldsymbol{\beta}}=
 (X^TX)^{-1}X^T\mathbf{y}
 $$
 
@@ -1219,8 +1212,7 @@ This is one reason linear algebra is so important for efficient computing.
 The Euclidean norm of a vector is:
 
 $$
-\|\mathbf{x}\|_2
-=
+\|\mathbf{x}\|_2=
 \sqrt{x_1^2+x_2^2+\cdots+x_n^2}
 $$
 
@@ -1315,8 +1307,7 @@ $$
 \begin{bmatrix}
 x\\
 y
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 5\\
 6
