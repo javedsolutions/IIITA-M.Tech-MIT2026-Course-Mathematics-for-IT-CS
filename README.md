@@ -95,7 +95,7 @@ tions
 
 * :large_blue_circle: [Determinants and Their Properties, Rank of a Matrix](Unit_1_Linear_Algebra_and_Matrix_Theory/Determinants_and_Matrix_Rank.md),
 
-* :large_blue_circle: [Applications of Linear Algebra in Information Technology and Data Representation](Unit_1_Linear_Algebra_and_Matrix_Theory/linear_algebra_application.md).
+* :large_blue_circle: [Applications of Linear Algebra in Information Technology and Data Representation](Unit_1_Linear_Algebra_and_Matrix_Theory/basic_linear_algebra_applications_it_data_representation.md).
 
 
 ### 🎯 Unit 2: Eigen Analysis and Matrix Decomposition 🎯
