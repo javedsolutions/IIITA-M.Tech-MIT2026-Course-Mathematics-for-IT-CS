@@ -1,12 +1,14 @@
-# Low-Rank Approximation and Matrix Factorization Concepts
-
-> **Subject:** Linear Algebra  
-> **Level:** Undergraduate / introductory computational linear algebra  
-> **Focus:** Low-rank approximation, matrix factorization, SVD, QR, LU, Cholesky, CUR, and Python implementation
-
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 2: Eigen Analysis and Matrix Decomposition
+* ### Current Topic: Low-Rank Approximation and Matrix Factorization Concepts
+* #### Low-rank approximation, matrix factorization, SVD, QR, LU, Cholesky, CUR, and Python implementation
 ---
-
-## 1. Learning Objectives
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
 After completing this reading material, you should be able to:
 
@@ -1972,36 +1974,6 @@ A_plus = np.linalg.pinv(A)
 
 ---
 
-# 56. Suggested GitHub Folder Structure
-
-```text
-low_rank_matrix_factorization/
-│
-├── low_rank_matrix_factorization.md
-│
-└── figures/
-    ├── 01_rank1_matrix.png
-    ├── 02_outer_product.png
-    ├── 03_factorization_pipeline.png
-    ├── 04_truncated_svd.png
-    ├── 05_error_vs_rank.png
-    ├── 06_singular_values.png
-    ├── 07_pca_low_dimensional_structure.png
-    ├── 08_cur_sampling.png
-    ├── 09_qr_orthogonal_directions.png
-    └── 10_cholesky_factorization.png
-```
-
-All figure references use relative paths, for example:
-
-```markdown
-![Rank-1 matrix](figures/01_rank1_matrix.png)
-```
-
-Therefore, the complete folder can be uploaded directly to GitHub.
-
----
-
 # 57. Conclusion
 
 Low-rank approximation provides a powerful way to simplify large matrices while retaining their most important structure.
@@ -2049,6 +2021,16 @@ NMF
 \]
 
 These methods form an important computational foundation for linear algebra, numerical computing, machine learning, artificial intelligence, data analytics, computer vision, and recommender systems.
+
+---
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
+
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
 
 The most important practical principle is:
 
