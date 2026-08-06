@@ -1,10 +1,17 @@
-# Linear Algebra Applications in Data Compression, Recommendation Systems, Image Representation, and Machine Learning
-
-> **Level:** Basic / introductory  
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 2: Eigen Analysis and Matrix Decomposition
+* ### Current Topic: Linear Algebra Applications in Data Compression, Recommendation Systems, Image Representation, and Machine Learning
+* #### Eigenvalues, eigenvectors, eigenspaces, characteristic equations, algebraic and geometric multiplicity, diagonalization, spectral decomposition, and Python implementation.
+---
 > **Prerequisites:** Vectors, matrices, matrix multiplication, transpose, and basic Python  
 > **Tools:** NumPy, Matplotlib, and optionally scikit-learn
-
-## 1. Learning Objectives
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
+---
+## 🎯 1. Learning Objectives
 
 After studying this material, you should be able to:
 
