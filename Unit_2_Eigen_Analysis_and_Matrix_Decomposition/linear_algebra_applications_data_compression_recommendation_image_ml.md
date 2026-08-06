@@ -41,11 +41,11 @@ A large amount of modern data can be organized as matrices.
 
 A general data matrix is
 
-\[
+$$
 X\in\mathbb{R}^{m\times n}.
-\]
+$$
 
-Linear algebra gives us tools to transform, compress, factorize, and analyze \(X\).
+Linear algebra gives us tools to transform, compress, factorize, and analyze $(X)$.
 
 ![Linear algebra applications workflow](figures/07_linear_algebra_applications_pipeline.png)
 
@@ -73,13 +73,13 @@ Linear algebra is particularly useful for **lossy compression**.
 
 ## 4. Low-Rank Approximation
 
-Instead of storing every element of a large matrix \(A\), we may approximate it by a lower-rank matrix:
+Instead of storing every element of a large matrix $(A)$, we may approximate it by a lower-rank matrix:
 
-\[
+$$
 A\approx A_k,
 \qquad
 \operatorname{rank}(A_k)=k.
-\]
+$$
 
 The goal is to retain important information while reducing storage.
 
@@ -89,23 +89,23 @@ The goal is to retain important information while reducing storage.
 
 The Singular Value Decomposition is
 
-\[
+$$
 \boxed{A=U\Sigma V^T}.
-\]
+$$
 
 The singular values satisfy
 
-\[
+$$
 \sigma_1\geq\sigma_2\geq\cdots\geq0.
-\]
+$$
 
-A rank-\(k\) approximation is
+A rank-$(k)$ approximation is
 
-\[
+$$
 \boxed{A_k=U_k\Sigma_kV_k^T}.
-\]
+$$
 
-If the first few singular values are much larger than the remaining ones, a small \(k\) can give a good approximation.
+If the first few singular values are much larger than the remaining ones, a small $(k)$ can give a good approximation.
 
 ![Singular values](figures/02_singular_values.png)
 
@@ -137,13 +137,13 @@ print(A_k)
 
 A common error measure is the Frobenius norm:
 
-\[
+$$
 \boxed{
 \|A-A_k\|_F
 =
 \sqrt{\sum_{i,j}(a_{ij}-(a_k)_{ij})^2}.
 }
-\]
+$$
 
 ```python
 error = np.linalg.norm(A - A_k, ord="fro")
@@ -158,23 +158,23 @@ print("Relative error:", relative_error)
 
 ## 8. Storage Savings
 
-An \(m\times n\) matrix requires approximately
+An $(m\times n)$ matrix requires approximately
 
-\[
+$$
 mn
-\]
+$$
 
 numbers.
 
-A rank-\(k\) SVD approximation requires approximately
+A rank-$(k)$ SVD approximation requires approximately
 
-\[
+$$
 mk+k+nk=k(m+n+1)
-\]
+$$
 
 numbers.
 
-When \(k\ll\min(m,n)\), the saving can be substantial.
+When $(k\ll\min(m,n))$, the saving can be substantial.
 
 ---
 
@@ -184,39 +184,39 @@ When \(k\ll\min(m,n)\), the saving can be substantial.
 
 A grayscale image can be represented as
 
-\[
+$$
 I\in\mathbb{R}^{m\times n}.
-\]
+$$
 
 Each matrix element represents a pixel intensity.
 
 For an 8-bit grayscale image,
 
-\[
+$$
 0\leq I_{ij}\leq255.
-\]
+$$
 
 A color image usually has three channels:
 
-\[
+$$
 I\in\mathbb{R}^{m\times n\times3}.
-\]
+$$
 
 ## 10. Image Compression Using SVD
 
 For a grayscale image,
 
-\[
+$$
 I=U\Sigma V^T.
-\]
+$$
 
-Keeping only the first \(k\) singular values gives
+Keeping only the first $(k)$ singular values gives
 
-\[
+$$
 \boxed{I_k=U_k\Sigma_kV_k^T}.
-\]
+$$
 
-A small \(k\) can preserve broad structures while removing fine details.
+A small $(k)$ can preserve broad structures while removing fine details.
 
 ![Image low-rank representation](figures/03_image_low_rank_representation.png)
 
@@ -272,7 +272,7 @@ Examples include:
 
 A **user-item matrix** can store ratings:
 
-\[
+$$
 R=
 \begin{bmatrix}
 5&4&0&0\\
@@ -280,7 +280,7 @@ R=
 0&1&5&4\\
 1&0&4&5
 \end{bmatrix}.
-\]
+$$
 
 Rows represent users, columns represent items, and entries represent ratings.
 
@@ -290,7 +290,7 @@ A zero may mean that the user has not rated the item.
 
 The matrix is usually incomplete:
 
-\[
+$$
 R=
 \begin{bmatrix}
 5&4&?&?\\
@@ -298,7 +298,7 @@ R=
 ?&1&5&4\\
 1&?&4&5
 \end{bmatrix}.
-\]
+$$
 
 We want to estimate missing preferences.
 
@@ -308,29 +308,29 @@ One important approach is **matrix factorization**.
 
 We approximate
 
-\[
+$$
 \boxed{R\approx UV^T}.
-\]
+$$
 
 Here:
 
-- \(U\) represents users in a lower-dimensional latent space;
-- \(V\) represents items;
+- $(U)$ represents users in a lower-dimensional latent space;
+- $(V)$ represents items;
 - the columns correspond to latent factors.
 
 If
 
-\[
+$$
 U\in\mathbb{R}^{m\times k},
 \qquad
 V\in\mathbb{R}^{n\times k},
-\]
+$$
 
 then
 
-\[
+$$
 UV^T\in\mathbb{R}^{m\times n}.
-\]
+$$
 
 ![Recommendation matrix factorization](figures/04_recommendation_matrix_factorization.png)
 
@@ -342,9 +342,9 @@ For movies, factors might approximately capture preferences for action, comedy, 
 
 A predicted preference can be modeled using a dot product:
 
-\[
+$$
 \boxed{\hat r_{ui}=u_i^Tv_j}.
-\]
+$$
 
 ## 16. Simple SVD Recommendation Example
 
@@ -409,25 +409,25 @@ Machine learning relies heavily on:
 
 For example, a linear model is
 
-\[
+$$
 \boxed{\hat y=Xw+b}.
-\]
+$$
 
-Here \(X\) is the feature matrix, \(w\) contains model parameters, and \(b\) is the bias.
+Here $(X)$ is the feature matrix, $(w)$ contains model parameters, and $(b)$ is the bias.
 
 ## 19. Linear Regression
 
 A least-squares problem seeks
 
-\[
+$$
 \min_w\|Xw-y\|_2^2.
-\]
+$$
 
 When appropriate, its analytical solution can be expressed as
 
-\[
+$$
 w=(X^TX)^{-1}X^Ty.
-\]
+$$
 
 In numerical code, however, it is usually better to solve the least-squares problem directly instead of explicitly computing an inverse.
 
@@ -454,9 +454,9 @@ print("Predictions:", y_pred)
 
 The dot product is
 
-\[
+$$
 \boxed{a^Tb=\sum_i a_ib_i}.
-\]
+$$
 
 It is fundamental in recommendation systems, information retrieval, neural networks, and classification.
 
@@ -471,12 +471,12 @@ print("Dot product:", a @ b)
 
 ## 21. Cosine Similarity
 
-\[
+$$
 \boxed{
 \cos\theta=
 \frac{a^Tb}{\|a\|\|b\|}
 }
-\]
+$$
 
 ```python
 import numpy as np
@@ -510,15 +510,15 @@ Dimensionality reduction attempts to represent data with fewer variables while p
 
 ## 23. PCA Basic Idea
 
-For centered data \(X_c\), the covariance matrix is
+For centered data $(X_c)$, the covariance matrix is
 
-\[
+$$
 \boxed{
 C=\frac{1}{n-1}X_c^TX_c.
 }
-\]
+$$
 
-The principal directions are eigenvectors of \(C\), and the corresponding eigenvalues describe variance along those directions.
+The principal directions are eigenvectors of $(C)$, and the corresponding eigenvalues describe variance along those directions.
 
 ![PCA principal component](figures/05_pca_principal_component.png)
 
@@ -597,19 +597,19 @@ print(pca.explained_variance_ratio_)
 
 A matrix can transform a vector:
 
-\[
+$$
 \boxed{y=Ax}.
-\]
+$$
 
 For example,
 
-\[
+$$
 A=
 \begin{bmatrix}
 1.4&0.5\\
 0.2&0.8
 \end{bmatrix}.
-\]
+$$
 
 This changes the coordinate representation of data.
 
@@ -621,21 +621,21 @@ Linear transformations are fundamental in feature engineering, dimensionality re
 
 A basic neural-network layer can be expressed as
 
-\[
+$$
 \boxed{z=Wx+b}.
-\]
+$$
 
 Then an activation function is applied:
 
-\[
+$$
 \boxed{a=f(z)}.
-\]
+$$
 
 For a batch of inputs:
 
-\[
+$$
 Z=XW^T+b.
-\]
+$$
 
 Thus, matrix multiplication allows large numbers of neural-network operations to be performed efficiently.
 
@@ -681,7 +681,7 @@ print(A)
 
 The common theme is
 
-\[
+$$
 \boxed{
 \text{Represent data as matrices}
 \rightarrow
@@ -689,13 +689,13 @@ The common theme is
 \rightarrow
 \text{Extract useful information}
 }
-\]
+$$
 
 ## 30. SVD as a Common Tool
 
-\[
+$$
 \boxed{A=U\Sigma V^T}
-\]
+$$
 
 can be interpreted as a sequence of coordinate transformations and scalings.
 
@@ -750,9 +750,9 @@ It measures the number of independent directions represented by the matrix.
 
 A matrix is low rank when
 
-\[
+$$
 \operatorname{rank}(A)\ll\min(m,n).
-\]
+$$
 
 Low-rank structure is useful because a large dataset can be represented with fewer parameters.
 
@@ -768,9 +768,9 @@ A latent representation describes data using hidden or compressed features.
 
 For example,
 
-\[
+$$
 R\approx UV^T.
-\]
+$$
 
 Instead of representing every user with thousands of item ratings, a user can be represented by a small latent vector.
 
@@ -778,13 +778,13 @@ Instead of representing every user with thousands of item ratings, a user can be
 
 Projection maps data onto a smaller subspace.
 
-For a unit vector \(u\),
+For a unit vector $(u)$,
 
-\[
+$$
 \boxed{
 \operatorname{proj}_u(x)=(x^Tu)u.
 }
-\]
+$$
 
 Projection is fundamental to PCA and dimensionality reduction.
 
@@ -814,7 +814,7 @@ Projection is fundamental to PCA and dimensionality reduction.
 
 ### Exercise 1 — SVD
 
-Create a \(5\times5\) matrix and calculate its SVD using NumPy.
+Create a $(5\times5)$ matrix and calculate its SVD using NumPy.
 
 ### Exercise 2 — Low-Rank Approximation
 
@@ -844,27 +844,27 @@ Create a dataset with three features and reduce it to two principal components.
 
 Implement
 
-\[
+$$
 Z=XW^T+b
-\]
+$$
 
 using NumPy.
 
 ### Exercise 7 — Compression Ratio
 
-For an \(m\times n\) matrix, compare
+For an $(m\times n)$ matrix, compare
 
-\[
+$$
 mn
-\]
+$$
 
 with
 
-\[
+$$
 k(m+n+1).
-\]
+$$
 
-Experiment with different values of \(k\).
+Experiment with different values of $(k)$.
 
 ---
 
@@ -878,7 +878,7 @@ Create a Python program that reports:
 2. matrix rank;
 3. SVD;
 4. singular-value visualization;
-5. rank-\(k\) approximation;
+5. rank-$(k)$ approximation;
 6. reconstruction error;
 7. PCA;
 8. projection onto principal components.
@@ -931,53 +931,53 @@ Linear algebra provides a mathematical language for representing and manipulatin
 
 ### Data Compression
 
-\[
+$$
 \boxed{A\approx A_k}
-\]
+$$
 
 ### SVD
 
-\[
+$$
 \boxed{A=U\Sigma V^T}
-\]
+$$
 
 and
 
-\[
+$$
 \boxed{A_k=U_k\Sigma_kV_k^T}.
-\]
+$$
 
 ### Image Representation
 
-\[
+$$
 \boxed{I\in\mathbb{R}^{m\times n}}
-\]
+$$
 
 for a grayscale image.
 
 ### Recommendation Systems
 
-\[
+$$
 \boxed{R\approx UV^T}.
-\]
+$$
 
 ### Machine Learning
 
-\[
+$$
 \boxed{\hat y=Xw+b}.
-\]
+$$
 
 ### PCA
 
-\[
+$$
 \boxed{Cv=\lambda v}.
-\]
+$$
 
 ### Neural Networks
 
-\[
+$$
 \boxed{Z=XW^T+b}.
-\]
+$$
 
 ---
 
@@ -985,7 +985,7 @@ for a grayscale image.
 
 Many data-science problems can be expressed as operations on vectors and matrices:
 
-\[
+$$
 \boxed{
 \text{Data}
 \rightarrow
@@ -997,6 +997,6 @@ Many data-science problems can be expressed as operations on vectors and matrice
 \rightarrow
 \text{Prediction or Decision}
 }
-\]
+$$
 
 Understanding matrices, vector spaces, rank, projections, eigenvalues, eigenvectors, and SVD therefore provides an important mathematical foundation for **data science, artificial intelligence, machine learning, computer vision, recommendation systems, and data compression**.
