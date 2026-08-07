@@ -88,11 +88,11 @@ print("SSE:", np.sum(r**2))
 
 ## 4. Geometric Interpretation
 
-The columns of $A$ span $\operatorname{Col}(A)$. Every vector $Ax$ lies in that subspace.
+The columns of $A$ span $\mathrm{Col}(A)$. Every vector $Ax$ lies in that subspace.
 
-If $b$ is not in $\operatorname{Col}(A)$, the exact equation $Ax=b$ has no solution. Least squares finds the point in the column space closest to $b$:
+If $b$ is not in $\mathrm{Col}(A)$, the exact equation $Ax=b$ has no solution. Least squares finds the point in the column space closest to $b$:
 
-$$\boxed{A\hat{x}=\operatorname{proj}_{\operatorname{Col}(A)}(b)}.$$
+$$\boxed{A\hat{x}=\mathrm{proj}_{\mathrm{Col}(A)}(b)}.$$
 
 ![Projection geometry](figures/03_projection_geometry.png)
 
@@ -283,7 +283,7 @@ This is the normal-equation form of linear regression.
 
 ## 12. Projection Matrix
 
-If $X$ has full column rank, the orthogonal projection matrix onto $\operatorname{Col}(X)$ is
+If $X$ has full column rank, the orthogonal projection matrix onto $\mathrm{Col}(X)$ is
 
 $$\boxed{P=X(X^TX)^{-1}X^T}.$$
 
