@@ -168,8 +168,7 @@ $$
 \begin{bmatrix}
 9\\
 3
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 11\\
 7
@@ -198,8 +197,7 @@ The **span** of a set of vectors is the collection of all possible linear combin
 For vectors $v_1,v_2,\ldots,v_k$,
 
 $$
-\operatorname{span}\{v_1,\ldots,v_k\}
-=
+\operatorname{span}\{v_1,\ldots,v_k\}=
 \left\{
 c_1v_1+\cdots+c_kv_k:
 c_i\in\mathbb{R}
@@ -227,8 +225,7 @@ $$
 Its span is
 
 $$
-\operatorname{span}\{v\}
-=
+\operatorname{span}\{v\}=
 \left\{
 cv:c\in\mathbb{R}
 \right\}.
@@ -411,8 +408,7 @@ c_1
 c_2
 \begin{bmatrix}
 0\\1
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 0\\0
 \end{bmatrix}.
@@ -806,8 +802,7 @@ Thus,
 $$
 \begin{bmatrix}
 x\\y\\z
-\end{bmatrix}
-=
+\end{bmatrix}=
 x
 \begin{bmatrix}
 1\\0\\-1
@@ -925,8 +920,7 @@ $$
 then:
 
 $$
-\operatorname{Col}(A)
-=
+\operatorname{Col}(A)=
 \operatorname{span}
 \left\{
 \begin{bmatrix}
@@ -951,10 +945,8 @@ The row space is also a vector space.
 A fundamental result is:
 
 $$
-\dim(\operatorname{Row}(A))
-=
-\dim(\operatorname{Col}(A))
-=
+\dim(\operatorname{Row}(A))=
+\dim(\operatorname{Col}(A))=
 \operatorname{rank}(A).
 $$
 
@@ -1097,8 +1089,7 @@ Therefore:
 $$
 \begin{bmatrix}
 3\\1
-\end{bmatrix}
-=
+\end{bmatrix}=
 c_1
 \begin{bmatrix}
 1\\1
@@ -1211,16 +1202,14 @@ For example, $\mathbb{R}^2$ has many possible bases, but every basis contains ex
 For a matrix $A$:
 
 $$
-\operatorname{rank}(A)
-=
+\operatorname{rank}(A)=
 \dim(\operatorname{Col}(A)).
 $$
 
 The rank is also the dimension of the row space:
 
 $$
-\operatorname{rank}(A)
-=
+\operatorname{rank}(A)=
 \dim(\operatorname{Row}(A)).
 $$
 
@@ -1384,13 +1373,13 @@ where:
 If $A$ has 5 columns and rank 3, then:
 
 $$
-3+\operatorname{nullity}(A)=5.
+3+\text{nullity}(A)=5.
 $$
 
 Therefore:
 
 $$
-\operatorname{nullity}(A)=2.
+\text{nullity}(A)=2.
 $$
 
 ---
@@ -1718,7 +1707,7 @@ $$
 4. Determine the dimension of:
 
 $$
-\operatorname{span}
+\text{span}
 \left\{
 \begin{bmatrix}1\\2\\3\end{bmatrix},
 \begin{bmatrix}2\\4\\6\end{bmatrix},
@@ -1756,7 +1745,7 @@ $$
 - The **rank-nullity theorem** is:
 
 $$
-\operatorname{rank}(A)+\operatorname{nullity}(A)=n.
+\text{rank}(A)+\text{nullity}(A)=n.
 $$
 
 - In Python, `numpy.linalg.matrix_rank()` is useful for numerical independence and rank tests.
