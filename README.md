@@ -91,9 +91,9 @@ tions
 
 * :large_blue_circle: [Orthogonality and Projections - Orthogonal Bases, Orthogonal Projections, Gram-Schmidt Orthogonalization](Unit_1_Linear_Algebra_and_Matrix_Theory/orthogonality_and_projections.md),
 
-* :large_blue_circle: Least Squares Problems and Linear Models.
+* :large_blue_circle: [Least Squares Problems and Linear Models](Unit_1_Linear_Algebra_and_Matrix_Theory/least_squares_problems_and_linear_models.md).
 
-* :large_blue_circle: Determinants and Their Properties, Rank of a Matrix,
+* :large_blue_circle: [Determinants and Their Properties, Rank of a Matrix](Unit_1_Linear_Algebra_and_Matrix_Theory/determinants_and_rank_of_matrix.md)
 
 * :large_blue_circle: [Applications of Linear Algebra in Information Technology and Data Representation](Unit_1_Linear_Algebra_and_Matrix_Theory/basic_linear_algebra_applications_it_data_representation.md).
 
