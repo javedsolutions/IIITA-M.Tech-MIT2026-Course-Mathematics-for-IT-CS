@@ -36,7 +36,7 @@ $$
 \boxed{
 \det(A)\neq0
 \iff
-\operatorname{rank}(A)=n
+\text{rank}(A)=n
 \iff
 A\text{ is invertible}
 }
@@ -411,7 +411,7 @@ Equivalently,
 
 $$
 \boxed{
-\operatorname{rank}(A)=\dim(\operatorname{Col}(A))
+\text{rank}(A)=\dim(\text{Col}(A))
 }
 $$
 
@@ -452,7 +452,7 @@ $$
 Thus the columns are dependent and
 
 $$
-\boxed{\operatorname{rank}(A)=1}.
+\boxed{\text{rank}(A)=1}.
 $$
 
 ![Dependent columns: rank 1](figures/04_rank_one_dependent_vectors.png)
@@ -475,7 +475,7 @@ $$
 Row reduction produces an RREF with two pivot rows:
 
 $$
-\operatorname{RREF}(A)=
+\text{RREF}(A)=
 \begin{bmatrix}
 1&0&1\\
 0&1&1\\
@@ -486,7 +486,7 @@ $$
 Therefore
 
 $$
-\boxed{\operatorname{rank}(A)=2}.
+\boxed{\text{rank}(A)=2}.
 $$
 
 ![Rank from row reduction](figures/05_rank_row_reduction.png)
@@ -538,10 +538,8 @@ Hence,
 
 $$
 \boxed{
-\operatorname{rank}(A)
-=
-\dim(\text{Row}(A))
-=
+\text{rank}(A)=
+\dim(\text{Row}(A))=
 \dim(\text{Col}(A))
 }
 $$
@@ -555,7 +553,7 @@ This applies to square and rectangular matrices.
 ### Zero matrix
 
 $$
-\boxed{\operatorname{rank}(0)=0}
+\boxed{\text{rank}(0)=0}
 $$
 
 ### Identity matrix
@@ -563,7 +561,7 @@ $$
 For $I_n$:
 
 $$
-\boxed{\operatorname{rank}(I_n)=n}
+\boxed{\text{rank}(I_n)=n}
 $$
 
 ### Rectangular matrix
@@ -572,7 +570,7 @@ For an m x n matrix:
 
 $$
 \boxed{
-\operatorname{rank}(A)\leq\min(m,n)
+\text{rank}(A)\leq\min(m,n)
 }
 $$
 
@@ -586,7 +584,7 @@ $$
 \boxed{
 \det(A)\neq0
 \iff
-\operatorname{rank}(A)=n
+\text{rank}(A)=n
 \iff
 A^{-1}\text{ exists}
 }
@@ -598,7 +596,7 @@ $$
 \boxed{
 \det(A)=0
 \iff
-\operatorname{rank}(A)<n
+\text{rank}(A)<n
 }
 $$
 
@@ -623,28 +621,25 @@ The ranks of A and the augmented matrix $[A|b]$ determine the type of solution.
 For n unknowns:
 
 $$
-\operatorname{rank}(A)
-=
-\operatorname{rank}([A|b])
-=
+\text{rank}(A)=
+\text{rank}([A|b])=
 n.
 $$
 
 ### Infinitely many solutions
 
 $$
-\operatorname{rank}(A)
-=
-\operatorname{rank}([A|b])
+\text{rank}(A)=
+\text{rank}([A|b])
 <n.
 $$
 
 ### No solution
 
 $$
-\operatorname{rank}(A)
+\text{rank}(A)
 <
-\operatorname{rank}([A|b]).
+\text{rank}([A|b]).
 $$
 
 ---
@@ -682,7 +677,7 @@ For an m x n matrix:
 
 $$
 \boxed{
-\operatorname{rank}(A)+\operatorname{nullity}(A)=n
+\text{rank}(A)+\text{nullity}(A)=n
 }
 $$
 
@@ -691,7 +686,7 @@ The nullity is the dimension of the null space.
 For example, if a matrix has 5 columns and rank 3:
 
 $$
-\operatorname{nullity}(A)=5-3=2.
+\text{nullity}(A)=5-3=2.
 $$
 
 ---
@@ -703,7 +698,7 @@ For a nonsingular matrix,
 $$
 A^{-1}
 =
-\frac{1}{\det(A)}\operatorname{adj}(A).
+\frac{1}{\det(A)}\text{adj}(A).
 $$
 
 Thus the determinant directly determines whether the inverse exists.
@@ -1005,7 +1000,7 @@ $$
 \boxed{
 \det(A)\neq0
 \iff
-\operatorname{rank}(A)=n
+\text{rank}(A)=n
 }
 $$
 
@@ -1013,7 +1008,7 @@ $$
 
 $$
 \boxed{
-\operatorname{rank}(A)+\operatorname{nullity}(A)=n
+\text{rank}(A)+\text{nullity}(A)=n
 }
 $$
 
@@ -1103,7 +1098,7 @@ $$
 $$
 \det(A)\neq0
 \iff
-\operatorname{rank}(A)=n
+\text{rank}(A)=n
 \iff
 A^{-1}\text{ exists}.
 $$
@@ -1111,7 +1106,7 @@ $$
 - The rank-nullity theorem is
 
 $$
-\operatorname{rank}(A)+\operatorname{nullity}(A)=n.
+\text{rank}(A)+\text{nullity}(A)=n.
 $$
 
 Determinants and rank are fundamental tools for linear systems, computer graphics, machine learning, data analytics, numerical computation, and many other IT applications.
