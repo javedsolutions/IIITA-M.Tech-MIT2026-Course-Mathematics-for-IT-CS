@@ -46,7 +46,7 @@ tions
    * :blue_book: Sheldon Axler, Linear Algebra Done Right, 3rd Edition, Springer, 2015.
    * :blue_book: Athanasios Papoulis and S. Unnikrishna Pillai, Probability, Random Variables and Stochas-tic Processes, 4th Edition, McGraw-Hill Education, 2002.
    * :blue_book: Marc Peter Deisenroth, A. Aldo Faisal and Cheng Soon Ong, Mathematics for MachineLearning, 1st Edition, Cambridge University Press, 2020.
-3.  💻**Software:** Access to GitHub and a modern code editor (e.g., VS Code).
+3.  💻**Software:** Access to GitHub and a modern code editor (e.g., [VS Code Editor](https://code.visualstudio.com/Download)).
 
 ---
 
