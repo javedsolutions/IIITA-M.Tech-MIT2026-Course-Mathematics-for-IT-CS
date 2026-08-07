@@ -584,7 +584,7 @@ $$
 \boxed{
 \det(A)\neq0
 \iff
-\text{rank}(A)=n
+\text{rank}(A)= n
 \iff
 A^{-1}\text{ exists}
 }
@@ -596,7 +596,7 @@ $$
 \boxed{
 \det(A)=0
 \iff
-\text{rank}(A)<n
+\text{rank}(A)< n
 }
 $$
 
@@ -696,8 +696,7 @@ $$
 For a nonsingular matrix,
 
 $$
-A^{-1}
-=
+A^{-1}=
 \frac{1}{\det(A)}\text{adj}(A).
 $$
 
