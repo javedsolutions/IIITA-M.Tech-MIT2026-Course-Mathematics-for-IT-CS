@@ -1,6 +1,13 @@
-# Determinants and Their Properties, Rank of a Matrix
-
-## Learning Objectives
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+* ### Current Topic: Determinants and Their Properties, Rank of a Matrix
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 Learning Objectives
 
 After studying this material, you should be able to:
 
@@ -1111,22 +1118,11 @@ Determinants and rank are fundamental tools for linear systems, computer graphic
 
 ---
 
-## Figures Included
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
-The `figures/` folder contains:
-
-1. `01_determinant_area_scaling.png` — determinant as area scaling
-2. `02_negative_determinant_orientation.png` — negative determinant and orientation
-3. `03_rank_two_independent_vectors.png` — independent vectors and rank 2
-4. `04_rank_one_dependent_vectors.png` — dependent vectors and rank 1
-5. `05_rank_row_reduction.png` — rank using row reduction
-6. `06_determinant_row_properties.png` — determinant row-operation properties
-7. `07_determinant_rank_relationship.png` — determinant, rank, and invertibility relationship
-
-The Markdown file uses relative paths such as:
-
-```text
-figures/01_determinant_area_scaling.png
-```
-
-so the figures render correctly when the complete package is uploaded to GitHub.
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
