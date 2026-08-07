@@ -196,11 +196,7 @@ The **span** of a set of vectors is the collection of all possible linear combin
 For vectors $v_1,v_2,\ldots,v_k$,
 
 $$
-\text{span}\{v_1,\ldots,v_k\}=
-\left\{
-c_1v_1+\cdots+c_kv_k:
-c_i\in\mathbb{R}
-\right\}.
+\text{span} \{(v_1,\ldots,v_k)\} = \left\lbrace c_1v_1+\cdots+c_kv_k:c_i\in\mathbb{R} \right\rbrace.
 $$
 
 In simple terms:
@@ -224,10 +220,7 @@ $$
 Its span is
 
 $$
-\text{span}\{v\}=
-\left\{
-cv:c\in\mathbb{R}
-\right\}.
+\text{span}\{(v)\}=\left\lbrace cv:c\in\mathbb{R}\right\rbrace.
 $$
 
 This forms a line through the origin.
@@ -613,12 +606,12 @@ For example:
 
 $$
 \mathbb{R}^2=
-\left\{
+\left\lbrace
 \begin{bmatrix}
 x\\y
 \end{bmatrix}
 :x,y\in\mathbb{R}
-\right\}.
+\right\rbrace.
 $$
 
 ---
@@ -780,12 +773,12 @@ Consider:
 
 $$
 W=
-\left\{
+\left\lbrace
 \begin{bmatrix}
 x\\y\\z
 \end{bmatrix}
 :x+y+z=0
-\right\}.
+\right\rbrace.
 $$
 
 This is a subspace of $\mathbb{R}^3$.
@@ -818,14 +811,14 @@ Therefore,
 $$
 W=
 \text{span}
-\left\{
+\left\lbrace
 \begin{bmatrix}
 1\\0\\-1
 \end{bmatrix},
 \begin{bmatrix}
 0\\1\\-1
 \end{bmatrix}
-\right\}.
+\right\rbrace.
 $$
 
 This immediately shows that $W$ is a subspace.
@@ -838,12 +831,12 @@ Consider:
 
 $$
 S=
-\left\{
+\left\lbrace
 \begin{bmatrix}
 x\\y
 \end{bmatrix}
 :x+y=1
-\right\}.
+\right\rbrace.
 $$
 
 The zero vector
@@ -921,14 +914,14 @@ then:
 $$
 \text{Col}(A)=
 \text{span}
-\left\{
+\left\lbrace
 \begin{bmatrix}
 1\\2\\3
 \end{bmatrix},
 \begin{bmatrix}
 2\\4\\6
 \end{bmatrix}
-\right\}.
+\right\rbrace.
 $$
 
 Since the second column is twice the first, the column space has dimension 1.
@@ -987,8 +980,7 @@ Every vector in $\mathbb{R}^2$ can be written as:
 $$
 \begin{bmatrix}
 x\\y
-\end{bmatrix}
-=
+\end{bmatrix}=
 x e_1+y e_2.
 $$
 
@@ -1698,20 +1690,20 @@ form a basis of $\mathbb{R}^2$.
 3. Find a basis for:
 
 $$
-W=\left\{
+W=\left\lbrace
 (x,y,z):x+y+z=0
-\right\}.
+\right\rbrace.
 $$
 
 4. Determine the dimension of:
 
 $$
 \text{span}
-\left\{
+\left\lbrace
 \begin{bmatrix}1\\2\\3\end{bmatrix},
 \begin{bmatrix}2\\4\\6\end{bmatrix},
 \begin{bmatrix}1\\0\\1\end{bmatrix}
-\right\}.
+\right\rbrace.
 $$
 
 5. If a matrix has 7 columns and rank 4, find its nullity.
