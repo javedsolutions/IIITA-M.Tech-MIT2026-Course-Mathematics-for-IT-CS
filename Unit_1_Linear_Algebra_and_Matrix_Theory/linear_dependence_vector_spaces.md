@@ -158,8 +158,7 @@ $$
 \begin{bmatrix}
 3\\
 1
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 2\\
 4
@@ -197,7 +196,7 @@ The **span** of a set of vectors is the collection of all possible linear combin
 For vectors $v_1,v_2,\ldots,v_k$,
 
 $$
-\operatorname{span}\{v_1,\ldots,v_k\}=
+\text{span}\{v_1,\ldots,v_k\}=
 \left\{
 c_1v_1+\cdots+c_kv_k:
 c_i\in\mathbb{R}
@@ -225,7 +224,7 @@ $$
 Its span is
 
 $$
-\operatorname{span}\{v\}=
+\text{span}\{v\}=
 \left\{
 cv:c\in\mathbb{R}
 \right\}.
@@ -274,7 +273,7 @@ $$
 Thus,
 
 $$
-\operatorname{span}\{e_1,e_2\}=\mathbb{R}^2.
+\text{span}\{e_1,e_2\}=\mathbb{R}^2.
 $$
 
 In $\mathbb{R}^3$, two independent vectors span a plane through the origin.
@@ -526,13 +525,13 @@ Suppose a matrix $A$ has $n$ columns.
 Then its columns are linearly independent exactly when:
 
 $$
-\operatorname{rank}(A)=n.
+\text{rank}(A)=n.
 $$
 
 If
 
 $$
-\operatorname{rank}(A)<n,
+\text{rank}(A)<n,
 $$
 
 the columns are linearly dependent.
@@ -818,7 +817,7 @@ Therefore,
 
 $$
 W=
-\operatorname{span}
+\text{span}
 \left\{
 \begin{bmatrix}
 1\\0\\-1
@@ -920,8 +919,8 @@ $$
 then:
 
 $$
-\operatorname{Col}(A)=
-\operatorname{span}
+\text{Col}(A)=
+\text{span}
 \left\{
 \begin{bmatrix}
 1\\2\\3
@@ -945,9 +944,9 @@ The row space is also a vector space.
 A fundamental result is:
 
 $$
-\dim(\operatorname{Row}(A))=
-\dim(\operatorname{Col}(A))=
-\operatorname{rank}(A).
+\dim(\text{Row}(A))=
+\dim(\text{Col}(A))=
+\text{rank}(A).
 $$
 
 ---
@@ -1202,15 +1201,15 @@ For example, $\mathbb{R}^2$ has many possible bases, but every basis contains ex
 For a matrix $A$:
 
 $$
-\operatorname{rank}(A)=
-\dim(\operatorname{Col}(A)).
+\text{rank}(A)=
+\dim(\text{Col}(A)).
 $$
 
 The rank is also the dimension of the row space:
 
 $$
-\operatorname{rank}(A)=
-\dim(\operatorname{Row}(A)).
+\text{rank}(A)=
+\dim(\text{Row}(A)).
 $$
 
 Thus, rank tells us how many independent directions are present in the matrix.
@@ -1358,7 +1357,7 @@ For an $m\times n$ matrix $A$:
 
 $$
 \boxed{
-\operatorname{rank}(A)+\operatorname{nullity}(A)=n
+\text{rank}(A)+\text{nullity}(A)=n
 }
 $$
 
