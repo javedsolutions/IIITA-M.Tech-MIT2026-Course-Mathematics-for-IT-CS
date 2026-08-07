@@ -65,8 +65,7 @@ $$
 their dot product is
 
 $$
-u\cdot v
-=
+u\cdot v=
 u_1v_1+u_2v_2+\cdots+u_nv_n.
 $$
 
@@ -95,12 +94,9 @@ $$
 Then:
 
 $$
-u\cdot v
-=
-2(4)+3(-1)
-=
-8-3
-=
+u\cdot v=
+2(4)+3(-1)=
+8-3=
 5.
 $$
 
@@ -154,12 +150,9 @@ $$
 Then:
 
 $$
-u^Tv
-=
-3(-1)+1(3)
-=
--3+3
-=
+u^Tv=
+3(-1)+1(3)=
+-3+3=
 0.
 $$
 
@@ -210,12 +203,9 @@ $$
 Then:
 
 $$
-u^Tv
-=
-1(2)+2(-1)+3(0)
-=
-2-2
-=
+u^Tv=
+1(2)+2(-1)+3(0)=
+2-2=
 0.
 $$
 
@@ -228,8 +218,7 @@ Therefore $u$ and $v$ are orthogonal even though they belong to $\mathbb{R}^3$.
 The Euclidean norm of a vector is:
 
 $$
-\|v\|
-=
+\|v\|=
 \sqrt{v^Tv}.
 $$
 
@@ -245,10 +234,8 @@ $$
 we have:
 
 $$
-\|v\|
-=
-\sqrt{3^2+4^2}
-=
+\|v\|=
+\sqrt{3^2+4^2}=
 5.
 $$
 
@@ -271,8 +258,7 @@ A vector with length 1 is called a **unit vector**.
 Given a nonzero vector $v$, its normalized version is:
 
 $$
-\hat{v}
-=
+\hat{v}=
 \frac{v}{\|v\|}.
 $$
 
@@ -292,8 +278,7 @@ $$
 \frac{1}{5}
 \begin{bmatrix}
 3\\4
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 3/5\\4/5
 \end{bmatrix}.
@@ -418,8 +403,7 @@ $$
 Taking the dot product with $q_j$:
 
 $$
-q_j^Tx
-=
+q_j^Tx=
 c_1q_j^Tq_1+\cdots+c_nq_j^Tq_n.
 $$
 
@@ -482,10 +466,8 @@ The coefficients are:
 
 $$
 c_1=
-\frac{q_1^Tx}{q_1^Tq_1}
-=
-\frac{12}{4}
-=
+\frac{q_1^Tx}{q_1^Tq_1}=
+\frac{12}{4}=
 3,
 $$
 
@@ -493,10 +475,8 @@ and
 
 $$
 c_2=
-\frac{q_2^Tx}{q_2^Tq_2}
-=
-\frac{27}{9}
-=
+\frac{q_2^Tx}{q_2^Tq_2}=
+\frac{27}{9}=
 3.
 $$
 
@@ -514,8 +494,7 @@ The **orthogonal projection** of a vector $x$ onto a nonzero vector $a$ is:
 
 $$
 \boxed{
-\operatorname{proj}_a(x)
-=
+\text{proj}_a(x)=
 \frac{x^Ta}{a^Ta}a
 }
 $$
@@ -523,8 +502,7 @@ $$
 Equivalently:
 
 $$
-\operatorname{proj}_a(x)
-=
+\text{proj}_a(x)=
 \frac{x\cdot a}{\|a\|^2}a.
 $$
 
@@ -565,13 +543,11 @@ $$
 Therefore:
 
 $$
-\operatorname{proj}_a(x)
-=
+\text{proj}_a(x)=
 \frac{6}{4}
 \begin{bmatrix}
 2\\0
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 3\\0
 \end{bmatrix}.
@@ -627,7 +603,7 @@ Projection: [3. 0.]
 The difference between the original vector and its projection is called the **residual**:
 
 $$
-r=x-\operatorname{proj}_a(x).
+r=x-\text{proj}_a(x).
 $$
 
 The residual is orthogonal to $a$.
@@ -642,7 +618,7 @@ This gives the decomposition:
 
 $$
 \boxed{
-x=\operatorname{proj}_a(x)+r
+x=\text{proj}_a(x)+r
 }
 $$
 
@@ -689,7 +665,7 @@ The projection of $x$ onto $W$ is:
 
 $$
 \boxed{
-\operatorname{proj}_W(x)=QQ^Tx
+\text{proj}_W(x)=QQ^Tx
 }
 $$
 
@@ -713,7 +689,7 @@ Therefore:
 
 $$
 \boxed{
-\operatorname{proj}_W(x)=Px
+\text{proj}_W(x)=Px
 }
 $$
 
@@ -752,7 +728,7 @@ provided the columns of $A$ are linearly independent.
 Then:
 
 $$
-\operatorname{proj}_{\operatorname{Col}(A)}(x)=Px.
+\text{proj}_{\text{Col}(A)}(x)=Px.
 $$
 
 This formula is central to least-squares methods.
@@ -804,7 +780,7 @@ The distance from $x$ to a subspace $W$ is:
 
 $$
 \boxed{
-\|x-\operatorname{proj}_W(x)\|
+\|x-\text{proj}_W(x)\|
 }
 $$
 
@@ -861,16 +837,14 @@ $$
 Next, remove the component of $v_2$ in the direction of $u_1$:
 
 $$
-u_2
-=
-v_2-\operatorname{proj}_{u_1}(v_2).
+u_2=
+v_2-\text{proj}_{u_1}(v_2).
 $$
 
 Since:
 
 $$
-\operatorname{proj}_{u_1}(v_2)
-=
+\text{proj}_{u_1}(v_2)=
 \frac{v_2^Tu_1}{u_1^Tu_1}u_1,
 $$
 
@@ -878,8 +852,7 @@ we have:
 
 $$
 \boxed{
-u_2
-=
+u_2 =
 v_2-
 \frac{v_2^Tu_1}{u_1^Tu_1}u_1
 }
@@ -919,10 +892,8 @@ $$
 Calculate:
 
 $$
-v_2^Tu_1
-=
-2(3)+3(1)
-=
+v_2^Tu_1=
+2(3)+3(1)=
 9.
 $$
 
@@ -935,13 +906,11 @@ $$
 Therefore:
 
 $$
-\operatorname{proj}_{u_1}(v_2)
-=
+\text{proj}_{u_1}(v_2)=
 \frac{9}{10}
 \begin{bmatrix}
 3\\1
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 27/10\\9/10
 \end{bmatrix}.
@@ -950,16 +919,13 @@ $$
 Then:
 
 $$
-u_2
-=
+u_2=
 \begin{bmatrix}
 2\\3
-\end{bmatrix}
--
+\end{bmatrix}-
 \begin{bmatrix}
 27/10\\9/10
-\end{bmatrix}
-=
+\end{bmatrix} =
 \begin{bmatrix}
 -7/10\\21/10
 \end{bmatrix}.
@@ -968,10 +934,8 @@ $$
 Check:
 
 $$
-u_1^Tu_2
-=
-3(-7/10)+1(21/10)
-=
+u_1^Tu_2=
+3(-7/10)+1(21/10)=
 0.
 $$
 
@@ -1030,17 +994,16 @@ $$
 ### Step 2
 
 $$
-u_2=v_2-\operatorname{proj}_{u_1}(v_2).
+u_2=v_2-\text{proj}_{u_1}(v_2).
 $$
 
 ### Step 3
 
 $$
-u_3
-=
+u_3=
 v_3
--\operatorname{proj}_{u_1}(v_3)
--\operatorname{proj}_{u_2}(v_3).
+-\text{proj}_{u_1}(v_3)
+-\text{proj}_{u_2}(v_3).
 $$
 
 ### General Step
@@ -1049,12 +1012,10 @@ For $j\ge2$:
 
 $$
 \boxed{
-u_j
-=
-v_j
--
+u_j=
+v_j-
 \sum_{i=1}^{j-1}
-\operatorname{proj}_{u_i}(v_j)
+\text{proj}_{u_i}(v_j)
 }
 $$
 
@@ -1272,8 +1233,7 @@ $$
 Therefore:
 
 $$
-\operatorname{proj}_{\operatorname{Col}(A)}(x)
-=
+\text{proj}_{\text{Col}(A)}(x)=
 QQ^Tx.
 $$
 
@@ -1310,7 +1270,7 @@ If the system has no exact solution, we can find the vector in the column space 
 That vector is:
 
 $$
-\hat b=\operatorname{proj}_{\operatorname{Col}(A)}(b).
+\hat b=\text{proj}_{\text{Col}(A)}(b).
 $$
 
 The error is:
@@ -1391,13 +1351,13 @@ $$
 where:
 
 $$
-\hat b\in\operatorname{Col}(A)
+\hat b\in\text{Col}(A)
 $$
 
 and:
 
 $$
-r\perp\operatorname{Col}(A).
+r\perp\text{Col}(A).
 $$
 
 This is why orthogonal projection is fundamental to regression.
@@ -1539,8 +1499,7 @@ $$
 ## Property 2: Projection
 
 $$
-\operatorname{proj}_a(x)
-=
+\text{proj}_a(x)=
 \frac{x^Ta}{a^Ta}a.
 $$
 
@@ -1549,8 +1508,7 @@ $$
 If $Q$ has orthonormal columns:
 
 $$
-\operatorname{proj}_{\operatorname{Col}(Q)}(x)
-=
+\text{proj}_{\text{Col}(Q)}(x)=
 QQ^Tx.
 $$
 
@@ -1735,7 +1693,7 @@ $$
 
 $$
 \boxed{
-\operatorname{proj}_{\operatorname{Col}(Q)}(x)=QQ^Tx
+\text{proj}_{\text{Col}(Q)}(x)=QQ^Tx
 }
 $$
 
