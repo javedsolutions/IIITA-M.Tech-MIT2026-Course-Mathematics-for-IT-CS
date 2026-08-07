@@ -1,6 +1,13 @@
-# Least Squares Problems and Linear Models
-
-## Learning Objectives
+# :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
+## Unit 1: Linear Algebra and Matrix Theory
+* ### Current Topic: Least Squares Problems and Linear Models
+---
+## 👥 Instructor Information
+* **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
+* **Email:** javed@iiita.ac.in
+* **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
+---
+## 🎯 Learning Objectives
 
 After studying this material, you should be able to:
 
@@ -663,14 +670,13 @@ b=\begin{bmatrix}2\\3\\5\end{bmatrix}.$$
 - QR and SVD provide useful numerically robust methods.
 - Least squares connects linear algebra with statistics, machine learning, data analytics, signal processing, computer vision, and engineering.
 
-## Figures
+---
 
-The accompanying `figures/` folder contains:
+## ❓: CHALLENGING Questions - Check Your Understanding 
+* ➡️ **[Q-01]**
+* ➡️ 
 
-1. `01_least_squares_fit.png` — least-squares fit and residuals
-2. `02_residual_plot.png` — residual plot
-3. `03_projection_geometry.png` — geometric projection
-4. `04_normal_equations.png` — normal equations
-5. `05_linear_model_components.png` — model components
-6. `06_multiple_regression_plane.png` — multiple regression plane
-7. `07_linear_model_workflow.png` — modeling workflow
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** ChatGPT - for examples and codes
