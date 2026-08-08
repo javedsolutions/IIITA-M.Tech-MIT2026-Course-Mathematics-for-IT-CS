@@ -71,7 +71,9 @@ $$
 A matrix containing one column:
 
 $$
-B=\begin{bmatrix}2\\4\\6\end{bmatrix}
+B=\begin{bmatrix}2\\
+4\\
+6\end{bmatrix}
 $$
 
 ### Square Matrix
@@ -79,7 +81,8 @@ $$
 A matrix with equal numbers of rows and columns:
 
 $$
-A=\begin{bmatrix}2&1\\3&4\end{bmatrix}
+A=\begin{bmatrix}2&1\\ 
+3&4\end{bmatrix}
 $$
 
 ### Zero Matrix
@@ -87,7 +90,8 @@ $$
 All elements are zero:
 
 $$
-O=\begin{bmatrix}0&0\\0&0\end{bmatrix}
+O=\begin{bmatrix}0&0\\ 
+0&0\end{bmatrix}
 $$
 
 ### Identity Matrix
@@ -118,20 +122,20 @@ Two matrices can be added only when they have the **same dimensions**.
 Let
 
 $$
-A=\begin{bmatrix}1&2\\3&4\end{bmatrix},
+A=\begin{bmatrix}1&2\\
+3&4\end{bmatrix},
 \qquad
-B=\begin{bmatrix}5&1\\2&3\end{bmatrix}.
+B=\begin{bmatrix}5&1\\
+2&3\end{bmatrix}.
 $$
 
 Then
 
 $$
-A+B=
-\begin{bmatrix}
+A+B=\begin{bmatrix}
 1+5&2+1\\
 3+2&4+3
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 6&3\\
 5&7
@@ -162,8 +166,7 @@ A-B=
 \begin{bmatrix}
 1-5&2-1\\
 3-2&4-3
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 -4&1\\
 1&1
@@ -184,8 +187,7 @@ $$
 3
 \begin{bmatrix}
 1&2\\3&4
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 3&6\\9&12
 \end{bmatrix}.
@@ -531,8 +533,7 @@ A^{-1}
 \frac15
 \begin{bmatrix}
 4&-1\\-3&2
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 0.8&-0.2\\-0.6&0.4
 \end{bmatrix}.
