@@ -7,7 +7,7 @@
 * **Email:** javed@iiita.ac.in
 * **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
 ---
-## 🎯 1. Learning Objectives
+## 🎯 Learning Objectives
 
 After studying this material, you should be able to:
 
@@ -53,12 +53,18 @@ For two vectors
 $$
 u=
 \begin{bmatrix}
-u_1\\u_2\\\vdots\\u_n
+u_1\\
+u_2\\
+\vdots\\
+u_n
 \end{bmatrix},
 \qquad
 v=
 \begin{bmatrix}
-v_1\\v_2\\\vdots\\v_n
+v_1\\
+v_2\\
+\vdots\\
+v_n
 \end{bmatrix},
 $$
 
@@ -82,12 +88,14 @@ Let
 $$
 u=
 \begin{bmatrix}
-2\\3
+2\\
+3
 \end{bmatrix},
 \qquad
 v=
 \begin{bmatrix}
-4\\-1
+4\\
+-1
 \end{bmatrix}.
 $$
 
@@ -138,12 +146,14 @@ For example:
 $$
 u=
 \begin{bmatrix}
-3\\1
+3\\
+1
 \end{bmatrix},
 \qquad
 v=
 \begin{bmatrix}
--1\\3
+-1\\
+3
 \end{bmatrix}.
 $$
 
@@ -191,12 +201,16 @@ For example:
 $$
 u=
 \begin{bmatrix}
-1\\2\\3
+1\\
+2\\
+3
 \end{bmatrix},
 \qquad
 v=
 \begin{bmatrix}
-2\\-1\\0
+2\\
+-1\\
+0
 \end{bmatrix}.
 $$
 
@@ -227,7 +241,8 @@ For
 $$
 v=
 \begin{bmatrix}
-3\\4
+3\\
+4
 \end{bmatrix},
 $$
 
@@ -267,7 +282,8 @@ For:
 $$
 v=
 \begin{bmatrix}
-3\\4
+3\\
+4
 \end{bmatrix},
 $$
 
@@ -277,10 +293,12 @@ $$
 \hat v=
 \frac{1}{5}
 \begin{bmatrix}
-3\\4
+3\\
+4
 \end{bmatrix}=
 \begin{bmatrix}
-3/5\\4/5
+3/5\\
+4/5
 \end{bmatrix}.
 $$
 
@@ -375,12 +393,14 @@ For $\mathbb{R}^2$, the standard basis is:
 $$
 e_1=
 \begin{bmatrix}
-1\\0
+1\\
+0
 \end{bmatrix},
 \qquad
 e_2=
 \begin{bmatrix}
-0\\1
+0\\
+1
 \end{bmatrix}.
 $$
 
@@ -444,12 +464,14 @@ Suppose:
 $$
 q_1=
 \begin{bmatrix}
-2\\0
+2\\
+0
 \end{bmatrix},
 \qquad
 q_2=
 \begin{bmatrix}
-0\\3
+0\\
+3
 \end{bmatrix}.
 $$
 
@@ -458,7 +480,8 @@ Let:
 $$
 x=
 \begin{bmatrix}
-6\\9
+6\\
+9
 \end{bmatrix}.
 $$
 
@@ -519,12 +542,14 @@ Let:
 $$
 x=
 \begin{bmatrix}
-3\\4
+3\\
+4
 \end{bmatrix},
 \qquad
 a=
 \begin{bmatrix}
-2\\0
+2\\
+0
 \end{bmatrix}.
 $$
 
@@ -546,10 +571,12 @@ $$
 \text{proj}_a(x)=
 \frac{6}{4}
 \begin{bmatrix}
-2\\0
+2\\
+0
 \end{bmatrix}=
 \begin{bmatrix}
-3\\0
+3\\
+0
 \end{bmatrix}.
 $$
 
@@ -558,7 +585,8 @@ The projection is:
 $$
 \boxed{
 \begin{bmatrix}
-3\\0
+3\\
+0
 \end{bmatrix}
 }
 $$
@@ -871,12 +899,14 @@ Let:
 $$
 v_1=
 \begin{bmatrix}
-3\\1
+3\\
+1
 \end{bmatrix},
 \qquad
 v_2=
 \begin{bmatrix}
-2\\3
+2\\
+3
 \end{bmatrix}.
 $$
 
@@ -885,7 +915,8 @@ First:
 $$
 u_1=v_1=
 \begin{bmatrix}
-3\\1
+3\\
+1
 \end{bmatrix}.
 $$
 
@@ -909,10 +940,12 @@ $$
 \text{proj}_{u_1}(v_2)=
 \frac{9}{10}
 \begin{bmatrix}
-3\\1
+3\\
+1
 \end{bmatrix} =
 \begin{bmatrix}
-27/10\\9/10
+27/10\\
+9/10
 \end{bmatrix}.
 $$
 
@@ -921,13 +954,16 @@ Then:
 $$
 u_2=
 \begin{bmatrix}
-2\\3
+2\\
+3
 \end{bmatrix}-
 \begin{bmatrix}
-27/10\\9/10
+27/10\\
+9/10
 \end{bmatrix} =
 \begin{bmatrix}
--7/10\\21/10
+-7/10\\
+21/10
 \end{bmatrix}.
 $$
 
@@ -965,7 +1001,8 @@ $$
 q_1=
 \frac{1}{\sqrt{10}}
 \begin{bmatrix}
-3\\1
+3\\
+1
 \end{bmatrix}.
 $$
 
@@ -1601,12 +1638,14 @@ If an input vector becomes zero after removing previous projections, the input v
 $$
 u=
 \begin{bmatrix}
-2\\1
+2\\
+1
 \end{bmatrix},
 \quad
 v=
 \begin{bmatrix}
-1\\-2
+1\\
+-2
 \end{bmatrix}
 $$
 
@@ -1617,7 +1656,8 @@ are orthogonal.
 $$
 x=
 \begin{bmatrix}
-3\\4
+3\\
+4
 \end{bmatrix}
 $$
 
@@ -1626,7 +1666,8 @@ onto:
 $$
 a=
 \begin{bmatrix}
-2\\1
+2\\
+1
 \end{bmatrix}.
 $$
 
@@ -1636,11 +1677,13 @@ $$
 
 $$
 \begin{bmatrix}
-1\\1
+1\\
+1
 \end{bmatrix},
 \quad
 \begin{bmatrix}
-1\\0
+1\\
+0
 \end{bmatrix}.
 $$
 
@@ -1650,11 +1693,15 @@ $$
 
 $$
 \begin{bmatrix}
-1\\0\\0
+1\\
+0\\
+0
 \end{bmatrix},
 \quad
 \begin{bmatrix}
-0\\1\\0
+0\\
+1\\
+0
 \end{bmatrix}.
 $$
 
