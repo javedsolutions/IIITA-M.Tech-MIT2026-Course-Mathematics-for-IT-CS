@@ -42,7 +42,7 @@ has **2 rows** and **3 columns**, so its dimension is $2\times3$.
 
 The individual numbers are called **entries** or **elements** of the matrix.
 
-![Matrix representation](figures/01_matrix_representation.png)
+<!-- ![Matrix representation](figures/01_matrix_representation.png) -->
 
 Matrices are important in IT because they provide compact representations of:
 
@@ -125,6 +125,9 @@ $$
 A=\begin{bmatrix}1&2\\
 3&4\end{bmatrix},
 \qquad
+$$
+
+$$
 B=\begin{bmatrix}5&1\\
 2&3\end{bmatrix}.
 $$
@@ -142,7 +145,7 @@ A+B=\begin{bmatrix}
 \end{bmatrix}.
 $$
 
-![Matrix addition](figures/02_matrix_addition.png)
+<!-- ![Matrix addition](figures/02_matrix_addition.png) -->
 
 ### Python
 
@@ -369,7 +372,7 @@ $$
 For a square matrix, the **trace** is the sum of the main diagonal.
 
 $$
-\operatorname{tr}
+\mathrm{tr}
 \begin{bmatrix}
 2&1&3\\
 4&5&6\\
@@ -392,7 +395,8 @@ For
 $$
 A=
 \begin{bmatrix}
-a&b\\c&d
+a&b\\
+c&d
 \end{bmatrix},
 $$
 
@@ -407,7 +411,8 @@ For
 $$
 A=
 \begin{bmatrix}
-2&1\\3&4
+2&1\\
+3&4
 \end{bmatrix},
 $$
 
