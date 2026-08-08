@@ -53,6 +53,9 @@ Matrices are important in IT because they provide compact representations of:
 - network connections,
 - machine-learning parameters,
 - recommendation-system data.
+  
+
+#### 🎯  **[Play with a Matrix through interactive visualization](https://shad.io/MatVis/)**
 
 ---
 
@@ -189,10 +192,12 @@ A scalar multiplies every element:
 $$
 3
 \begin{bmatrix}
-1&2\\3&4
+1&2\\
+3&4
 \end{bmatrix}=
 \begin{bmatrix}
-3&6\\9&12
+3&6\\
+9&12
 \end{bmatrix}.
 $$
 
@@ -228,7 +233,7 @@ $$
 (2\times3)(3\times2)=(2\times2).
 $$
 
-![Matrix multiplication dimensions](figures/03_matrix_multiplication.png)
+<!-- ![Matrix multiplication dimensions](figures/03_matrix_multiplication.png) -->
 
 For
 
@@ -284,6 +289,7 @@ and distributive:
 $$
 A(B+C)=AB+AC.
 $$
+
 
 ---
 
@@ -1123,7 +1129,7 @@ $$
 
 ---
 ## ❓: CHALLENGING Questions - Check Your Understanding 
-* ➡️ **[Q-01]**
+* ➡️ **[Q-01]** In Matrix Multiplication - A\timesB, which matrix changes what in other matrix?
 * ➡️ 
 
 ---
