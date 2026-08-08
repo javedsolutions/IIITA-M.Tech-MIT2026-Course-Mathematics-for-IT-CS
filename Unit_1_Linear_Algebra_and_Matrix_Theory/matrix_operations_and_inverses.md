@@ -814,7 +814,7 @@ $$
 v'=Av
 $$
 
-**A sequence of transformations can be combined using matrix multiplication, this beauty of mathematics can be seen in the paper {Attention is what you need](https://arxiv.org/abs/1706.03762) which uses combination of linear transformations to generate different text embedding from the existing ones.**
+**A sequence of transformations can be combined using matrix multiplication, this beauty of mathematics can be seen in the paper [Attention is All You Need](https://arxiv.org/abs/1706.03762) which uses combination of linear transformations to generate different text embedding from the existing ones.**
 
 
 ## Image Processing
