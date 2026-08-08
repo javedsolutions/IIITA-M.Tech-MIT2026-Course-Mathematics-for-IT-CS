@@ -1609,7 +1609,7 @@ If an input vector becomes zero after removing previous projections, the input v
 | Projection onto vector | $\frac{x^Ta}{a^Ta}a$ |
 | Projection onto orthonormal subspace | $QQ^Tx$ |
 | General projection matrix | $A(A^TA)^{-1}A^T$ |
-| Orthogonal residual | $r=x-\operatorname{proj}(x)$ |
+| Orthogonal residual | $r=x-\mathrm{proj}(x)$ |
 | Gram-Schmidt | Converts independent vectors to orthogonal vectors |
 | QR decomposition | $A=QR$ |
 | Orthonormal matrix property | $Q^TQ=I$ |
@@ -1729,8 +1729,7 @@ $$
 
 $$
 \boxed{
-\operatorname{proj}_a(x)
-=
+\mathrm{proj}_a(x)=
 \frac{x^Ta}{a^Ta}a
 }
 $$
