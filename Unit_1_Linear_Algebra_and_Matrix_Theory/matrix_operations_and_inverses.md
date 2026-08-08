@@ -1130,9 +1130,10 @@ $$
 ---
 ## ❓: CHALLENGING Questions - Check Your Understanding 
 * ➡️ **[Q-01]** In Matrix Multiplication - A\timesB, which matrix changes what in other matrix?
-* ➡️ 
+* ➡️ **[Q-02]** We are all familiar with Undo (Ctrl+Z) operation in computers, in matrices which is the undo operation?
+* ➡️ **[Q-02]** What is the significance of zero determinant matrices in Computer Science applications?
 
 ---
 ## 📚 References 
 * **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
-* **[R-02]** ChatGPT - for examples and codes
+* **[R-02]** Support of ChatGPT - for examples and codes
