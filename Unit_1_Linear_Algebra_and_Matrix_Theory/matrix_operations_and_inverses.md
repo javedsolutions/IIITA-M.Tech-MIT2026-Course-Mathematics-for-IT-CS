@@ -1076,34 +1076,41 @@ np.allclose(
 1. Calculate:
 
 $$
-\begin{bmatrix}1&2\\3&4\end{bmatrix}
+\begin{bmatrix}1&2\\
+3&4\end{bmatrix}
 +
-\begin{bmatrix}5&6\\7&8\end{bmatrix}.
+\begin{bmatrix}5&6\\
+7&8\end{bmatrix}.
 $$
 
 2. Calculate:
 
 $$
-3\begin{bmatrix}2&1\\4&5\end{bmatrix}.
+3\begin{bmatrix}2&1\\
+4&5\end{bmatrix}.
 $$
 
 3. Calculate:
 
 $$
-\begin{bmatrix}1&2\\3&4\end{bmatrix}
-\begin{bmatrix}2&0\\1&3\end{bmatrix}.
+\begin{bmatrix}1&2\\
+3&4\end{bmatrix}
+\begin{bmatrix}2&0\\
+1&3\end{bmatrix}.
 $$
 
 4. Find the determinant of:
 
 $$
-\begin{bmatrix}4&3\\2&5\end{bmatrix}.
+\begin{bmatrix}4&3\\
+2&5\end{bmatrix}.
 $$
 
 5. Find the inverse of:
 
 $$
-\begin{bmatrix}2&1\\1&1\end{bmatrix}.
+\begin{bmatrix}2&1\\
+1&1\end{bmatrix}.
 $$
 
 ## Programming
