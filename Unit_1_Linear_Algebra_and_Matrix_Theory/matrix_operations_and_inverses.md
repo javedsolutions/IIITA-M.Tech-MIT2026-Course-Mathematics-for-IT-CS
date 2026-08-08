@@ -449,6 +449,8 @@ The determinant also measures signed area/volume scaling.
 
 ![Determinant area scaling](figures/05_determinant_area_scaling.png)
 
+**Note: Try computing determinant in a $3\times3$ matrix. Observe the changes.**
+
 ---
 
 # 11. Matrix Inverse
@@ -484,7 +486,8 @@ For example,
 $$
 A=
 \begin{bmatrix}
-2&1\\3&4
+2&1\\
+3&4
 \end{bmatrix}
 $$
 
@@ -495,7 +498,8 @@ But
 $$
 B=
 \begin{bmatrix}
-1&2\\2&4
+1&2\\
+2&4
 \end{bmatrix}
 $$
 
@@ -512,18 +516,19 @@ For
 $$
 A=
 \begin{bmatrix}
-a&b\\c&d
+a&b\\
+c&d
 \end{bmatrix},
 $$
 
 if $ad-bc\ne0$,
 
 $$
-A^{-1}
-=
+A^{-1}=
 \frac{1}{ad-bc}
 \begin{bmatrix}
-d&-b\\-c&a
+d&-b\\
+-c&a
 \end{bmatrix}.
 $$
 
@@ -532,21 +537,23 @@ Example:
 $$
 A=
 \begin{bmatrix}
-2&1\\3&4
+2&1\\
+3&4
 \end{bmatrix}.
 $$
 
 Since $\det(A)=5$,
 
 $$
-A^{-1}
-=
+A^{-1}=
 \frac15
 \begin{bmatrix}
-4&-1\\-3&2
+4&-1\\
+-3&2
 \end{bmatrix}=
 \begin{bmatrix}
-0.8&-0.2\\-0.6&0.4
+0.8&-0.2\\
+-0.6&0.4
 \end{bmatrix}.
 $$
 
@@ -621,12 +628,14 @@ Write:
 $$
 A=
 \begin{bmatrix}
-2&1\\1&3
+2&1\\
+1&3
 \end{bmatrix},
 \quad
 b=
 \begin{bmatrix}
-5\\6
+5\\
+6
 \end{bmatrix}.
 $$
 
@@ -756,13 +765,13 @@ If $A$ and $B$ are invertible:
 ### Inverse of an inverse
 
 $$
-(A^{-1})^{-1}=A.
+(A^{-1})^{-1}=A
 $$
 
 ### Inverse of a product
 
 $$
-(AB)^{-1}=B^{-1}A^{-1}.
+(AB)^{-1}=B^{-1}A^{-1}
 $$
 
 The order is reversed.
@@ -770,19 +779,19 @@ The order is reversed.
 ### Inverse of a transpose
 
 $$
-(A^T)^{-1}=(A^{-1})^T.
+(A^T)^{-1}=(A^{-1})^T
 $$
 
 ### Identity matrix
 
 $$
-I^{-1}=I.
+I^{-1}=I
 $$
 
 ### Determinant
 
 $$
-\det(A^{-1})=\frac{1}{\det(A)}.
+\det(A^{-1})=\frac{1}{\det(A)}
 $$
 
 ---
@@ -802,10 +811,11 @@ Matrices can represent:
 A transformation can be represented by
 
 $$
-v'=Av.
+v'=Av
 $$
 
-A sequence of transformations can be combined using matrix multiplication.
+**A sequence of transformations can be combined using matrix multiplication, this beauty of mathematics can be seen in the paper {Attention is what you need](https://arxiv.org/abs/1706.03762) which uses combination of linear transformations to generate different text embedding from the existing ones.**
+
 
 ## Image Processing
 
@@ -829,13 +839,13 @@ Matrix operations are used for filtering, transformations, enhancement, and feat
 A dataset can be represented as
 
 $$
-X\in\mathbb{R}^{m\times n}.
+X\in\mathbb{R}^{m\times n}
 $$
 
 A simple linear model can be expressed as
 
 $$
-Y=XW+b.
+Y=XW+b
 $$
 
 Example:
