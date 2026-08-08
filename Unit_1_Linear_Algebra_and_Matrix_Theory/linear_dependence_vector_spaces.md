@@ -395,15 +395,18 @@ Then:
 $$
 c_1
 \begin{bmatrix}
-1\\0
+1\\
+0
 \end{bmatrix}
 +
 c_2
 \begin{bmatrix}
-0\\1
+0\\
+1
 \end{bmatrix}=
 \begin{bmatrix}
-0\\0
+0\\
+0
 \end{bmatrix}.
 $$
 
@@ -609,7 +612,8 @@ $$
 \mathbb{R}^2=
 \left\lbrace
 \begin{bmatrix}
-x\\y
+x\\
+y
 \end{bmatrix}
 :x,y\in\mathbb{R}
 \right\rbrace.
@@ -776,7 +780,9 @@ $$
 W=
 \left\lbrace
 \begin{bmatrix}
-x\\y\\z
+x\\
+y\\
+z
 \end{bmatrix}
 :x+y+z=0
 \right\rbrace.
@@ -794,16 +800,22 @@ Thus,
 
 $$
 \begin{bmatrix}
-x\\y\\z
+x\\
+y\\
+z
 \end{bmatrix}=
 x
 \begin{bmatrix}
-1\\0\\-1
+1\\
+0\\
+-1
 \end{bmatrix}
 +
 y
 \begin{bmatrix}
-0\\1\\-1
+0\\
+1\\
+-1
 \end{bmatrix}.
 $$
 
@@ -814,10 +826,14 @@ W=
 \text{span}
 \left\lbrace
 \begin{bmatrix}
-1\\0\\-1
+1\\
+0\\
+-1
 \end{bmatrix},
 \begin{bmatrix}
-0\\1\\-1
+0\\
+1\\
+-1
 \end{bmatrix}
 \right\rbrace.
 $$
@@ -834,7 +850,8 @@ $$
 S=
 \left\lbrace
 \begin{bmatrix}
-x\\y
+x\\
+y
 \end{bmatrix}
 :x+y=1
 \right\rbrace.
@@ -844,7 +861,8 @@ The zero vector
 
 $$
 \begin{bmatrix}
-0\\0
+0\\
+0
 \end{bmatrix}
 $$
 
@@ -917,10 +935,14 @@ $$
 \text{span}
 \left\lbrace
 \begin{bmatrix}
-1\\2\\3
+1\\
+2\\
+3
 \end{bmatrix},
 \begin{bmatrix}
-2\\4\\6
+2\\
+4\\
+6
 \end{bmatrix}
 \right\rbrace.
 $$
@@ -967,12 +989,14 @@ The standard basis of $\mathbb{R}^2$ is:
 $$
 e_1=
 \begin{bmatrix}
-1\\0
+1\\
+0
 \end{bmatrix},
 \qquad
 e_2=
 \begin{bmatrix}
-0\\1
+0\\
+1
 \end{bmatrix}.
 $$
 
@@ -980,7 +1004,8 @@ Every vector in $\mathbb{R}^2$ can be written as:
 
 $$
 \begin{bmatrix}
-x\\y
+x\\
+y
 \end{bmatrix}=
 x e_1+y e_2.
 $$
@@ -990,12 +1015,14 @@ Another valid basis is:
 $$
 b_1=
 \begin{bmatrix}
-1\\1
+1\\
+1
 \end{bmatrix},
 \qquad
 b_2=
 \begin{bmatrix}
-1\\-1
+1\\
+-1
 \end{bmatrix}.
 $$
 
@@ -1012,17 +1039,23 @@ The standard basis of $\mathbb{R}^3$ is:
 $$
 e_1=
 \begin{bmatrix}
-1\\0\\0
+1\\
+0\\
+0
 \end{bmatrix},
 \quad
 e_2=
 \begin{bmatrix}
-0\\1\\0
+0\\
+1\\
+0
 \end{bmatrix},
 \quad
 e_3=
 \begin{bmatrix}
-0\\0\\1
+0\\
+0\\
+1
 \end{bmatrix}.
 $$
 
@@ -1031,7 +1064,9 @@ Every vector
 $$
 v=
 \begin{bmatrix}
-x\\y\\z
+x\\
+y\\
+z
 \end{bmatrix}
 $$
 
@@ -1052,12 +1087,14 @@ Suppose:
 $$
 b_1=
 \begin{bmatrix}
-1\\1
+1\\
+1
 \end{bmatrix},
 \qquad
 b_2=
 \begin{bmatrix}
-1\\-1
+1\\
+-1
 \end{bmatrix}.
 $$
 
@@ -1066,7 +1103,8 @@ Let:
 $$
 v=
 \begin{bmatrix}
-3\\1
+3\\
+1
 \end{bmatrix}.
 $$
 
@@ -1080,16 +1118,19 @@ Therefore:
 
 $$
 \begin{bmatrix}
-3\\1
+3\\
+1
 \end{bmatrix}=
 c_1
 \begin{bmatrix}
-1\\1
+1\\
+1
 \end{bmatrix}
 +
 c_2
 \begin{bmatrix}
-1\\-1
+1\\
+-1
 \end{bmatrix}.
 $$
 
@@ -1114,7 +1155,8 @@ Hence:
 $$
 [v]_B=
 \begin{bmatrix}
-2\\1
+2\\
+1
 \end{bmatrix}.
 $$
 
@@ -1232,17 +1274,23 @@ Suppose:
 $$
 v_1=
 \begin{bmatrix}
-1\\2\\3
+1\\
+2\\
+3
 \end{bmatrix},
 \quad
 v_2=
 \begin{bmatrix}
-2\\4\\6
+2\\
+4\\
+6
 \end{bmatrix},
 \quad
 v_3=
 \begin{bmatrix}
-1\\0\\1
+1\\
+0\\
+1
 \end{bmatrix}.
 $$
 
@@ -1673,8 +1721,10 @@ For rectangular matrices, rank is a more general tool.
 1. Determine whether
 
 $$
-\begin{bmatrix}1\\2\end{bmatrix},
-\begin{bmatrix}2\\4\end{bmatrix}
+\begin{bmatrix}1\\
+2\end{bmatrix},
+\begin{bmatrix}2\\
+4\end{bmatrix}
 $$
 
 are linearly independent.
@@ -1682,8 +1732,10 @@ are linearly independent.
 2. Determine whether
 
 $$
-\begin{bmatrix}1\\0\end{bmatrix},
-\begin{bmatrix}0\\1\end{bmatrix}
+\begin{bmatrix}1\\
+0\end{bmatrix},
+\begin{bmatrix}0\\
+1\end{bmatrix}
 $$
 
 form a basis of $\mathbb{R}^2$.
@@ -1701,9 +1753,15 @@ $$
 $$
 \text{span}
 \left\lbrace
-\begin{bmatrix}1\\2\\3\end{bmatrix},
-\begin{bmatrix}2\\4\\6\end{bmatrix},
-\begin{bmatrix}1\\0\\1\end{bmatrix}
+\begin{bmatrix}1\\
+2\\
+3\end{bmatrix},
+\begin{bmatrix}2\\
+4\\
+6\end{bmatrix},
+\begin{bmatrix}1\\
+0\\
+1\end{bmatrix}
 \right\rbrace.
 $$
 
