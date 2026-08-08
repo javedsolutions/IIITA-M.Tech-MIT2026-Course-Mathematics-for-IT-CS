@@ -253,7 +253,8 @@ Every vector
 
 $$
 \begin{bmatrix}
-x\\y
+x\\
+y
 \end{bmatrix}
 $$
 
