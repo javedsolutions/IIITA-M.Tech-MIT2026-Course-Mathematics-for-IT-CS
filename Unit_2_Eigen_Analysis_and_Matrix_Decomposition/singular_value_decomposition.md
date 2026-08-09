@@ -482,7 +482,7 @@ A=
 \sigma_r\mathbf u_r\mathbf v_r^T.
 $$
 
-A rank-$(k)$ approximation is
+A rank- $(k)$ approximation is
 
 $$
 \boxed{
@@ -520,7 +520,7 @@ can therefore represent the main structure using substantially fewer parameters.
 
 ## 18. Eckart–Young theorem
 
-The **Eckart–Young theorem** states that the truncated SVD gives the best rank-$(k)$ approximation under both the 2-norm and Frobenius norm.
+The **Eckart–Young theorem** states that the truncated SVD gives the best rank $(k)$ approximation under both the 2-norm and Frobenius norm.
 
 For the spectral norm,
 
@@ -541,7 +541,7 @@ $$
 
 ---
 
-## 19. Python rank-$(k)$ approximation
+## 19. Python rank $(k)$ approximation
 
 ```python
 import numpy as np
@@ -618,7 +618,7 @@ $$
 
 entries.
 
-A rank-$(k)$ SVD representation stores approximately
+A rank $(k)$ SVD representation stores approximately
 
 $$
 mk+k+nk
