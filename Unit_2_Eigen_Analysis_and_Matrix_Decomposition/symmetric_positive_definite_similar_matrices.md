@@ -1208,8 +1208,7 @@ $$
 Moreover,
 
 $$
-\lambda_{\max}
-=
+\lambda_{\max}=
 \max_{x\neq0}
 \frac{x^TAx}{x^Tx}.
 $$
