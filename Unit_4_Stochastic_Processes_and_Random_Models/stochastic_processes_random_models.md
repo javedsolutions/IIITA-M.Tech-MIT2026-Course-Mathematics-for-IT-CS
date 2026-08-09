@@ -2991,4 +2991,8 @@ $$
 }
 $$
 
+---
+## 📚 References 
+* **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
+* **[R-02]** AI Tools for examples and codes
 
