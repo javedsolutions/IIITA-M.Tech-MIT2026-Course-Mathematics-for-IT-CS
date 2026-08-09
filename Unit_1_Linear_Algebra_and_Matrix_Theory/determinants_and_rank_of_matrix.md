@@ -941,7 +941,7 @@ print("\ndet(A.T):", np.linalg.det(A.T))
 | Determinant | Scalar associated with a square matrix |
 | det(A) = 0 | Matrix is singular |
 | det(A) != 0 | Matrix is invertible |
-| $|det(A)|$ | Area/volume scaling |
+| \|det(A)\| | Area/volume scaling |
 | Rank | Number of independent rows/columns |
 | Pivot | Leading nonzero entry after row reduction |
 | Full rank | Maximum possible rank |
