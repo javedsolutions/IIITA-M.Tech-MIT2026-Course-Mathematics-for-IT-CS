@@ -56,7 +56,7 @@ $$
 
 A linear transformation is a special type of function whose behavior is compatible with vector addition and scalar multiplication.
 
-> In simple words, during linear transformation, the combined effect of any operation should be equal to the effect of operation when applied in pieces
+> In simple words, during linear transformation, the combined effect of any operation should be equal to the net effect of operations when applied in pieces
 ---
 
 ## 3. Definition of a linear transformation
