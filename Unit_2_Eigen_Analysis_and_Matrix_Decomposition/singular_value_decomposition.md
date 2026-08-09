@@ -206,7 +206,7 @@ $$
 If
 
 $$
-\operatorname{rank}(A)=r,
+\mathrm{rank}(A)=r,
 $$
 
 the compact SVD is
@@ -302,8 +302,7 @@ $$
 we obtain
 
 $$
-A^TA
-=
+A^TA=
 V\Sigma^T\Sigma V^T.
 $$
 
@@ -362,7 +361,7 @@ print(S**2)
 The rank is the number of nonzero singular values:
 
 $$
-\boxed{\text{rank}(A)=\#\{i:\sigma_i>0\}}.
+\boxed{\text{rank}(A)=\\#\{i:\sigma_i>0\}}.
 $$
 
 Because floating-point arithmetic may produce very small values instead of exact zero, use a tolerance.
