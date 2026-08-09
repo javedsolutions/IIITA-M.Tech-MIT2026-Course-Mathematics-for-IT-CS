@@ -2007,6 +2007,10 @@ $$
 
 These methods form an important computational foundation for linear algebra, numerical computing, machine learning, artificial intelligence, data analytics, computer vision, and recommender systems.
 
+The most important practical principle is:
+
+> **When a matrix has strong low-dimensional structure, a carefully chosen low-rank factorization can reduce storage and computation while preserving the information that matters most.**
+
 ---
 ## ❓: CHALLENGING Questions - Check Your Understanding 
 * ➡️ **[Q-01]**
@@ -2015,8 +2019,6 @@ These methods form an important computational foundation for linear algebra, num
 ---
 ## 📚 References 
 * **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
-* **[R-02]** ChatGPT - for examples and codes
+* **[R-02]** AI Tools for examples and codes
 
-The most important practical principle is:
 
-> **When a matrix has strong low-dimensional structure, a carefully chosen low-rank factorization can reduce storage and computation while preserving the information that matters most.**
