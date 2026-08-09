@@ -41,13 +41,15 @@ $$
 might map
 
 $$
-\begin{bmatrix}x\\y\end{bmatrix}
+\begin{bmatrix}x\\
+y\end{bmatrix}
 $$
 
 to
 
 $$
-\begin{bmatrix}x+y\\2x-y\end{bmatrix}.
+\begin{bmatrix}x+y\\
+2x-y\end{bmatrix}.
 $$
 
 ![Mapping diagram](figures/02_mapping_diagram.png)
@@ -247,7 +249,8 @@ and
 $$
 \mathbf{x}=
 \begin{bmatrix}
-5\\1
+5\\
+1
 \end{bmatrix}
 $$
 
@@ -387,10 +390,12 @@ The standard basis of $(\mathbb{R}^2)$ is
 
 $$
 \mathbf{e}_1=
-\begin{bmatrix}1\\0\end{bmatrix},
+\begin{bmatrix}1\\
+0\end{bmatrix},
 \qquad
 \mathbf{e}_2=
-\begin{bmatrix}0\\1\end{bmatrix}.
+\begin{bmatrix}0\\
+1\end{bmatrix}.
 $$
 
 Since
@@ -464,7 +469,8 @@ $$
 \left\{
 t
 \begin{bmatrix}
--2\\1
+-2\\
+1
 \end{bmatrix}:t\in\mathbb{R}
 \right\}.
 $$
@@ -653,10 +659,8 @@ $$
 then
 
 $$
-(S\circ T)(\mathbf{x})
-=
-B(A\mathbf{x})
-=
+(S\circ T)(\mathbf{x})=
+B(A\mathbf{x})=
 (BA)\mathbf{x}.
 $$
 
@@ -813,7 +817,8 @@ Observe the changes in rank, determinant, and output.
 ### Scaling
 
 $$
-\begin{bmatrix}s_x&0\\0&s_y\end{bmatrix}
+\begin{bmatrix}s_x&0\\
+0&s_y\end{bmatrix}
 $$
 
 ### Rotation
@@ -828,37 +833,43 @@ $$
 ### Reflection about $(x)$-axis
 
 $$
-\begin{bmatrix}1&0\\0&-1\end{bmatrix}
+\begin{bmatrix}1&0\\
+0&-1\end{bmatrix}
 $$
 
 ### Reflection about $(y)$-axis
 
 $$
-\begin{bmatrix}-1&0\\0&1\end{bmatrix}
+\begin{bmatrix}-1&0\\
+0&1\end{bmatrix}
 $$
 
 ### Projection onto $(x)$-axis
 
 $$
-\begin{bmatrix}1&0\\0&0\end{bmatrix}
+\begin{bmatrix}1&0\\
+0&0\end{bmatrix}
 $$
 
 ### Projection onto $(y)$-axis
 
 $$
-\begin{bmatrix}0&0\\0&1\end{bmatrix}
+\begin{bmatrix}0&0\\
+0&1\end{bmatrix}
 $$
 
 ### $(x)$-direction shear
 
 $$
-\begin{bmatrix}1&k\\0&1\end{bmatrix}
+\begin{bmatrix}1&k\\
+0&1\end{bmatrix}
 $$
 
 ### $(y)$-direction shear
 
 $$
-\begin{bmatrix}1&0\\k&1\end{bmatrix}
+\begin{bmatrix}1&0\\
+k&1\end{bmatrix}
 $$
 
 ---
@@ -877,12 +888,25 @@ $$
 10. Why does transformation order matter?
 11. Determine whether $(T(x,y)=(2x-y,3x+4y))$ is linear.
 12. Find the matrix of $(T(x,y)=(x+3y,2x-y))$.
-13. Find the kernel of $(\begin{bmatrix}1&2\\2&4\end{bmatrix})$.
-14. Find its rank and nullity.
-15. Determine whether $(\begin{bmatrix}2&1\\4&2\end{bmatrix})$ is invertible.
-16. Write Python code to rotate a vector by $(90^\circ)$.
-17. Write Python code to project a vector onto the $(x)$-axis.
-18. Implement a shear transformation and plot a square before and after.
+13. Find the kernel of
+
+$$
+\begin{bmatrix}1&2\\
+2&4\end{bmatrix}
+$$
+
+15. Find its rank and nullity.
+16. Determine whether
+
+$$
+\begin{bmatrix}2&1\\
+4&2\end{bmatrix}
+$$
+
+     is invertible.
+18. Write Python code to rotate a vector by $(90^\circ)$.
+19. Write Python code to project a vector onto the $(x)$-axis.
+20. Implement a shear transformation and plot a square before and after.
 
 ---
 
@@ -893,10 +917,10 @@ $$
 | Linearity | $(T(a\mathbf u+b\mathbf v)=aT(\mathbf u)+bT(\mathbf v))$ |
 | Matrix transformation | $(T(\mathbf x)=A\mathbf x)$ |
 | Kernel | $(\ker(T)=\{\mathbf x:T(\mathbf x)=0\})$ |
-| Image | $(\operatorname{Im}(T)=\{T(\mathbf x)\})$ |
-| Rank | $(\dim(\operatorname{Im}(T)))$ |
+| Image | $(\mathrm{Im}(T)=\{T(\mathbf x)\})$ |
+| Rank | $(\dim(\mathrm{Im}(T)))$ |
 | Nullity | $(\dim(\ker(T)))$ |
-| Rank-Nullity | $(n=\operatorname{rank}+\operatorname{nullity})$ |
+| Rank-Nullity | $(n=\mathrm{rank}+\mathrm{nullity})$ |
 | Composition | $([S\circ T]=[S][T])$ |
 | Inverse | $(A^{-1}A=AA^{-1}=I)$ |
 | Invertibility | $(\det(A)\neq0)$ |
