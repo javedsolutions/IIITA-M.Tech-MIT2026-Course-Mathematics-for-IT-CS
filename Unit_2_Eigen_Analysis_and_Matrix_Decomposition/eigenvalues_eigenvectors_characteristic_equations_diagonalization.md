@@ -1404,7 +1404,7 @@ Use SymPy to calculate a characteristic polynomial symbolically.
 Verify numerically that
 
 $$
-\operatorname{tr}(A)=\sum_i\lambda_i.
+\mathrm{tr}(A)=\sum_i\lambda_i.
 $$
 
 ### Problem 9
