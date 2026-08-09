@@ -189,6 +189,8 @@ $$
 
 ![Characteristic polynomial](figures/03_characteristic_polynomial.png)
 
+Note: if we take partial derivative at $\lambda_1$ and $\lambda_2$, the slope is positive (going up) and negative (coming down) respectively and to find minimum point put slope=0, we will get 7/2=3.5, which we can see clearly in the graph
+
 ---
 
 # Part III — Finding Eigenvectors
@@ -227,7 +229,8 @@ $$
 \boxed{
 v_1=
 \begin{bmatrix}
-1\\1
+1\\
+1
 \end{bmatrix}.
 }
 $$
@@ -254,7 +257,8 @@ $$
 \boxed{
 v_2=
 \begin{bmatrix}
-1\\-2
+1\\
+-2
 \end{bmatrix}.
 }
 $$
@@ -471,12 +475,14 @@ with eigenvectors
 $$
 v_1=
 \begin{bmatrix}
-1\\1
+1\\
+1
 \end{bmatrix},
 \qquad
 v_2=
 \begin{bmatrix}
-1\\-2
+1\\
+-2
 \end{bmatrix}.
 $$
 
@@ -1355,21 +1361,24 @@ A.eigenvects()
 Find the eigenvalues and eigenvectors of
 
 $$
-A=\begin{bmatrix}2&1\\1&2\end{bmatrix}.
+A=\begin{bmatrix}2&1\\
+1&2\end{bmatrix}.
 $$
 
 ### Problem 2
 Find the characteristic polynomial of
 
 $$
-A=\begin{bmatrix}3&2\\1&4\end{bmatrix}.
+A=\begin{bmatrix}3&2\\
+1&4\end{bmatrix}.
 $$
 
 ### Problem 3
 Determine whether
 
 $$
-A=\begin{bmatrix}2&1\\0&2\end{bmatrix}
+A=\begin{bmatrix}2&1\\
+0&2\end{bmatrix}
 $$
 
 is diagonalizable.
@@ -1378,7 +1387,8 @@ is diagonalizable.
 Diagonalize
 
 $$
-A=\begin{bmatrix}5&2\\2&5\end{bmatrix}.
+A=\begin{bmatrix}5&2\\
+2&5\end{bmatrix}.
 $$
 
 ### Problem 5
