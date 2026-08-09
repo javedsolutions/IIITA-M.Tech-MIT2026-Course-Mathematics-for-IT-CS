@@ -260,7 +260,8 @@ give
 $$
 T(\mathbf{x})=
 \begin{bmatrix}
-7\\19
+7\\
+19
 \end{bmatrix}.
 $$
 
