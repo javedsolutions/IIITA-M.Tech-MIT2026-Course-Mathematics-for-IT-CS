@@ -437,13 +437,13 @@ The kernel is
 $$
 \boxed{
 \ker(T)=\{\mathbf{x}:T(\mathbf{x})=\mathbf{0}\}
-}.
+}
 $$
 
 For $(T(\mathbf{x})=A\mathbf{x})$,
 
 $$
-\ker(T)=\{\mathbf{x}:A\mathbf{x}=0\}.
+\ker(T)=\{\mathbf{x}:A\mathbf{x}=0\}
 $$
 
 ![Kernel and image](figures/06_kernel_image.png)
@@ -467,14 +467,12 @@ $$
 so
 
 $$
-\ker(T)=
-\left\{
-t
+\ker(T)=\\{ t
 \begin{bmatrix}
 -2\\
 1
 \end{bmatrix}:t\in\mathbb{R}
-\right\}.
+\\}
 $$
 
 ### Python
@@ -898,14 +896,14 @@ $$
 $$
 
 15. Find its rank and nullity.
-16. Determine whether
+16. Determine whether the below matrix is invertible.
 
 $$
 \begin{bmatrix}2&1\\
 4&2\end{bmatrix}
 $$
 
-     is invertible.
+     
 18. Write Python code to rotate a vector by $(90^\circ)$.
 19. Write Python code to project a vector onto the $(x)$-axis.
 20. Implement a shear transformation and plot a square before and after.
