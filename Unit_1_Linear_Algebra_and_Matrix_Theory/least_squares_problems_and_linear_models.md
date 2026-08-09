@@ -634,8 +634,12 @@ Least squares finds the combination of model directions that comes closest to th
 
 1. Solve the least-squares problem
 
-$$A=\begin{bmatrix}1&1\\1&2\\1&3\end{bmatrix},\quad
-b=\begin{bmatrix}2\\3\\5\end{bmatrix}.$$
+$$A=\begin{bmatrix}1&1\\
+1&2\\
+1&3\end{bmatrix},\quad
+b=\begin{bmatrix}2\\
+3\\
+5\end{bmatrix}.$$
 
 2. Find the residual vector.
 3. Verify $A^Tr=0$.
