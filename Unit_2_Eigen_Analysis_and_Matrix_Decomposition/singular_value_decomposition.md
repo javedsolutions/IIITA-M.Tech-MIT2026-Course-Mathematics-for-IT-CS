@@ -1230,4 +1230,4 @@ Because of these connections, SVD is one of the most useful tools in linear alge
 ---
 ## 📚 References 
 * **[R-01]** Linear Algebra by Gilbert Strang, MIT Press
-* **[R-02]** ChatGPT - for examples and codes
+* **[R-02]** AI Tools for examples and codes
