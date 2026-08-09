@@ -98,7 +98,7 @@ $$
 \sigma_1\geq\sigma_2\geq\cdots\geq0.
 $$
 
-A rank-$(k)$ approximation is
+A rank $(k)$ approximation is
 
 $$
 \boxed{A_k=U_k\Sigma_kV_k^T}.
@@ -164,7 +164,7 @@ $$
 
 numbers.
 
-A rank-$(k)$ SVD approximation requires approximately
+A rank $(k)$ SVD approximation requires approximately
 
 $$
 mk+k+nk=k(m+n+1)
