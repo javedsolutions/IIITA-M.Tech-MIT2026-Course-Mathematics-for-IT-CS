@@ -208,7 +208,7 @@ $$
 
 ### 6.5 Complementary event
 
-The complement of $(A)$, written $(A^c)$, contains all outcomes in $(\Omega)$ that are not in $(A)$.
+The complement of $(A)$, written $(A^c)$, contains all outcomes in $(\Omega)$ that are not in $(A)$ represented with $(\setminus)$ setminus symbol.
 
 $$
 A^c=\Omega\setminus A.
