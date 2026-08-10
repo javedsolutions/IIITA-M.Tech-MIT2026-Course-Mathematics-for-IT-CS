@@ -1,3 +1,5 @@
+![Linear Algebra Probability Representative Image](figures/probabilityImage.jpg)
+
 # :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
 ## Unit 3: Probability and Random Variable
 ### Current Topic: Applications of Probability in Information Technology, AI and Data Analytics
