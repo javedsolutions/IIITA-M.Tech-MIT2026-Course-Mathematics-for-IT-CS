@@ -1,4 +1,4 @@
-
+![Unique solution: intersecting lines](figures/IIITAllahabadwiki.jpg)
 # :classical_building: IIITA-M.Tech-MIT2026-Course-Mathematics-for-IT-CS
 ## :mortar_board: Mathematic for IT/CS course for Masters (PG) students of IIIT Allahabad
 
