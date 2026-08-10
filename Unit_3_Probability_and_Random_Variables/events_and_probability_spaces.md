@@ -1,3 +1,5 @@
+![IIIT Allahabad Photograph](figures/probabilityImage.jpg)
+
 # :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
 ## Unit 3: Probability and Random Variables
 ### Current Topic: Events and Probability Spaces - intuitive explanations, figures, examples, and Python implementations
