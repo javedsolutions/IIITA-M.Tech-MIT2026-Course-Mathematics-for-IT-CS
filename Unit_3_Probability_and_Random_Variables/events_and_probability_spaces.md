@@ -1,4 +1,4 @@
-![IIIT Allahabad Photograph](figures/probabilityImage.jpg)
+![Linear Algebra Probability Representative Image](figures/probabilityImage.jpg)
 
 # :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
 ## Unit 3: Probability and Random Variables
