@@ -10,7 +10,7 @@
 * **Email:** javed@iiita.ac.in
 * **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
 ---
-## Learning Objectives
+## 🎯 Learning Objectives
 
 After completing this chapter, you should be able to:
 
