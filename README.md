@@ -134,6 +134,14 @@ tions
 * :red_circle: [Mathematical Foundations for AI, Machine Learning and Information Systems-Applications](Unit_4_Stochastic_Processes_and_Random_Models/stochastic_processes_random_models.md).
 
 ---
+
+## 🔖: Practice Questions in the Lab
+
+|💻 |  Question |Maths Concept | Implementation Link |
+|:--- | :--- | :---: | :--- |
+|1.|Solving Linear Equations | Basic Algebra |  [Python Code](Applications/image_compression.ipynb) |
+---
+
 ## 🗺️: Applications of Mathematics for IT Concepts in the real world
 
 |💻 |  Applications |Maths Concept | Implementation Link |
