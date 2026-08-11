@@ -10,7 +10,7 @@
 * **Email:** javed@iiita.ac.in
 * **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
 ---
-## Learning objectives
+## 🎯 Learning objectives
 
 You will learn to:
 - distinguish discrete and continuous distributions;
