@@ -9,7 +9,7 @@
 * **Email:** javed@iiita.ac.in
 * **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
 ---
-## Learning objectives
+## 🎯 Learning objectives
 
 After studying this material, you should be able to:
 
