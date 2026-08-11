@@ -188,9 +188,9 @@ Often $(P(B))$ is not directly known.
 
 Suppose $(A)$ and $(A^c)$ partition the sample space. Then:
 
-\[
+$$
 P(B) = P(B\mid A)P(A) + P(B\mid A^c)P(A^c).
-\]
+$$
 
 Therefore:
 
@@ -261,10 +261,12 @@ $$
 So:
 
 $$
-\boxed{P(D\mid +)\approx16.1\%}
+\boxed{P(D\mid +)\approx16.1\\%}
 $$
 
-This result may initially seem surprising because the test has a 95% true-positive rate. The reason is the **base rate**: the disease is rare.
+>This result may initially seem surprising because the test has a 95% true-positive rate.
+
+>The reason is the **base rate**: the disease is rare
 
 ---
 
