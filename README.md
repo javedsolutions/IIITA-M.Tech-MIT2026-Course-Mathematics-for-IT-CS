@@ -135,14 +135,14 @@ tions
 
 ---
 
-## 🔖: Practice Questions in the Lab (Updated as per ongoing session)
+### 🔖: Practice Questions in the Lab (Updated as per ongoing session)
 
 |💻 |  Question |Maths Concept | Implementation Link |
 |:--- | :--- | :---: | :--- |
 |1.|Solving Linear Equations | Basic Algebra |  [Python Code](Applications/image_compression.ipynb) |
 ---
 
-## 🗺️: Applications of Mathematics for IT Concepts in the real world (Updated as per ongoing session)
+### 🗺️: Applications of Mathematics for IT Concepts in the real world (Updated as per ongoing session)
 
 |💻 |  Applications |Maths Concept | Implementation Link |
 |:--- | :--- | :---: | :--- |
