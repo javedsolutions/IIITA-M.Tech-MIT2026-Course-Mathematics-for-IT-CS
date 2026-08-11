@@ -1,8 +1,8 @@
 ![IIIT Allahabad Photograph](figures/IIITAllahabadwiki.jpg)
 # :classical_building: IIITA-M.Tech-MIT2026-Course-Mathematics-for-IT-CS
-## :mortar_board: Mathematic for IT/CS course for Masters (PG) students of IIIT Allahabad
+## :mortar_board: Mathematics for IT/CS course for Masters (PG) students of IIIT Allahabad
 
-## 📘 Course Code: Mathematic for IT (PC-IT-MIT501) 
+## 📘 Course Code: Mathematics for IT (PC-IT-MIT501) 
 **Semester:** Fall 2026 | **Credits:** 4.0  (L-T-P-S: 3-0-2-0)
 
 **Lecture Hours:**  🙋‍♂️ 📆 MONDAY 🕟 3:30 PM 🙋‍♂️ 📆 TUESDAY 🕚 11:00 AM | **Room:** # 5155 (CC3, 1st Floor)
