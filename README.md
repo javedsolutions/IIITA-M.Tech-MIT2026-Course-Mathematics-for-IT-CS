@@ -5,7 +5,9 @@
 ## 📘 Course Code: Mathematic for IT (PC-IT-MIT501) 
 **Semester:** Fall 2026 | **Credits:** 4.0  (L-T-P-S: 3-0-2-0)
 
-**Class Hours:** Mon/Wed 10:00 AM - 11:30 AM | **Room:** CC3, Room No. 5255 (2nd Floor)  
+**Lecture Hours:**  🙋‍♂️ 📆 MONDAY 🕟 3:30 PM 🙋‍♂️ 📆 TUESDAY 🕚 11:00 AM | **Room:** # 5155 (CC3, 1st Floor)
+
+**Practice Hours:** 📆 THURSDAY 🕚 11:00 AM  **Room:** # 5241 (CC3, 2nd Floor)
 
 ---
 
