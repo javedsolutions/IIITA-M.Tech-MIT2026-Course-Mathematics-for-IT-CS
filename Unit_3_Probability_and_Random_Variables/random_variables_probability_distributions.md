@@ -11,7 +11,7 @@
 * **Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in)
 ---
 
-## 1. Learning objectives
+## 🎯 1. Learning objectives
 
 After studying this material, you should be able to:
 
