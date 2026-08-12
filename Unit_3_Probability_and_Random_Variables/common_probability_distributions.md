@@ -520,12 +520,12 @@ $$
 
 | Distribution | Mean | Variance |
 |---|---:|---:|
-| Bernoulli($(p)$) | $(p)$ | $(p(1-p))$ |
-| Binomial($(n,p)$) | $(np)$ | $(np(1-p))$ |
-| Poisson($(\lambda)$) | $(\lambda)$ | $(\lambda)$ |
-| Uniform($(a,b)$) | $((a+b)/2)$ | $((b-a)^2/12)$ |
-| Gaussian($(\mu,\sigma^2)$) | $(\mu)$ | $(\sigma^2)$ |
-| Exponential($(\lambda)$) | $(1/\lambda)$ | $(1/\lambda^2)$ |
+| Bernoulli $(p)$ | $(p)$ | $(p(1-p))$ |
+| Binomial $(n,p)$ | $(np)$ | $(np(1-p))$ |
+| Poisson $(\lambda)$ | $(\lambda)$ | $(\lambda)$ |
+| Uniform $(a,b)$ | $((a+b)/2)$ | $((b-a)^2/12)$ |
+| Gaussian $(\mu,\sigma^2)$ | $(\mu)$ | $(\sigma^2)$ |
+| Exponential $(\lambda)$ | $(1/\lambda)$ | $(1/\lambda^2)$ |
 
 ---
 
