@@ -519,7 +519,7 @@ The variance is:
 
 $$
 \boxed{
-\operatorname{Var}(X_n)=n.
+\mathrm{Var}(X_n)=n.
 }
 $$
 
@@ -998,7 +998,7 @@ The autocorrelation at lag $(k)$ is:
 $$
 \boxed{
 \rho(k)=
-\operatorname{Corr}(X_t,X_{t-k}).
+\mathrm{Corr}(X_t,X_{t-k}).
 }
 $$
 
@@ -1061,7 +1061,7 @@ $$
 or changing variance:
 
 $$
-\operatorname{Var}(X_t),
+\mathrm{Var}(X_t),
 $$
 
 a stationary model may be inappropriate.
@@ -2521,8 +2521,7 @@ For action $(a)$:
 
 $$
 \boxed{
-EU(a)
-=
+EU(a)=
 E[U(a,S)\mid\text{data}]
 }
 $$
