@@ -2141,7 +2141,7 @@ $$
 For sequence generation:
 
 $$
-P(x_1,\ldots,x_n)=\prod_{i=1}^{n} P(x_i\mid x_{<i})
+P(x_1,\ldots,x_n) = \prod_{i=1}^{n}P(x_i\mid x_{\lt i} )
 $$
 
 
