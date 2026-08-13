@@ -15,8 +15,8 @@
 * **Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
 * **Email:** javed@iiita.ac.in
 * **Senior Teaching Assistants:** Mr. Apurba Chakraborty (rsi2024005@iiita.ac.in), Ms Aarthi Jha (rsi2025509@iiita.ac.in)
-<!--  * **Office:** Room 5159, Tech Tower
-* **Office Hours:** Tue/Thu 2:00 PM - 4:00 PM
+<!--  * **Office:** Room 5159, CC3, CV Raman Bhawan
+* **Meeting Hours:** Working Days - 9:00 AM - 1:00 PM
 -->
 ---
 
