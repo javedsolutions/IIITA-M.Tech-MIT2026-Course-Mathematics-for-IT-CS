@@ -1,5 +1,3 @@
-
-
 # :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
 ## Unit 1: Linear Algebra and Matrix Theory
 ### Current Topic: Basic Linear Algebra Applications in IT and Data Representation
