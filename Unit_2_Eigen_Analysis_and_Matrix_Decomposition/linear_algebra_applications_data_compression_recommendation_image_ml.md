@@ -1,12 +1,12 @@
-![Linear Algebra- Mathematics for IT](figures/linearalgebra.jpg)
-
 # :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
 ## Unit 2: Eigen Analysis and Matrix Decomposition
 * ### Current Topic: Linear Algebra Applications in Data Compression, Recommendation Systems, Image Representation, and Machine Learning
 * #### Eigenvalues, eigenvectors, eigenspaces, characteristic equations, algebraic and geometric multiplicity, diagonalization, spectral decomposition, and Python implementation.
 > **Prerequisites:** Vectors, matrices, matrix multiplication, transpose, and basic Python  
 > **Tools:** NumPy, Matplotlib, and optionally scikit-learn
----
+
+![Linear Algebra- Mathematics for IT](figures/linearalgebra.jpg)
+
 ## 👥 Instructor Information
 * **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
 * **Email:** javed@iiita.ac.in
