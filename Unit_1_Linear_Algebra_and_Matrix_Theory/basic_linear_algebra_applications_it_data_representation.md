@@ -1,9 +1,11 @@
-![Linear Algebra- Mathematics for IT](figures/linearalgebra.jpg)
+
 
 # :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
 ## Unit 1: Linear Algebra and Matrix Theory
 ### Current Topic: Basic Linear Algebra Applications in IT and Data Representation
----
+
+![Linear Algebra- Mathematics for IT](figures/linearalgebra.jpg)
+
 ## 👥 Instructor Information
 * **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
 * **Email:** javed@iiita.ac.in
