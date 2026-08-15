@@ -1,3 +1,5 @@
+![Linear Algebra- Mathematics for IT](figures/linearalgebra.jpg)
+
 # :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
 ## Unit 1: Linear Algebra and Matrix Theory
 ### Current Topic: Row Reduction and Echelon Forms - Basics, graphical interpretation, solved examples, and Python implementation
