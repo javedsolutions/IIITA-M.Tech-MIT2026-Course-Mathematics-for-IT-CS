@@ -1,10 +1,10 @@
-![Linear Algebra- Mathematics for IT](figures/linearalgebra.jpg)
-
 # :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
 ## Unit 2: Eigen Analysis and Matrix Decomposition
 * ### Current Topic: Eigenvalues and Eigenvectors, Characteristic Equations, and Diagonalization of Matrices
 * #### Eigenvalues, eigenvectors, eigenspaces, characteristic equations, algebraic and geometric multiplicity, diagonalization, spectral decomposition, and Python implementation.
----
+
+![Linear Algebra- Mathematics for IT](figures/linearalgebra.jpg)
+
 ## 👥 Instructor Information
 * **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
 * **Email:** javed@iiita.ac.in
