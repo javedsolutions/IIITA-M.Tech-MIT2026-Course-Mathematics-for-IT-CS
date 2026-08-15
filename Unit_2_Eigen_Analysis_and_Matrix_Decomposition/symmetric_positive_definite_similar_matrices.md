@@ -1,10 +1,10 @@
-![Linear Algebra- Mathematics for IT](figures/linearalgebra.jpg)
-
 # :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
 ## Unit 2: Eigen Analysis and Matrix Decomposition
 * ### Current Topic: Symmetric Matrices, Positive Definite Matrices, and Similar Matrices
 * #### Definitions, properties, geometric interpretation, eigenvalues, quadratic forms, matrix similarity, diagonalization, and Python implementation.
----
+
+![Linear Algebra- Mathematics for IT](figures/linearalgebra.jpg)
+
 ## 👥 Instructor Information
 * **Edited by Instructor:** [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016/)
 * **Email:** javed@iiita.ac.in
