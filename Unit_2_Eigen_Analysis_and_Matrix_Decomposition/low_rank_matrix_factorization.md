@@ -1,3 +1,5 @@
+![Linear Algebra- Mathematics for IT](figures/linearalgebra.jpg)
+
 # :classical_building: Mathematics for IT Course - M.Tech. 1st Semester, IIIT Allahabad
 ## Unit 2: Eigen Analysis and Matrix Decomposition
 * ### Current Topic: Low-Rank Approximation and Matrix Factorization Concepts
