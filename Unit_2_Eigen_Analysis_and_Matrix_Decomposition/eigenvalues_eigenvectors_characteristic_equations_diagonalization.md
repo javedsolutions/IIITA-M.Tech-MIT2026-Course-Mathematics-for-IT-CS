@@ -265,6 +265,10 @@ v_2=
 }
 $$
 
+Importance of Eigenvalues and Eigenvectors in Structural Engineering, a real incident of breaking bridge with synchronized footsteps of soldiers took place in 1831, hence marching was banned on bridges.
+
+![EigenValues And EigenVectors](bridgeBroke1831.png)
+
 ---
 
 # Part IV — Python Implementation
